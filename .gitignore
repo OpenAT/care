@@ -4,7 +4,6 @@
 __pycache__/
 *.py[cod]
 
-
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -23,18 +22,23 @@ docs/_build/
 target/
 
 #odoo
-o8_*/
 /*.conf
-/*.init
-/*.log
-/*.pid
-data_dir
+/status.ini
+/update.lock
+/backup
+/data_dir
+/log
+/update
 
-#pycharm
+# Bash home
+/.bash*
+/.profile
+
+# pycharm
 .idea/
 
-#Mac OSX
+# Mac OSX
 .DS_*
 
-#Sass
+# Sass
 *.css.map
