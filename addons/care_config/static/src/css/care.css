@@ -118,9 +118,6 @@ header .nav a {
 #wsd-checkout-box h1 {
   font-size: 1.5em; }
 
-.products_pager {
-  display: none; }
-
 .oe_product.oe_grid {
   border: none;
   box-shadow: none; }
@@ -253,7 +250,7 @@ ul.cat_menu > li > a {
   margin-bottom: 20px;
   list-style: none;
   background-color: inherit;
-  border-radius: none; }
+  border-radius: 0; }
 
 #wsd_checkout label {
   height: 32px; }
