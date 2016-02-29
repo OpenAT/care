@@ -115,3 +115,15 @@ msgstr "Bestellung überprüfen"
 #: view:website:website_sale.cart
 msgid "Shopping Cart"
 msgstr "Warenkorb"
+
+#. module: website_sale
+#: view:website:website_sale.cart view:website:website_sale.checkout
+#: view:website:website_sale.confirmation view:website:website_sale.payment
+msgid "Shipping & Billing"
+msgstr "Ihre Daten"
+
+#. module: website_sale
+#: view:website:website_sale.cart view:website:website_sale.checkout
+#: view:website:website_sale.confirmation view:website:website_sale.payment
+msgid "Review Order"
+msgstr "Auftrag überprüfen"
