@@ -130,7 +130,7 @@ header .nav a {
   box-shadow: none; }
 
 .oe_product section {
-  background: #efb71b;
+  background: #efb71b !important;
   border-top: none; }
 
 .oe_product.oe_grid section h5 {
@@ -193,6 +193,9 @@ ul.cat_menu > li.cat0 {
   color: #e57424;
   background-color: inherit;
   font-weight: 300; }
+
+.text-info.oe_subdescription {
+  color: darkgrey; }
 
 ul.cat_menu > li > a {
   color: #413839;

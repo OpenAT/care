@@ -44,7 +44,7 @@
 }
 .oe_product section {
   // padding-bottom: 30px;
-  background: $careyellow;
+  background: $careyellow !important;
   border-top: none;
 }
 .oe_product.oe_grid section h5 {
@@ -117,6 +117,10 @@ ul.cat_menu > li.cat0 {
   color: $orange;
   background-color: inherit;
   font-weight: 300;
+}
+
+.text-info.oe_subdescription {
+  color: darkgrey;
 }
 
 // level 1
