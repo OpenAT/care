@@ -23,13 +23,14 @@
 3x3 grid for the /shop pages
     """,
     'author': 'Michael Karrer (michael.karrer@datadialog.net), DataDialog',
-    'version': '1.0',
+    'version': '1.1',
     'website': 'https://www.datadialog.net',
     'installable': True,
     'depends': [
         'website',
         'website_sale',
         'website_sale_donate',
+        'website_sale_categories',
     ],
     'data': [
         'views/templates.xml',
