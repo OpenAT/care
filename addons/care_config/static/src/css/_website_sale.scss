@@ -60,6 +60,9 @@
   margin: 0;
   color: #ffffff;
 }
+.oe_product.oe_grid section h5 strong a {
+ margin: 4px;
+}
 .nav .fa-shopping-cart,
 .small_cart_header .fa-shopping-cart {
   display: none;
@@ -92,7 +95,7 @@
   float: right;
   color: black;
   position: relative;
-  padding: 0;
+  //padding: 0;
 }
 .oe_product.oe_grid section .product_price .a-submit {
   clear: both;
