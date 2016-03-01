@@ -50,8 +50,30 @@
 }
 .quick_add_to_cart {
   width: 100%;
-  background-color: darkgrey;
+  background: #696969;
+  text-align: center;
+}
 
+.oe_product.oe_grid .oe_subdescription {
+  background: darkgrey;
+  height: 60px;
+  margin: 0;
+  color: #ffffff;
+}
+.nav .fa-shopping-cart,
+.small_cart_header .fa-shopping-cart {
+  display: none;
+}
+.fa-shopping-cart {
+  background: transparent;
+  border: 0px;
+}
+.fa-shopping-cart:before {
+  content: "Ins Care Packet";
+  background: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 .oe_product.oe_grid section h5 {
   display: inline;
