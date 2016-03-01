@@ -18,7 +18,7 @@
 #wsd-checkout-box h3,
 #wsd-checkout-box h4,
 #wsd-checkout-box h5,
-#wsd-checkout-box p, {
+#wsd-checkout-box p {
   font-family: Arial, Helvetica, sans-serif;
 }
 #wsd-checkout-box h1 {
@@ -29,9 +29,9 @@
 //    border: 1px solid rgb(41, 38, 38);
 //}
 
-.products_pager {
-  display: none;
-}
+//.products_pager {
+//  display: none;
+//}
 .oe_product.oe_grid {
   border: none;
   box-shadow: none;
@@ -194,7 +194,7 @@ ul.cat_menu > li > a {
     margin-bottom: 20px;
     list-style: none;
     background-color: inherit;
-    border-radius: none;
+    border-radius: 0;
 }
 
 // CHECKOUT PAGE
