@@ -46,10 +46,17 @@
   // padding-bottom: 30px;
   background: $careyellow !important;
   border-top: none;
+  padding: 0;
+}
+.quick_add_to_cart {
+  width: 100%;
+  background-color: darkgrey;
+
 }
 .oe_product.oe_grid section h5 {
   display: inline;
-  float: left;
+  //float: left;
+  width: 100%;
   strong {
     font-size: 100%;
   a {
