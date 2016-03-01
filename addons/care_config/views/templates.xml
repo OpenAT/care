@@ -2,12 +2,12 @@
 <openerp>
     <data>
 
-        <!-- Load custom CSS and JS for the website -->
-        <template id="care_assets_frontend" inherit_id="website.assets_frontend" name="care CSS and JS">
-            <xpath expr="/t" position="inside">
-                <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
-            </xpath>
-        </template>
+<!-- Load custom CSS and JS for the website -->
+<template id="care_assets_frontend" inherit_id="website.assets_frontend" name="care CSS and JS">
+    <xpath expr='//script[@src="/website_forum/static/src/js/website_forum.js"]' position="after">
+        <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
+    </xpath>
+</template>
 
     </data>
 </openerp>
