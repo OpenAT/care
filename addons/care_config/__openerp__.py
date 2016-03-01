@@ -32,10 +32,11 @@ Use this Addon as a Base for all Customer specific Modifications containing:
 
     """,
     'author': 'Joachim Grubelnik (joachim.grubelnik@datadialog.net), DataDialog',
-    'version': '1.0',
+    'version': '1.1',
     'website': 'https://www.datadialog.net',
     'installable': True,
     'depends': [
+        'website',
         'website_sale_donate',
         'website_sale_categories',
     ],

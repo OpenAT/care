@@ -3,12 +3,11 @@
     <data>
 
         <!-- Load custom CSS and JS for the website -->
-        <template id="assets_frontend" inherit_id="website.assets_frontend" name="care_config Frontend CSS and JS">
+        <template id="assets_frontend_care" inherit_id="website.assets_frontend" name="care_config Frontend CSS and JS">
             <!-- //form[@action='/shop/cart/update'] -->
-            <xpath expr="(//link[@rel='stylesheet'])[last()-1]" position="after">
+            <xpath expr="." position="inside">
                 <!-- Java Scripts -->
                 <!--<script type="text/javascript" src="/customer_care/static/src/js/customer_care.js"></script>-->
-
                 <!-- Style Sheets -->
                 <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
             </xpath>

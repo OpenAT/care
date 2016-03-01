@@ -2,7 +2,7 @@
 <openerp>
     <data>
 
-        <template id="products_cart" inherit_id="website_sale.products_item" active="True" customize_show="True" name="Care Items Design">
+        <template id="products_item_care" inherit_id="website_sale.products_item" name="Care Product Items">
             <xpath expr="//form[@action='/shop/cart/update']" position="replace">
                 <form action="/shop/cart/update" method="post" class="product_item">
                     <div itemscope="itemscope" itemtype="http://schema.org/Product">
