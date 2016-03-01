@@ -51,6 +51,17 @@ msgstr "Auf der Seite bleiben beim Artikel-hinzufügen"
 msgid "Checkout"
 msgstr "Bestellen"
 
+#. module: website_sale
+#: view:website:website_sale.cart view:website:website_sale.checkout
+#: view:website:website_sale.confirmation view:website:website_sale.payment
+msgid "Shipping & Billing"
+msgstr "Ihre Daten"
+
+#. module: website_sale
+#: view:website:website_sale.cart view:website:website_sale.checkout
+#: view:website:website_sale.confirmation view:website:website_sale.payment
+msgid "Review Order"
+msgstr "Care Packet"
 
 #. module: website_sale_donate
 #: view:website:website_sale.product
@@ -115,3 +126,15 @@ msgstr "Bestellung überprüfen"
 #: view:website:website_sale.cart
 msgid "Shopping Cart"
 msgstr "Warenkorb"
+
+#. module: website_sale
+#: view:website:website_sale.cart view:website:website_sale.checkout
+#: view:website:website_sale.confirmation view:website:website_sale.payment
+msgid "Shipping & Billing"
+msgstr "Ihre Daten"
+
+#. module: website_sale
+#: view:website:website_sale.cart view:website:website_sale.checkout
+#: view:website:website_sale.confirmation view:website:website_sale.payment
+msgid "Review Order"
+msgstr "Auftrag überprüfen"
