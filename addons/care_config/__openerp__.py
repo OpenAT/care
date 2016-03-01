@@ -37,8 +37,8 @@ Use this Addon as a Base for all Customer specific Modifications containing:
     'installable': True,
     'depends': [
         'website',
+        'website_sale',
         'website_sale_donate',
-        'website_sale_categories',
     ],
     'data': [
         'views/templates.xml',
