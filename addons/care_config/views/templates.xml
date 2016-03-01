@@ -5,7 +5,7 @@
         <!-- Load custom CSS and JS for the website -->
         <template id="assets_frontend_care" inherit_id="website.assets_frontend" name="care_config Frontend CSS and JS">
             <!-- //form[@action='/shop/cart/update'] -->
-            <xpath expr="." position="inside">
+            <xpath expr="//link[last()]" position="after">
                 <!-- Java Scripts -->
                 <!--<script type="text/javascript" src="/customer_care/static/src/js/customer_care.js"></script>-->
                 <!-- Style Sheets -->
