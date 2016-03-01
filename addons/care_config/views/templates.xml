@@ -3,8 +3,8 @@
     <data>
 
         <!-- Load custom CSS and JS for the website -->
-        <template id="assets_frontend" inherit_id="website.assets_frontend" name="care CSS and JS">
-            <xpath expr="//link[last()]" position="before">
+        <template id="assets_frontend" inherit_id="website.theme" name="care CSS and JS">
+            <xpath expr="//link[last()]" position="after">
                 <!-- <script type="text/javascript" src="/customer_care/static/src/js/customer_care.js"></script> -->
                 <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
             </xpath>
