@@ -267,3 +267,16 @@ ul.cat_menu > li > a {
     margin-top: 0.7em;
   }
 }
+
+@media (max-width: 991px) {
+#products_grid_before {
+  float: left;
+  width: 100%
+  }
+}
+
+@media (max-width: 768px) {
+#products_grid .oe_product {
+
+}
+}

@@ -315,6 +315,10 @@ ul.cat_menu > li > a {
 .oe_website_sale h1, .oe_website_sale h2, .oe_website_sale h3, .oe_website_sale h4, .oe_website_sale h5, .oe_website_sale h6 {
   margin-top: 0.7em; }
 
+@media (max-width: 991px) {
+  #products_grid_before {
+    float: left;
+    width: 100%; } }
 #wsd_checkout .page-header {
   background: #efb71b;
   padding: 13px 10px 13px 50px;
