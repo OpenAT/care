@@ -35,6 +35,10 @@ body {
   margin: 0;
   padding: 0; }
 
+.container {
+  width: 98%;
+  max-width: 1440px; }
+
 footer {
   background: #333;
   border-top: 1px solid #eeeeee;
@@ -73,6 +77,9 @@ h4 {
   font-size: 1.1em;
   margin-bottom: 0.125em;
   padding: 0; }
+
+h5 {
+  font-size: 1.125em; }
 
 p {
   font-size: 1em;
@@ -133,14 +140,29 @@ header .nav a {
 
 .quick_add_to_cart {
   width: 100%;
-  background: #696969;
+  background: #666;
   text-align: center; }
 
+.col-md-9 .oe-height-2 {
+  height: 383px; }
+
+.oe_product .oe_product_image img {
+  height: auto;
+  bottom: inherit; }
+
+.oe_product .oe_product_image img:hover {
+  height: auto; }
+
+.btn-xs, .btn-group-xs > .btn {
+  width: 100%;
+  padding: 6px 12px; }
+
 .oe_product.oe_grid .oe_subdescription {
-  background: darkgrey;
+  background: lightgray;
   height: 60px;
   margin: 0 !important;
-  color: #ffffff; }
+  color: black;
+  width: 100%; }
 
 .oe_product.oe_grid section h5 strong a {
   margin: 4px; }
@@ -149,12 +171,15 @@ header .nav a {
 .small_cart_header .fa-shopping-cart {
   display: none; }
 
+.btn.btn-default.btn-xs.fa.fa-shopping-cart {
+  color: white; }
+
 .fa-shopping-cart {
   background: transparent;
   border: 0px; }
 
 .fa-shopping-cart:before {
-  content: "Ins Care Packet";
+  content: "Ins CARE-Packet legen";
   background: transparent;
   font-size: 16px;
   text-transform: uppercase;
@@ -167,6 +192,9 @@ header .nav a {
     font-size: 100%; }
     .oe_product.oe_grid section h5 strong a {
       color: black; }
+
+.oe_product .product_price {
+  padding: 0; }
 
 .oe_product.oe_grid section .product_price {
   display: inline;
