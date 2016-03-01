@@ -1,0 +1,76 @@
+//$orange: #e57424;
+// Test
+
+body {
+    font-family: 'OpenSansARegular', "Open Sans", Sans-serif;
+    font-size: 17.6000003814697px;
+    line-height: 1.618em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  width: 98%;
+  max-width: 1440px;
+}
+
+footer {
+    // background-color: #272727;
+    background: #333;
+    border-top: 1px solid #eeeeee;
+    // color: #555555;
+    color: $careyellow;
+    min-height: 355px;
+    // visibility: hidden;
+   font-size: small;
+  p {
+    color: white;
+    a {
+      color: white;
+    }
+    a:hover {
+        color: $careyellow;
+      }
+  }
+  .col-md-4 {
+    border-right: 1px solid #808080;
+  }
+  .col-md-4:last-child {
+    border-right: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin:0 0 0.809em 0;
+    line-height: 1.2em;
+}
+
+h4{
+    font-family: 'OpenSansABold', "Open Sans", sans-serif;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.1em; margin-bottom: 0.125em; padding: 0;}
+h5 { font-size: 1.125em; }
+
+p {
+    font-size: 1em;
+    line-height: 1.518em;
+    margin: 0 0 1.618em 0;
+    padding: 0;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: $orange;
+}
+
+// COLOURS
+.text-primary {
+    color: $orange;
+}
