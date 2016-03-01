@@ -46,7 +46,7 @@
   // padding-bottom: 30px;
   background: $careyellow !important;
   border-top: none;
-  padding: 0;
+  padding: 0 !important;
 }
 .quick_add_to_cart {
   width: 100%;
@@ -57,7 +57,7 @@
 .oe_product.oe_grid .oe_subdescription {
   background: darkgrey;
   height: 60px;
-  margin: 0;
+  margin: 0 !important;
   color: #ffffff;
 }
 .oe_product.oe_grid section h5 strong a {
