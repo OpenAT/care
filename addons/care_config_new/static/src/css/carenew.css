@@ -1,0 +1,347 @@
+.btn {
+  border-radius: 0; }
+
+.btn-primary {
+  background: #efb71b;
+  background-color: #efb71b !important;
+  border: none; }
+
+.btn-primary:hover {
+  background: #e57424; }
+
+@font-face {
+  font-family: 'OpenSansABold';
+  src: url("/care_config_new/static/src/css/fonts/OpenSans-Bold.eot");
+  src: url("/care_config_new/static/src/css/fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("/care_config_new/static/src/css/fonts/OpenSans-Bold.woff") format("woff"), url("/care_config_new/static/src/css/fonts/OpenSans-Bold.ttf") format("truetype"), url("/care_config_new/static/src/css/fonts/OpenSans-Bold.svg#OpenSans_bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'OpenSansARegular';
+  src: url("/care_config_new/static/src/css/fonts/OpenSans-Regular.eot");
+  src: url("/care_config_new/static/src/css/fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("/care_config_new/static/src/css/fonts/OpenSans-Regular.woff") format("woff"), url("/care_config_new/static/src/css/fonts/OpenSans-Regular.ttf") format("truetype"), url("/care_config_new/static/src/css/fonts/OpenSans-Regular.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'OpenSansAItalic';
+  src: url("/care_config_new/static/src/css/fonts/OpenSans-Italic.eot");
+  src: url("/care_config_new/static/src/css/fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("/care_config_new/static/src/css/fonts/OpenSans-Italic.woff") format("woff"), url("/care_config_new/static/src/css/fonts/OpenSans-Italic.ttf") format("truetype"), url("/care_config_new/static/src/css/fonts/OpenSans-Italic.svg#OpenSans_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+body {
+  font-family: 'OpenSansARegular', "Open Sans", Sans-serif;
+  font-size: 17.6000003814697px;
+  line-height: 1.618em;
+  color: #333;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 98%;
+  max-width: 1440px; }
+
+footer {
+  background: #333;
+  border-top: 1px solid #eeeeee;
+  color: #efb71b;
+  min-height: 355px;
+  font-size: small; }
+  footer p {
+    color: white; }
+    footer p a {
+      color: white; }
+    footer p a:hover {
+      color: #efb71b; }
+  footer .col-md-4 {
+    border-right: 1px solid #808080; }
+  footer .col-md-4:last-child {
+    border-right: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  margin: 0 0 0.809em 0;
+  line-height: 1.2em; }
+
+h4 {
+  font-family: 'OpenSansABold', "Open Sans", sans-serif; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3 {
+  font-size: 1.3em; }
+
+h4 {
+  font-size: 1.1em;
+  margin-bottom: 0.125em;
+  padding: 0; }
+
+h5 {
+  font-size: 1.125em; }
+
+p {
+  font-size: 1em;
+  line-height: 1.518em;
+  margin: 0 0 1.618em 0;
+  padding: 0; }
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #e57424; }
+
+.text-primary {
+  color: #e57424; }
+
+header .navbar {
+  font-size: 14px; }
+header .nav a {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.fa-shopping-cart:before {
+  content: "\00a0\f004\00a0"; }
+
+.js_sale .btn-primary {
+  color: white;
+  background-color: #e57424;
+  border-color: black; }
+
+#wsd-checkout-box {
+  font-size: 14px; }
+
+#wsd-checkout-box,
+#wsd-checkout-box a,
+#wsd-checkout-box h1,
+#wsd-checkout-box h2,
+#wsd-checkout-box h3,
+#wsd-checkout-box h4,
+#wsd-checkout-box h5,
+#wsd-checkout-box p {
+  font-family: Arial, Helvetica, sans-serif; }
+
+#wsd-checkout-box h1 {
+  font-size: 1.5em; }
+
+.oe_product.oe_grid {
+  border: none;
+  box-shadow: none; }
+
+.oe_product.oe_grid:hover {
+  border: none;
+  box-shadow: none; }
+
+.oe_product section {
+  background: #efb71b !important;
+  border-top: none;
+  padding: 0 !important; }
+
+.quick_add_to_cart {
+  width: 100%;
+  background: #666;
+  text-align: center; }
+
+.col-md-9 .oe-height-2 {
+  height: 383px; }
+
+.oe_product .oe_product_image img {
+  height: auto;
+  bottom: inherit; }
+
+.oe_product .oe_product_image img:hover {
+  height: auto; }
+
+.btn-xs, .btn-group-xs > .btn {
+  width: 100%;
+  padding: 6px 12px; }
+
+.oe_product.oe_grid .oe_subdescription {
+  background: lightgray;
+  height: 70px;
+  margin: 0 !important;
+  color: black;
+  width: 100%; }
+
+.oe_product.oe_grid section h5 strong a {
+  margin: 4px; }
+
+.nav .fa-shopping-cart,
+.small_cart_header .fa-shopping-cart {
+  display: none; }
+
+.btn.btn-default.btn-xs.fa.fa-shopping-cart {
+  color: white; }
+
+.fa-shopping-cart {
+  background: transparent;
+  border: 0px; }
+
+.fa-shopping-cart:before {
+  content: "Ins CARE-Packet legen";
+  background: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.oe_product.oe_grid section h5 {
+  display: inline;
+  width: 100%; }
+  .oe_product.oe_grid section h5 strong {
+    font-size: 100%; }
+    .oe_product.oe_grid section h5 strong a {
+      color: black; }
+
+.oe_product .product_price {
+  padding: 0; }
+
+.oe_product.oe_grid section .product_price {
+  display: inline;
+  float: right;
+  color: black;
+  position: relative; }
+
+.oe_product.oe_grid section .product_price .a-submit {
+  clear: both;
+  display: block;
+  width: 100%; }
+
+.oe_currency_value {
+  float: right;
+  padding-left: 2px; }
+
+ul.cat_menu li {
+  font-size: 14.3999996185303px;
+  line-height: 1em; }
+  ul.cat_menu li a {
+    color: #e57424;
+    font-size: 14.3999996185303px;
+    padding: 0;
+    padding-bottom: 6px; }
+  ul.cat_menu li ul.nav-hierarchy {
+    padding-left: 0; }
+
+ul.cat_menu > li {
+  margin-bottom: 2em; }
+
+ul.cat_menu > li.cat0 {
+  margin-bottom: 1em; }
+  ul.cat_menu > li.cat0 a {
+    border: none;
+    color: #e57424;
+    font-size: 18.7199993133545px;
+    text-transform: none; }
+  ul.cat_menu > li.cat0 a:before {
+    display: inline-block;
+    content: "\00a0\f004\00a0";
+    font-family: FontAwesome !important;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased; }
+
+#products_grid_before .nav-pills > li.cat0.active > a,
+#products_grid_before .nav-pills > li.cat0.active > a:hover,
+#products_grid_before .nav-pills > li.cat0.active > a:focus {
+  color: #e57424;
+  background-color: inherit;
+  font-weight: 300; }
+
+.text-info.oe_subdescription {
+  color: darkgrey; }
+
+ul.cat_menu > li > a {
+  color: #413839;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  border-bottom: solid 1px #000;
+  border-radius: 0;
+  padding-left: 0;
+  padding-bottom: 0.5em;
+  margin: 0 0 1em 0; }
+
+#products_grid table {
+  border-spacing: 12px 24px; }
+
+#products_grid_before {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14.3999996185303px;
+  float: right;
+  padding-top: 34px; }
+
+#products_grid_before .nav-pills > li.active > a,
+#products_grid_before .nav-pills > li.active > a:hover,
+#products_grid_before .nav-pills > li.active > a:focus {
+  color: inherit;
+  background-color: inherit;
+  font-weight: bold; }
+
+#products_grid_before #cart_products thead {
+  display: none; }
+
+#products_grid_before .small_cart a {
+  font-size: 12px; }
+
+.small_cart a {
+  color: black; }
+
+.small_cart a strong {
+  font-weight: normal; }
+
+.small_cart_header {
+  background: #333;
+  padding: 13px 10px 13px 50px;
+  font-size: 20px;
+  padding: 10px; }
+  .small_cart_header a {
+    color: White; }
+  .small_cart_header small.text-danger {
+    color: #e57424; }
+
+.breadcrumb {
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: inherit;
+  border-radius: 0; }
+
+#wsd_checkout label {
+  height: 32px; }
+
+.oe_website_sale h1, .oe_website_sale h2, .oe_website_sale h3, .oe_website_sale h4, .oe_website_sale h5, .oe_website_sale h6 {
+  margin-top: 0.7em; }
+
+#wsd_checkout .page-header {
+  background: #efb71b;
+  padding: 13px 10px 13px 50px;
+  font-size: 20px;
+  position: relative; }
+
+#wsd_checkout .page-header:before {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 48px;
+  background: white;
+  content: ' ';
+  left: 10px;
+  top: 9px; }
+
+#wsd_checkout label {
+  color: rgba(0, 0, 0, 0.5); }
+
+#wsd_checkout label.text-danger {
+  color: #e4701e !important; }
+
+#wsd_checkout .form-control {
+  border-radius: 0; }
+
+#wsd_checkout .form-control:focus {
+  border-color: #e4701e;
+  box-shadow: none; }
+
+/*# sourceMappingURL=carenew.css.map */
