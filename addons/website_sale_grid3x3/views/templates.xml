@@ -61,5 +61,13 @@
             </xpath>
         </template>
 
+        <template id="products_cart_care_grid" inherit_id="website_sale.products" name="Care Grid Width">
+              <xpath expr="//div[@id='products_grid_before']" position="attributes">
+                  <attribute name="class">col-md-5</attribute>
+              </xpath>
+              <xpath expr="//div[@id='products_grid']" position="attributes">
+                  <attribute name="class">col-md-7</attribute>
+              </xpath>
+        </template>
     </data>
 </openerp>
