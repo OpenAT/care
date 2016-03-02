@@ -13,15 +13,16 @@
     font-size: 14px;
 
 }
-#wsd-checkout-box,
-#wsd-checkout-box a,
-#wsd-checkout-box h1,
-#wsd-checkout-box h2,
-#wsd-checkout-box h3,
-#wsd-checkout-box h4,
-#wsd-checkout-box h5,
-#wsd-checkout-box p {
-  font-family: Arial, Helvetica, sans-serif;
+//#wsd-checkout-box,
+//#wsd-checkout-box a,
+//#wsd-checkout-box h1,
+//#wsd-checkout-box h2,
+//#wsd-checkout-box h3,
+//#wsd-checkout-box h4,
+//#wsd-checkout-box h5,
+//#wsd-checkout-box p {
+body, a {
+  font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important;
 }
 #wsd-checkout-box h1 {
   font-size: 1.5em;
@@ -85,6 +86,10 @@
 }
 .oe_product.oe_grid section h5 strong a {
  margin: 4px;
+}
+.oe_product h5 strong,
+.product_price b {
+  font-weight: normal;
 }
 .nav .fa-shopping-cart,
 .small_cart_header .fa-shopping-cart {
@@ -191,7 +196,7 @@ ul.cat_menu > li.cat0 {
 // level 1
 ul.cat_menu > li > a {
   color: #413839;
-  font-family: Arial, Helvetica, sans-serif;
+  //font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 300;
@@ -210,7 +215,7 @@ ul.cat_menu > li > a {
 }
 
 #products_grid_before {
-  font-family: Arial, Helvetica, sans-serif;
+  //font-family: Arial, Helvetica, sans-serif;
   font-size: 14.3999996185303px;
   float: right;
   padding-top: 34px;
@@ -274,6 +279,17 @@ ul.cat_menu > li > a {
 
 @media screen and ( max-width: 1150px ) {
 
+}
+
+@media (max-width: 1350px) {
+  #products_grid_before {
+    float: left;
+    width: 100%;
+  }
+
+  #products_grid {
+    width: 100%;
+  }
 }
 
 @media (max-width: 991px) {
