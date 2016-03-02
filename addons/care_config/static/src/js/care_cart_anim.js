@@ -2,6 +2,8 @@
  * Created by mkarrer on 02.03.16.
  */
 
+jQuery('.icon_container').addClass('back');
+
 jQuery('.product_item > div .oe_product_image').flip({
   axis: 'y',
   trigger: 'manual',
