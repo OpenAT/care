@@ -13,15 +13,16 @@
     font-size: 14px;
 
 }
-#wsd-checkout-box,
-#wsd-checkout-box a,
-#wsd-checkout-box h1,
-#wsd-checkout-box h2,
-#wsd-checkout-box h3,
-#wsd-checkout-box h4,
-#wsd-checkout-box h5,
-#wsd-checkout-box p {
-  font-family: Arial, Helvetica, sans-serif;
+//#wsd-checkout-box,
+//#wsd-checkout-box a,
+//#wsd-checkout-box h1,
+//#wsd-checkout-box h2,
+//#wsd-checkout-box h3,
+//#wsd-checkout-box h4,
+//#wsd-checkout-box h5,
+//#wsd-checkout-box p {
+body, a {
+  font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important;
 }
 #wsd-checkout-box h1 {
   font-size: 1.5em;
@@ -57,7 +58,7 @@
 }
 
 .oe_product.oe-height-2 {
-  height: 400px;
+  height: 360px;
 }
 
 .oe_product .oe_product_image img {
@@ -86,6 +87,10 @@
 .oe_product.oe_grid section h5 strong a {
  margin: 4px;
 }
+.oe_product h5 strong,
+.product_price b {
+  font-weight: normal;
+}
 .nav .fa-shopping-cart,
 .small_cart_header .fa-shopping-cart {
   display: none;
@@ -110,6 +115,8 @@
   //float: left;
   width: 100%;
   height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
   strong {
     font-size: 100%;
   a {
@@ -191,7 +198,7 @@ ul.cat_menu > li.cat0 {
 // level 1
 ul.cat_menu > li > a {
   color: #413839;
-  font-family: Arial, Helvetica, sans-serif;
+  //font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 300;
@@ -210,7 +217,7 @@ ul.cat_menu > li > a {
 }
 
 #products_grid_before {
-  font-family: Arial, Helvetica, sans-serif;
+  //font-family: Arial, Helvetica, sans-serif;
   font-size: 14.3999996185303px;
   float: right;
   padding-top: 34px;
@@ -276,6 +283,17 @@ ul.cat_menu > li > a {
 
 }
 
+@media (max-width: 1350px) {
+  #products_grid_before {
+    float: left;
+    width: 100%;
+  }
+
+  #products_grid {
+    width: 100%;
+  }
+}
+
 @media (max-width: 991px) {
   #products_grid_before {
     float: left;
@@ -286,7 +304,7 @@ ul.cat_menu > li > a {
 @media (max-width: 768px) {
 
   .oe_product.oe-height-2 {
-    height: 400px !important;
+    height: 360px !important;
   }
 
   .oe_product section {
