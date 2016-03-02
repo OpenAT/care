@@ -28,7 +28,9 @@
     <xpath expr="//div[@id='products_grid_before']" position="inside">
         <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
         <!-- Small Cart Header -->
-        <t t-call="website_sale_donate.small_cart_header"/>
+        <t t-call="website_sale_donate.small_cart_header">
+            <t t-set="show_small_cart_header" t-value="True"/>
+        </t>
         <!-- Care Package Drop Area -->
         <div class="box_content">
             <div id="spenden_paket_circle">
