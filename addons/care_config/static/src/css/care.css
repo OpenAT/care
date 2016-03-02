@@ -572,6 +572,7 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 .oe_product.oe_grid .oe_subdescription {
   font-size: 16px;
   line-height: 22px;
+  padding: 10px 11px 5px;
 }
 
 .spenden_paket_bg, .spenden_paket_zf {
