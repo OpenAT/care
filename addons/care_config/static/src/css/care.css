@@ -144,8 +144,7 @@ header .nav a {
 
 .oe_product .oe_product_image img {
   height: auto;
-  bottom: inherit;
-  min-width: 345px; }
+  bottom: inherit; }
 
 .btn-xs, .btn-group-xs > .btn {
   width: 100%;
@@ -451,15 +450,11 @@ ul.cat_menu > li > a {
 }
 
 .product_item > div .icon_container {
-/*  transform: rotateY(180deg);
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  position: absolute;
-  z-index: 0;
-  transition: all 0.5s ease-out 0s;
-*/
+  background: #F5F5F5;
+}
+
+.product_item > div .icon_container img {
+  margin-top: 50px;
   width: 60px;
 }
 
@@ -499,11 +494,10 @@ body.schenken_mit_sinn div[class^="col"] {
 }*/
 
 .product_item > div h5, .product_item > div .quick_add_to_cart a, .product_item > div .box_caption p {
-    font-size: 1.125em;
+    font-size: 18px;
 }
 
 .product_item > div .oe_product.oe_grid .oe_subdescription {
-    font-size: 1em;
     line-height: 1.375em;
 }
 
@@ -571,10 +565,9 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   top: 40px;
 }
 
-.oe_product.oe_grid .oe_subdescription,
-.overlay_box p {
-  font-size: 1.125em;
-  line-height: 1.3333em;
+.oe_product.oe_grid .oe_subdescription {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .spenden_paket_bg, .spenden_paket_zf {
