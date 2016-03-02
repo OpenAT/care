@@ -267,7 +267,7 @@ ul.cat_menu > li > a {
   margin: 0 0 1em 0; }
 
 #products_grid table {
-  border-spacing: 12px 24px; }
+  border-spacing: 12px 40px; }
 
 #products_grid_before {
   font-size: 14.3999996185303px;
@@ -443,31 +443,32 @@ ul.cat_menu > li > a {
 }
 
 .product_item > div .oe_product_image {
+  position: relative;
   z-index: 1;
+  perspective: 524px;
+  height: 180px;
 }
 
 .product_item > div .icon_container {
+  transform: rotateY(180deg);
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 0;
+  transition: all 0.5s ease-out 0s;
   width: 60px;
 }
 
 .product_item > div .front {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
-}
-
-.produtct_item > div .overlay_box {
-  display: none;
-  position: absolute;
   height: 100%;
-  /*background: rgba(239,183,27,.8);*/
-  z-index: 10;
-  padding: 1.5em;
-}
-
-.product_item > div:hover .overlay_box {
-  display: block;
+  width: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.5s ease-out 0s;
 }
 
 .animated_icon {
@@ -479,7 +480,6 @@ ul.cat_menu > li > a {
 
 .product_item > div {
   height: 360px;
-  margin-top: 40px;
 }
 
 /*body.schenken_mit_sinn #main {
@@ -503,49 +503,6 @@ body.schenken_mit_sinn div[class^="col"] {
     line-height: 1.375em;
 }
 
-.howto_section {
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-
-.howto_title {
-  color: #333;
-  padding: 0 10px;
-  height: 50px;
-}
-
-.howto_title > p {
-  margin-bottom: 1.25em;
-}
-
-.howto_title > p:last-child {
-  margin-bottom: 0;
-}
-
-.howto_title a {
-  text-decoration: underline;
-}
-
-.howto_steps {
-  padding: 70px 0 0;
-}
-
-.howto_steps .icon_box:first-child {
-  padding-left: 0;
-}
-
-.howto_steps .icon_box:last-child {
-  padding-right: 0;
-}
-
-.howto_steps .icon_container {
-  height: 200px;
-  width: 100%;
-  background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
 .icon_info {
   height: auto;
   position: relative;
@@ -566,16 +523,8 @@ body.schenken_mit_sinn div[class^="col"] {
   padding: 16px 20px 16px 74px;
 }
 
-.spenden div[class^="col"] {
-    padding: 0px 12.5px;
-}
-
 .product_item > div, .patenbox {
   height: 360px;
-}
-
-.product_item > div {
-  margin-top: 40px;
 }
 
 body.care_patin_werden .product_item > div, .patenbox {
@@ -605,10 +554,6 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 
 .spenden_paket img.rotate {
   transform: rotate(172deg);
-}
-
-.product_item > div .oe_product_image, .product_item > div .info_box_overlay {
-  height: 180px;
 }
 
 .product_item > div h5 {
