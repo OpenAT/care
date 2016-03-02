@@ -32,7 +32,7 @@ msgstr "Sicheres Bestellen"
 #. module: website_sale_donate
 #: view:website:website_sale.product
 msgid "Add to Cart"
-msgstr "In den Warenkorb"
+msgstr "Ins CARE-Packet"
 
 #. module: website_sale_donate
 #: field:website,add_to_cart_stay_on_page:0
@@ -44,6 +44,10 @@ msgstr "Auf der Seite bleiben beim Artikel-hinzufügen"
 msgid "Add to Cart and stay on the Page"
 msgstr "Auf der Seite bleiben beim Artikel-hinzufügen"
 
+#. module: website_sale_donate
+#: view:website:website_sale_donate.small_cart_header
+msgid "My Items"
+msgstr "Mein Care-Packet"
 
 #. module: website_sale_donate
 #: view:website:website_sale.product
