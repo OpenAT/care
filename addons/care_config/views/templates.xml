@@ -15,10 +15,10 @@
     <!-- Make products_grid_before a left column just like the categories will do it -->
     <!-- ATTENTION: this will also be done by the product categories AND website_sale_donate! -->
     <xpath expr="//div[@id='products_grid_before']" position="attributes">
-        <attribute name="class">col-md-5</attribute>
+        <attribute name="class">col-md-4</attribute>
     </xpath>
     <xpath expr="//div[@id='products_grid']" position="attributes">
-        <attribute name="class">col-md-7</attribute>
+        <attribute name="class">col-md-8</attribute>
     </xpath>
 </template>
 
