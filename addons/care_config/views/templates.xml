@@ -9,5 +9,49 @@
     </xpath>
 </template>
 
+<!-- INHERIT PRODUCT LISTING products: small cart on left side -->
+<template id="care_product_grid_column_width" inherit_id="website_sale.products" active="True" customize_show="True" name="Care Column Widths">
+    <!-- Make products_grid_before a left column just like the categories will do it -->
+    <!-- ATTENTION: this will also be done by the product categories AND website_sale_donate! -->
+    <xpath expr="//div[@id='products_grid_before']" position="attributes">
+        <attribute name="class">col-md-5</attribute>
+    </xpath>
+    <xpath expr="//div[@id='products_grid']" position="attributes">
+        <attribute name="class">col-md-7</attribute>
+    </xpath>
+</template>
+
+<!-- INHERIT PRODUCT LISTING products: small cart on left side -->
+<template id="care_product_grid_cart" inherit_id="website_sale.products" active="True" customize_show="True" name="Care Cart">
+    <!-- Add a small shopping cart to products grid before column -->
+    <xpath expr="//div[@id='products_grid_before']" position="inside">
+        <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+        <!-- Small Cart Header -->
+        <t t-call="website_sale_donate.small_cart_header"/>
+        <!-- Care Package Drop Area -->
+        <div class="box_content">
+            <div id="spenden_paket_circle">
+                <div id="spenden_paket_opened">
+                    <div class="spenden_paket_bg_2" style="background-image:url(/care_config/static/img/care-box_gesamt.png);"></div>
+                    <div class="spenden_paket_bg" style="background-image:url(/care_config/static/img/care-box_kontur.png);"></div>
+                </div>
+                <div id="spenden_paket_closed" class="spenden_paket_bg_sent" style="background-image:url(/care_config/static/img/care_paket_geschlossen.png);"></div>
+                <div id="spenden_paket_confirmed" class="vCenter">
+                    <div>
+                        <p>Vielen Dank!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Small Cart -->
+        <t t-call="website_sale_donate.small_cart"/>
+        <!-- Checkout Button -->
+        <div class="text-left small_cart_buttons">
+            <a t-if="not optional_products and website_sale_order and website_sale_order.website_order_line" class="btn btn-primary pull-right" href="/shop/checkout">Checkout</a>
+        </div>
+        <div class="clearfix"/>
+    </xpath>
+</template>
+
     </data>
 </openerp>
