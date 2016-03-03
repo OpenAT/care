@@ -225,7 +225,7 @@ ul.cat_menu > li > a {
 
 .small_cart_header {
   margin-top: 0 !important;
-  margin: 0 -15px;
+  //margin: 0 -15px;
 }
 
 #products_grid_before .nav-pills > li.active > a,
@@ -322,8 +322,9 @@ ul.cat_menu > li > a {
     width: 345px;
   }
 
-  #products_grid .oe_product {
-
+  #products_grid {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
