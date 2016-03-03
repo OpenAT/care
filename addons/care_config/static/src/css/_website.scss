@@ -2,12 +2,21 @@
 // Test
 
 body {
-    font-family: 'OpenSansARegular', "Open Sans", Sans-serif;
+    font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
     font-size: 17.6000003814697px;
     line-height: 1.618em;
     color: #333;
     margin: 0;
     padding: 0;
+}
+
+strong {
+  font-family: 'HelveticaNeueLTStd-Bold';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'OfficinaSansStd-Bold';
 }
 
 .container {
