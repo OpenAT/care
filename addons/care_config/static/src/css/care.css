@@ -290,7 +290,6 @@ ul.cat_menu > li > a {
 #products_grid_before {
   font-size: 14.3999996185303px;
   float: right;
-  margin-top: 80px;
   background: #f5f5f5; }
 
 .small_cart_header {
@@ -347,7 +346,8 @@ ul.cat_menu > li > a {
   #products_grid {
     width: 100%; }
     #products_grid .col-md-8 {
-      padding-left: 0px !important; } }
+      padding-left: 0px !important;
+      margin-top: -80px; } }
 @media (max-width: 991px) {
   #products_grid_before {
     float: left;
@@ -721,10 +721,8 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   background-color: #333333; }
 
 .oe_product .oe_product_image img:hover {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%; }
+  width: 345px;
+  margin: auto; }
 
 #wsd_checkout .page-header {
   background: #efb71b;
