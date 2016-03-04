@@ -290,7 +290,7 @@ ul.cat_menu > li > a {
 #products_grid_before {
   font-size: 14.3999996185303px;
   float: right;
-  margin-top: 40px;
+  margin-top: 80px;
   background: #f5f5f5; }
 
 .small_cart_header {
@@ -368,7 +368,7 @@ ul.cat_menu > li > a {
     padding-right: 0px; } }
 #products_grid.col-md-8 {
   padding-left: 0px !important;
-  margin-top: -30px !important; }
+  margin-left: -10px; }
 
 /* FLOATWORK EDITS */
 /* SCHENKEN MIT SINN STLYES */
