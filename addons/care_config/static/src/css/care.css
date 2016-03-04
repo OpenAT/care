@@ -345,7 +345,9 @@ ul.cat_menu > li > a {
     width: 100%; }
 
   #products_grid {
-    width: 100%; } }
+    width: 100%; }
+    #products_grid .col-md-8 {
+      padding-left: 0px !important; } }
 @media (max-width: 991px) {
   #products_grid_before {
     float: left;
@@ -364,6 +366,9 @@ ul.cat_menu > li > a {
   #products_grid {
     padding-left: 0px;
     padding-right: 0px; } }
+#products_grid.col-md-8 {
+  padding-left: 0px !important; }
+
 /* FLOATWORK EDITS */
 /* SCHENKEN MIT SINN STLYES */
 .vCenter {
@@ -386,7 +391,7 @@ ul.cat_menu > li > a {
   zoom: 1;
   vertical-align: middle;
   height: 100%;
-  width: 1;
+  width: 1px;
   content: ""; }
 
 .vCenter p {
@@ -569,6 +574,10 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 .spenden_paket_zf .box_content .table_container {
   border-top: 1px solid #333333;
   padding-top: 10px; }
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px; }
 
 #spenden_paket_summe, #carepaket_spenden_button {
   position: absolute;
