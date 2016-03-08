@@ -300,14 +300,17 @@ ul.cat_menu > li > a {
 @media (max-width: 1350px) {
     #products_grid {
       //width: 100%;
+
       .col-md-8 {
         padding-left: 0px !important;
       }
 
       td {
         width: 50% !important;
-        display: inline-block;
+        //display: inline-block;
+        display: inline-table;
         float: left;
+        border-spacing: 10px 20px;
       }
 
       tr {
@@ -315,8 +318,17 @@ ul.cat_menu > li > a {
         float: none;
         clear: both !important;
       }
+      table {
+        //border-spacing: 22px 40px;
+        margin-top: 20px;
+      }
+    }
 
-}
+    .oe_product {
+      .oe_product_cart {
+        height: 410px;
+      }
+    }
 }
 
 @media (max-width: 991px) {
@@ -342,30 +354,30 @@ ul.cat_menu > li > a {
   }
 
   #products_grid {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+    //padding-left: 0px;
+    //padding-right: 0px;
 
-  tr {
-    float: none !important;
-    clear: both;
-    display: inline !important;
-  }
+    tr {
+      float: none !important;
+      clear: both;
+      display: inline !important;
+    }
 
-  td {
-    width: 50% !important;
+    td {
+      width: 100% !important;
+      display: inline-table;
+      float: none;
+      border-spacing: 10px 20px !important;
+    }
+    table {
+      //border-spacing: 10px 20px !important;
+      //margin-top: 20px;
+    }
   }
 }
 
-@media screen and ( max-width: 680px ) {
-  tr {
-    float: left !important;
-    display: inline-block !important;
-  }
+@media ( max-width: 680px ) {
 
-  td {
-    width: 100% !important;
-  }
 }
 
 
@@ -384,6 +396,7 @@ ul.cat_menu > li > a {
 
 /* FLOATWORK EDITS */
 /* SCHENKEN MIT SINN STLYES */
+
 .vCenter {
     text-align: center;
     font-size: 0px;
@@ -446,6 +459,7 @@ ul.cat_menu > li > a {
 .product_item > div .icon_container img {
   margin-top: 50px;
   width: 60px;
+  display: none;
 }
 
 .product_item > div .front {
@@ -472,7 +486,7 @@ ul.cat_menu > li > a {
 }
 
 /*body.schenken_mit_sinn #main {
-  padding-bottom: 150px;  
+  padding-bottom: 150px;
 }
 
 body.schenken_mit_sinn .inner {
@@ -621,10 +635,10 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 
 .spenden_paket_bg, .spenden_paket_bg_2, .spenden_paket_bg_sent  {
   background-repeat: no-repeat;
-  background-position: center center; 
-  -moz-background-size: 100% auto;  
-  -o-background-size: 100% auto;  
-  background-size: 100% auto; 
+  background-position: center center;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
 }
 
 
@@ -693,31 +707,31 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 }
 
 .spenden_paket_zf td img {
-  position: relative; 
+  position: relative;
 }
 
 .spenden_paket_zf td {
   height: 40px;
   border: 1px solid #999999;
   border-left: none;
-  border-right: none; 
+  border-right: none;
   vertical-align: middle;
 }
 
 .spenden_paket_zf .th_1 {
   text-align: left;
   width: 42%;
-} 
+}
 
 .spenden_paket_zf .th_2 {
   text-align: center;
   width: 22%;
-} 
+}
 
 .spenden_paket_zf .th_3 {
   text-align: center;
   width: 31%;
-} 
+}
 
 .spenden_paket_zf .th_4 {
   text-align: right;
@@ -726,16 +740,16 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 
 .spenden_paket_zf .td_1 {
   text-align: left;
-} 
+}
 
 .spenden_paket_zf .td_2 {
   text-align: right;
   padding-right: 10px;
-} 
+}
 
 .spenden_paket_zf .td_3 {
   text-align: center;
-} 
+}
 
 .spenden_paket_zf .td_4 {
   cursor: pointer;
@@ -775,8 +789,8 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   width: 58px;
   height: 30px;
   background: #fff;
-  text-align: center; 
-  
+  text-align: center;
+
   -webkit-box-shadow: inset 3px 3px 4px -2px #999;
   -moz-box-shadow: inset 3px 3px 4px -2px #999;
   box-shadow: inset 3px 3px 4px -2px #999;
@@ -807,7 +821,8 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 }
 
 .product_item > div .quick_add_to_cart a {
-  background-color: #666;
+  //background-color: #666;
+  background-color: #990000;
 }
 
 .product_item > div:hover .quick_add_to_cart a {
