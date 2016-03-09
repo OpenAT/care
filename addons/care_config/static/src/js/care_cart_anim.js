@@ -1,27 +1,32 @@
 /**
  * Created by mkarrer on 02.03.16.
  */
-
+/*
 jQuery('.icon_container').addClass('back');
-
+*/
+/*
 jQuery('.product_item > div .oe_product_image').flip({
   axis: 'y',
   trigger: 'manual',
   reverse: true
 });
+*/
 
 jQuery('.product_item > div').mouseenter(function() {
-    jQuery(this).find('.icon_container img').show();
+/*    jQuery(this).find('.icon_container img').show();
     jQuery(this).find('.oe_product_image').flip(true);
 }).mouseleave(function() {
     jQuery(this).find('.oe_product_image').flip(false);
+*/
 });
 
 jQuery('.product_item > div .submit_button a').click(function(e) {
     e.preventDefault();
+    console.log('test');
 });
 
 jQuery('.product_item > div').click(function() {
+/*
     $icon = jQuery(this).find('.icon_container img').clone();
     jQuery(this).find('.icon_container img').hide();
     if(jQuery(window).scrollTop() > jQuery('.spenden_paket').offset().top - jQuery('#header').height() - 20) {
@@ -52,7 +57,8 @@ jQuery('.product_item > div').click(function() {
     }
 
     $icon.animate({path : new jQuery.path.bezier(bezier_params)},1200);
-
+*/
+    var $zwischensumme = 0;
     var $tabelle = jQuery('.spenden_paket_zf tbody');
     var $spendentext = jQuery(this).find('p.left').text();
     var $spendenbetrag = +(jQuery(this).find('p.right').text().substring(2));
