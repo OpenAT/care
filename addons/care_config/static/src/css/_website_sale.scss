@@ -353,6 +353,13 @@ ul.cat_menu > li > a {
     width: 345px;
   }
 
+  #products_grid_before {
+    float: none;
+    width: 345px;
+    display: block;
+    margin: 0 auto;
+    }
+
   #products_grid {
     //padding-left: 0px;
     //padding-right: 0px;
@@ -380,12 +387,12 @@ ul.cat_menu > li > a {
 
 }
 
-
+/*
 #products_grid.col-md-8 {
     padding-left: 0px !important;
     margin-left: -10px;
   }
-
+*/
 
 
 

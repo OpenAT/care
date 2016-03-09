@@ -371,6 +371,12 @@ ul.cat_menu > li > a {
   .oe_product .oe_product_image img {
     width: 345px; }
 
+  #products_grid_before {
+    float: none;
+    width: 345px;
+    display: block;
+    margin: 0 auto; }
+
   #products_grid tr {
     float: none !important;
     clear: both;
@@ -380,10 +386,12 @@ ul.cat_menu > li > a {
     display: inline-table;
     float: none;
     border-spacing: 10px 20px !important; } }
+/*
 #products_grid.col-md-8 {
-  padding-left: 0px !important;
-  margin-left: -10px; }
-
+    padding-left: 0px !important;
+    margin-left: -10px;
+  }
+*/
 /* FLOATWORK EDITS */
 /* SCHENKEN MIT SINN STLYES */
 .vCenter {
