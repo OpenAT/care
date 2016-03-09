@@ -291,10 +291,14 @@ ul.cat_menu > li > a {
   font-size: 14.3999996185303px;
   float: right;
   margin-top: 80px;
-  background: #f5f5f5; }
+  background: #f5f5f5;
+  padding: 0px; }
 
 .small_cart_header {
   margin-top: 0 !important; }
+
+.small_cart_buttons {
+  margin-right: 10px; }
 
 #products_grid_before .nav-pills > li.active > a,
 #products_grid_before .nav-pills > li.active > a:hover,
@@ -386,6 +390,10 @@ ul.cat_menu > li > a {
     display: inline-table;
     float: none;
     border-spacing: 10px 20px !important; } }
+#products_grid_before > div.small_cart {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 /*
 #products_grid.col-md-8 {
     padding-left: 0px !important;
