@@ -421,7 +421,7 @@ ul.cat_menu > li > a {
   }
   .front {
   }
-  .product_item:hover .oe_product_image .front img {
+  .product_item:hover .oe_product_image .front {
     transform: rotateY(180deg);
   }
   .front img, .icon_container {
