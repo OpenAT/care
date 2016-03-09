@@ -161,12 +161,17 @@ body, a {
   height: 410px; }
 
 .oe_product .oe_product_image img {
-  height: auto;
+  height: 100% !important;
+  width: auto;
   bottom: inherit;
-  min-width: 345px; }
+  max-height: none;
+  max-width: none; }
 
 .oe_product .oe_product_image img:hover {
-  height: auto; }
+  height: auto;
+  width: auto;
+  max-height: none;
+  max-width: none; }
 
 .btn-xs, .btn-group-xs > .btn {
   width: 100%;
@@ -400,6 +405,41 @@ ul.cat_menu > li > a {
     margin-left: -10px;
   }
 */
+/* ALEX FLIPPING IMAGE */
+@media screen and (min-width: 768px) {
+  .oe_product_image {
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    position: relative;
+    perspective: 1000;
+    background: #f5f5f5; }
+
+  .product_item:hover .oe_product_image .front img {
+    transform: rotateY(180deg); }
+
+  .front img, .icon_container {
+    position: absolute;
+    backface-visibility: hidden; }
+
+  .icon_container {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    top: 40%;
+    left: 35%;
+    width: 35%;
+    height: 35%;
+    background: transparent !important;
+    z-index: 0; } }
+@media screen and (max-width: 768px) {
+  .icon_container {
+    display: none; }
+
+  .oe_product .oe_product_image img:hover {
+    width: 345px !important; } }
+/* ENDE ALEX FLIPPING IMAGE*/
 /* FLOATWORK EDITS */
 /* SCHENKEN MIT SINN STLYES */
 .vCenter {
@@ -450,11 +490,6 @@ ul.cat_menu > li > a {
 
 .product_item > div .icon_container {
   background: #F5F5F5; }
-
-.product_item > div .icon_container img {
-  margin-top: 50px;
-  width: 60px;
-  display: none; }
 
 .product_item > div .front {
   height: 100%;
