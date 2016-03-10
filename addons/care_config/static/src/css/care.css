@@ -846,6 +846,10 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 h5 .product_price span {
   font-family: sans-serif; }
 
+/* donation page panel */
+.panel {
+  background-color: rgba(255, 255, 255, 0.23); }
+
 #wsd_checkout .page-header {
   background: #efb71b;
   padding: 13px 10px 13px 50px;
