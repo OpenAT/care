@@ -9,7 +9,6 @@
 }
 #wsd-checkout-box {
     font-size: 14px;
-
 }
 //#wsd-checkout-box,
 //#wsd-checkout-box a,
@@ -672,6 +671,9 @@ body.schenken_mit_sinn div[class^="col"].spenden {
     width: 100%;
     height: 100%;
     z-index: 0;
+    background-image: url('/care_config/static/img/care-box_gesamt.png');
+    background-size: 250px;
+    background-repeat: no-repeat;
 }
 
 .spenden_paket_bg.hide_bg {
