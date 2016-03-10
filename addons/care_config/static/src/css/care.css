@@ -204,7 +204,7 @@ body, a {
   border: 0px; }
 
 .fa-shopping-cart:before {
-  content: "Ins CARE-Packet legen";
+  content: "Ins CARE-Paket legen";
   background: transparent;
   font-size: 16px;
   text-transform: uppercase;
@@ -796,6 +796,9 @@ body.schenken_mit_sinn div[class^="col"].spenden {
     margin: auto;
 }
 */
+h5 .product_price span {
+  font-family: sans-serif; }
+
 #wsd_checkout .page-header {
   background: #efb71b;
   padding: 13px 10px 13px 50px;
