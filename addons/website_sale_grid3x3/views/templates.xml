@@ -2,68 +2,62 @@
 <openerp>
     <data>
 
-        <template id="products_item_care" inherit_id="website_sale.products_item" name="Care Product Items">
-            <xpath expr="//form[@action='/shop/cart/update']" position="replace">
-                <form action="/shop/cart/update" method="post" class="product_item">
-                    <div itemscope="itemscope" itemtype="http://schema.org/Product">
-                        <div class="ribbon-wrapper">
-                            <div class="ribbon btn btn-danger">Sale</div>
-                        </div>
+        <!-- INHERIT PRODUCT LISTING products_item: ADD "Product Sales Description" and "Add to Cart Button" -->
+        <!-- HINT: Do NOT enable original desc. and add to cart option -->
+        <template id="products_item_care" inherit_id="website_sale.products_item" name="Care Product Description">
+            <xpath expr="//div[@itemprop='offers']" position="after">
+                <!-- Care Product Description -->
+                <div class="text-info oe_subdescription" contenteditable="false">
+                    <div itemprop="description" t-field="product.description_sale"></div>
+                </div>
+                <!-- Care Quick Add To Cart -->
+                <div class="quick_add_to_cart">
+                    <input name="product_id" t-att-value="product.product_variant_ids[0].id" type="hidden"/>
+                    <t t-if="len(product.product_variant_ids) == 1">
+                        <a class="btn btn-default btn-xs fa fa-shopping-cart a-submit"/>
+                    </t>
+                    <t t-if="len(product.product_variant_ids) &gt; 1">
+                        <a class="btn btn-default btn-xs fa fa-shopping-cart" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))"/>
+                    </t>
+                </div>
+            </xpath>
+        </template>
 
-                        <!-- Product Image -->
-                        <div class="oe_product_image">
-                            <a itemprop="url" class="front" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))">
-                                <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product, 'image', None if product_image_big else '300x300')" t-att-alt="product.name"/>
-                            </a>
-                            <div class="icon_container">
-                                <img src="/care_config/static/img/icon_geschenk.png"/>
+
+        <!-- INHERIT PRODUCT LISTING products: Care small cart -->
+        <template id="care_product_grid_cart" inherit_id="website_sale.products" active="True" customize_show="True" name="Care Cart and Add to Cart">
+
+            <!-- Add a small shopping cart to products grid before column -->
+            <xpath expr="//div[@id='products_grid_before']" position="inside">
+                <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+                <!-- Small Cart Header -->
+                <t t-call="website_sale_donate.small_cart_header">
+                    <t t-set="show_small_cart_header" t-value="True"/>
+                </t>
+                <!-- Care Package Drop Area -->
+                <div class="box_content">
+                    <div id="spenden_paket_circle">
+                        <div id="spenden_paket_opened">
+                            <div class="spenden_paket_bg_2"></div>
+                            <div class="spenden_paket_bg"></div>
+                        </div>
+                        <div id="spenden_paket_closed" class="spenden_paket_bg_sent"></div>
+                        <div id="spenden_paket_confirmed" class="vCenter">
+                            <div>
+                                <p>Thank you!</p>
                             </div>
                         </div>
-
-                        <section>
-                            <h5>
-                                <!-- Name -->
-                                <strong><a itemprop="name" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))" t-field="product.name"/></strong>
-                                <!-- Price (float right) -->
-                                <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
-                                    <b>
-                                        <!-- List Price -->
-                                        <t t-if="(compute_currency(product.lst_price) - product.price) &gt; 0.1">
-                                            <del class="text-danger" style="white-space: nowrap;" t-field="product.lst_price" t-field-options='{
-                                              "widget": "monetary",
-                                              "from_currency": "product.company_id.currency_id",
-                                              "display_currency": "user_id.partner_id.property_product_pricelist.currency_id"
-                                            }'/>&amp;nbsp;
-                                        </t>
-                                        <!-- Price and Currency -->
-                                        <span t-field="product.price" style="white-space: nowrap;"  t-field-options='{
-                                            "widget": "monetary",
-                                            "display_currency": "user_id.partner_id.property_product_pricelist.currency_id"
-                                            }'>
-                                        </span>
-                                        <!-- Hidden: only for form data -->
-                                        <span itemprop="price" style="display:none;" t-esc="product.price"/>
-                                        <span itemprop="priceCurrency" style="display:none;" t-esc="user_id.partner_id.property_product_pricelist.currency_id.name"/>
-                                    </b>
-                                </div>
-                            </h5>
-                            <!-- Product Description -->
-                            <div class="text-info oe_subdescription" contenteditable="false">
-                                <div itemprop="description" t-field="product.description_sale"></div>
-                            </div>
-                            <!-- Quick Add To Cart -->
-                            <div class="quick_add_to_cart">
-                                <input name="product_id" t-att-value="product.product_variant_ids[0].id" type="hidden"/>
-                                <t t-if="len(product.product_variant_ids) == 1">
-                                    <a class="btn btn-default btn-xs fa fa-shopping-cart a-submit"/>
-                                </t>
-                                <t t-if="len(product.product_variant_ids) &gt; 1">
-                                    <a class="btn btn-default btn-xs fa fa-shopping-cart" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))"/>
-                                </t>
-                            </div>
-                        </section>
                     </div>
-                </form>
+                </div>
+
+                <!-- Small Cart -->
+                <t t-call="website_sale_donate.small_cart"/>
+
+                <!-- Checkout Button -->
+                <div class="text-left small_cart_buttons">
+                    <a t-if="not optional_products and website_sale_order and website_sale_order.website_order_line" class="btn btn-primary pull-right" href="/shop/checkout">Checkout</a>
+                </div>
+                <div class="clearfix"/>
             </xpath>
         </template>
 
