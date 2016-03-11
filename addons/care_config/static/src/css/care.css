@@ -850,6 +850,13 @@ h5 .product_price span {
 .panel {
   background-color: rgba(255, 255, 255, 0.23); }
 
+#price_donate .form-control {
+  background-color: rgba(0, 0, 0, 0.075); }
+
+.pagination > .active > a {
+  background-color: #333;
+  border-color: #428bca; }
+
 #wsd_checkout .page-header {
   background: #efb71b;
   padding: 13px 10px 13px 50px;
