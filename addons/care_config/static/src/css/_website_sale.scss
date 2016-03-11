@@ -91,6 +91,10 @@ body, a {
 .oe_product.oe_grid section h5 strong a {
  margin: 4px;
 }
+.oe_product.oe_grid section h5 strong {
+  float:left;
+}
+
 .oe_product h5 strong,
 .product_price b {
   font-weight: normal;
@@ -981,3 +985,12 @@ h5 .product_price span {
     background-color: #333;
     border-color: #428bca;
 }
+
+/* Online spenden Area */
+body[data-rootcatid="2"] {
+#products_grid_before {
+  display: none;
+}
+}
+
+/* Online Spenden Area END */
