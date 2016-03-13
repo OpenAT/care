@@ -60,7 +60,7 @@ body, a {
 
 
 .oe_product .oe_product_image img {
-  height: 100% !important;
+  height: 232px !important;
   width: auto;
   bottom: inherit;
   max-height: none;
@@ -137,6 +137,7 @@ body, a {
 
 .oe_product .product_price {
   padding: 0;
+  padding-right: 8px;
 }
 
 .oe_product.oe_grid section .product_price {
