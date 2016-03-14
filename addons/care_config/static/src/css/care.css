@@ -889,20 +889,19 @@ body[data-rootcatid="2"] #products_grid_before {
     padding-left: 8px; }
   body[data-rootcatid="2"] #products_grid_before #products_grid table {
     border-spacing: 0px 0px; }
+  body[data-rootcatid="2"] #products_grid_before #products_grid table {
+    border-spacing: 0px 0px; }
 @media (max-width: 1409px) {
   body[data-rootcatid="2"] #products_grid .col-md-8 {
     padding-left: 0px !important; }
   body[data-rootcatid="2"] #products_grid td {
     width: 33.3333% !important;
     display: inline-table;
-    float: left;
-    border-spacing: 10px 20px; }
+    float: left; }
   body[data-rootcatid="2"] #products_grid tr {
     display: inline !important;
     float: none;
     clear: both !important; }
-  body[data-rootcatid="2"] #products_grid table {
-    margin-top: 20px; }
   body[data-rootcatid="2"] .oe_product .oe_product_cart {
     height: 410px; } }
 body[data-rootcatid="2"] #oe_main_menu_navbar {

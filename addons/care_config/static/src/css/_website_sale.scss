@@ -1019,6 +1019,9 @@ body[data-rootcatid="2"] {
   #products_grid table {
     border-spacing: 0px 0px;
 }
+  #products_grid table {
+    border-spacing: 0px 0px;
+}
 }
   @media (max-width: 1409px) {
     #products_grid {
@@ -1033,7 +1036,7 @@ body[data-rootcatid="2"] {
         //display: inline-block;
         display: inline-table;
         float: left;
-        border-spacing: 10px 20px;
+        //border-spacing: 10px 20px;
       }
 
       tr {
@@ -1043,7 +1046,7 @@ body[data-rootcatid="2"] {
       }
       table {
         //border-spacing: 22px 40px;
-        margin-top: 20px;
+        //margin-top: 20px;
       }
     }
 
