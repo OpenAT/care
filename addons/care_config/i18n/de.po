@@ -99,12 +99,12 @@ msgstr "jetzt bezahlen"
 #: view:website:website_sale.cart
 #: view:website:website_sale.product
 msgid "Add to Cart"
-msgstr "In den Warenkorb"
+msgstr "Ins Care Paket"
 
 #. module: website_sale
 #: view:website:website.layout
 msgid "My cart"
-msgstr "Warenkorb"
+msgstr "Care Paket"
 
 #. module: website_sale
 #: code:addons/website_sale/controllers/main.py:657
@@ -116,7 +116,7 @@ msgstr "Bestellen"
 #. module: website_sale
 #: view:website:website_sale.checkout
 msgid "Return to Cart"
-msgstr "Zurück zum Warenkorb"
+msgstr "Zurück zum Care Paket"
 
 #. module: website_sale
 #: view:website:website_sale.cart
@@ -129,7 +129,7 @@ msgstr "Bestellung überprüfen"
 #. module: website_sale
 #: view:website:website_sale.cart
 msgid "Shopping Cart"
-msgstr "Warenkorb"
+msgstr "Care Paket"
 
 #. module: website_sale
 #: view:website:website_sale.cart view:website:website_sale.checkout

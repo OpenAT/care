@@ -177,6 +177,9 @@ body, a {
   width: 100%;
   padding: 6px 12px; }
 
+#website-top-edit .btn-xs, .btn-group-xs > .btn {
+  width: auto !important; }
+
 .oe_product.oe_grid .oe_subdescription {
   background: #F5F5F5;
   height: 70px;
@@ -208,6 +211,13 @@ body, a {
 
 .fa-shopping-cart:before {
   content: "Ins CARE-Paket legen";
+  background: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+body[data-rootcatid="2"] .fa-shopping-cart:before {
+  content: "Jetzt Pate werden";
   background: transparent;
   font-size: 16px;
   text-transform: uppercase;
@@ -348,6 +358,9 @@ ul.cat_menu > li > a {
 
 #wsd_checkout label {
   height: 32px; }
+
+#wsd-checkout-box .img-responsive {
+  width: 60%; }
 
 .oe_website_sale h1, .oe_website_sale h2, .oe_website_sale h3, .oe_website_sale h4, .oe_website_sale h5, .oe_website_sale h6 {
   margin-top: 0.7em; }
@@ -861,8 +874,12 @@ h5 .product_price span {
   background-color: #333;
   border-color: #428bca; }
 
-/* Online spenden Area */
+/* Online Patenschaften Area */
 body[data-rootcatid="2"] #products_grid_before {
+  display: none; }
+
+/* Online spenden Area */
+body[data-rootcatid="6"] #products_grid_before {
   display: none; }
 
 /* Online Spenden Area END */
