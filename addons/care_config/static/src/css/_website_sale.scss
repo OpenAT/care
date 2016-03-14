@@ -322,7 +322,7 @@ ul.cat_menu > li > a {
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1416px) {
     #products_grid {
       //width: 100%;
 
@@ -1016,3 +1016,9 @@ body[data-rootcatid="6"] {
 }
 
 /* Online Spenden Area END */
+/* Online Patenschaften Area */
+body[data-rootcatid="2"] {
+  #products_grid_before {
+    display: none;
+  }
+}

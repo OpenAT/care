@@ -365,7 +365,7 @@ ul.cat_menu > li > a {
 .oe_website_sale h1, .oe_website_sale h2, .oe_website_sale h3, .oe_website_sale h4, .oe_website_sale h5, .oe_website_sale h6 {
   margin-top: 0.7em; }
 
-@media (max-width: 1450px) {
+@media (max-width: 1416px) {
   #products_grid .col-md-8 {
     padding-left: 0px !important; }
   #products_grid td {
@@ -883,6 +883,10 @@ body[data-rootcatid="6"] #products_grid_before {
   display: none; }
 
 /* Online Spenden Area END */
+/* Online Patenschaften Area */
+body[data-rootcatid="2"] #products_grid_before {
+  display: none; }
+
 #wsd_checkout .page-header {
   background: #efb71b;
   padding: 13px 10px 13px 50px;
