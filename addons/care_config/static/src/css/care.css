@@ -122,9 +122,10 @@ header .nav a {
   font-weight: bold;
   text-transform: uppercase; }
 
-.row {
-  margin-left: -28px; }
-
+/* .row {
+  margin-left: -28px;
+}
+*/
 .fa-shopping-cart:before {
   content: "\00a0\f004\00a0"; }
 
