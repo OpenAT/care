@@ -365,7 +365,7 @@ ul.cat_menu > li > a {
 .oe_website_sale h1, .oe_website_sale h2, .oe_website_sale h3, .oe_website_sale h4, .oe_website_sale h5, .oe_website_sale h6 {
   margin-top: 0.7em; }
 
-@media (max-width: 1416px) {
+@media (max-width: 1409px) {
   #products_grid .col-md-8 {
     padding-left: 0px !important; }
   #products_grid td {
