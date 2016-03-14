@@ -974,6 +974,10 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   transition: background-color .3s;
 }
 
+.oe_product:hover .quick_add_to_cart a {
+  background-color: #333;
+}
+
 .product_item > div .quick_add_to_cart a {
   //background-color: #666;
   background-color: #990000;
@@ -998,8 +1002,9 @@ h5 .product_price span {
   background-color: rgba(255, 255, 255, 0.23);
 }
 
-#price_donate .form-control {
-    background-color: rgba(0,0,0,0.075);
+#price_donate {
+    background-color: rgba(0,0,0,.5);
+  color: rgba(247,150,23,1);
 }
 
 .pagination > .active > a {
