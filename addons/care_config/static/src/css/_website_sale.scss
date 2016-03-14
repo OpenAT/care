@@ -1010,6 +1010,39 @@ body[data-rootcatid="2"] {
 #products_grid_before {
   display: none;
 }
+  @media (max-width: 1409px) {
+    #products_grid {
+      //width: 100%;
+
+      .col-md-8 {
+        padding-left: 0px !important;
+      }
+
+      td {
+        width: 33.3333% !important;
+        //display: inline-block;
+        display: inline-table;
+        float: left;
+        border-spacing: 10px 20px;
+      }
+
+      tr {
+        display: inline !important;
+        float: none;
+        clear: both !important;
+      }
+      table {
+        //border-spacing: 22px 40px;
+        margin-top: 20px;
+      }
+    }
+
+    .oe_product {
+      .oe_product_cart {
+        height: 410px;
+      }
+    }
+}
 }
 /* Online spenden Area */
 body[data-rootcatid="6"] {
@@ -1018,7 +1051,7 @@ body[data-rootcatid="6"] {
 }
 }
 
-/* Online Spenden Area END */
+
 /* Online Patenschaften Area */
 body[data-rootcatid="2"] {
   #products_grid_before {
