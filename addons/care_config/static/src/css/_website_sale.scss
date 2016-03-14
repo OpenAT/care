@@ -32,9 +32,10 @@ body, a {
 //    border: 1px solid rgb(41, 38, 38);
 //}
 
-//.products_pager {
-//  display: none;
-//}
+.products_pager {
+  display: none;
+}
+
 .oe_product.oe_grid {
   border: none;
   box-shadow: none;
@@ -1009,6 +1010,14 @@ h5 .product_price span {
 body[data-rootcatid="2"] {
 #products_grid_before {
   display: none;
+  .col-md-12 {
+    padding-right: 0px;
+    padding-left: 8px;
+}
+
+  #products_grid table {
+    border-spacing: 0px 0px;
+}
 }
   @media (max-width: 1409px) {
     #products_grid {
@@ -1043,6 +1052,9 @@ body[data-rootcatid="2"] {
       }
     }
 }
+  #oe_main_menu_navbar {
+    display: none;
+  }
 }
 /* Online spenden Area */
 body[data-rootcatid="6"] {

@@ -142,6 +142,9 @@ body, a {
 #wsd-checkout-box h1 {
   font-size: 1.5em; }
 
+.products_pager {
+  display: none; }
+
 .oe_product.oe_grid {
   border: none;
   box-shadow: none; }
@@ -880,6 +883,11 @@ h5 .product_price span {
 /* Online Patenschaften Area */
 body[data-rootcatid="2"] #products_grid_before {
   display: none; }
+  body[data-rootcatid="2"] #products_grid_before .col-md-12 {
+    padding-right: 0px;
+    padding-left: 8px; }
+  body[data-rootcatid="2"] #products_grid_before #products_grid table {
+    border-spacing: 0px 0px; }
 @media (max-width: 1409px) {
   body[data-rootcatid="2"] #products_grid .col-md-8 {
     padding-left: 0px !important; }
@@ -896,6 +904,8 @@ body[data-rootcatid="2"] #products_grid_before {
     margin-top: 20px; }
   body[data-rootcatid="2"] .oe_product .oe_product_cart {
     height: 410px; } }
+body[data-rootcatid="2"] #oe_main_menu_navbar {
+  display: none; }
 
 /* Online spenden Area */
 body[data-rootcatid="6"] #products_grid_before {
