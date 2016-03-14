@@ -849,7 +849,7 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   width: 100%;
   padding: 0px 11px;
   color: #fff;
-  background-color: #999999;
+  background-color: #990000;
   -webkit-transition: background-color .3s;
   -moz-transition: background-color .3s;
   -o-transition: background-color .3s;
@@ -882,30 +882,34 @@ h5 .product_price span {
   border-color: #428bca; }
 
 /* Online Patenschaften Area */
-body[data-rootcatid="2"] #products_grid_before {
-  display: none; }
-  body[data-rootcatid="2"] #products_grid_before .col-md-12 {
-    padding-right: 0px;
-    padding-left: 8px; }
-  body[data-rootcatid="2"] #products_grid_before #products_grid table {
-    border-spacing: 0px 0px; }
-  body[data-rootcatid="2"] #products_grid_before #products_grid table {
-    border-spacing: 0px 0px; }
-@media (max-width: 1409px) {
-  body[data-rootcatid="2"] #products_grid .col-md-8 {
-    padding-left: 0px !important; }
-  body[data-rootcatid="2"] #products_grid td {
-    width: 33.3333% !important;
-    display: inline-table;
-    float: left; }
-  body[data-rootcatid="2"] #products_grid tr {
-    display: inline !important;
-    float: none;
-    clear: both !important; }
-  body[data-rootcatid="2"] .oe_product .oe_product_cart {
-    height: 410px; } }
-body[data-rootcatid="2"] #oe_main_menu_navbar {
-  display: none; }
+body[data-rootcatid="2"] {
+  /*
+  #oe_main_menu_navbar {
+    display: none;
+  }
+  */ }
+  body[data-rootcatid="2"] #products_grid_before {
+    display: none; }
+    body[data-rootcatid="2"] #products_grid_before .col-md-12 {
+      padding-right: 0px;
+      padding-left: 8px; }
+    body[data-rootcatid="2"] #products_grid_before #products_grid table {
+      border-spacing: 0px 0px; }
+    body[data-rootcatid="2"] #products_grid_before #products_grid table {
+      border-spacing: 0px 0px; }
+  @media (max-width: 1409px) {
+    body[data-rootcatid="2"] #products_grid .col-md-8 {
+      padding-left: 0px !important; }
+    body[data-rootcatid="2"] #products_grid td {
+      width: 33.3333% !important;
+      display: inline-table;
+      float: left; }
+    body[data-rootcatid="2"] #products_grid tr {
+      display: inline !important;
+      float: none;
+      clear: both !important; }
+    body[data-rootcatid="2"] .oe_product .oe_product_cart {
+      height: 410px; } }
 
 /* Online spenden Area */
 body[data-rootcatid="6"] #products_grid_before {
