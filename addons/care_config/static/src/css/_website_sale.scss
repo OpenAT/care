@@ -1,7 +1,19 @@
+/* Achtung DIESES CSS IST DERZEIT für ALLE auch gültig */
+/* TODO: auftrennen in Allgemein und spezifisch für Schenken mit Sinn */
+
+/* ALLGEMEIN für JEDE SHOP KATEGORIE */
+
 /* .row {
   margin-left: -28px;
 }
 */
+
+/* ALLGEMEIN für JEDE SHOP KATEGORIE END */
+
+/* SCHENKEN mit Sinn ONLY */
+
+/* SCHENKEN mit Sinn ONLY END */
+
 .fa-shopping-cart:before {
     content: "\00a0\f004\00a0";
 }
@@ -496,7 +508,7 @@ ul.cat_menu > li > a {
 
 
 /* ALEX FLIPPING IMAGE */
-/*
+
 @media screen and ( min-width: 768px ) {
   .oe_product_image {
     transform-style: preserve-3d;
@@ -529,8 +541,9 @@ ul.cat_menu > li > a {
     z-index: 0;
   }
 }
-*/
-/*
+
+
+
 @media screen and ( max-width: 768px ) {
   .icon_container {
     display: none;
@@ -539,11 +552,12 @@ ul.cat_menu > li > a {
     width: 345px !important;
   }
 }
-*/
 
+/*
 .icon_container {
     display: none;
   }
+  */
 /* ENDE ALEX FLIPPING IMAGE*/
 
 
@@ -1015,72 +1029,4 @@ h5 .product_price span {
     border-color: #428bca;
 }
 
-/* Online Patenschaften Area */
-body[data-rootcatid="2"] {
-#products_grid_before {
-  display: none;
-  .col-md-12 {
-    padding-right: 0px;
-    padding-left: 8px;
-}
 
-  #products_grid table {
-    border-spacing: 0px 0px;
-}
-  #products_grid table {
-    border-spacing: 0px 0px;
-}
-}
-  @media (max-width: 1409px) {
-    #products_grid {
-      //width: 100%;
-
-      .col-md-8 {
-        padding-left: 0px !important;
-      }
-
-      td {
-        width: 33.3333% !important;
-        //display: inline-block;
-        display: inline-table;
-        float: left;
-        //border-spacing: 10px 20px;
-      }
-
-      tr {
-        display: inline !important;
-        float: none;
-        clear: both !important;
-      }
-      table {
-        //border-spacing: 22px 40px;
-        //margin-top: 20px;
-      }
-    }
-
-    .oe_product {
-      .oe_product_cart {
-        height: 410px;
-      }
-    }
-}
-  /*
-  #oe_main_menu_navbar {
-    display: none;
-  }
-  */
-}
-/* Online spenden Area */
-body[data-rootcatid="6"] {
-#products_grid_before {
-  display: none;
-}
-}
-
-
-/* Online Patenschaften Area */
-body[data-rootcatid="2"] {
-  #products_grid_before {
-    display: none;
-  }
-}

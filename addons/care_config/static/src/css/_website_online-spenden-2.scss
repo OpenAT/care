@@ -1,0 +1,15 @@
+
+/* Online spenden Area */
+body[data-rootcatid="10"] {
+#products_grid_before {
+  display: none;
+}
+  #wsd-checkout-box > div > div.panel-body.text-center > form > div > h4 > div {
+    text-align: left;
+    margin-left: calc(40%);
+  }
+#wsd-checkout-box > div > div.panel-body.text-center > form > div > h4 {
+  text-align: center;
+}
+
+}

@@ -1,0 +1,55 @@
+/* Care PatIn werden Bereich */
+body[data-rootcatid="2"] {
+#products_grid_before {
+  display: none;
+  .col-md-12 {
+    padding-right: 0px;
+    padding-left: 8px;
+}
+
+  #products_grid table {
+    border-spacing: 0px 0px;
+}
+  #products_grid table {
+    border-spacing: 0px 0px;
+}
+}
+  @media (max-width: 1409px) {
+    #products_grid {
+      //width: 100%;
+
+      .col-md-8 {
+        padding-left: 0px !important;
+      }
+
+      td {
+        width: 33.3333% !important;
+        //display: inline-block;
+        display: inline-table;
+        float: left;
+        //border-spacing: 10px 20px;
+      }
+
+      tr {
+        display: inline !important;
+        float: none;
+        clear: both !important;
+      }
+      table {
+        //border-spacing: 22px 40px;
+        //margin-top: 20px;
+      }
+    }
+
+    .oe_product {
+      .oe_product_cart {
+        height: 410px;
+      }
+    }
+}
+  /*
+  #oe_main_menu_navbar {
+    display: none;
+  }
+  */
+}

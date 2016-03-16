@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn {
   border-radius: 0; }
 
@@ -122,10 +123,16 @@ header .nav a {
   font-weight: bold;
   text-transform: uppercase; }
 
+/* Achtung DIESES CSS IST DERZEIT für ALLE auch gültig */
+/* TODO: auftrennen in Allgemein und spezifisch für Schenken mit Sinn */
+/* ALLGEMEIN für JEDE SHOP KATEGORIE */
 /* .row {
   margin-left: -28px;
 }
 */
+/* ALLGEMEIN für JEDE SHOP KATEGORIE END */
+/* SCHENKEN mit Sinn ONLY */
+/* SCHENKEN mit Sinn ONLY END */
 .fa-shopping-cart:before {
   content: "\00a0\f004\00a0"; }
 
@@ -463,27 +470,23 @@ ul.cat_menu > li > a {
   width: 40%; }
 
 /* ALEX FLIPPING IMAGE */
-/*
-@media screen and ( min-width: 768px ) {
+@media screen and (min-width: 768px) {
   .oe_product_image {
     transform-style: preserve-3d;
     transition: all 1.0s linear;
     position: relative;
     perspective: 1000px;
-    background: #f5f5f5;
-  }
-  .front {
-  }
+    background: #f5f5f5; }
+
   .product_item:hover .oe_product_image .front {
-    transform: rotateY(180deg);
-  }
+    transform: rotateY(180deg); }
+
   .front img, .icon_container {
     position: absolute;
-    backface-visibility: hidden;
-  }
+    backface-visibility: hidden; }
+
   .icon_container {
     display: block;
-    //transform: rotateY(180deg);
     box-sizing: border-box;
     padding: 10px;
     color: white;
@@ -493,23 +496,18 @@ ul.cat_menu > li > a {
     width: 35%;
     height: 35%;
     background: transparent !important;
-    z-index: 0;
-  }
-}
-*/
-/*
-@media screen and ( max-width: 768px ) {
+    z-index: 0; } }
+@media screen and (max-width: 768px) {
   .icon_container {
+    display: none; }
+
+  .oe_product .oe_product_image img:hover {
+    width: 345px !important; } }
+/*
+.icon_container {
     display: none;
   }
-  .oe_product .oe_product_image img:hover {
-    width: 345px !important;
-  }
-}
-*/
-.icon_container {
-  display: none; }
-
+  */
 /* ENDE ALEX FLIPPING IMAGE*/
 /* FLOATWORK EDITS */
 /* SCHENKEN MIT SINN STLYES */
@@ -888,7 +886,36 @@ h5 .product_price span {
   background-color: #333;
   border-color: #428bca; }
 
-/* Online Patenschaften Area */
+#wsd_checkout .page-header {
+  background: #efb71b;
+  padding: 13px 10px 13px 50px;
+  font-size: 20px;
+  position: relative; }
+
+#wsd_checkout .page-header:before {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 48px;
+  background: white;
+  content: ' ';
+  left: 10px;
+  top: 9px; }
+
+#wsd_checkout label {
+  color: rgba(0, 0, 0, 0.5); }
+
+#wsd_checkout label.text-danger {
+  color: #e4701e !important; }
+
+#wsd_checkout .form-control {
+  border-radius: 0; }
+
+#wsd_checkout .form-control:focus {
+  border-color: #e4701e;
+  box-shadow: none; }
+
+/* Care PatIn werden Bereich */
 body[data-rootcatid="2"] {
   /*
   #oe_main_menu_navbar {
@@ -918,41 +945,19 @@ body[data-rootcatid="2"] {
     body[data-rootcatid="2"] .oe_product .oe_product_cart {
       height: 410px; } }
 
-/* Online spenden Area */
+/* Online Spenden Bereich */
 body[data-rootcatid="6"] #products_grid_before {
   display: none; }
 
-/* Online Patenschaften Area */
-body[data-rootcatid="2"] #products_grid_before {
+/* Online spenden Area */
+body[data-rootcatid="10"] #products_grid_before {
   display: none; }
+body[data-rootcatid="10"] #wsd-checkout-box > div > div.panel-body.text-center > form > div > h4 > div {
+  text-align: left;
+  margin-left: calc(40%); }
+body[data-rootcatid="10"] #wsd-checkout-box > div > div.panel-body.text-center > form > div > h4 {
+  text-align: center; }
 
-#wsd_checkout .page-header {
-  background: #efb71b;
-  padding: 13px 10px 13px 50px;
-  font-size: 20px;
-  position: relative; }
-
-#wsd_checkout .page-header:before {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  border-radius: 48px;
-  background: white;
-  content: ' ';
-  left: 10px;
-  top: 9px; }
-
-#wsd_checkout label {
-  color: rgba(0, 0, 0, 0.5); }
-
-#wsd_checkout label.text-danger {
-  color: #e4701e !important; }
-
-#wsd_checkout .form-control {
-  border-radius: 0; }
-
-#wsd_checkout .form-control:focus {
-  border-color: #e4701e;
-  box-shadow: none; }
+/* Schenken mit Sinn Bereich */
 
 /*# sourceMappingURL=care.css.map */
