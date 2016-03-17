@@ -210,7 +210,7 @@ body, a {
 
 .oe_product h5 strong,
 .product_price b {
-  font-weight: normal; }
+  font-weight: 200; }
 
 .nav .fa-shopping-cart,
 .small_cart_header .fa-shopping-cart {
@@ -221,14 +221,17 @@ body, a {
 
 .fa-shopping-cart {
   background: transparent;
-  border: 0px; }
+  border: 0px;
+  text-align: left; }
 
 .fa-shopping-cart:before {
   content: "Ins CARE-Paket legen";
   background: transparent;
   font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 300; }
+  text-transform: uppercase; }
+
+.fa {
+  font-family: "HelveticaNeueLTStd-Roman", "Helvetica", "Arial", sans-serif !important; }
 
 body[data-rootcatid="2"] .fa-shopping-cart:before {
   content: "Jetzt Pate werden";
@@ -842,12 +845,12 @@ body.schenken_mit_sinn div[class^="col"].spenden {
 
 .quick_add_to_cart a {
   display: block;
-  font-size: 1.125em;
   line-height: 40px;
   width: 100%;
   padding: 0px 11px;
   color: #fff;
   background-color: #990000;
+  font-weight: bold;
   -webkit-transition: background-color .3s;
   -moz-transition: background-color .3s;
   -o-transition: background-color .3s;
