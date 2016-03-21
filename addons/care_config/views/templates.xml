@@ -8,6 +8,7 @@
             <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
             <!-- <script type="text/javascript" src="/care_config/static/src/js/jquery.flip.min.js"/> -->
             <script type="text/javascript" src="/care_config/static/src/js/care_cart_anim.js"/>
+            <script type="text/javascript" src="/care_config/static/src/js/jquery.path.js"/>
         </xpath>
     </template>
 
