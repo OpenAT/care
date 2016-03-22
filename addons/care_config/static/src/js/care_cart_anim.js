@@ -38,7 +38,7 @@ $(document).ready( function() {
     var $target = $('.spenden_paket_bg_2');
 
 
-    $('.oe_product').click( function( e ) {
+    /*$('.oe_product').click( function( e ) {
         e.preventDefault();
 
         var $move = $( this ).children( '.img' );
@@ -65,7 +65,7 @@ $(document).ready( function() {
         }).animateRotate(180, 1750, 250);
 
 
-    });
+    });*/
 });
 
 
