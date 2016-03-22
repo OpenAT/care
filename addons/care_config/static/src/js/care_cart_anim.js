@@ -41,7 +41,7 @@ $(document).ready( function() {
     $('.oe_product').click( function( e ) {
         e.preventDefault();
 
-        var $move = $(this + '.img');
+        var $move = $( this ).children( '.img' );
 
         var bezier_params = {
             start: { 
