@@ -12,6 +12,26 @@ jQuery('.product_item > div .oe_product_image').flip({
 });
 */
 
+
+
+// ////// START ALEX
+
+$('oe_product').click( function( e ) {
+    e.preventDefault();
+
+    console.log('ALEX TEST');
+});
+
+
+
+
+// ////// END ALEX
+
+
+
+
+
+
 jQuery('.product_item > div').mouseenter(function() {
 /*    jQuery(this).find('.icon_container img').show();
     jQuery(this).find('.oe_product_image').flip(true);
@@ -58,7 +78,7 @@ jQuery('.product_item > div').click(function() {
 
     $icon.animate({path : new jQuery.path.bezier(bezier_params)},1200);
 */
-    var $zwischensumme = 0;
+   /*var $zwischensumme = 0;
     var $tabelle = jQuery('.spenden_paket_zf tbody');
     var $spendentext = jQuery(this).find('p.left').text();
     var $spendenbetrag = +(jQuery(this).find('p.right').text().substring(2));
@@ -76,5 +96,5 @@ jQuery('.product_item > div').click(function() {
 
     $zwischensumme += $spendenbetrag;
     jQuery('#spenden_paket_summe span').text($zwischensumme);
-    //calculateSum();
+    //calculateSum();*/
 });
