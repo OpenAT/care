@@ -16,11 +16,59 @@ jQuery('.product_item > div .oe_product_image').flip({
 
 // ////// START ALEX
 
-$('.oe_product').click( function( e ) {
-    e.preventDefault();
+$(document).ready( function() {
 
-    console.log('ALEX TEST');
+    $.fn.animateRotate = function(angle, duration, delay, easing, complete) {
+        return this.each(function() {
+        var $elem = $(this);
+
+        $({deg: 0}).delay(delay).animate({deg: angle}, {
+            duration: duration,
+            easing: easing,
+            step: function(now) {
+                $elem.css({
+                    transform: 'rotate(' + now + 'deg)'
+                });
+            },
+                complete: complete || $.noop
+            });
+        });
+    };
+
+    var $target = $('.spenden_paket_bg_2');
+
+
+    $('.oe_product').click( function( e ) {
+        e.preventDefault();
+
+        var $move = $(this + '.img');
+
+        var bezier_params = {
+            start: { 
+                x: $move.offset().left, 
+                y: $move.offset().top, 
+                angle: -100,
+                length: 0
+            },  
+            end: { 
+                x: $target.offset().left,
+                y: $target.offset().top + $target.height() / 2, 
+                angle: 60, 
+                length: 1
+            }
+        }
+
+
+        $move.animate({path : new $.path.bezier(bezier_params)}, 2000, function() {
+            $target.append( $( this ) );
+            $( this ).css( {'bottom':0, 'left': 0, 'top': 'auto'} );
+        }).animateRotate(180, 1750, 250);
+
+
+    });
 });
+
+
 
 
 
