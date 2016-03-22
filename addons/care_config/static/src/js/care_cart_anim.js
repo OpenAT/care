@@ -16,7 +16,7 @@ jQuery('.product_item > div .oe_product_image').flip({
 
 // ////// START ALEX
 
-$('oe_product').click( function( e ) {
+$('.oe_product').click( function( e ) {
     e.preventDefault();
 
     console.log('ALEX TEST');
