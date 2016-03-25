@@ -38,10 +38,10 @@ $(document).ready( function() {
     var $target = $('.spenden_paket_bg_2');
 
 
-    /*$('.oe_product').click( function( e ) {
+    $('.oe_product').click( function( e ) {
         e.preventDefault();
 
-        var $move = $( this ).children( '.img' );
+        var $move = $( this ).next( '.icon_container' ).css('display','block');
 
         var bezier_params = {
             start: { 
@@ -65,7 +65,7 @@ $(document).ready( function() {
         }).animateRotate(180, 1750, 250);
 
 
-    });*/
+    });
 });
 
 
