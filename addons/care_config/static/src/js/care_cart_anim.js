@@ -48,14 +48,14 @@ $(document).ready( function() {
 
         var bezier_params = {
             start: { 
-                x: $move.offset().left, 
-                y: $move.offset().top, 
+                x: 0, 
+                y: 0, 
                 angle: -100,
                 length: 0
             },  
             end: { 
-                x: $target.offset().left,
-                y: $target.offset().top + $target.height() / 2, 
+                x: $target.offset().left - $move.offset().left,
+                y: $target.offset().top + $target.height() / 2 - $move.offset().top, 
                 angle: 60, 
                 length: 1
             }
