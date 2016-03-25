@@ -21,6 +21,21 @@
                     </t>
                 </div>
             </xpath>
+            <!-- Icon Container for Javascript Flip Animation -->
+            <xpath expr="//div[@class='oe_product_image']" position="after">
+                    <!-- Product Image -->
+                <!--
+                    <div class="oe_product_image">
+
+                        <a itemprop="url" class="front" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))">
+                            <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product, 'image', None if product_image_big else '300x300')" t-att-alt="product.name"/>
+                        </a>
+                        -->
+                        <div class="icon_container">
+                            <img src="/care_config/static/img/icon_geschenk.png"/>
+                        </div>
+                    <!-- </div> -->
+            </xpath>
         </template>
 
 

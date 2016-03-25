@@ -509,7 +509,9 @@ ul.cat_menu > li > a {
     //margin-left: -10px;
     width: 40%;
   }
-
+.icon_container {
+  display: none;
+}
 
 /* ALEX FLIPPING IMAGE */
 
@@ -531,7 +533,7 @@ ul.cat_menu > li > a {
     backface-visibility: hidden;
   }
   .icon_container {
-    display: block;
+    display: none;
     //transform: rotateY(180deg);
     box-sizing: border-box;
     padding: 10px;

@@ -472,6 +472,9 @@ ul.cat_menu > li > a {
   padding-right: 0px !important;
   width: 40%; }
 
+.icon_container {
+  display: none; }
+
 /* ALEX FLIPPING IMAGE */
 @media screen and (min-width: 768px) {
   .oe_product_image {
@@ -489,7 +492,7 @@ ul.cat_menu > li > a {
     backface-visibility: hidden; }
 
   .icon_container {
-    display: block;
+    display: none;
     box-sizing: border-box;
     padding: 10px;
     color: white;
