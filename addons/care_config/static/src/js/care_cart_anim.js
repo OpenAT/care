@@ -41,9 +41,10 @@ $(document).ready( function() {
     $('.oe_product').click( function( e ) {
         e.preventDefault();
 
-        var $move = $( this ).next( '.icon_container' ).css('display','block');
+        var $move = $( this ).next( '.icon_container' );
+            $move.css('display','block');
 
-        console.log($move);
+        console.log( $move.offset() );
 
         /*var bezier_params = {
             start: { 
