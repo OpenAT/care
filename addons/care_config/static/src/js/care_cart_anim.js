@@ -42,9 +42,7 @@ $(document).ready( function() {
         e.preventDefault();
 
         var $move = $( this ).find( '.icon_container' );
-            $move.css('display','block');
-
-        console.log( $move.offset() );
+            $move.css({ 'display':'block', 'z-index':9999 });
 
         var bezier_params = {
             start: { 
@@ -54,8 +52,8 @@ $(document).ready( function() {
                 length: 0
             },  
             end: { 
-                x: $target.offset().left - $move.offset().left,
-                y: $target.offset().top + $target.height() / 2 - $move.offset().top, 
+                x: $target.offset().left + $target.width() - $move.offset().left - 50,
+                y: $target.offset().top + $target.height() - $move.offset().top, 
                 angle: 60, 
                 length: 1
             }
@@ -63,8 +61,9 @@ $(document).ready( function() {
 
 
         $move.animate({path : new $.path.bezier(bezier_params)}, 2000, function() {
-            $target.append( $( this ) );
-            $( this ).css( {'bottom':0, 'left': 0, 'top': 'auto'} );
+            //$target.append( $( this ) );
+            //$( this ).css( {'bottom':0, 'left': 0, 'top': 'auto'} );
+            $( this ).fadeOut();
         }).animateRotate(180, 1750, 250);
 
 
