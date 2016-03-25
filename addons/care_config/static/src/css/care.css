@@ -476,6 +476,9 @@ ul.cat_menu > li > a {
   display: none; }
 
 /* ALEX FLIPPING IMAGE */
+.flip {
+  height: 265px; }
+
 @media screen and (min-width: 768px) {
   .oe_product_image {
     transform-style: preserve-3d;
@@ -497,12 +500,15 @@ ul.cat_menu > li > a {
     padding: 10px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 35%;
     left: 35%;
     width: 35%;
     height: 35%;
     background: transparent !important;
-    z-index: 0; } }
+    z-index: 0; }
+    .icon_container img {
+      width: 75px;
+      text-align: center; } }
 @media screen and (max-width: 768px) {
   .icon_container {
     display: none; }

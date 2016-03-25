@@ -6,12 +6,12 @@
         <!-- HINT: Do NOT enable original desc. and add to cart option -->
         <template id="products_item_care" inherit_id="website_sale.products_item" name="Care Product Description">
             <xpath expr="//div[@itemprop='offers']" position="after">
-                <!-- Care Product Description -->
+            <!-- Care Product Description -->
                 <div class="text-info oe_subdescription" contenteditable="false">
                     <div itemprop="description" t-field="product.description_sale"></div>
                 </div>
                 <!-- Care Quick Add To Cart -->
-                <div class="quick_add_to_cart">
+               <div class="quick_add_to_cart">
                     <input name="product_id" t-att-value="product.product_variant_ids[0].id" type="hidden"/>
                     <t t-if="len(product.product_variant_ids) == 1">
                         <a class="btn btn-default btn-xs fa fa-shopping-cart a-submit"/>
@@ -21,23 +21,43 @@
                     </t>
                 </div>
             </xpath>
+
             <!-- Icon Container for Javascript Flip Animation -->
-            <xpath expr="//div[@class='oe_product_image']" position="after">
+            <!--<xpath expr="//div[@class='oe_product_image']" position="after">-->
                     <!-- Product Image -->
-                <!--
+<!--
                     <div class="oe_product_image">
 
                         <a itemprop="url" class="front" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))">
                             <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product, 'image', None if product_image_big else '300x300')" t-att-alt="product.name"/>
                         </a>
                         -->
-                        <div class="icon_container">
+                       <!-- <div class="icon_container">
                             <img src="/care_config/static/img/icon_geschenk.png"/>
-                        </div>
-                    <!-- </div> -->
-            </xpath>
+                        </div>-->
+                     <!-- </div> -->
+            <!--</xpath>-->
         </template>
 
+<template id="products_item_flip_image" inherit_id="website_sale_donate.wsd_products_item_image" name="Care Products Item Image">
+                <xpath expr="//div[@class='oe_product_image']" position="replace">
+                    <div class="flip">
+                        <div class="front">
+                            <div class="oe_product_image">
+                                  <a itemprop="url" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))">
+                                      <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product, 'image', None if product_image_big else '300x300')" t-att-alt="product.name"/>
+                                  </a>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="icon_container">
+                                <img src="/care_config/static/img/icon_geschenk.png"/>
+                            </div>
+                        </div>
+                    </div>
+            </xpath>
+</template>
 
         <!-- INHERIT PRODUCT LISTING products: Care small cart -->
         <template id="care_product_grid_cart" inherit_id="website_sale.products" active="True" customize_show="True" name="Care Cart and Add to Cart">

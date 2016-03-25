@@ -47,8 +47,8 @@ $(document).ready( function() {
 
         var bezier_params = {
             start: { 
-                x: 0, 
-                y: 0, 
+                x: 0,
+                y: 0,
                 angle: -100,
                 length: 0
             },  
@@ -73,6 +73,8 @@ $(document).ready( function() {
 
 
     $('.oe_website_sale .a-submit').unbind('click');
+
+    $('.flip').flip({ trigger: 'hover' });
 
 });
 
