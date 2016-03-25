@@ -35,13 +35,12 @@ $(document).ready( function() {
         });
     };
 
-    var $target = $('.spenden_paket_bg_2');
-
 
     $('.oe_product').click( function( e ) {
         e.preventDefault();
 
-        var $move_temp = $( this ).find( '.icon_container' ).css({ 'display':'block', 'z-index':9999, 'width' : '100%' });
+        var $target = $('.spenden_paket_bg_2');
+        var $move_temp = $( this ).find( '.icon_container' ).css({ 'z-index':9999, 'width' : '100%' });
         var $move = $move_temp.clone().appendTo ( this );
 
             $move_temp.hide();
@@ -63,13 +62,14 @@ $(document).ready( function() {
 
 
         $move.animate({path : new $.path.bezier(bezier_params)}, 2000, function() {
-            //$target.append( $( this ) );
-            //$( this ).css( {'bottom':0, 'left': 0, 'top': 'auto'} );
             $( this ).remove();
+            $move_temp.show();
         }).animateRotate(180, 1750, 250);
-
-
     });
+
+
+    $('.oe_website_sale .a-submit').unbind('click');
+
 });
 
 
