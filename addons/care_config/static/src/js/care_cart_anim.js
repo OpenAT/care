@@ -41,8 +41,10 @@ $(document).ready( function() {
     $('.oe_product').click( function( e ) {
         e.preventDefault();
 
-        var $move = $( this ).find( '.icon_container' );
-            $move.css({ 'display':'block', 'z-index':9999 });
+        var $move_temp = $( this ).find( '.icon_container' ).css({ 'display':'block', 'z-index':9999, 'width' : '100%' });
+        var $move = $move_temp.clone().appendTo ( this );
+
+            $move_temp.hide();
 
         var bezier_params = {
             start: { 
@@ -52,7 +54,7 @@ $(document).ready( function() {
                 length: 0
             },  
             end: { 
-                x: $target.offset().left + $target.width() - $move.offset().left - 50,
+                x: $target.offset().left + $target.width() - $move.offset().left - 175,
                 y: $target.offset().top + $target.height() - $move.offset().top, 
                 angle: 60, 
                 length: 1
@@ -63,7 +65,7 @@ $(document).ready( function() {
         $move.animate({path : new $.path.bezier(bezier_params)}, 2000, function() {
             //$target.append( $( this ) );
             //$( this ).css( {'bottom':0, 'left': 0, 'top': 'auto'} );
-            $( this ).fadeOut();
+            $( this ).remove();
         }).animateRotate(180, 1750, 250);
 
 
