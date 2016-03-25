@@ -64,6 +64,9 @@ $(document).ready( function() {
         $move.animate({path : new $.path.bezier(bezier_params)}, 2000, function() {
             $( this ).remove();
             $move_temp.show();
+
+            $('.oe_product form').submit();
+
         }).animateRotate(180, 1750, 250);
     });
 
