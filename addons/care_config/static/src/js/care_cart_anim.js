@@ -41,12 +41,12 @@ $(document).ready( function() {
     $('.oe_product').click( function( e ) {
         e.preventDefault();
 
-        var $move = $( this ).next( '.icon_container' );
+        var $move = $( this ).find( '.icon_container' );
             $move.css('display','block');
 
         console.log( $move.offset() );
 
-        /*var bezier_params = {
+        var bezier_params = {
             start: { 
                 x: $move.offset().left, 
                 y: $move.offset().top, 
@@ -65,7 +65,7 @@ $(document).ready( function() {
         $move.animate({path : new $.path.bezier(bezier_params)}, 2000, function() {
             $target.append( $( this ) );
             $( this ).css( {'bottom':0, 'left': 0, 'top': 'auto'} );
-        }).animateRotate(180, 1750, 250);*/
+        }).animateRotate(180, 1750, 250);
 
 
     });
