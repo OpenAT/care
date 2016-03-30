@@ -2,7 +2,7 @@
  * Created by mkarrer on 02.03.16.
  */
 /*
-jQuery('.icon_container').addClass('back');
+jQuery('.wsd-icon_container').addClass('back');
 */
 /*
 jQuery('.product_item > div .oe_product_image').flip({
@@ -40,7 +40,7 @@ $(document).ready( function() {
         e.preventDefault();
 
         var $target = $('.spenden_paket_bg_2');
-        var $move_temp = $( this ).find( '.icon_container' ).css({ 'z-index':9999, 'width' : '100%' });
+        var $move_temp = $( this ).find( '.wsd-icon_container' ).css({ 'z-index':9999, 'width' : '100%' });
         var $move = $move_temp.clone().appendTo ( this );
 
             $move_temp.hide();
@@ -91,7 +91,7 @@ $(document).ready( function() {
 
 
 jQuery('.product_item > div').mouseenter(function() {
-/*    jQuery(this).find('.icon_container img').show();
+/*    jQuery(this).find('.wsd-icon_container img').show();
     jQuery(this).find('.oe_product_image').flip(true);
 }).mouseleave(function() {
     jQuery(this).find('.oe_product_image').flip(false);
@@ -105,8 +105,8 @@ jQuery('.product_item > div .submit_button a').click(function(e) {
 
 jQuery('.product_item > div').click(function() {
 /*
-    $icon = jQuery(this).find('.icon_container img').clone();
-    jQuery(this).find('.icon_container img').hide();
+    $icon = jQuery(this).find('.wsd-icon_container img').clone();
+    jQuery(this).find('.wsd-icon_container img').hide();
     if(jQuery(window).scrollTop() > jQuery('.spenden_paket').offset().top - jQuery('#header').height() - 20) {
         $bodyelem.animate({
             scrollTop: jQuery('.spenden_paket').offset().top - jQuery('#header').height() - 20

@@ -225,12 +225,17 @@ body, a {
   text-align: left; }
 
 .fa-shopping-cart:before {
+  display: none;
+  /*
   content: "Ins CARE-Paket legen";
   background: transparent;
   font-size: 16px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  */ }
 
-.fa {
+.quick_add_to_cart a {
+  font-size: 16px;
+  text-transform: uppercase;
   font-family: "HelveticaNeueLTStd-Roman", "Helvetica", "Arial", sans-serif !important; }
 
 body[data-rootcatid="2"] .fa-shopping-cart:before {
@@ -472,7 +477,7 @@ ul.cat_menu > li > a {
   padding-right: 0px !important;
   width: 40%; }
 
-.icon_container {
+.wsd-icon_container {
   display: none; }
 
 /* ALEX FLIPPING IMAGE */
@@ -490,11 +495,11 @@ ul.cat_menu > li > a {
   .product_item:hover .oe_product_image .front {
     transform: rotateY(180deg); }
 
-  .front img, .icon_container {
+  .front img, .wsd-icon_container {
     position: absolute;
     backface-visibility: hidden; }
 
-  .icon_container {
+  .wsd-icon_container {
     display: block;
     box-sizing: border-box;
     padding: 10px;
@@ -506,17 +511,17 @@ ul.cat_menu > li > a {
     height: 35%;
     background: transparent !important;
     z-index: 0; }
-    .icon_container img {
+    .wsd-icon_container img {
       width: 75px;
       text-align: center; } }
 @media screen and (max-width: 768px) {
-  .icon_container {
+  .wsd-icon_container {
     display: none; }
 
   .oe_product .oe_product_image img:hover {
     width: 345px !important; } }
 /*
-.icon_container {
+.wsd-icon_container {
     display: none;
   }
   */
@@ -569,7 +574,7 @@ ul.cat_menu > li > a {
   perspective: 524px;
   height: 232px; }
 
-.product_item > div .icon_container {
+.product_item > div .wsd-icon_container {
   background: #F5F5F5; }
 
 .product_item > div .front {

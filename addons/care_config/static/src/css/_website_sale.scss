@@ -132,16 +132,24 @@ body, a {
   border: 0px;
   text-align: left;
 }
+
+
 .fa-shopping-cart:before {
+  display: none;
+  /*
   content: "Ins CARE-Paket legen";
   background: transparent;
   font-size: 16px;
   text-transform: uppercase;
+  */
 }
 
-.fa {
+.quick_add_to_cart a {
+  font-size: 16px;
+  text-transform: uppercase;
   font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important
 }
+
 body[data-rootcatid="2"] .fa-shopping-cart:before {
   content: "Jetzt Pate werden";
   background: transparent;
@@ -509,7 +517,7 @@ ul.cat_menu > li > a {
     //margin-left: -10px;
     width: 40%;
   }
-.icon_container {
+.wsd-icon_container {
   display: none;
 }
 
@@ -533,11 +541,11 @@ ul.cat_menu > li > a {
   .product_item:hover .oe_product_image .front {
     transform: rotateY(180deg);
   }
-  .front img, .icon_container {
+  .front img, .wsd-icon_container {
     position: absolute;
     backface-visibility: hidden;
   }
-  .icon_container {
+  .wsd-icon_container {
     display: block;
     //transform: rotateY(180deg);
     box-sizing: border-box;
@@ -560,7 +568,7 @@ ul.cat_menu > li > a {
 
 
 @media screen and ( max-width: 768px ) {
-  .icon_container {
+  .wsd-icon_container {
     display: none;
   }
   .oe_product .oe_product_image img:hover {
@@ -569,7 +577,7 @@ ul.cat_menu > li > a {
 }
 
 /*
-.icon_container {
+.wsd-icon_container {
     display: none;
   }
   */
@@ -638,11 +646,11 @@ ul.cat_menu > li > a {
   height: 232px;
 }
 
-.product_item > div .icon_container {
+.product_item > div .wsd-icon_container {
   background: #F5F5F5;
 }
 
-.product_item > div .icon_container img {
+.product_item > div .wsd-icon_container img {
 }
 
 .product_item > div .front {
