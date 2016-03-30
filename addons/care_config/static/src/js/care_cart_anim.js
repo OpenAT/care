@@ -18,6 +18,7 @@ jQuery('.product_item > div .oe_product_image').flip({
 
 $(document).ready( function() {
 
+    // rotation help-function
     $.fn.animateRotate = function(angle, duration, delay, easing, complete) {
         return this.each(function() {
         var $elem = $(this);
@@ -36,45 +37,102 @@ $(document).ready( function() {
     };
 
 
-    $('.oe_product').click( function( e ) {
+    // giftbox-animation
+    $effect_disp_width = 0; // min. screen resolution where animation starts; 0 = on every device, 768 = no effect on mobile...
+
+    $("body[data-rootcatid='7'] .oe_product").click( function( e ) {
         e.preventDefault();
 
-        var $target = $('.spenden_paket_bg_2');
-        var $move_temp = $( this ).find( '.wsd-icon_container' ).css({ 'z-index':9999, 'width' : '100%' });
-        var $move = $move_temp.clone().appendTo ( this );
+        $("html, body").animate({ scrollTop: 0 });
 
-            $move_temp.hide();
+        if ($(window).width() > $effect_disp_width) {
+            var $target = $('.spenden_paket_bg_2');
+            var $move_temp = $(this).find('.wsd-animated-giftbox');
+            var $move_left = $move_temp.position().left;
+            var $move_top = $move_temp.position().top;
 
-        var bezier_params = {
-            start: { 
-                x: 0,
-                y: 0,
-                angle: -100,
-                length: 0
-            },  
-            end: { 
-                x: $target.offset().left + $target.width() - $move.offset().left - 175,
-                y: $target.offset().top + $target.height() - $move.offset().top, 
-                angle: 60, 
-                length: 1
+            var $move = $move_temp.clone().appendTo(this).css({
+                'top': $move_top + 'px',
+                'left': $move_left + 'px',
+                'width': '75px',
+                'z-index': 999
+            });
+
+            $move_temp.css('display', 'none').attr('src', '');
+
+            var $width_offset = 25; // JOE, diesen Wert ändern
+            if ( $(window).width() < 481 ) {
+                $width_offset = 150;
             }
+
+            var bezier_params = {
+                start: {
+                    x: $move_left,
+                    y: $move_top,
+                    angle: -100,
+                    length: 0
+                },
+                end: {
+                    x: $target.offset().left - $move.offset().left + ( $target.width() - $move.width() ) + $width_offset,
+                    y: $target.offset().top - $move.offset().top + 200,
+                    angle: 60,
+                    length: 1
+                }
+            }
+
+            var $form = $(this).find('form');
+
+            $move.animate({path: new $.path.bezier(bezier_params)}, 2000, function () {
+                $(this).remove();
+                //$move_temp.show();
+
+                $form.submit();
+
+            }).animateRotate(180, 1750, 250);
         }
-
-        var $form = $(this).find('form');
-
-        $move.animate({path : new $.path.bezier(bezier_params)}, 2000, function() {
-            $( this ).remove();
-            $move_temp.show();
-
-            $form.submit();
-
-        }).animateRotate(180, 1750, 250);
+        else {
+            $(this).find('form').submit();
+        }
     });
 
 
-    $('.oe_website_sale .a-submit').unbind('click');
+    // disable quick-add-to-cart-button
+    $("body[data-rootcatid='7'] .oe_website_sale .a-submit").unbind('click');
 
-    $('.flip').flip({ trigger: 'hover' });
+
+    // activate flip-effect
+    if ( $( window).width() > $effect_disp_width ) {
+        $("body[data-rootcatid='7'] .wrap_wsd_1").flip({ trigger: 'hover' });
+    }
+
+
+
+    // activate flip-effect on the whole tile
+    $("body[data-rootcatid='7'] .oe_product").mouseenter( function() {
+        if ( $( window).width() > $effect_disp_width )
+            $( this).find('.wrap_wsd_1').flip( true );
+    }).mouseleave( function() {
+        if ( $( window).width() > $effect_disp_width )
+            $( this).find('.wrap_wsd_1').flip( false );
+    });
+
+
+    // close box and slide to the right on submit of the cart
+    $('.small_cart_buttons a').click( function(e) {
+        e.preventDefault();
+
+        $('.spenden_paket_bg').css('background','transparent');
+        $('.spenden_paket_bg_2').css("background-image", "url('/care_config/static/img/care_paket_geschlossen.png')")
+
+        var timeout_animation = setTimeout( function() {
+            $('.spenden_paket_bg_2').css('left','300px').css('z-index', '99');
+            $('#spenden_paket_confirmed').delay(150).fadeIn();
+        }, 1500);
+
+        var timeout_href = setTimeout( function() {
+            window.location.href = "/shop/checkout";
+        }, 3000)
+    });
 
 });
 
