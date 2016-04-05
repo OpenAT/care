@@ -526,12 +526,13 @@ body[data-rootcatid='7'] .wsd-icon_container {
     background: #F5F5F5 !important;
     z-index: 0; }
     .wsd-icon_container img {
-      width: 75px;
+      width: 70px;
       text-align: center;
-      top: 70px;
+      top: 50%;
+      margin-top: -35px;
       /*left: 100px;*/
       left: 50%;
-      margin-left: -37.5px; } }
+      margin-left: -35px; } }
 @media screen and (max-width: 1400px) {
   /*.wsd-icon_container {
     img {

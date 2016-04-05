@@ -43,48 +43,44 @@ $(document).ready( function() {
     $("body[data-rootcatid='7'] .oe_product").click( function( e ) {
         e.preventDefault();
 
+        $( this).find('section').mouseleave( function() {
+            $( this ).find('.wrap_wsd_1').flip( true );
+        })
+
         $("html, body").animate({ scrollTop: 0 });
 
         if ($(window).width() > $effect_disp_width) {
-            var $target = $('.spenden_paket_bg_2');
-            var $move_temp = $(this).find('.wsd-animated-giftbox');
-            var $move_left = $move_temp.position().left;
-            var $move_top = $move_temp.position().top;
+            var $target = $('.spenden_paket_bg');
+            var $move_old = $(this).find('.wsd-animated-giftbox');
 
-            var $move = $move_temp.clone().appendTo(this).css({
-                'top': $move_top + 'px',
-                'left': $move_left + 'px',
-                'width': '75px',
-                'z-index': 999
+            var $move = $move_old.clone().appendTo('body').css({
+                'top': $move_old.offset().top,
+                'left': $move_old.offset().left,
+                'width': '70px',
+                'z-index': 999,
+                'position':'absolute'
             });
-
-            $move_temp.css('display', 'none').attr('src', '');
-
-            var $width_offset = 25; // JOE, diesen Wert ändern
-            if ( $(window).width() < 481 ) {
-                $width_offset = 150;
-            }
 
             var bezier_params = {
                 start: {
-                    x: $move_left,
-                    y: $move_top,
+                    x: $move_old.offset().left,
+                    y: $move_old.offset().top,
                     angle: -100,
                     length: 0
                 },
                 end: {
-                    x: $target.offset().left - $move.offset().left + ( $target.width() - $move.width() ) + $width_offset,
-                    y: $target.offset().top - $move.offset().top + 200,
+                    x: $target.offset().left + 100,
+                    y: $target.offset().top + 135,
                     angle: 60,
                     length: 1
                 }
             }
 
             var $form = $(this).find('form');
+            $move_old.hide();
 
             $move.animate({path: new $.path.bezier(bezier_params)}, 2000, function () {
                 $(this).remove();
-                //$move_temp.show();
 
                 $form.submit();
 
@@ -108,7 +104,7 @@ $(document).ready( function() {
 
 
     // activate flip-effect on the whole tile
-    $("body[data-rootcatid='7'] .oe_product").mouseenter( function() {
+    $("body[data-rootcatid='7'] .oe_product, body[data-rootcatid='7'] .oe_product section").mouseenter( function() {
         if ( $( window).width() > $effect_disp_width )
             $( this).find('.wrap_wsd_1').flip( true );
     }).mouseleave( function() {

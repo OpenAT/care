@@ -11,6 +11,13 @@
             <script type="text/javascript" src="/care_config/static/src/js/jquery.path.js"/>
         </xpath>
     </template>
-
+    <!-- adding Google webmaster tools site verifivation id -->
+        <!--
+        <template id="google_webmastertools_site_verification" inherit_id="website.layout" name="Google Webmastertools site verification">
+            <xpath expr="//head//title" position="after">
+                <meta name="google-site-verification" content="google1234567890.html"/>
+            </xpath>
+        </template>
+        -->
     </data>
 </openerp>
