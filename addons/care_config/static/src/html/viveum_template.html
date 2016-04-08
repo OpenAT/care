@@ -274,6 +274,8 @@
       td.ncoltxtr, td.ncolinput {
         text-align : left;
         padding-left: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
       }
 
       td.ncolinput img {
@@ -282,7 +284,10 @@
       }
 
       td.ncoltxtc {text-align : center;}
-      td.ncollogol {text-align : right;}
+      td.ncollogol {
+        text-align : right;
+        padding: 0 8px;
+      }
       td.ncollogor {text-align : left;}
       td.ncollogoc {text-align : center;}
       td.ncoltxtmessage {text-align : left;}
@@ -312,22 +317,44 @@
 
       #ie_cc img {
         margin: 0 auto;
+        width: 100%;
+        max-width: 60px;
+      }
+
+      #ie_cc {
+        font-size: 0;
       }
 
       #ie_cc a {
         display: block;
+        font-size: 12px;
       }
 
       #btn_Back, #ncol_cancel {
+        background: #666666;
+        color: #fff;
+        max-width: 180px;
         border: 1px solid #c3c3c3;
         color: #666;
         padding: 0 7px;
-        line-height: 48px;
-        font-size: 0.9em;
         text-align: left;
         cursor: pointer;
+        text-align: center;
+        
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
 
         transition: all .3s;
+      }
+
+
+      #btn_Back {
+        float: left;
+      }
+
+      #ncol_cancel {
+        float: right;
       }
 
       #btn_Back:hover, #ncol_cancel:hover {
@@ -457,6 +484,13 @@
         content: url('http://p346809.mittwaldserver.info/wp-content/themes/floatwork_/images/icon_key.png');
       }
 
+      #Ecom_Payment_Card_ExpDate_Month {
+        margin-right: 10px;
+      }
+
+      #Ecom_Payment_Card_Verification {
+        margin: 0px 60px 6px 10px;
+      }
 
 
 
