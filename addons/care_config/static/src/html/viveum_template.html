@@ -284,12 +284,18 @@
       }
 
       td.ncoltxtc {text-align : center;}
+
       td.ncollogol {
-        text-align : right;
+        text-align: right;
+      }
+
+      td.ncollogor {text-align : left;}
+
+      td.ncollogoc {
+        text-align: center;
         padding: 0 8px;
       }
-      td.ncollogor {text-align : left;}
-      td.ncollogoc {text-align : center;}
+
       td.ncoltxtmessage {text-align : left;}
       input#submit3 {
         background: transparent url("http://care.datadialog.net/care_config/static/src/img/viveum-spenden-button.png") no-repeat 0 0;
@@ -302,12 +308,18 @@
       }
 
       td input, td select {
+        height: 40px;
+        line-height: 40px;
         padding: 4px;
         border: 1px solid #c3c3c3;
 
         -webkit-box-shadow: inset 1px 1px 3px 0px rgba(195, 195, 195, 0.75);
         -moz-box-shadow: inset 1px 1px 3px 0px rgba(195, 195, 195, 0.75);
         box-shadow: inset 1px 1px 3px 0px rgba(195, 195, 195, 0.75);
+      }
+
+      #submit3 {
+        display: none;
       }
 
       td input {
@@ -319,6 +331,7 @@
         margin: 0 auto;
         width: 100%;
         max-width: 60px;
+        margin-bottom: 20px;
       }
 
       #ie_cc {
@@ -331,11 +344,11 @@
       }
 
       #btn_Back, #ncol_cancel {
+        font-size: 16px;
         background: #666666;
         color: #fff;
         max-width: 180px;
         border: 1px solid #c3c3c3;
-        color: #666;
         padding: 0 7px;
         text-align: left;
         cursor: pointer;
@@ -347,7 +360,6 @@
 
         transition: all .3s;
       }
-
 
       #btn_Back {
         float: left;
@@ -489,7 +501,7 @@
       }
 
       #Ecom_Payment_Card_Verification {
-        margin: 0px 60px 6px 10px;
+        margin: 0px 60px 6px 0;
       }
 
 
