@@ -107,7 +107,7 @@
       }
 
       strong {
-        font-family: 'HelveticaNeueLTStd-Roman';
+        /*font-family: 'HelveticaNeueLTStd-Roman';*/
       }
 
       em {
@@ -115,7 +115,7 @@
       }
 
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'HelveticaNeueLTStd-Roman';
+        /*font-family: 'HelveticaNeueLTStd-Roman';*/
         font-weight: normal;
       }
 
@@ -258,9 +258,29 @@
       /* END GENENERAL STYLES */
   
       /* BASE LAYOUT */
-      td.ncoltxtl {text-align : right;}
-      td.ncoltxtl2 {text-align : right;}
-      td.ncoltxtr {text-align : left;}
+      #container a:hover {
+        color: #e4761e;
+      }
+
+      td {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      td.ncoltxtl, td.ncoltxtl2 {
+        text-align : right;
+        padding-right: 10px;
+      }
+
+      td.ncoltxtr, td.ncolinput {
+        text-align : left;
+        padding-left: 10px;
+      }
+
+      td.ncolinput img {
+        float: left;
+        margin-right: 6px;
+      }
+
       td.ncoltxtc {text-align : center;}
       td.ncollogol {text-align : right;}
       td.ncollogor {text-align : left;}
@@ -275,6 +295,45 @@
         width: 60px;
         text-indent: -9999px;
       }
+
+      td input, td select {
+        padding: 4px;
+        border: 1px solid #c3c3c3;
+
+        -webkit-box-shadow: inset 1px 1px 3px 0px rgba(195, 195, 195, 0.75);
+        -moz-box-shadow: inset 1px 1px 3px 0px rgba(195, 195, 195, 0.75);
+        box-shadow: inset 1px 1px 3px 0px rgba(195, 195, 195, 0.75);
+      }
+
+      td input {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      #ie_cc img {
+        margin: 0 auto;
+      }
+
+      #ie_cc a {
+        display: block;
+      }
+
+      #btn_Back, #ncol_cancel {
+        border: 1px solid #c3c3c3;
+        color: #666;
+        padding: 0 7px;
+        line-height: 48px;
+        font-size: 0.9em;
+        text-align: left;
+        cursor: pointer;
+
+        transition: all .3s;
+      }
+
+      #btn_Back:hover, #ncol_cancel:hover {
+        color: #E4761E;
+      }
+
       /* END BASE LAYOUT */
 
 
@@ -317,6 +376,11 @@
       .center_logo {
         text-align: center;
         margin: 15px 15px;
+      }
+
+      table {
+        table-layout: fixed;
+        width: 100%;
       }
 
       .row  {
