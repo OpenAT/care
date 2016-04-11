@@ -126,7 +126,8 @@ $(document).ready( function() {
         }, 1500);
 
         var timeout_href = setTimeout( function() {
-            window.location.href = "/shop/checkout";
+            //window.location.href = "/shop/checkout";
+            window.location.href = "#";
         }, 3000)
     });
 
