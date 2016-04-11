@@ -993,6 +993,16 @@ body {
     margin: auto; }
   #wsd_checkout_form .form-control-feedback {
     top: 40px; }
+  #wsd_checkout_form .price_donate_suggested {
+    height: 90px;
+    width: 90px;
+    font-size: 35px; }
+  #wsd_checkout_form #price_donate {
+    background-color: white !important;
+    height: 90px;
+    width: 90px; }
+  #wsd_checkout_form .price_donate .input-group-addon {
+    display: none; }
 
 #payment_method .tab-content {
   max-width: 530px;

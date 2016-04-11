@@ -33,6 +33,19 @@ body {
   .form-control-feedback {
     top: 40px;
   }
+  .price_donate_suggested {
+    height: 90px;
+    width: 90px;
+    font-size: 35px;
+  }
+  #price_donate {
+    background-color: white !important;
+    height: 90px;
+    width: 90px;
+  }
+  .price_donate .input-group-addon {
+    display: none;
+  }
 }
 
 #payment_method {
@@ -83,6 +96,5 @@ body {
   left: 10px;
   top: 9px;
 }
-
 
 /* Checkout Page neu ENDE */
