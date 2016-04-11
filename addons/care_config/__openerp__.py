@@ -41,5 +41,6 @@ Use this Addon as a Base for all Customer specific Modifications containing:
     ],
     'data': [
         'views/templates.xml',
+        'reports/dankeemail.xml',
     ],
 }

@@ -1,0 +1,100 @@
+/* Checkout Page neu BEGIN */
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.billing-fields {
+  max-width: 530px;
+  margin: auto;
+}
+
+#wsd_checkout_steps_header {
+  display: none;
+}
+
+#wsd_checkout_form {
+  font-size: 15px;
+  background: #F5F5F5;
+  padding: 15px;
+  input,
+  select {
+    border-radius: 0;
+    height: 46px;
+  }
+  label {
+    font-weight: normal;
+    /*display: none;*/
+  }
+  .row {
+    max-width: 620px;
+    margin: auto;
+  }
+  .form-control-feedback {
+    top: 40px;
+  }
+  .price_donate_suggested {
+    height: 90px;
+    width: 90px;
+    font-size: 35px;
+  }
+  #price_donate {
+    background-color: white !important;
+    height: 90px;
+    width: 90px;
+  }
+  .price_donate .input-group-addon {
+    display: none;
+  }
+}
+
+#payment_method {
+  .tab-content {
+    max-width: 530px;
+    margin: auto;
+  }
+  .nav-tabs {
+    text-align: center;
+    > li {
+      float: none;
+      img {
+        display: none !important;
+      }
+    }
+  }
+  .nav {
+    > li {
+      display: inline-block;
+    }
+  }
+}
+
+.checkout_title,
+#payment_method .col-lg-12:first-child {
+  background: $careyellow;
+  padding: 10px 10px 10px 50px;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 1em;
+  margin-top: 3em;
+  h3 {
+    margin-bottom: 0 !important;
+    font-weight: normal;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.checkout_title:before,
+#payment_method .col-lg-12:first-child:before {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 48px;
+  background: white;
+  content: ' ';
+  left: 10px;
+  top: 9px;
+}
+
+/* Checkout Page neu ENDE */
