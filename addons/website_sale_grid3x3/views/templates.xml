@@ -86,7 +86,7 @@
 
                 <!-- Checkout Button -->
                 <div class="text-left small_cart_buttons">
-                    <a t-if="not optional_products and website_sale_order and website_sale_order.website_order_line" class="btn btn-primary pull-right" href="/shop/checkout">Checkout</a>
+                    <a t-if="not optional_products and website_sale_order and website_sale_order.website_order_line" class="btn btn-primary pull-right" href="#">Checkout</a>
                 </div>
                 <div class="clearfix"/>
             </xpath>
