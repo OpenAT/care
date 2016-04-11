@@ -1003,6 +1003,8 @@ body {
     width: 90px; }
   #wsd_checkout_form .price_donate .input-group-addon {
     display: none; }
+  #wsd_checkout_form .amount_title {
+    display: none; }
 
 #payment_method .tab-content {
   max-width: 530px;
