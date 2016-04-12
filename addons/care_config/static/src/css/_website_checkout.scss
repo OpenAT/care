@@ -13,8 +13,11 @@
   font-size: 20px;
   position: relative;
 }
-#wsd_checkout .page-header:before {
+.checkout_title::before, #payment_method .col-lg-12:first-child::before {
   display: none;
+}
+
+#wsd_checkout .page-header:before {
   width: 30px;
   height: 30px;
   position: absolute;
