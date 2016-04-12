@@ -375,9 +375,9 @@ ul.cat_menu > li > a {
     border: 0px !important; }
 
 #products_grid_before .table-striped > tbody > tr:nth-child(2n+1) > td, #products_grid_before .table-striped > tbody > tr:nth-child(2n+1) > th {
-  background-color: none; }
+  background-color: transparent; }
 
-.small_cart #cart_total h3 {
+#products_grid_before .small_cart #cart_total h3 {
   font-size: 18px;
   line-height: 40px;
   margin: 0;
@@ -422,7 +422,7 @@ ul.cat_menu > li > a {
   display: none; }
 
 #products_grid_before .small_cart a {
-  font-size: 12px; }
+  font-size: 14px; }
 
 .small_cart a {
   color: #333; }
@@ -748,7 +748,7 @@ body.schenken_mit_sinn div[class^="col"] {
   padding-left: 20px;
   padding-right: 20px; }
 
-.small_cart_buttons a {
+#products_grid_before .small_cart_buttons a {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 10px; }
