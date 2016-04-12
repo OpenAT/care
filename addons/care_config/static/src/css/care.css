@@ -548,6 +548,10 @@ ul.cat_menu > li > a {
   padding-left: 10px;
   padding-right: 10px; }
 
+#products_grid .small_cart .oe_website_spinner {
+  width: 40px;
+  display: inline-block; }
+
 #products_grid.col-md-8 {
   padding-left: 0px !important;
   padding-right: 0px !important;
