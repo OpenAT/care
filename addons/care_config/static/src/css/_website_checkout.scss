@@ -1,26 +1,35 @@
+.oe_structure {
+
+  background: #F5F5F5;
+
+  .row {
+    margin: 0;
+  }
+}
+
 #wsd_checkout .page-header {
   background: $careyellow;
   padding: 13px 10px 13px 50px;
   font-size: 20px;
   position: relative;
 }
-#wsd_checkout .page-header:before {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  border-radius: 48px;
-  background: white;
-  content: ' ';
-  left: 10px;
-  top: 9px;
-}
+// #wsd_checkout .page-header:before {
+//   width: 30px;
+//   height: 30px;
+//   position: absolute;
+//   border-radius: 48px;
+//   background: white;
+//   content: ' ';
+//   left: 10px;
+//   top: 9px;
+// }
 
 #wsd_checkout label {
   color: rgba(0,0,0,.5);
 }
 
 #wsd_checkout label.text-danger {
-  color: $focusorange !important;
+  color: #333333;
 }
 
 #wsd_checkout .form-control {
@@ -30,4 +39,55 @@
 #wsd_checkout .form-control:focus {
   border-color: $focusorange;
   box-shadow: none;
+}
+
+.form-group.col-lg-12 {
+  padding: 0;
+}
+
+.oe_structure {
+  .form-control {
+    font-size: 18px;
+    color: #333;
+    height: 46px;
+    box-shadow: none;
+  }
+  
+  .form-control:focus {
+    border-color: $focusorange;
+    box-shadow: none;
+  }
+
+  .has-error .form-control:focus {
+    box-shadow: none;
+    border-color: #FF0000;
+  }
+
+  .form-control-feedback {
+    top: auto;
+    bottom: 5px;
+  }
+}
+
+#payment_method {
+  .nav > li > a:hover, .nav > li > a:focus {
+    background: none;
+    border: none;
+    color: $focusorange;
+  }
+
+  .nav-tabs {
+    text-align: left;
+  }
+
+  .nav-tabs > li.active > a {
+    border-radius: none;
+  }
+
+  .tab-content {
+    height: auto !important;
+    padding: 20px;
+    max-width: none;
+    background: #fff;
+  }
 }

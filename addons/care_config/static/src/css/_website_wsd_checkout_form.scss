@@ -15,7 +15,6 @@ body {
 
 #wsd_checkout_form {
   font-size: 15px;
-  background: #F5F5F5;
   padding: 15px;
   input,
   select {
@@ -75,7 +74,7 @@ body {
 .checkout_title,
 #payment_method .col-lg-12:first-child {
   background: $careyellow;
-  padding: 10px 10px 10px 50px;
+  padding: 10px;
   font-size: 20px;
   position: relative;
   margin-bottom: 1em;
