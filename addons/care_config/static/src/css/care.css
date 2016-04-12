@@ -59,6 +59,9 @@ strong {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'OfficinaSansStd-Bold'; }
 
+#wsd_checkout_form  h1, #wsd_checkout_form  h2, #wsd_checkout_form  h3, #wsd_checkout_form  h4, #wsd_checkout_form  h5, #wsd_checkout_form  h6 {
+  font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial, sans-serif; }
+
 .container {
   width: 100%;
   max-width: 1440px; }
@@ -380,16 +383,16 @@ ul.cat_menu > li > a {
 .container a:hover {
   text-decoration: none; }
 
-table .small_cart_header {
+#products_grid_before .small_cart_header {
   height: 50px;
   line-height: 50px;
   background: #333;
   font-size: 18px;
   padding: 0 20px;
   margin: 0; }
-  table .small_cart_header a {
+  #products_grid_before .small_cart_header a {
     color: White; }
-  table .small_cart_header small.text-danger {
+  #products_grid_before .small_cart_header small.text-danger {
     color: #efb71b; }
 
 .breadcrumb {
@@ -1065,16 +1068,16 @@ h5 .product_price span {
   top: auto;
   bottom: 5px; }
 
+#wsd_checkout_form #payment_method .nav-tabs > li > a {
+  -webkit-border-radius: none !important;
+     -moz-border-radius: none !important;
+          border-radius: none !important; }
 #wsd_checkout_form #payment_method .nav > li > a:hover, #wsd_checkout_form #payment_method .nav > li > a:focus {
-  background: none;
+  background: #fff;
   border: none;
   color: #e4701e; }
 #wsd_checkout_form #payment_method .nav-tabs {
   text-align: left; }
-#wsd_checkout_form #payment_method .nav-tabs > li.active > a {
-  -webkit-border-radius: none;
-     -moz-border-radius: none;
-          border-radius: none; }
 #wsd_checkout_form #payment_method .tab-content {
   height: auto !important;
   padding: 20px;
@@ -1134,14 +1137,16 @@ body {
 #payment_method .nav > li {
   display: inline-block; }
 
-.checkout_title {
+.checkout_title,
+.payment_title {
   background: #efb71b;
   padding: 10px;
   font-size: 20px;
   position: relative;
   margin-bottom: 1em;
   margin-top: 3em; }
-  .checkout_title h3 {
+  .checkout_title h3,
+  .payment_title h3 {
     margin-bottom: 0 !important;
     font-weight: normal;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;

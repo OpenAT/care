@@ -74,18 +74,18 @@
 }
 
 #wsd_checkout_form #payment_method {
+  .nav-tabs > li > a {
+    border-radius: none !important;
+  }
+
   .nav > li > a:hover, .nav > li > a:focus {
-    background: none;
+    background: #fff;
     border: none;
     color: $focusorange;
   }
 
   .nav-tabs {
     text-align: left;
-  }
-
-  .nav-tabs > li.active > a {
-    border-radius: none;
   }
 
   .tab-content {
