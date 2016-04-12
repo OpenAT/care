@@ -182,6 +182,7 @@ body[data-rootcatid="2"] .fa-shopping-cart:before {
   margin: 0;
 
   a {
+    text-transform: capitalize;
     color: inherit;
   }
 }
@@ -288,10 +289,10 @@ ul.cat_menu > li > a {
 }
 
 .small_cart #cart_total {
-  border: none;
+  border-top: 0px;
 
-  .order_total {
-    border: none !important;
+  #order_total {
+    border: 0px !important;
   }
 }
 
@@ -311,7 +312,7 @@ ul.cat_menu > li > a {
     color: #333;
 }
 
-.oe_cart.small_cart table td {
+#products_grid_before .oe_cart.small_cart table td {
     color: #333;
     padding: 0 10px;
     font-size: 14px;
@@ -1105,7 +1106,6 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   padding: 0px 11px;
   color: #fff;
   background-color: #990000;
-  font-weight: bold;
 
   -webkit-transition: background-color .3s;
   -moz-transition: background-color .3s;

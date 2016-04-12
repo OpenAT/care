@@ -283,6 +283,7 @@ body[data-rootcatid="2"] .fa-shopping-cart:before {
   line-height: 40px;
   margin: 0; }
   .oe_product.oe_grid section h5 a {
+    text-transform: capitalize;
     color: inherit; }
 
 .oe_product .product_price {
@@ -369,9 +370,9 @@ ul.cat_menu > li > a {
   border-bottom: 1px solid #333; }
 
 .small_cart #cart_total {
-  border: none; }
-  .small_cart #cart_total .order_total {
-    border: none !important; }
+  border-top: 0px; }
+  .small_cart #cart_total #order_total {
+    border: 0px !important; }
 
 .small_cart #cart_total h3 {
   font-size: 18px;
@@ -389,7 +390,7 @@ ul.cat_menu > li > a {
   line-height: 40px;
   color: #333; }
 
-.oe_cart.small_cart table td {
+#products_grid_before .oe_cart.small_cart table td {
   color: #333;
   padding: 0 10px;
   font-size: 14px;
@@ -1014,7 +1015,6 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   padding: 0px 11px;
   color: #fff;
   background-color: #990000;
-  font-weight: bold;
   -webkit-transition: background-color .3s;
   -moz-transition: background-color .3s;
   -o-transition: background-color .3s;
