@@ -63,7 +63,6 @@
 
   .has-error .form-control:focus {
     box-shadow: none;
-    border-color: #FF0000;
   }
 
   .form-control-feedback {
@@ -75,11 +74,12 @@
 #wsd_checkout_form #payment_method {
   .nav-tabs > li > a {
     border-radius: 0px;
+    color: inherit;
   }
 
-  .nav > li > a:hover, .nav > li > a:focus {
+  .nav-tabs > li.active > a, .nav > li > a:hover, .nav > li > a:focus {
     background: #fff;
-    color: #333;
+    color: $careyellow;
   }
 
   .nav-tabs {
@@ -93,3 +93,26 @@
     background: #fff;
   }
 }
+
+
+
+
+// .checkbox {
+//   label {
+//       position:relative;   
+//       cursor:pointer;
+//   }
+//   label [type="checkbox"] {
+//       display:none;
+//   }
+//   [type="checkbox"] + span {
+//       display: inline-block;
+//       padding: 1em;
+//   }
+//   :checked + span {
+//       background:#0f0;
+//   }
+//   [type="checkbox"][disabled] + span {
+//       background:#f00;  
+//   }​
+// }

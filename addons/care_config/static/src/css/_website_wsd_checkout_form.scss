@@ -52,9 +52,12 @@ body {
   margin-bottom: 40px;
 
   .tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
     max-width: 530px;
     margin: auto;
   }
+
   .nav-tabs {
     text-align: center;
     > li {
@@ -64,6 +67,7 @@ body {
       }
     }
   }
+
   .nav {
     > li {
       display: inline-block;

@@ -365,6 +365,42 @@ ul.cat_menu > li > a {
   background: #f5f5f5;
   padding: 0px; }
 
+#cart_products {
+  border-bottom: 1px solid #333; }
+
+.small_cart #cart_total {
+  border: none; }
+  .small_cart #cart_total .order_total {
+    border: none !important; }
+
+.small_cart #cart_total h3 {
+  font-size: 18px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 10px; }
+
+.oe_website_sale .small_cart input.js_quantity {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  line-height: 40px;
+  color: #333; }
+
+.oe_cart.small_cart table td {
+  color: #333;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 40px; }
+
+.text-muted {
+  color: #333; }
+
+.oe_cart.small_cart table td:first-child {
+  display: none; }
+
 .small_cart_header {
   margin-top: 0 !important; }
 
@@ -385,7 +421,7 @@ ul.cat_menu > li > a {
   font-size: 12px; }
 
 .small_cart a {
-  color: black; }
+  color: #333; }
 
 .small_cart a strong {
   font-weight: normal; }
@@ -1076,8 +1112,7 @@ h5 .product_price span {
 .oe_structure #wsd_checkout_form .has-error .form-control:focus {
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
-          box-shadow: none;
-  border-color: #FF0000; }
+          box-shadow: none; }
 .oe_structure #wsd_checkout_form .form-control-feedback {
   top: auto;
   bottom: 5px; }
@@ -1085,10 +1120,11 @@ h5 .product_price span {
 #wsd_checkout_form #payment_method .nav-tabs > li > a {
   -webkit-border-radius: 0px;
      -moz-border-radius: 0px;
-          border-radius: 0px; }
-#wsd_checkout_form #payment_method .nav > li > a:hover, #wsd_checkout_form #payment_method .nav > li > a:focus {
+          border-radius: 0px;
+  color: inherit; }
+#wsd_checkout_form #payment_method .nav-tabs > li.active > a, #wsd_checkout_form #payment_method .nav > li > a:hover, #wsd_checkout_form #payment_method .nav > li > a:focus {
   background: #fff;
-  color: #333; }
+  color: #efb71b; }
 #wsd_checkout_form #payment_method .nav-tabs {
   text-align: left; }
 #wsd_checkout_form #payment_method .tab-content {
@@ -1139,6 +1175,8 @@ body {
 #payment_method {
   margin-bottom: 40px; }
   #payment_method .tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
     max-width: 530px;
     margin: auto; }
   #payment_method .nav-tabs {
