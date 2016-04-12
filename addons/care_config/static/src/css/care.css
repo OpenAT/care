@@ -1012,8 +1012,10 @@ h5 .product_price span {
   font-size: 20px;
   position: relative; }
 
+.checkout_title::before, #payment_method .col-lg-12:first-child::before {
+  display: none; }
+
 #wsd_checkout .page-header:before {
-  display: none;
   width: 30px;
   height: 30px;
   position: absolute;
