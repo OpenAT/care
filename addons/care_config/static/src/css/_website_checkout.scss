@@ -13,20 +13,25 @@
   font-size: 20px;
   position: relative;
 }
-// #wsd_checkout .page-header:before {
-//   width: 30px;
-//   height: 30px;
-//   position: absolute;
-//   border-radius: 48px;
-//   background: white;
-//   content: ' ';
-//   left: 10px;
-//   top: 9px;
-// }
-
-#wsd_checkout label {
-  color: rgba(0,0,0,.5);
+#wsd_checkout .page-header:before {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 48px;
+  background: white;
+  content: ' ';
+  left: 10px;
+  top: 9px;
 }
+
+#wsd_checkout_form label {
+  color: #333;
+}
+
+// #wsd_checkout label {
+//   color: rgba(0,0,0,.5);
+// }
 
 #wsd_checkout label.text-danger {
   color: #333333;
@@ -39,10 +44,6 @@
 #wsd_checkout .form-control:focus {
   border-color: $focusorange;
   box-shadow: none;
-}
-
-.form-group.col-lg-12 {
-  padding: 0;
 }
 
 .oe_structure {
@@ -69,7 +70,7 @@
   }
 }
 
-#payment_method {
+#wsd_checkout_form #payment_method {
   .nav > li > a:hover, .nav > li > a:focus {
     background: none;
     border: none;
