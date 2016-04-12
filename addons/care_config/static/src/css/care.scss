@@ -9,8 +9,10 @@ $careyellow: #efb71b;
 
 .btn-primary {
   background: $careyellow;
-  background-color: $careyellow !important;
+  background-color: $careyellow;
   border: none;
+
+  transition: background-color .3s;
 }
 
 .btn-primary:hover {

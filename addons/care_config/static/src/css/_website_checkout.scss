@@ -1,14 +1,9 @@
-#wsd_checkout_form h3 {
-  font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial, sans-serif;
+.oe_structure {
+  background: #F5F5F5;
 }
 
-.oe_structure {
-
-  background: #F5F5F5;
-
-  .row {
-    margin: 0;
-  }
+#wsd_checkout_form > .row {
+  margin: 0 auto;
 }
 
 #wsd_checkout .page-header {
