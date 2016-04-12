@@ -150,6 +150,11 @@ header .nav a {
   background-color: #efb71b;
   border-color: black; }
 
+.js_sale .btn-primary, .btn-default.btn {
+  line-height: 40px;
+  height: 40px;
+  padding: 0 15px; }
+
 #wsd-checkout-box {
   font-size: 14px; }
 
@@ -1004,6 +1009,9 @@ h5 .product_price span {
   background-color: #333;
   border-color: #428bca; }
 
+#wsd_checkout_form h3 {
+  font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial, sans-serif; }
+
 .oe_structure {
   background: #F5F5F5; }
   .oe_structure .row {
@@ -1047,35 +1055,34 @@ h5 .product_price span {
      -moz-box-shadow: none;
           box-shadow: none; }
 
-.oe_structure .form-control {
+.oe_structure #wsd_checkout_form .form-control {
   font-size: 18px;
   color: #333;
   height: 46px;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none; }
-.oe_structure .form-control:focus {
+.oe_structure #wsd_checkout_form .form-control:focus {
   border-color: #e4701e;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none; }
-.oe_structure .has-error .form-control:focus {
+.oe_structure #wsd_checkout_form .has-error .form-control:focus {
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none;
   border-color: #FF0000; }
-.oe_structure .form-control-feedback {
+.oe_structure #wsd_checkout_form .form-control-feedback {
   top: auto;
   bottom: 5px; }
 
 #wsd_checkout_form #payment_method .nav-tabs > li > a {
-  -webkit-border-radius: none !important;
-     -moz-border-radius: none !important;
-          border-radius: none !important; }
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px; }
 #wsd_checkout_form #payment_method .nav > li > a:hover, #wsd_checkout_form #payment_method .nav > li > a:focus {
   background: #fff;
-  border: none;
-  color: #e4701e; }
+  color: #333; }
 #wsd_checkout_form #payment_method .nav-tabs {
   text-align: left; }
 #wsd_checkout_form #payment_method .tab-content {
@@ -1097,7 +1104,7 @@ body {
 
 #wsd_checkout_form {
   font-size: 15px;
-  padding: 15px; }
+  padding: 15px 0; }
   #wsd_checkout_form input,
   #wsd_checkout_form select {
     -webkit-border-radius: 0;
