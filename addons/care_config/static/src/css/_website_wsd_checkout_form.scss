@@ -6,7 +6,6 @@ body {
 
 .billing-fields {
   max-width: 530px;
-  margin: auto;
 }
 
 #wsd_checkout_steps_header {
@@ -15,7 +14,7 @@ body {
 
 #wsd_checkout_form {
   font-size: 15px;
-  padding: 15px 0;
+  padding: 0 15px 15px;
   input,
   select {
     border-radius: 0;
@@ -51,6 +50,8 @@ body {
 }
 
 #payment_method {
+  margin-bottom: 40px;
+
   .tab-content {
     max-width: 530px;
     margin: auto;
