@@ -333,7 +333,7 @@ ul.cat_menu > li > a {
   padding-bottom: 0.5em;
   margin: 0 0 1em 0; }
 
-#products_grid table {
+.container #products_grid table {
   border-spacing: 22px 40px; }
 
 #products_grid_before {
