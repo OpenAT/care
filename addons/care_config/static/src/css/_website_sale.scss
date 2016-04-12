@@ -27,6 +27,13 @@
     background-color: $orange;
     border-color: black;
 }
+
+.js_sale .btn-primary, .btn-default.btn {
+  line-height: 40px;
+  height: 40px;
+  padding: 0 15px;
+}
+
 #wsd-checkout-box {
     font-size: 14px;
 }

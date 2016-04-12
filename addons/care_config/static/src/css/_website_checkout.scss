@@ -1,3 +1,7 @@
+#wsd_checkout_form h3 {
+  font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial, sans-serif;
+}
+
 .oe_structure {
 
   background: #F5F5F5;
@@ -49,7 +53,7 @@
   box-shadow: none;
 }
 
-.oe_structure {
+.oe_structure #wsd_checkout_form {
   .form-control {
     font-size: 18px;
     color: #333;
@@ -75,13 +79,12 @@
 
 #wsd_checkout_form #payment_method {
   .nav-tabs > li > a {
-    border-radius: none !important;
+    border-radius: 0px;
   }
 
   .nav > li > a:hover, .nav > li > a:focus {
     background: #fff;
-    border: none;
-    color: $focusorange;
+    color: #333;
   }
 
   .nav-tabs {
