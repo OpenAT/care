@@ -1120,8 +1120,7 @@ body {
     font-weight: normal;
     /*display: none;*/ }
   #wsd_checkout_form .row {
-    max-width: 620px;
-    margin: auto; }
+    max-width: 620px; }
   #wsd_checkout_form .form-control-feedback {
     top: 40px; }
   #wsd_checkout_form .price_donate_suggested {
