@@ -1055,17 +1055,17 @@ h5 .product_price span {
   border-color: #e4701e;
   box-shadow: none; }
 
-.oe_structure #wsd_checkout_form .form-control {
+#wsd_checkout_form .form-control {
   font-size: 18px;
   color: #333;
   height: 46px;
   box-shadow: none; }
-.oe_structure #wsd_checkout_form .form-control:focus {
+#wsd_checkout_form .form-control:focus {
   border-color: #e4701e;
   box-shadow: none; }
-.oe_structure #wsd_checkout_form .has-error .form-control:focus {
+#wsd_checkout_form .has-error .form-control:focus {
   box-shadow: none; }
-.oe_structure #wsd_checkout_form .form-control-feedback {
+#wsd_checkout_form .form-control-feedback {
   top: auto;
   bottom: 5px; }
 
@@ -1098,7 +1098,7 @@ body {
   padding: 0 15px 15px; }
   #wsd_checkout_form input {
     border-radius: 0;
-    height: 46px; }
+    /*height: 46px;*/ }
   #wsd_checkout_form label {
     font-weight: normal;
     /*display: none;*/ }
