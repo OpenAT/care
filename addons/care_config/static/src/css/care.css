@@ -1083,6 +1083,17 @@ h5 .product_price span {
   background: #fff;
   margin: 0 auto 40px; }
 
+.ppt_opc .price_donate {
+  display: inline-block; }
+
+@media (min-width: 300px) {
+  #wsd_checkout_form .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle; }
+
+  .price_donate_suggested_outer {
+    display: inline-block; } }
 /* Checkout Page neu BEGIN */
 body {
   -webkit-font-smoothing: antialiased; }
@@ -1112,12 +1123,14 @@ body {
     font-size: 35px; }
   #wsd_checkout_form #price_donate {
     background-color: white !important;
-    height: 90px;
     width: 90px; }
   #wsd_checkout_form .price_donate .input-group-addon {
-    display: none; }
+    min-width: 0; }
   #wsd_checkout_form .amount_title {
     display: none; }
+
+.input-group-addon {
+  width: auto; }
 
 #payment_method {
   margin-bottom: 40px; }

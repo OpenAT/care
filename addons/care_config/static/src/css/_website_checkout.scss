@@ -95,7 +95,21 @@
   }
 }
 
+.ppt_opc .price_donate {
+    display: inline-block;
+  }
 
+@media (min-width: 300px) {
+  #wsd_checkout_form .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    //margin-top:10px;
+  }
+  .price_donate_suggested_outer {
+    display: inline-block;
+  }
+}
 
 
 // .checkbox {

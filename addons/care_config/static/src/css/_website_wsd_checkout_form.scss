@@ -36,15 +36,20 @@ body {
   }
   #price_donate {
     background-color: white !important;
-    height: 90px;
+    //height: 90px;
     width: 90px;
   }
   .price_donate .input-group-addon {
-    display: none;
+    //display: none;
+    min-width: 0;
   }
   .amount_title {
     display: none;
   }
+}
+
+.input-group-addon {
+  width: auto;
 }
 
 #payment_method {
