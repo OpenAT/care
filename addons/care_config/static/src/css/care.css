@@ -1096,10 +1096,9 @@ body {
 #wsd_checkout_form {
   font-size: 15px;
   padding: 0 15px 15px; }
-  #wsd_checkout_form input,
-  #wsd_checkout_form select {
+  #wsd_checkout_form input {
     border-radius: 0;
-    /*height: 46px;*/ }
+    height: 46px; }
   #wsd_checkout_form label {
     font-weight: normal;
     /*display: none;*/ }

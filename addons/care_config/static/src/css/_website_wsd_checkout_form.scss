@@ -15,10 +15,9 @@ body {
 #wsd_checkout_form {
   font-size: 15px;
   padding: 0 15px 15px;
-  input,
-  select {
+  input, {
     border-radius: 0;
-    /*height: 46px;*/
+    height: 46px;
   }
   label {
     font-weight: normal;
