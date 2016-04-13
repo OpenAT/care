@@ -266,7 +266,6 @@ table .oe_product .oe_product_image img:hover {
 
 .quick_add_to_cart a {
   font-size: 18px;
-  text-transform: capitalize;
   font-family: "HelveticaNeueLTStd-Roman", "Helvetica", "Arial", sans-serif !important; }
 
 body[data-rootcatid="2"] .fa-shopping-cart:before {
@@ -1148,7 +1147,8 @@ h5 .product_price span {
   height: auto !important;
   padding: 20px;
   max-width: none;
-  background: #fff; }
+  background: #fff;
+  margin: 0 auto 40px; }
 
 /* Checkout Page neu BEGIN */
 body {
