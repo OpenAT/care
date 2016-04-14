@@ -34,7 +34,7 @@ $(document).ready( function() {
 
         $( this ).find('.wrap_wsd_1').flip( true );
 
-        window.parent.$("html, body").animate({ scrollTop: 0 });
+        //window.parent.$("html, body").animate({ scrollTop: 0 });
 
         if ($(window).width() > $effect_disp_width) {
             var $target = $('.spenden_paket_bg');
@@ -116,7 +116,7 @@ $(document).ready( function() {
             //window.location.href = "/shop/checkout";
             //window.location.href = "#";
 
-            window.parent.$("html, body").animate({ scrollTop: $('.one-page-checkout').offset().top });
+            //window.parent.$("html, body").animate({ scrollTop: $('.one-page-checkout').offset().top });
         }, 3000)
     });
 
