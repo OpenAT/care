@@ -1173,6 +1173,9 @@ body {
   left: 10px;
   top: 9px; }
 
+#wsd_pp_auto_submit_form > form > button {
+  max-width: 100%; }
+
 /* Checkout Page neu ENDE */
 /* Care PatIn werden Bereich */
 body[data-rootcatid="2"] {
