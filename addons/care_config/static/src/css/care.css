@@ -246,6 +246,10 @@ table .oe_product .oe_product_image img:hover {
   border: 0px;
   text-align: left; }
 
+table .oe_product .oe_product_image img:hover {
+  height: 100%;
+  width: 100%; }
+
 .fa-shopping-cart:before {
   display: none;
   /*
