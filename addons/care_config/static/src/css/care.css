@@ -19,6 +19,12 @@
 .btn-primary:hover {
   background: #e57424; }
 
+.btn-primary:active {
+  background-color: #e57424; }
+
+.btn-primary:visited {
+  background-color: #e57424; }
+
 @font-face {
   font-family: 'OpenSansABold';
   src: url("/care_config/static/src/css/fonts/OpenSans-Bold.eot");

@@ -26,9 +26,14 @@ $careyellow: #efb71b;
 }
 
 .btn-primary:hover {
-  background: $orange;
-}
-
+    background: $orange;
+  }
+.btn-primary:active {
+    background-color: $orange;
+  }
+.btn-primary:visited {
+    background-color: $orange;
+  }
 // Import Files
 @import "fontfaces";
 @import "website";
