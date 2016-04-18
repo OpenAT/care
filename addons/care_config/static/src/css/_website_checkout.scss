@@ -31,6 +31,8 @@
   color: #333;
 }
 
+
+
 // #wsd_checkout label {
 //   color: rgba(0,0,0,.5);
 // }
@@ -39,13 +41,17 @@
   color: #333333;
 }
 
-#wsd_checkout .form-control {
+.one-page-checkout .form-control {
   border-radius: 0;
 }
 
 #wsd_checkout .form-control:focus {
   border-color: $focusorange;
   box-shadow: none;
+}
+
+#wsd_checkout_form .checkbox label {
+    line-height: 20px;
 }
 
 .container #wsd_checkout_form {
@@ -69,6 +75,10 @@
     top: auto;
     bottom: 5px;
   }
+}
+
+.product_price {
+  padding-top: 3em;
 }
 
 #wsd_checkout_form #payment_method {
