@@ -26,16 +26,27 @@ body {
 }
 
 .js_sale .btn-primary {
-    color: white;
-    // background-color: $orange;
-    border-color: black;
+  background: #EFB71B;
+  color: #333333;
+  font-size: 1em;
+  line-height: 50px;
+
+  -webkit-transition: background .3s;
+  -moz-transition: background .3s;
+  -o-transition: background .3s;
+  transition: background .3s;
 }
 
-.js_sale .btn-primary, .btn-default.btn {
-  line-height: 40px;
-  height: 40px;
-  padding: 0 15px;
+.js_sale .btn-primary:hover {
+  background-color: #990000;
+  color: #fff;
 }
+
+// .js_sale .btn-primary, .btn-default.btn {
+//   line-height: 40px;
+//   height: 40px;
+//   padding: 0 15px;
+// }
 
 #wsd-checkout-box {
     font-size: 14px;
@@ -982,6 +993,7 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   padding-left: 0px;
   padding-right:0px;
 }
+
 #spenden_paket_summe, #carepaket_spenden_button {
     position: absolute;
   width: 210px;

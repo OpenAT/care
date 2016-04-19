@@ -16,14 +16,15 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'HelveticaNeueLTStd-Roman';
   // font-family: 'OfficinaSansStd-Bold';
 }
 
-#wsd_checkout_form {
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial, sans-serif;
-  }
-}
+// #wsd_checkout_form {
+//   h1, h2, h3, h4, h5, h6 {
+//     font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial, sans-serif;
+//   }
+// }
 
 .container {
   width: 100%;

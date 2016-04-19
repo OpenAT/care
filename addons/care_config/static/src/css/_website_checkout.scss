@@ -1,9 +1,47 @@
+.ppt_opc_cb_inner > h1 {
+  display: none;
+}
+
+.product_price.mt16, .payment_interval_ids {
+  max-width: 620px;
+  margin: 0px auto;
+  text-align: left;
+}
+
+.payment_interval_ids {
+  padding: 0px 6px;  
+}
+
+#wsd_checkout_form .price_donate .input-group-addon, #wsd_checkout_form #price_donate {
+  height: 90px;
+
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+#wsd_checkout_form #price_donate {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.price_donate_suggested_outer {
+    margin: 0 3px;
+}
+
 #wsd_checkout_form {
   background: #F5F5F5;
+  padding: 3em 15px 15px;
 }
 
 #wsd_checkout_form .row {
   margin: 0 auto;
+}
+
+#wsd_checkout_form .row.billing-fields {
+    margin-left: -6px;
+    margin-right: -6px;
 }
 
 #wsd_checkout .page-header {
@@ -50,7 +88,7 @@
   box-shadow: none;
 }
 
-#wsd_checkout_form .checkbox label {
+.container #wsd_checkout_form .checkbox label {
     line-height: 20px;
 }
 
@@ -77,14 +115,27 @@
   }
 }
 
-.product_price {
-  padding-top: 3em;
-}
+.payment_interval_ids {
+  margin-bottom: 3em;
+
+  small, .form-group {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+} 
 
 #wsd_checkout_form #payment_method {
   .nav-tabs > li > a {
     border-radius: 0px;
     color: inherit;
+  }
+
+  .nav-tabs > li:last-child {
+    float: right;
+  }
+
+  .nav-tabs > li:last-child > a {
+    margin-right: 0;
   }
 
   .nav-tabs > li.active > a, .nav > li > a:hover, .nav > li > a:focus {
