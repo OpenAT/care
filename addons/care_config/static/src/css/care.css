@@ -74,8 +74,8 @@ body {
 strong {
   font-family: 'HelveticaNeueLTStd-Bold'; }
 
-#wsd_checkout_form  h1, #wsd_checkout_form  h2, #wsd_checkout_form  h3, #wsd_checkout_form  h4, #wsd_checkout_form  h5, #wsd_checkout_form  h6 {
-  font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'HelveticaNeueLTStd-Roman'; }
 
 .container {
   width: 100%;
@@ -164,13 +164,18 @@ body {
   content: "\00a0\f004\00a0"; }
 
 .js_sale .btn-primary {
-  color: white;
-  border-color: black; }
+  background: #EFB71B;
+  color: #333333;
+  font-size: 1em;
+  line-height: 50px;
+  -webkit-transition: background .3s;
+  -moz-transition: background .3s;
+  -o-transition: background .3s;
+  transition: background .3s; }
 
-.js_sale .btn-primary, .btn-default.btn {
-  line-height: 40px;
-  height: 40px;
-  padding: 0 15px; }
+.js_sale .btn-primary:hover {
+  background-color: #990000;
+  color: #fff; }
 
 #wsd-checkout-box {
   font-size: 14px; }
@@ -1084,11 +1089,41 @@ h5 .product_price span {
   background-color: #333;
   border-color: #428bca; }
 
+.ppt_opc_cb_inner > h1 {
+  display: none; }
+
+.product_price.mt16, .payment_interval_ids {
+  max-width: 620px;
+  margin: 0px auto;
+  text-align: left; }
+
+.payment_interval_ids {
+  padding: 0px 6px; }
+
+#wsd_checkout_form .price_donate .input-group-addon, #wsd_checkout_form #price_donate {
+  height: 90px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+
+#wsd_checkout_form #price_donate {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none; }
+
+.price_donate_suggested_outer {
+  margin: 0 3px; }
+
 #wsd_checkout_form {
-  background: #F5F5F5; }
+  background: #F5F5F5;
+  padding: 3em 15px 15px; }
 
 #wsd_checkout_form .row {
   margin: 0 auto; }
+
+#wsd_checkout_form .row.billing-fields {
+  margin-left: -6px;
+  margin-right: -6px; }
 
 #wsd_checkout .page-header {
   background: #efb71b;
@@ -1128,7 +1163,7 @@ h5 .product_price span {
      -moz-box-shadow: none;
           box-shadow: none; }
 
-#wsd_checkout_form .checkbox label {
+.container #wsd_checkout_form .checkbox label {
   line-height: 20px; }
 
 .container #wsd_checkout_form .form-control {
@@ -1151,14 +1186,21 @@ h5 .product_price span {
   top: auto;
   bottom: 5px; }
 
-.product_price {
-  padding-top: 3em; }
+.payment_interval_ids {
+  margin-bottom: 3em; }
+  .payment_interval_ids small, .payment_interval_ids .form-group {
+    display: inline-block;
+    vertical-align: bottom; }
 
 #wsd_checkout_form #payment_method .nav-tabs > li > a {
   -webkit-border-radius: 0px;
      -moz-border-radius: 0px;
           border-radius: 0px;
   color: inherit; }
+#wsd_checkout_form #payment_method .nav-tabs > li:last-child {
+  float: right; }
+#wsd_checkout_form #payment_method .nav-tabs > li:last-child > a {
+  margin-right: 0; }
 #wsd_checkout_form #payment_method .nav-tabs > li.active > a, #wsd_checkout_form #payment_method .nav > li > a:hover, #wsd_checkout_form #payment_method .nav > li > a:focus {
   background: #fff;
   color: #efb71b; }
