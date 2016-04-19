@@ -8,6 +8,10 @@
   text-align: left;
 }
 
+body .oe_website_sale h4.payment_interval_ids {
+  margin: 0px auto 3em;
+}
+
 .payment_interval_ids {
   padding: 0px 6px;  
 }
@@ -30,7 +34,7 @@
     margin: 0 3px;
 }
 
-#wsd_checkout_form {
+.container #wsd_checkout_form {
   background: #F5F5F5;
   padding: 3em 15px 15px;
 }
@@ -117,10 +121,19 @@
 
 .payment_interval_ids {
   margin-bottom: 3em;
+  text-align: center;
 
   small, .form-group {
     display: inline-block;
     vertical-align: bottom;
+  }
+
+  small {
+    font-size: 15px;
+  }
+
+  .form-group {
+    width: 325px;
   }
 } 
 

@@ -75,7 +75,7 @@ strong {
   font-family: 'HelveticaNeueLTStd-Bold'; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'HelveticaNeueLTStd-Roman'; }
+  font-family: 'HelveticaNeueLTStd-Roman' !important; }
 
 .container {
   width: 100%;
@@ -157,8 +157,8 @@ body {
 /* SCHENKEN mit Sinn ONLY */
 /* SCHENKEN mit Sinn ONLY END */
 .oe_website_sale .row {
-  margin: 0;
-  margin-left: -22px; }
+  margin-left: -22px;
+  margin-right: -22px; }
 
 .fa-shopping-cart:before {
   content: "\00a0\f004\00a0"; }
@@ -1097,6 +1097,9 @@ h5 .product_price span {
   margin: 0px auto;
   text-align: left; }
 
+body .oe_website_sale h4.payment_interval_ids {
+  margin: 0px auto 3em; }
+
 .payment_interval_ids {
   padding: 0px 6px; }
 
@@ -1114,7 +1117,7 @@ h5 .product_price span {
 .price_donate_suggested_outer {
   margin: 0 3px; }
 
-#wsd_checkout_form {
+.container #wsd_checkout_form {
   background: #F5F5F5;
   padding: 3em 15px 15px; }
 
@@ -1187,10 +1190,15 @@ h5 .product_price span {
   bottom: 5px; }
 
 .payment_interval_ids {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  text-align: center; }
   .payment_interval_ids small, .payment_interval_ids .form-group {
     display: inline-block;
     vertical-align: bottom; }
+  .payment_interval_ids small {
+    font-size: 15px; }
+  .payment_interval_ids .form-group {
+    width: 325px; }
 
 #wsd_checkout_form #payment_method .nav-tabs > li > a {
   -webkit-border-radius: 0px;
