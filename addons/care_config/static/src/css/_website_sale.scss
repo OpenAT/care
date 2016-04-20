@@ -140,8 +140,7 @@ table .oe_product section {
   min-height: 100%;
   width: auto;
   height: auto;
-  max-width: none;
-  max-height: none;
+  max-width: 100%;
 }
 
 .oe_cart.small_cart table td[name="product_image"] {
@@ -413,7 +412,7 @@ ul.cat_menu > li > a {
 
 #products_grid_before .oe_cart.small_cart table td {
     color: #333;
-    padding: 0 10px;
+    padding: 0 0;
     font-size: 14px;
     line-height: 40px;
 }
@@ -453,7 +452,8 @@ ul.cat_menu > li > a {
 }
 
 .oe_website_sale .row.ppt_opc-small_cart {
-  margin-left: 0;
+  margin-left: -6px;
+  margin-right: -6px;
 }
 
 .small_cart a {

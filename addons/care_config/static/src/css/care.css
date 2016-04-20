@@ -249,8 +249,7 @@ table .oe_product section {
   min-height: 100%;
   width: auto;
   height: auto;
-  max-width: none;
-  max-height: none; }
+  max-width: 100%; }
 
 .oe_cart.small_cart table td[name="product_image"] {
   width: 0; }
@@ -467,7 +466,7 @@ ul.cat_menu > li > a {
 
 #products_grid_before .oe_cart.small_cart table td {
   color: #333;
-  padding: 0 10px;
+  padding: 0 0;
   font-size: 14px;
   line-height: 40px; }
 
@@ -494,7 +493,8 @@ ul.cat_menu > li > a {
   font-size: 14px; }
 
 .oe_website_sale .row.ppt_opc-small_cart {
-  margin-left: 0; }
+  margin-left: -6px;
+  margin-right: -6px; }
 
 .small_cart a {
   color: #333; }
@@ -1152,7 +1152,7 @@ h5 .product_price span {
   text-align: left; }
 
 body .oe_website_sale h4.payment_interval_ids {
-  margin: 0px auto 3em; }
+  margin: 2em auto 3em; }
 
 .payment_interval_ids {
   padding: 0px 6px; }
