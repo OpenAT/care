@@ -239,6 +239,11 @@ table .oe_product section {
 td[name="product_image"] {
   display: none; }
 
+#website_sale_donate .oe_cart.small_cart table td {
+  font-size: 15px;
+  padding: 0;
+  line-height: 40px; }
+
 #website_sale_donate #cart_products {
   font-size: 15px; }
   #website_sale_donate #cart_products .small_cart_header {
@@ -247,10 +252,6 @@ td[name="product_image"] {
       font-size: 15px; }
     #website_sale_donate #cart_products .small_cart_header a:hover {
       color: #efb71b; }
-  #website_sale_donate #cart_products .oe_cart.small_cart table td {
-    font-size: 15px;
-    padding: 0;
-    line-height: 40px; }
   #website_sale_donate #cart_products .table-condensed > thead > tr > th {
     padding: 0;
     font-weight: normal; }

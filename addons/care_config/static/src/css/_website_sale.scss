@@ -127,6 +127,12 @@ td[name="product_image"] {
   display: none;
 }
 
+#website_sale_donate .oe_cart.small_cart table td {
+    font-size: 15px;
+    padding: 0;
+    line-height: 40px;
+}
+
 #website_sale_donate #cart_products {
   font-size: 15px;
 
@@ -139,12 +145,6 @@ td[name="product_image"] {
     a:hover {
       color: #efb71b;
     }
-  }
-
-  .oe_cart.small_cart table td {
-      font-size: 15px;
-      padding: 0;
-      line-height: 40px;
   }
 
   .table-condensed > thead > tr > th {
