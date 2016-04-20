@@ -97,6 +97,12 @@ body .oe_website_sale h4.payment_interval_ids {
 }
 
 .container #wsd_checkout_form {
+  .price_donate_suggested_currency {
+      font-size: 10px;
+      margin-top: 5px;
+      margin-left: 5px;
+  }
+
   .form-control {
     font-size: 18px;
     color: #333;
