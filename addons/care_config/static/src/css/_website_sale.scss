@@ -146,6 +146,10 @@ table .oe_product section {
 
 .oe_cart.small_cart table td[name="product_image"] {
   width: 0;
+
+  img {
+    display: none;
+  }
 }
 
 .oe_cart.small_cart table td[name="product_image"]:first-child {

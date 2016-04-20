@@ -254,6 +254,8 @@ table .oe_product section {
 
 .oe_cart.small_cart table td[name="product_image"] {
   width: 0; }
+  .oe_cart.small_cart table td[name="product_image"] img {
+    display: none; }
 
 .oe_cart.small_cart table td[name="product_image"]:first-child {
   min-width: 0; }
@@ -451,7 +453,7 @@ ul.cat_menu > li > a {
   font-size: 18px;
   line-height: 40px;
   margin: 0;
-  padding: 0 10px; }
+  padding: 0 0; }
 
 .oe_website_sale .small_cart input.js_quantity {
   background: none;
