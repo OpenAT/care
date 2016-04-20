@@ -123,8 +123,38 @@ table .oe_product section {
   max-height: none;
 }
 
-td.product_image {
+td[name="product_image"] {
   display: none;
+}
+
+#website_sale_donate #cart_products {
+  font-size: 15px;
+
+  .small_cart_header {
+    margin-bottom: 1em;
+    a {
+      font-size: 15px;
+    }
+
+    a:hover {
+      color: #efb71b;
+    }
+  }
+
+  .oe_cart.small_cart table td {
+      font-size: 15px;
+      padding: 0;
+      line-height: 40px;
+  }
+
+  .table-condensed > thead > tr > th {
+    padding: 0;
+    font-weight: normal;
+  }
+}
+
+span[data-oe-type="monetary"] {
+    margin-right: 6px;
 }
 
 table .oe_product .oe_product_image img:hover {
