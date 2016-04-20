@@ -232,7 +232,9 @@ table .oe_product section {
   min-width: 100%;
   min-height: 100%;
   width: auto;
-  height: auto; }
+  height: auto;
+  max-width: none;
+  max-height: none; }
 
 td.product_image {
   display: none; }

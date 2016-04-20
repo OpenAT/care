@@ -119,6 +119,8 @@ table .oe_product section {
   min-height: 100%;
   width: auto;
   height: auto;
+  max-width: none;
+  max-height: none;
 }
 
 td.product_image {
