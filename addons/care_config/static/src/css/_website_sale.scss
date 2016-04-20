@@ -25,13 +25,13 @@ body {
     content: "\00a0\f004\00a0";
 }
 
-.js_sale .btn-primary {
-  background: #EFB71B;
-  color: #ffffff;
+.js_sale .btn-default, .js_sale .btn-primary {
   font-size: 1em;
-  line-height: 50px;
-  height: 50px;
+  line-height: 40px;
+  height: 40px;
   padding: 0 15px;
+  border: none;
+
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -40,6 +40,21 @@ body {
   -moz-transition: background .3s;
   -o-transition: background .3s;
   transition: background .3s;
+}
+
+.js_sale .btn-default {
+  background: #333333;
+  color: #ffffff;
+}
+
+.js_sale .btn-default:hover {
+  background-color: #666666 ;
+  color: #fff;
+}
+
+.js_sale .btn-primary {
+  background: #EFB71B;
+  color: #ffffff;
 }
 
 .js_sale .btn-primary:hover {
