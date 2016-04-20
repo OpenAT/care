@@ -65,6 +65,7 @@ body {
 .js_sale .btn-default.price_donate_suggested, .js_sale .btn-default.price_donate_suggested:hover {
   background: #fff;
   color: #333;
+  border: 1px solid #ccc;
 }
 
 // .js_sale .btn-primary, .btn-default.btn {
@@ -143,7 +144,7 @@ table .oe_product section {
   max-height: none;
 }
 
-td[name="product_image"] {
+.oe_cart.small_cart table td[name="product_image"] {
   width: 0;
 }
 
@@ -178,6 +179,12 @@ td[name="product_image"] {
     padding: 0;
     font-weight: normal;
   }
+}
+
+#wsd_checkout_form .price_donate .input-group-addon {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 span[data-oe-type="monetary"] {

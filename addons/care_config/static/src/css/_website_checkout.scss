@@ -120,9 +120,17 @@ body .oe_website_sale h4.payment_interval_ids {
   }
 }
 
-.payment_interval_ids {
-  margin-bottom: 3em;
+.arbitrary_price {
   text-align: center;
+}
+
+.payment_interval_ids {
+  margin: 2em 0 3em;
+  text-align: center;
+  
+  hr {
+    display: none;
+  }
 
   small, .form-group {
     display: inline-block;

@@ -195,7 +195,8 @@ body {
 
 .js_sale .btn-default.price_donate_suggested, .js_sale .btn-default.price_donate_suggested:hover {
   background: #fff;
-  color: #333; }
+  color: #333;
+  border: 1px solid #ccc; }
 
 #wsd-checkout-box {
   font-size: 14px; }
@@ -251,7 +252,7 @@ table .oe_product section {
   max-width: none;
   max-height: none; }
 
-td[name="product_image"] {
+.oe_cart.small_cart table td[name="product_image"] {
   width: 0; }
 
 .oe_cart.small_cart table td[name="product_image"]:first-child {
@@ -272,6 +273,11 @@ td[name="product_image"] {
 #website_sale_donate #cart_products.table-condensed > thead > tr > th {
   padding: 0;
   font-weight: normal; }
+
+#wsd_checkout_form .price_donate .input-group-addon {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
 
 span[data-oe-type="monetary"] {
   margin-right: 6px; }
@@ -1236,9 +1242,14 @@ body .oe_website_sale h4.payment_interval_ids {
   bottom: 5px;
   right: 15px; }
 
-.payment_interval_ids {
-  margin-bottom: 3em;
+.arbitrary_price {
   text-align: center; }
+
+.payment_interval_ids {
+  margin: 2em 0 3em;
+  text-align: center; }
+  .payment_interval_ids hr {
+    display: none; }
   .payment_interval_ids small, .payment_interval_ids .form-group {
     display: inline-block;
     vertical-align: bottom; }
