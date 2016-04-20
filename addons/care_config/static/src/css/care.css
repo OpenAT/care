@@ -280,6 +280,9 @@ table .oe_product section {
   -moz-box-shadow: none;
   box-shadow: none; }
 
+.price_donate span.input-group-addon:first-child {
+  display: none; }
+
 span[data-oe-type="monetary"] {
   margin-right: 6px; }
 

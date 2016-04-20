@@ -190,6 +190,10 @@ table .oe_product section {
     box-shadow: none;
 }
 
+.price_donate span.input-group-addon:first-child {
+  display: none;
+}
+
 span[data-oe-type="monetary"] {
     margin-right: 6px;
 }
