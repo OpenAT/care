@@ -48,53 +48,50 @@ body .oe_website_sale h4.payment_interval_ids {
     margin-right: -6px;
 }
 
-#wsd_checkout .page-header {
-  background: $careyellow;
-  padding: 13px 10px 13px 50px;
-  font-size: 20px;
-  position: relative;
-}
 .checkout_title::before, #payment_method .col-lg-12:first-child::before {
   display: none;
 }
 
-#wsd_checkout .page-header:before {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  border-radius: 48px;
-  background: white;
-  content: ' ';
-  left: 10px;
-  top: 9px;
-}
+#wsd_checkout_form {
+  .page-header {
+    background: $careyellow;
+    padding: 13px 10px 13px 50px;
+    font-size: 20px;
+    position: relative;
+  }
 
-#wsd_checkout_form label {
-  color: #333;
-  margin-bottom: 0;
-}
+  .page-header:before {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 48px;
+    background: white;
+    content: ' ';
+    left: 10px;
+    top: 9px;
+  }
 
-#wsd_checkout_form .form-control {
-  margin-bottom: 7px;
-}
+  label {
+    color: #333;
+    margin-bottom: 0;
+  }
 
+  .form-group {
+    margin-bottom: 7px;
+  }
 
+  label.text-danger {
+    color: #333333;
+  }
 
-// #wsd_checkout label {
-//   color: rgba(0,0,0,.5);
-// }
-
-#wsd_checkout label.text-danger {
-  color: #333333;
+  .form-control:focus {
+    border-color: $focusorange;
+    box-shadow: none;
+  }
 }
 
 .one-page-checkout .form-control {
   border-radius: 0;
-}
-
-#wsd_checkout .form-control:focus {
-  border-color: $focusorange;
-  box-shadow: none;
 }
 
 .container #wsd_checkout_form .checkbox {

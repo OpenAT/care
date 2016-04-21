@@ -185,8 +185,8 @@ body {
 .fa-shopping-cart:before {
   content: "\00a0\f004\00a0"; }
 
-.js_sale a.btn-default, .js_sale a.btn-primary {
-  font-family: 'OfficinaSansStd-Bold';
+#products_grid_before .js_sale a.btn-default, #products_grid_before .js_sale a.btn-primary, #wsd_checkout_form .js_sale a.btn-default, #wsd_checkout_form .js_sale a.btn-primary {
+  font-family: 'OfficinaSansStd-Bold' !important;
   font-size: 24px;
   line-height: 50px;
   padding: 0 15px;
@@ -635,6 +635,9 @@ ul.cat_menu > li > a {
   #products_grid_before.col-md-4 {
     padding-right: 0 !important; }
 
+  #products_grid.col-md-8 {
+    padding-right: 0 !important; }
+
   .container .oe_website_sale .row {
     margin-left: -10px;
     margin-right: -10px; }
@@ -674,7 +677,7 @@ ul.cat_menu > li > a {
 
 #products_grid.col-md-8 {
   padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-right: 22px !important;
   width: 60%; }
 
 #products_grid_before.col-md-4 {
@@ -1229,16 +1232,15 @@ body .oe_website_sale h4.payment_interval_ids {
   margin-left: -6px;
   margin-right: -6px; }
 
-#wsd_checkout .page-header {
+.checkout_title::before, #payment_method .col-lg-12:first-child::before {
+  display: none; }
+
+#wsd_checkout_form .page-header {
   background: #efb71b;
   padding: 13px 10px 13px 50px;
   font-size: 20px;
   position: relative; }
-
-.checkout_title::before, #payment_method .col-lg-12:first-child::before {
-  display: none; }
-
-#wsd_checkout .page-header:before {
+#wsd_checkout_form .page-header:before {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -1249,27 +1251,23 @@ body .oe_website_sale h4.payment_interval_ids {
   content: ' ';
   left: 10px;
   top: 9px; }
-
 #wsd_checkout_form label {
   color: #333;
   margin-bottom: 0; }
-
-#wsd_checkout_form .form-control {
+#wsd_checkout_form .form-group {
   margin-bottom: 7px; }
-
-#wsd_checkout label.text-danger {
+#wsd_checkout_form label.text-danger {
   color: #333333; }
+#wsd_checkout_form .form-control:focus {
+  border-color: #e4701e;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none; }
 
 .one-page-checkout .form-control {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0; }
-
-#wsd_checkout .form-control:focus {
-  border-color: #e4701e;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none; }
 
 .container #wsd_checkout_form .checkbox {
   min-height: 0; }

@@ -25,21 +25,23 @@ body {
     content: "\00a0\f004\00a0";
 }
 
-.js_sale a.btn-default, .js_sale a.btn-primary {
-  font-family: 'OfficinaSansStd-Bold';
-  font-size: 24px;
-  line-height: 50px;
-  padding: 0 15px;
-  border: none;
+#products_grid_before, #wsd_checkout_form {
+  .js_sale a.btn-default, .js_sale a.btn-primary {
+    font-family: 'OfficinaSansStd-Bold' !important;
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0 15px;
+    border: none;
 
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 
-  -webkit-transition: background .3s;
-  -moz-transition: background .3s;
-  -o-transition: background .3s;
-  transition: background .3s;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+  }  
 }
 
 .js_sale a.btn-default {
@@ -649,6 +651,10 @@ ul.cat_menu > li > a {
     padding-right: 0 !important;
   }
 
+  #products_grid.col-md-8 {
+    padding-right: 0 !important;
+  }
+
   .container .oe_website_sale .row {
     margin-left: -10px;
     margin-right: -10px;
@@ -712,7 +718,7 @@ ul.cat_menu > li > a {
 
 #products_grid.col-md-8 {
     padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-right: 22px !important;
     //margin-left: -10px;
     width: 60%;
   }
