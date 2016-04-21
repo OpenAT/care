@@ -185,7 +185,7 @@ body {
 .fa-shopping-cart:before {
   content: "\00a0\f004\00a0"; }
 
-#products_grid_before .js_sale a.btn-default, #products_grid_before .js_sale a.btn-primary, #wsd_checkout_form a.btn-default, #wsd_checkout_form .js_sale a.btn-primary {
+.js_sale #products_grid_before a.btn-default, .js_sale #products_grid_before a.btn-primary, .js_sale #wsd_checkout_form a.btn-default, .js_sale #wsd_checkout_form a.btn-primary {
   font-family: 'OfficinaSansStd-Bold' !important;
   font-size: 24px;
   line-height: 50px;
