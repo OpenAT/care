@@ -28,8 +28,8 @@ body {
 .js_sale {
   #products_grid_before a.btn-default, #products_grid_before a.btn-primary, #wsd_checkout_form a.btn-default, #wsd_checkout_form a.btn-primary {
     font-family: 'OfficinaSansStd-Bold' !important;
-    font-size: 24px;
-    line-height: 50px;
+    font-size: 22px;
+    line-height: 45px;
     padding: 0 15px;
     border: none;
 
@@ -681,6 +681,10 @@ ul.cat_menu > li > a {
   body #products_grid_before > div.small_cart {
       padding-left: 20px;
       padding-right: 20px;
+  }
+
+  .container #wsd_checkout_form {
+      padding: 0 0 10px;
   }
 }
 
