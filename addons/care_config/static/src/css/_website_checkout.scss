@@ -9,7 +9,7 @@
 }
 
 body .oe_website_sale h4.payment_interval_ids {
-  margin: 2em auto 3em;
+  margin: 2em auto 30px;
 }
 
 .payment_interval_ids {
@@ -36,7 +36,7 @@ body .oe_website_sale h4.payment_interval_ids {
 
 .container #wsd_checkout_form {
   background: #F5F5F5;
-  padding: 3em 15px 15px;
+  padding: 30px;
 }
 
 #wsd_checkout_form .row {
@@ -71,6 +71,11 @@ body .oe_website_sale h4.payment_interval_ids {
 
 #wsd_checkout_form label {
   color: #333;
+  margin-bottom: 0;
+}
+
+#wsd_checkout_form .form-control {
+  margin-bottom: 7px;
 }
 
 
@@ -92,8 +97,12 @@ body .oe_website_sale h4.payment_interval_ids {
   box-shadow: none;
 }
 
-.container #wsd_checkout_form .checkbox label {
+.container #wsd_checkout_form .checkbox {
+  min-height: 0;
+
+  label {
     line-height: 20px;
+  }
 }
 
 .container #wsd_checkout_form {
@@ -131,7 +140,7 @@ body .oe_website_sale h4.payment_interval_ids {
 }
 
 .payment_interval_ids {
-  margin: 2em 0 3em;
+  margin: 2em 0 30px;
   text-align: center;
   
   hr {

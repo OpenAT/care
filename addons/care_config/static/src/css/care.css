@@ -155,7 +155,10 @@ a {
     display: block;
     text-align: center; }
   .container #wsd_checkout_form #payment_method .nav-tabs > li > a {
-    border: 1px solid #ddd; } }
+    border: 1px solid #ddd;
+    margin-right: 0; }
+  .container #wsd_checkout_form #payment_method .nav-tabs > li:last-child {
+    float: none; } }
 header .navbar {
   font-size: 14px; }
 header .nav a {
@@ -182,37 +185,37 @@ body {
 .fa-shopping-cart:before {
   content: "\00a0\f004\00a0"; }
 
-.js_sale .btn-default, .js_sale .btn-primary {
-  font-size: 1em;
-  line-height: 40px;
-  height: 40px;
+.js_sale a.btn-default, .js_sale a.btn-primary {
+  font-family: 'OfficinaSansStd-Bold';
+  font-size: 24px;
+  line-height: 50px;
   padding: 0 15px;
   border: none;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   -webkit-transition: background .3s;
   -moz-transition: background .3s;
   -o-transition: background .3s;
   transition: background .3s; }
 
-.js_sale .btn-default {
-  background: #333333;
+.js_sale a.btn-default {
+  background: #990000;
   color: #ffffff; }
 
-.js_sale .btn-default:hover {
-  background-color: #666666;
-  color: #fff; }
-
-.js_sale .btn-primary {
-  background: #EFB71B;
-  color: #ffffff; }
-
-.js_sale .btn-primary:hover {
+.js_sale a.btn-default:hover {
   background-color: #333333;
   color: #fff; }
 
-.js_sale .btn-default.price_donate_suggested, .js_sale .btn-default.price_donate_suggested:hover {
+.js_sale a.btn-primary {
+  background: #00678F;
+  color: #ffffff; }
+
+.js_sale a.btn-primary:hover {
+  background-color: #e4761e;
+  color: #fff; }
+
+.js_sale a.btn-default.price_donate_suggested, .js_sale a.btn-default.price_donate_suggested:hover {
   background: #fff;
   color: #333;
   border: 1px solid #ccc; }
@@ -311,11 +314,11 @@ table .oe_product .oe_product_image img:hover {
   max-height: none;
   max-width: none; }
 
-.btn-xs, .btn-group-xs > .btn {
+.btn-xs, a.btn-group-xs > .btn {
   width: 100%;
   padding: 6px 12px; }
 
-#website-top-edit .btn-xs, .btn-group-xs > .btn {
+#website-top-edit a.btn-xs, a.btn-group-xs > .btn {
   width: auto !important; }
 
 .oe_product.oe_grid .oe_subdescription {
@@ -338,6 +341,7 @@ table .oe_product .oe_product_image img:hover {
   display: none; }
 
 .btn.btn-default.btn-xs.fa.fa-shopping-cart {
+  text-align: center;
   color: white; }
 
 .fa-shopping-cart {
@@ -601,6 +605,12 @@ ul.cat_menu > li > a {
     float: left;
     width: 100%; } }
 @media (max-width: 768px) {
+  .container #products_grid .oe_product {
+    margin-top: 0; }
+
+  .container .oe_product .oe_product_cart {
+    margin-bottom: 0; }
+
   .oe_product.oe-height-2 {
     height: 410px !important; }
 
@@ -620,7 +630,22 @@ ul.cat_menu > li > a {
     width: 50% !important;
     display: inline-table;
     float: left;
-    border-spacing: 10px 20px !important; } }
+    border-spacing: 10px 0px !important; }
+
+  #products_grid_before.col-md-4 {
+    padding-right: 0 !important; }
+
+  .container .oe_website_sale .row {
+    margin-left: -10px;
+    margin-right: -10px; }
+
+  #products_grid_before .oe_cart.small_cart table td.text-left {
+    width: 60%;
+    text-align: left; }
+
+  #products_grid_before .oe_cart.small_cart table td.text-right {
+    width: 40%;
+    text-align: right; } }
 @media screen and (max-width: 480px) {
   #products_grid_before.col-md-4 {
     width: 100% !important; }
@@ -1174,7 +1199,7 @@ h5 .product_price span {
   text-align: left; }
 
 body .oe_website_sale h4.payment_interval_ids {
-  margin: 2em auto 3em; }
+  margin: 2em auto 30px; }
 
 .payment_interval_ids {
   padding: 0px 6px; }
@@ -1195,7 +1220,7 @@ body .oe_website_sale h4.payment_interval_ids {
 
 .container #wsd_checkout_form {
   background: #F5F5F5;
-  padding: 3em 15px 15px; }
+  padding: 30px; }
 
 #wsd_checkout_form .row {
   margin: 0 auto; }
@@ -1226,7 +1251,11 @@ body .oe_website_sale h4.payment_interval_ids {
   top: 9px; }
 
 #wsd_checkout_form label {
-  color: #333; }
+  color: #333;
+  margin-bottom: 0; }
+
+#wsd_checkout_form .form-control {
+  margin-bottom: 7px; }
 
 #wsd_checkout label.text-danger {
   color: #333333; }
@@ -1242,8 +1271,10 @@ body .oe_website_sale h4.payment_interval_ids {
      -moz-box-shadow: none;
           box-shadow: none; }
 
-.container #wsd_checkout_form .checkbox label {
-  line-height: 20px; }
+.container #wsd_checkout_form .checkbox {
+  min-height: 0; }
+  .container #wsd_checkout_form .checkbox label {
+    line-height: 20px; }
 
 .container #wsd_checkout_form .price_donate_suggested_currency {
   font-size: 10px;
@@ -1274,7 +1305,7 @@ body .oe_website_sale h4.payment_interval_ids {
   text-align: center; }
 
 .payment_interval_ids {
-  margin: 2em 0 3em;
+  margin: 2em 0 30px;
   text-align: center; }
   .payment_interval_ids hr {
     display: none; }

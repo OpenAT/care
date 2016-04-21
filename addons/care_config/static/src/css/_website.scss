@@ -114,12 +114,17 @@ a {
     }
 
     #payment_method .nav > li {
-        display: block;
-        text-align: center;
+      display: block;
+      text-align: center;
     }
 
     #wsd_checkout_form #payment_method .nav-tabs > li > a {
-        border: 1px solid #ddd;
+      border: 1px solid #ddd;
+      margin-right: 0;
+    }
+
+    #wsd_checkout_form #payment_method .nav-tabs > li:last-child {
+        float: none;
     }
   }
 }
