@@ -665,7 +665,11 @@ ul.cat_menu > li > a {
 
   body .js_sale #products_grid_before a.btn-default, body .js_sale #products_grid_before a.btn-primary, body .js_sale #wsd_checkout_form a.btn-default, body .js_sale #wsd_checkout_form a.btn-primary {
     width: 100%;
-    margin: 5px 0; } }
+    margin: 10px 0; }
+
+  body .small_cart_buttons {
+    padding: 0px 20px;
+    margin-right: 0px; } }
 @media (max-width: 500px) {
   body .oe_cart table td:nth-child(2), body #modal_optional_products table td:nth-child(2) {
     border-top-width: 1px; } }
