@@ -683,8 +683,15 @@ ul.cat_menu > li > a {
       padding-right: 20px;
   }
 
-  .container #wsd_checkout_form {
+  body .container #wsd_checkout_form {
       padding: 0 0 10px;
+  }
+
+  body {
+    .js_sale #products_grid_before a.btn-default, .js_sale #products_grid_before a.btn-primary, .js_sale #wsd_checkout_form a.btn-default, .js_sale #wsd_checkout_form a.btn-primary {
+        width: 100%;
+        margin: 5px 0;
+    }
   }
 }
 
