@@ -632,10 +632,10 @@ ul.cat_menu > li > a {
     float: left;
     border-spacing: 10px 0px !important; }
 
-  #products_grid_before.col-md-4 {
+  body #products_grid_before.col-md-4 {
     padding-right: 0 !important; }
 
-  #products_grid.col-md-8 {
+  body #products_grid.col-md-8 {
     padding-right: 0 !important; }
 
   .container.oe_website_sale .row {
@@ -661,7 +661,7 @@ ul.cat_menu > li > a {
     padding-right: 20px; } }
 @media (max-width: 500px) {
   body .oe_cart table td:nth-child(2), body #modal_optional_products table td:nth-child(2) {
-    border-top-width: 0px; } }
+    border-top-width: 1px; } }
 @media screen and (max-width: 480px) {
   #products_grid_before.col-md-4 {
     width: 100% !important; }
