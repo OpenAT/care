@@ -267,7 +267,7 @@ table .oe_product .oe_product_image img:hover {
   font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important
 }
 
-body[data-rootcatid="2"] .fa-shopping-cart:before {
+body[data-last-visited-rootcatid="2"] .fa-shopping-cart:before {
   content: "Jetzt Pate werden";
   background: transparent;
   font-size: 16px;
@@ -769,7 +769,7 @@ ul.cat_menu > li > a {
  display: none !important;
 }
 
-body[data-rootcatid='7'] .wsd-icon_container {
+body[data-last-visited-rootcatid='7'] .wsd-icon_container {
   display: block !important;
 }
 
