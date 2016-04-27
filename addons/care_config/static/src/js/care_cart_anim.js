@@ -117,7 +117,7 @@ $(document).ready( function() {
             //window.location.href = "#";
 
             //window.parent.$("html, body").animate({ scrollTop: $('.one-page-checkout').offset().top });
-            parentIFrame.scrollTo( 750, 0 );
+            parentIFrame.scrollToOffset( 0, 750 );
         }, 3000)
     });
 
