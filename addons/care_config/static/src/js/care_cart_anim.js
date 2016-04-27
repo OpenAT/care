@@ -101,7 +101,7 @@ $(document).ready( function() {
 
 
     // close box and slide to the right on submit of the cart
-    $('body[data-rootcatid='7'] .small_cart_buttons a').click( function(e) {
+    $("body[data-rootcatid='7'] .small_cart_buttons a").click( function(e) {
         e.preventDefault();
 
         $('.spenden_paket_bg').css('background','transparent');
