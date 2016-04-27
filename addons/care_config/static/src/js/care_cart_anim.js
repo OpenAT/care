@@ -80,7 +80,7 @@ $(document).ready( function() {
 
 
     // disable quick-add-to-cart-button
-    $("body[data-rootcatid='7'] .oe_website_sale .a-submit").unbind('click');
+    $("body[data-rootcatid='7'] .quick_add_to_cart .a-submit").unbind('click');
 
 
     // activate flip-effect
@@ -101,7 +101,7 @@ $(document).ready( function() {
 
 
     // close box and slide to the right on submit of the cart
-    $('.small_cart_buttons a').click( function(e) {
+    $('body[data-rootcatid='7'] .small_cart_buttons a').click( function(e) {
         e.preventDefault();
 
         $('.spenden_paket_bg').css('background','transparent');
@@ -117,7 +117,7 @@ $(document).ready( function() {
             //window.location.href = "#";
 
             //window.parent.$("html, body").animate({ scrollTop: $('.one-page-checkout').offset().top });
-            //parentIFrame.scrollToOffset( 0, $('.one-page-checkout').offset().top - 25 );
+            parentIFrame.scrollToOffset( 0, $('.one-page-checkout').offset().top - 25 );
             parentIFrame.sendMessage('parcel-closed');
         }, 3000)
     });
