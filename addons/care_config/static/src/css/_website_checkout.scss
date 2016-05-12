@@ -199,6 +199,12 @@ body .oe_website_sale h4.payment_interval_ids {
     display: inline-block;
   }
 
+.opc_warning {
+  color: red;
+  text-align: center;
+
+}
+
 @media (min-width: 300px) {
   #wsd_checkout_form .form-inline .form-group {
     display: inline-block;
