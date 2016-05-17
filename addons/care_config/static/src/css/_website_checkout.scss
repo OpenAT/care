@@ -186,6 +186,14 @@ body .oe_website_sale h4.payment_interval_ids {
     text-align: left;
   }
 
+  .nav-tabs > li img {
+    display: inline-block !important;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    margin-right: 3px;
+  }
+
   .tab-content {
     height: auto !important;
     padding: 20px;
