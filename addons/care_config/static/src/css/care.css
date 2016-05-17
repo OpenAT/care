@@ -271,7 +271,8 @@ table .oe_product section {
   min-height: 0;
   width: auto;
   height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  max-height: none; }
 
 .oe_cart.small_cart table td[name="product_image"] {
   width: 0; }
@@ -480,7 +481,7 @@ ul.cat_menu > li > a {
   margin: 0;
   padding: 0 0; }
 
-.oe_website_sale .small_cart input.js_quantity {
+body .oe_website_sale .small_cart input.js_quantity {
   background: none;
   border: none;
   -webkit-box-shadow: none;
