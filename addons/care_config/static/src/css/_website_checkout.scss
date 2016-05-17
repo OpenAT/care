@@ -2,8 +2,8 @@
   display: none;
 }
 
-.product_price.mt16, .payment_interval_ids {
-  max-width: 620px;
+.row #wsd_checkout_form .row, #wsd_checkout_form .row, .product_price.mt16, .payment_interval_ids {
+  max-width: 704px;
   margin: 0px auto;
   text-align: left;
 }
@@ -30,17 +30,17 @@ body .oe_website_sale h4.payment_interval_ids {
   appearance: none;
 }
 
+#wsd_checkout_form #price_donate {
+  font-size: 22px;
+}
+
 .price_donate_suggested_outer {
     margin: 0 3px;
 }
 
 .container #wsd_checkout_form {
-  background: #F5F5F5;
-  padding: 30px;
-}
-
-#wsd_checkout_form .row {
-  margin: 0 auto;
+  background: #ffffff;
+  padding: 0 30px 30px;
 }
 
 #wsd_checkout_form .row.billing-fields {
@@ -192,6 +192,8 @@ body .oe_website_sale h4.payment_interval_ids {
     max-width: none;
     background: #fff;
     margin: 0 auto 40px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
