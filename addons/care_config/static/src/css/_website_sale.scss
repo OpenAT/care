@@ -69,28 +69,28 @@ body {
 }
 
 #wsd_checkout_form_submit_button:before, #add_to_cart:before {
-  content: '';
+  content: "\f13e";
   position: absolute;
   display: block;
+  font-family: FontAwesome !important;
+  font: normal normal normal 18px/1 FontAwesome;
+  color: #333;
   width: 20px;
   height: 20px;
-  top: -40px;
+  top: -30px;
   left: 0px;
-  background: '../img/icon_key.png';
   
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  background-size: 100% auto;
 }
 
 #wsd_checkout_form_submit_button:after, #add_to_cart:after {
   content: 'Ihre Daten sind sicher';
   position: absolute;
   display: block;
-  top: -40px;
-  left: 35px;
+  top: -30px;
+  left: 25px;
   color: #333;
   font-size: 14px;
+  line-height: 1.2em;
   font-family: 'HelveticaNeueLTStd-Roman';
 }
 
@@ -1383,4 +1383,7 @@ h5 .product_price span {
     border-color: #428bca;
 }
 
+.cat_descbottom {
+  display: none;
+}
 

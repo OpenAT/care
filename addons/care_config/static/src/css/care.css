@@ -219,26 +219,26 @@ body {
   position: relative; }
 
 #wsd_checkout_form_submit_button:before, #add_to_cart:before {
-  content: '';
+  content: "\f13e";
   position: absolute;
   display: block;
+  font-family: FontAwesome !important;
+  font: normal normal normal 18px/1 FontAwesome;
+  color: #333;
   width: 20px;
   height: 20px;
-  top: -40px;
-  left: 0px;
-  background: '../img/icon_key.png';
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-     background-size: 100% auto; }
+  top: -30px;
+  left: 0px; }
 
 #wsd_checkout_form_submit_button:after, #add_to_cart:after {
   content: 'Ihre Daten sind sicher';
   position: absolute;
   display: block;
-  top: -40px;
-  left: 35px;
+  top: -30px;
+  left: 25px;
   color: #333;
   font-size: 14px;
+  line-height: 1.2em;
   font-family: 'HelveticaNeueLTStd-Roman'; }
 
 .js_sale a.btn-default.price_donate_suggested, .js_sale a.btn-default.price_donate_suggested:hover {
@@ -1249,6 +1249,9 @@ h5 .product_price span {
 .pagination > .active > a {
   background-color: #333;
   border-color: #428bca; }
+
+.cat_descbottom {
+  display: none; }
 
 .ppt_opc_cb_inner > h1 {
   display: none; }
