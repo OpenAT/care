@@ -219,7 +219,7 @@ body {
   position: relative; }
 
 #wsd_checkout_form_submit_button:before, #add_to_cart:before {
-  content: "\f13e";
+  content: "\f023";
   position: absolute;
   display: block;
   font-family: FontAwesome !important;
