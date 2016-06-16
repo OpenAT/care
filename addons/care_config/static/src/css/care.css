@@ -1469,6 +1469,11 @@ body .oe_website_sale h4.payment_interval_ids {
   color: red;
   text-align: center; }
 
+.form-group input[type="checkbox"] {
+  position: relative;
+  top: 0px;
+  margin-right: 7px; }
+
 @media (min-width: 300px) {
   #wsd_checkout_form .form-inline .form-group {
     display: inline-block;
