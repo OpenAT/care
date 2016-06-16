@@ -12,12 +12,24 @@ body .oe_website_sale h4.payment_interval_ids {
   margin: 2em auto 30px;
 }
 
-.payment_interval_ids {
+.product_price.mt16, .payment_interval_ids {
   padding: 0px 6px; 
+}
+
+.product_price.mt16:before {
+  content: 'Bitte wählen Sie Ihre gewünschte Spendenhöhe';
+  display: block;
+  background: #efb71b;
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 28px;
+  color: #333;
 }
 
 #wsd_checkout_form .price_donate .input-group-addon, #wsd_checkout_form #price_donate {
   height: 90px;
+  color: #777;
 
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -48,7 +60,7 @@ body .oe_website_sale h4.payment_interval_ids {
     margin-right: -6px;
 }
 
-.checkout_title::before, #payment_method .col-lg-12:first-child::before {
+.checkout_title:before, #payment_method .col-lg-12:first-child:before {
   display: none;
 }
 
@@ -104,7 +116,7 @@ body .oe_website_sale h4.payment_interval_ids {
 
 .container #wsd_checkout_form {
   .price_donate_suggested_currency {
-      font-size: 10px;
+      font-size: 16px;
       margin-top: 5px;
       margin-left: 5px;
   }
