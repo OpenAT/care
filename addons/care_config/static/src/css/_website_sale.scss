@@ -339,14 +339,14 @@ body[data-last-visited-rootcatid="2"] .fa-shopping-cart:before {
   width: 100%;
 }
 
-.oe_cart.small_cart a[name="product_name"] {
+body .oe_cart.small_cart a[name="product_name"] {
   padding-top: 0;
   padding-bottom: 0;
   // margin-right: 0.5em;
   // display: block;
 }
 
-.oe_cart.small_cart .small_cart_price_unit, .oe_cart.small_cart .remove_product {
+body .oe_cart.small_cart .small_cart_price_unit, body .oe_cart.small_cart .remove_product {
   line-height: inherit;
 }
 
