@@ -1534,8 +1534,6 @@ body {
     width: 90px; }
   #wsd_checkout_form .price_donate .input-group-addon {
     min-width: 0; }
-  #wsd_checkout_form .amount_title {
-    display: none; }
 
 .input-group-addon {
   width: auto; }
