@@ -566,6 +566,22 @@ body .oe_website_sale .small_cart input.js_quantity {
   }
 }
 
+#wsd_checkout_form .amount_title {
+  /* display: none; */
+  max-width: 704px;
+  display: block;
+  margin: 0px auto;
+  text-align: left;
+  background: $careyellow;
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 1em;
+  margin-top: 3em;
+  border-left: solid white 5px;
+  border-right: solid white 5px;
+}
+
 @media (max-width: 1350px) {
   #products_grid_before {
     //float: left;
@@ -623,11 +639,11 @@ body .oe_website_sale .small_cart input.js_quantity {
     //width: 100%;
 
     td {
-      width: 33% !important;
+      // width: 33% !important;
       //display: inline-block;
       display: inline-table;
       float: left;
-      border-spacing: 10px 20px;
+      // border-spacing: 10px 20px;
     }
 
     tr {

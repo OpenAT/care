@@ -605,6 +605,21 @@ body .oe_website_sale .small_cart input.js_quantity {
 .oe_website_sale h1, .oe_website_sale h2, .oe_website_sale h3, .oe_website_sale h4, .oe_website_sale h5, .oe_website_sale h6 {
   margin-top: 0.7em; }
 
+#wsd_checkout_form .amount_title {
+  /* display: none; */
+  max-width: 704px;
+  display: block;
+  margin: 0px auto;
+  text-align: left;
+  background: #efb71b;
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 1em;
+  margin-top: 3em;
+  border-left: solid white 5px;
+  border-right: solid white 5px; }
+
 @media (max-width: 1200px) {
   #products_grid .col-md-8 {
     padding-left: 0px !important; }
@@ -634,10 +649,8 @@ body .oe_website_sale .small_cart input.js_quantity {
     padding-left: 0 !important;
     padding-right: 0 !important; }
     body #products_grid.col-md-8 td {
-      width: 33% !important;
       display: inline-table;
-      float: left;
-      border-spacing: 10px 20px; }
+      float: left; }
     body #products_grid.col-md-8 tr {
       display: inline !important;
       float: none;
@@ -1304,16 +1317,6 @@ body .oe_website_sale h4.payment_interval_ids {
 
 .product_price.mt16, .payment_interval_ids {
   padding: 0px 6px; }
-
-.product_price.mt16:before {
-  content: 'Bitte wählen Sie Ihre gewünschte Spendenhöhe';
-  display: block;
-  background: #efb71b;
-  padding: 10px;
-  font-size: 20px;
-  position: relative;
-  margin-bottom: 28px;
-  color: #333; }
 
 #wsd_checkout_form label.sr-only {
   position: absolute;
