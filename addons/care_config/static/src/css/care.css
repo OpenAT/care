@@ -723,7 +723,7 @@ body .oe_website_sale .small_cart input.js_quantity {
     margin-right: 0px; }
 
   #wsd_checkout_form_submit_button {
-    margin-bottom: 1.5em; } }
+    margin-bottom: 1.5em !important; } }
 @media (max-width: 500px) {
   body .oe_cart table td:nth-child(2), body #modal_optional_products table td:nth-child(2) {
     border-top-width: 1px; } }
