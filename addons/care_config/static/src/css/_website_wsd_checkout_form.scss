@@ -45,18 +45,6 @@ body {
   }
   .amount_title {
     display: none;
-    max-width: 704px;
-    display: block;
-    margin: 0px auto;
-    text-align: left;
-    background: $careyellow;
-    padding: 10px;
-    font-size: 20px;
-    position: relative;
-    margin-bottom: 1em;
-    margin-top: 3em;
-    border-left: solid white 5px;
-    border-right: solid white 5px;
   }
 }
 
@@ -90,21 +78,7 @@ body {
     }
   }
 }
-.amount_title {
-    max-width: 704px;
-    display: block;
-    margin: 0px auto;
-    text-align: left;
-    background: red;
-    padding: 10px;
-    font-size: 20px;
-    position: relative;
-    margin-bottom: 1em;
-    margin-top: 3em;
-    border-left: solid white 5px;
-    border-right: solid white 5px;
 
-}
 .checkout_title,
 .payment_title {
   background: $careyellow;
@@ -118,11 +92,10 @@ body {
     font-weight: normal;
     // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-
   }
 }
 
-/*.checkout_title:before,
+.checkout_title:before,
 #payment_method .col-lg-12:first-child:before {
   width: 30px;
   height: 30px;
@@ -132,7 +105,7 @@ body {
   content: ' ';
   left: 10px;
   top: 9px;
-}*/
+}
 
 #wsd_pp_auto_submit_form > form > button {
   max-width: 100%;
