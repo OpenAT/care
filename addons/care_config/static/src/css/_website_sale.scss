@@ -340,7 +340,7 @@ body[data-last-visited-rootcatid="2"] .fa-shopping-cart:before {
 }
 .oe_currency_value {
   float: right;
-  padding-left: 2px;
+  padding-left: 6px;
 }
 // SHOP CATEGORIES NAVIGATION
 ul.cat_menu li {
@@ -744,10 +744,14 @@ body .oe_website_sale .small_cart input.js_quantity {
         width: 100%;
         margin: 10px 0;
     }
+
+    .js_sale #wsd_checkout_form a#add_to_cart.btn-primary {
+      width: auto;
+    }
   }
 
   #wsd_checkout_form_submit_button:before, #add_to_cart:before, #wsd_checkout_form_submit_button:after, #add_to_cart:after {
-    top: -98px;
+    top: 54px;
   }
 
   body .small_cart_buttons {
@@ -1416,10 +1420,14 @@ h5 .product_price span {
     }
 
     .oe_cart.small_cart a[name="product_name"] {
-      /*padding-top: 0.25em;
-      padding-bottom: 0.25em;
-      margin-right: 0.5em;
-      display: block;*/
+      padding-top: 0;
+      padding-bottom: 0;
+      // margin-right: 0.5em;
+      // display: block;
+    }
+
+    .oe_cart.small_cart .small_cart_price_unit, .oe_cart.small_cart .remove_product {
+      line-height: inherit;
     }
     .oe_cart table tr {
       float: initial;
