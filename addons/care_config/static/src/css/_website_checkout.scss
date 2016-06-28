@@ -98,6 +98,8 @@ body .oe_website_sale h4.payment_interval_ids {
     width: 30px;
     height: 30px;
     position: absolute;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
     border-radius: 48px;
     background: white;
     content: ' ';
@@ -120,11 +122,16 @@ body .oe_website_sale h4.payment_interval_ids {
 
   .form-control:focus {
     border-color: $focusorange;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
     box-shadow: none;
   }
 }
 
 .one-page-checkout .form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
 }
 
@@ -148,15 +155,24 @@ body .oe_website_sale h4.payment_interval_ids {
     font-size: 18px;
     color: #333;
     height: 46px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
     box-shadow: none;
   }
   
   .form-control:focus {
     border-color: $focusorange;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
     box-shadow: none;
   }
 
   .has-error .form-control:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
     box-shadow: none;
   }
 
@@ -200,6 +216,8 @@ body .oe_website_sale h4.payment_interval_ids {
 
 #wsd_checkout_form #payment_method {
   .nav-tabs > li > a {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
     border-radius: 0px;
     color: inherit;
   }
