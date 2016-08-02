@@ -1317,21 +1317,17 @@ body .oe_website_sale h4.payment_interval_ids {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 0px;
-  left: 0px;
-  font-size: 0px;
   clip: inherit;
-  z-index: 3; }
-
-#wsd_checkout_form label.sr-only:before {
-  content: 'Betrag';
+  z-index: 3;
   position: absolute;
   top: 6px;
   left: 7px;
   color: #777;
   font-size: 16px;
   line-height: 16px;
-  text-align: left; }
+  text-align: left;
+  overflow: visible;
+  width: 100%; }
 
 #wsd_checkout_form .price_donate .input-group-addon, #wsd_checkout_form #price_donate {
   height: 90px;
