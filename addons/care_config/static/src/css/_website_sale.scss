@@ -1486,6 +1486,14 @@ h5 .product_price span {
     border-color: #428bca;
 }
 
+body[data-catid='2'] .payment_interval_ids.payment_interval_lines_ids {
+  display: none;
+}
+
+body[data-catid='2'] .product_price.mt16 {
+  padding: 0px 6px 2em;
+}
+
 .cat_descbottom {
   display: none;
 }

@@ -1279,6 +1279,12 @@ h5 .product_price span {
   background-color: #333;
   border-color: #428bca; }
 
+body[data-catid='2'] .payment_interval_ids.payment_interval_lines_ids {
+  display: none; }
+
+body[data-catid='2'] .product_price.mt16 {
+  padding: 0px 6px 2em; }
+
 .cat_descbottom {
   display: none; }
 
@@ -1487,6 +1493,18 @@ body .oe_website_sale h4.payment_interval_ids {
   top: 0px;
   margin-right: 7px; }
 
+@media only screen and (max-width: 767px) {
+  #wsd_checkout_form label.sr-only {
+    top: 3px;
+    left: 5px; }
+
+  .container #wsd_checkout_form .price_donate_suggested_currency {
+    margin-top: 3px;
+    margin-left: 3px; }
+
+  .container #wsd_checkout_form .price_donate_suggested_currency, #wsd_checkout_form label.sr-only {
+    font-size: 13px;
+    line-height: 13px; } }
 @media (min-width: 300px) {
   #wsd_checkout_form .form-inline .form-group {
     display: inline-block;
