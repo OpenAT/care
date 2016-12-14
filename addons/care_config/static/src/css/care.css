@@ -1643,5 +1643,48 @@ body[data-last-visited-rootcatid="10"] #wsd-checkout-box > div > div.panel-body.
   text-align: center; }
 
 /* Schenken mit Sinn Bereich */
+/* zweckspenden externe Domain iwanna.help */
+body[data-rootcatid="9"] #products_grid_before {
+  display: none; }
+body[data-rootcatid="9"] .ppt_opc #wsd-checkout-box img.product-image {
+  display: none; }
+
+@media screen and (max-width: 767px) and (min-width: 650px) {
+  body[data-rootcatid="9"] .container #wsd_checkout_form {
+    padding: 0 30px 30px; }
+  body[data-rootcatid="9"] .col-md-12 {
+    margin: 0;
+    padding: 0; }
+  body[data-rootcatid="9"] .container .arbitrary_price > span, body[data-rootcatid="9"] .container .arbitrary_price > div {
+    display: inline-block !important; }
+  body[data-rootcatid="9"] .col-lg-2 {
+    width: 16.66666667%;
+    float: left; }
+  body[data-rootcatid="9"] .col-lg-5 {
+    width: 41.66666667%;
+    float: left; }
+  body[data-rootcatid="9"] .col-lg-9 {
+    width: 75%;
+    float: left; }
+  body[data-rootcatid="9"] .col-lg-3 {
+    width: 25%;
+    float: left; }
+  body[data-rootcatid="9"] .col-lg-6 {
+    width: 50%;
+    float: left; }
+  body[data-rootcatid="9"] .container #payment_method .nav > li {
+    display: inline-block;
+    text-align: left; }
+  body[data-rootcatid="9"] .container #wsd_checkout_form #payment_method .nav-tabs > li:not(.active) > a {
+    border: 1px solid transparent;
+    margin-right: 0; }
+  body[data-rootcatid="9"] .container #wsd_checkout_form #payment_method .nav-tabs > li.active > a {
+    border-color: #ddd;
+    border-bottom: 0; }
+  body[data-rootcatid="9"] .container #wsd_checkout_form #payment_method .nav-tabs > li > a:hover {
+    border-color: #eee #eee #ddd;
+    border-width: 1px; }
+
+  /* /body[data-rootcatid=9] */ }
 
 /*# sourceMappingURL=care.css.map */
