@@ -154,6 +154,11 @@ a {
     margin-right: 0; }
   .container #wsd_checkout_form #payment_method .nav-tabs > li:last-child {
     float: none; } }
+/* JQUERY VALIDATE */
+.apf_container .form-control-feedback {
+  right: 10px;
+  top: 33px; }
+
 header .navbar {
   font-size: 14px; }
 header .nav a {
