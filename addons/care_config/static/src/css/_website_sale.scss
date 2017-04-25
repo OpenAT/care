@@ -1026,6 +1026,12 @@ body[data-last-visited-rootcatid='7'] .wsd-icon_container {
   background: #fff;
 }
 
+#products_grid .oe_product .oe_product_image {
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
 .product_item > div .oe_product_image {
   position: relative;
   z-index: 1;
