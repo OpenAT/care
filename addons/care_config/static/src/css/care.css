@@ -1704,5 +1704,13 @@ body[data-rootcatid="9"] .ppt_opc #wsd-checkout-box img.product-image {
     border-width: 1px; }
 
   /* /body[data-rootcatid=9] */ }
+.crowdfunding .oe_currency_value {
+  float: inherit; }
+
+/*
+.crowdfunding .oe_currency_value:before {
+  content: '€ ';
+}
+*/
 
 /*# sourceMappingURL=care.css.map */
