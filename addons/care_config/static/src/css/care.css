@@ -1315,6 +1315,18 @@ body[data-catid='2'] .product_price.mt16 {
     float: none;
     width: auto;
     display: table-cell !important; } }
+/* Only for Category MongolRally */
+body[data-catid="12"] #wsd_checkout_form_submit_button:after, body[data-catid="12"] #add_to_cart:after {
+  content: 'Deine Daten sind sicher' !important; }
+body[data-catid="12"] #aq7 .acquirer_pre_msg > p {
+  display: none; }
+body[data-catid="12"] #aq7 .acquirer_pre_msg:after {
+  content: 'Bitte gib deinen IBAN und BIC ein.'; }
+body[data-catid="12"] .checkout_title > span {
+  display: none; }
+body[data-catid="12"] .checkout_title:after {
+  content: "Deine Daten"; }
+
 .ppt_opc_cb_inner > h1 {
   display: none; }
 
