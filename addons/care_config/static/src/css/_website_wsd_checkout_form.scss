@@ -117,3 +117,20 @@ body {
   margin-right: 10px;
 }
 /* Checkout Page neu ENDE */
+/* Iframe Modal Box behavior */
+/*
+#wsd_checkout_form .form-group {
+        position: relative !important;
+}
+.modal-open .modal {
+        overflow: visible !important;
+}
+.modal {
+    position: absolute !important;
+}
+*/
+/* BODY SCROLL AFTER ADDING MODAL BEHAVIOR -- STILL NEED TESTS */
+/* Fix Backend CSS for Speichern Button */
+#website-top-edit .btn.btn-primary.btn-xs {
+  width: auto !important;
+}
