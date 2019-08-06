@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+
+    <!-- INHERIT AND EXTEND theme_default_snippets -->
+    <template id="email_theme_care_snippets_overrides_prat2" inherit_id="fso_website_email.theme_framework_snippets" name="Email Theme care Snippet overrides part2">
+
+        <xpath expr="//li[@id='snippet_menu_special']" position="after">
+            <li id="snippet_menu_combined_snippets_care">
+                <a href="#combined_snippets_care" data-toggle="tab">Combined</a>
+            </li>
+        </xpath>
+
+        <!-- ======================= -->
+        <!--  care COMBINED SNIPPETS -->
+        <!-- ======================= -->
+        <xpath expr="//div[@id='snippet_email_special']" position="after">
+            <div id="combined_snippets_care" class="tab-pane fade">
+
+             <!-- HEADER SNIPPET BLOCK ALLG -->
+                <!-- =============== -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_care/static/src/icons/header_snippet.png"/>
+                        <span class="oe_snippet_thumbnail_title">Header Snippet</span>
+                    </div>
+                    <div id="combinedheadersnippet" class="oe_snippet_body ckediting_enabled snippet_block snippet_block_text_image_left care_snippet_block_padding_none">
+                        <table cellpadding="0" cellspacing="0" class="centeringTable">
+                            <tbody>
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" class="flexibleContainerCell" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0"
+                                                               class="nestedContainer">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" class="nestedContainerCell"
+                                                                        valign="top">
+                                                                        <table border="0" cellpadding="0"
+                                                                               cellspacing="0" class="contentTable">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="textContent">
+                                                                                        <table align="left" border="0"
+                                                                                               cellpadding="0"
+                                                                                               cellspacing="0"
+                                                                                               class="flexibleContainerLeft">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td align="left"
+                                                                                                        class="imageContent ckediting_enabled"
+                                                                                                        valign="top">
+                                                                                                        <img class="flexibleImage" src="/fso_website_email_care/static/src/img/logo.png"/>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+
+                                                                                        <table align="right" border="0"
+                                                                                               cellpadding="0"
+                                                                                               cellspacing="0"
+                                                                                               class="flexibleContainerRight">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="textContent ckediting_enabled"
+                                                                                                        valign="top">
+                                                                                                        <p>
+                                                                                                                <span class="ckediting_enabled drop_in drop_next drop_in_button dadi_di_button_large dadi_di_button_fullright dadi_di_button_red">
+                                                                                                                    <a href="#">Jetzt Spenden</a>
+                                                                                                                </span>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- FOOTER SNIPPET BLOCK -->
+                <!-- =============== -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_care/static/src/icons/footer_snippet.png"/>
+                        <span class="oe_snippet_thumbnail_title">Footer Snippet</span>
+                    </div>
+
+                    <div class="oe_snippet_body ckediting_disabled care_bin">
+
+                        <div id="combinedsnippetfooter" class="ckediting_disabled snippet_block snippet_block_text_intro combinedfooter mediaicons">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell"
+                                                                            valign="top">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent ckediting_enabled">
+                                                                                            <h2 style="text-align: center;">
+                                                                                                FOLGEN SIE UNS AUF&amp;nbsp;
+                                                                                            </h2>
+                                                                                            <p style="text-align: center">
+                                                                                                <a href="https://www.facebook.com/CARE.Oesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/facebook.png" alt="Facebook"/></a>
+                                                                                                &amp;nbsp; &amp;nbsp;&amp;nbsp;
+                                                                                                <a href="https://twitter.com/#!/careaustria" target="_blank"><img src="/fso_website_email_care/static/src/icons/twitter.png" alt="Facebook"/></a>&amp;nbsp;
+                                                                                                &amp;nbsp; &amp;nbsp;<a href="https://www.flickr.com/photos/careoesterreich/albums" target="_blank"><img src="/fso_website_email_care/static/src/icons/flickr.png" alt="Flickr"/></a>&amp;nbsp;
+                                                                                                <a href="https://www.youtube.com/careoesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/youtube.png" alt="Youtube"/></a>
+                                                                                                &amp;nbsp;&amp;nbsp;
+                                                                                            </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="ckediting_disabled snippet_block snippet_block_text_intro combinedfooter">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell"
+                                                                            valign="top">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent ckediting_enabled">
+                                                                                            <h2 style="text-align: center;">
+                                                                                                <strong>KONTAKT</strong>
+                                                                                            </h2>
+
+                                                                                            <p style="text-align: center;">
+                                                                                                Lange Gasse 30/4
+                                                                                                1080 Wien Österreich
+                                                                                                +43 1 715 0 715
+                                                                                                <a href="mailto:care@care.at">care@care.at</a>
+                                                                                            </p>
+                                                                                            <p style="text-align: center;">
+                                                                                                <a href="www.care.at" target="_blank">www.care.at</a>
+                                                                                            </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="ckediting_disabled snippet_block snippet_block_text_intro combinedfooter">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell"
+                                                                            valign="top">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent ckediting_enabled">
+                                                                                            <h2 style="text-align: center;">
+                                                                                                Bild - Text links&amp;nbsp;
+                                                                                                &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                &amp;nbsp;Bild- Text rechts
+                                                                                            </h2>
+
+                                                                                            <div style="text-align: center;">
+                                                                                                Platzhalter
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>&#8203;</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="ckediting_disabled snippet_block snippet_block_text_intro combinedfooter">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell"
+                                                                            valign="top">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent ckediting_enabled">
+                                                                                            <p style="text-align: center;">
+                                                                                                <span style="font-family: &quot;PT Sans&quot;, &quot;Trebuchet MS&quot;, sans-serif; font-size: 16px; background-color: transparent; text-align: center;">
+                                                                                                    &amp;nbsp;Kontakt&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp; Datenschutz&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp;Sitemap&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp;Barrierefreiheit&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp;Impressum&amp;nbsp;&amp;nbsp;
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p style="text-align: center;">
+                                                                                                <span style="font-family: &quot;PT Sans&quot;, &quot;Trebuchet MS&quot;, sans-serif; font-size: 16px; background-color: transparent; text-align: center;">
+                                                                                                    <a href="%NEWSLETTER%">
+                                                                                                        Newsletter
+                                                                                                        Abbestellen</a>&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp;
+                                                                                                    <a href="%MEINEDATENFORM%">
+                                                                                                        Daten ändern
+                                                                                                    </a>
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p style="text-align: center;">
+                                                                                                <span style="font-family: &quot;PT Sans&quot;, &quot;Trebuchet MS&quot;, sans-serif; font-size: 16px; background-color: transparent; text-align: center;">
+                                                                                                    C 2018 CARE
+                                                                                                    Österreich
+                                                                                                </span>
+                                                                                            </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+
+</data>
+</openerp>

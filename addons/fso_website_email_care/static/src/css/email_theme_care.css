@@ -1,0 +1,148 @@
+/* ---- */
+/* MAIN */
+/* ---- */
+html, body, #bodyTable, #bodyCell {
+    background-color: white;
+}
+html body #wrapwrap {
+    margin-top: 0;
+}
+.headerCell {
+    font-size: 12px;
+}
+
+#open_in_browser {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*
+    ====
+    body
+    ====
+*/
+#bodyCell {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+/* ------------------------------- */
+/* care SIZING FOR 826 PIXEL WIDTH */
+/* ------------------------------- */
+#emailBody {
+    width: 826px;
+    background-color: #ffefcf;
+    padding-left: 103px;
+    padding-right: 103px;
+}
+
+/* ---------- */
+/* Typography */
+/* ---------- */
+body, p, a {
+    /*font-family: 'PT Sans', 'Trebuchet MS', sans-serif;*/
+    font-family: PT Sans, Trebuchet MS, sans-serif;
+    font-size: 16px;
+    color: #5a4941;
+}
+/* ATTENTION: Do not add line-height to "td", "div" or "span" elements to support Outlook 2013 and alike */
+p {
+    line-height: 1.5em;
+}
+div, span, td {
+    font-size: inherit;
+}
+
+p {
+    /* Top */
+    margin-top: 0;
+    -webkit-margin-before: inherit;
+    /* Bottom */
+    margin-bottom: 0;
+    -webkit-margin-after: inherit;
+    padding-bottom: 0.25em;
+    /* Just reset */
+    -webkit-margin-start: inherit;
+    -webkit-margin-end: inherit;
+}
+/* Links */
+a,
+a:visited {
+    color: #666666;
+    text-decoration: underline;
+}
+
+/* Headlines */
+.h1, .h2, .h3,
+h1, h2, h3 {
+    margin-top: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+    /*font-family: 'PT Sans', 'Trebuchet MS', sans-serif;*/
+    font-family: PT Sans, Trebuchet MS, sans-serif;
+    line-height: 140%;
+    color: #5a4941;
+
+    /* Top */
+    margin-top: 0;
+    -webkit-margin-before: inherit;
+
+    /* Bottom */
+    margin-bottom: 0;
+    -webkit-margin-after: inherit;
+    padding-bottom: 0.25em;
+
+    /* Just reset */
+    -webkit-margin-start: inherit;
+    -webkit-margin-end: inherit;
+}
+.h1, h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #5a4941;
+}
+.h2, h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #5a4941;
+}
+.h3, h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.h4, h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+.h5, h5 {
+    font-size: 16px;
+    font-weight: 300;
+}
+.h6, h6 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+blockquote {
+    padding: 11px 22px;
+    margin: 0 0 22px;
+    font-size: 20px;
+    border-left: 5px solid #ab1455;
+}
+
+p.care_small {
+    font-size: 14px;
+}
+
+p.care_tiny {
+    font-size: 10px;
+}
+
+.care_red {
+    color: #ab1455;
+}
+

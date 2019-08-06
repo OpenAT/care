@@ -1,0 +1,24 @@
+/* .special button in header style only di button use in this theme */
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerRight {
+    background-color: white;
+}
+
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
+    height: 55px;
+    width: 155px;
+    background-color: white;
+}
+#combinedheadersnippet.snippet_block_text_image_left.care_sb_fg_red .flexibleContainerRight,
+#combinedheadersnippet.snippet_block_text_image_left.care_sb_fg_background .flexibleContainerRight {
+    width: 205px;
+    background-color: white;
+}
+#combinedheadersnippet.snippet_block_text_image_left .dadi_di_button_large {
+}
+
+.combinedfooter {
+    background-color: #fbd499;
+}
+.combinedfooter.mediaicons img {
+    width: 31px;
+}
