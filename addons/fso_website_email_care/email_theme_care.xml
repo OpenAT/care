@@ -10,6 +10,7 @@
         <link href='/fso_website_email_care/static/src/css/email_theme_care_snippets.css' rel='stylesheet' type='text/css' t-ignore="true"/>
         <!-- NEW: Bullet Proof Buttons -->
         <link href='/fso_website_email_care/static/src/css/email_theme_care_snippets_bpbuttons.css' rel='stylesheet' type='text/css' t-ignore="true"/>
+        <link href='/fso_website_email_care/static/src/css/email_theme_care_snippets_bpbuttons_responsive.css' rel='stylesheet' type='text/css' t-ignore="true"/>
         
         <link href='/fso_website_email_care/static/src/css/email_theme_care_responsive.css' rel='stylesheet' type='text/css' t-ignore="true"/>
         <link href='/fso_website_email_care/static/src/css/email_theme_care_snippets_buttons_responsive.css' rel='stylesheet' type='text/css' t-ignore="true"/>

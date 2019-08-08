@@ -21,6 +21,10 @@
     margin-left: 0;
 
 }
+.snippet_block_bpbutton .bpbutton_table,
+.snippet_block_bpbutton .bpbutton_table:hover {
+    box-shadow: none;
+}
 
 .snippet_block_bpbutton .textContent {
     height: 126px;

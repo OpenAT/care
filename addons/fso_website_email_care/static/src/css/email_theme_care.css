@@ -2,7 +2,7 @@
 /* MAIN */
 /* ---- */
 html, body, #bodyTable, #bodyCell {
-    background-color: white;
+    background-color: #ffefcf;
 }
 html body #wrapwrap {
     margin-top: 0;
@@ -32,19 +32,19 @@ html body #wrapwrap {
 /* care SIZING FOR 826 PIXEL WIDTH */
 /* ------------------------------- */
 #emailBody {
-    width: 826px;
+    width: 620px;
     background-color: #ffefcf;
-    padding-left: 103px;
-    padding-right: 103px;
 }
 
 /* ---------- */
 /* Typography */
 /* ---------- */
+
 body, p, a {
     /*font-family: 'PT Sans', 'Trebuchet MS', sans-serif;*/
-    font-family: PT Sans, Trebuchet MS, sans-serif;
-    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-rendering: optimizeLegibility;
+    font-size: 19px;
     color: #5a4941;
 }
 /* ATTENTION: Do not add line-height to "td", "div" or "span" elements to support Outlook 2013 and alike */
@@ -69,8 +69,9 @@ p {
 }
 /* Links */
 a,
+a:hover,
 a:visited {
-    color: #666666;
+    color: #eb9e70;
     text-decoration: underline;
 }
 
@@ -82,8 +83,7 @@ h1, h2, h3 {
 .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 {
     /*font-family: 'PT Sans', 'Trebuchet MS', sans-serif;*/
-    font-family: PT Sans, Trebuchet MS, sans-serif;
-    line-height: 140%;
+    font-family: Arial, Helvetica, sans-serif !important;
     color: #5a4941;
 
     /* Top */
@@ -100,29 +100,33 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-margin-end: inherit;
 }
 .h1, h1 {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
     color: #5a4941;
 }
 .h2, h2 {
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 700;
     color: #5a4941;
+    margin-bottom: 15px;
+    letter-spacing: 0.7px;
 }
 .h3, h3 {
-    font-size: 22px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 15px;
     font-weight: 700;
 }
 .h4, h4 {
-    font-size: 18px;
-    font-weight: 300;
-}
-.h5, h5 {
     font-size: 16px;
     font-weight: 300;
 }
+.h5, h5 {
+    font-size: 15px;
+    font-weight: 300;
+}
 .h6, h6 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -135,11 +139,13 @@ blockquote {
 }
 
 p.care_small {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: regular;
 }
 
 p.care_tiny {
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: regular;
 }
 
 .care_red {

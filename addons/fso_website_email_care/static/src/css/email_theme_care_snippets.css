@@ -5,44 +5,62 @@
 .flexibleContainer {
     width: 620px;
 }
-
+/*
+.flexibleContainerCell {
+    margin-left: 103px;
+    margin-right: 103px;
+}*/
 
 /* .snippet_block_text_image_left */
 .snippet_block_text_image_left .flexibleContainerRight {
-    width: 280px;
-    background-color: white;
+    width: 300px;
 }
-
-#email_body_html .snippet_block_text_image_left{
-    background-color: white;
+.snippet_block_text_image_left .textContent {
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
-    width: 280px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
+}
+.snippet_block_text_image_left .textContent {
+    background-color: white;
 }
 .snippet_block_text_image_left.care_sb_fg_red .flexibleContainerRight,
 .snippet_block_text_image_left.care_sb_fg_background .flexibleContainerRight {
-    width: 280px;
+    width: 300px;
     background-color: white;
 }
 
 /* .snippet_block_text_image_right */
-#email_body_html .snippet_block_text_image_right {
-    background-color: white;
-}
 
 .snippet_block_text_image_right .flexibleContainerLeft {
-    width: 280px;
+    width: 300px;
 }
-
+.snippet_block_text_image_right .textContent {
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.snippet_block_text_image_right .flexibleContainerCell {
+    padding: 0px;
+}
+.snippet_block_text_intro .flexibleContainerCell {
+    padding: 0px;
+}
 .snippet_block_text_image_right .flexibleContainerRight .flexibleImage {
-    width: 280px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
+}
+.snippet_block_text_image_right .textContent {
+    background-color: white;
 }
 .snippet_block_text_image_right.care_sb_fg_red .flexibleContainerLeft,
 .snippet_block_text_image_right.care_sb_fg_background .flexibleContainerLeft {
-    width: 280px;
-    background-color: white;
+    width: 300px;
 }
 
 /* .snippet_block_text_twocol */
@@ -52,13 +70,20 @@
 }
 .snippet_block_text_twocol .flexibleContainerRight,
 .snippet_block_text_twocol .flexibleContainerRight .flexibleImage {
-    width: 300px;
+    width: 260px;
     background-color: white;
 }
 .snippet_block_text_twocol .flexibleContainerLeft,
 .snippet_block_text_twocol .flexibleContainerLeft .flexibleImage {
-    width: 300px;
+    width: 260px;
     background-color: white;
+}
+
+.snippet_block_text_twocol .flexibleContainerRight .textContent {
+    padding: 20px;
+}
+.snippet_block_text_twocol .flexibleContainerLeft .textContent {
+    padding: 20px;
 }
 
 /* .snippet_block_text_threecol */
@@ -73,7 +98,11 @@
 }
 
 /**/
-.snippet_block_text_intro {
+.snippet_block_text_intro .textContent {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 8px;
     background-color: white;
 }
 /* .snippet_block_banner */
@@ -115,7 +144,10 @@
 /* SNIPPET OPTIONS */
 /* --------------- */
 
-
+/* Reset flexibleContainercell padding */
+.flexibleContainerCell {
+    padding: 0px;
+}
 /* Background and Foreground Options for Snippet Blocks */
 /* ---------------------------------------------------- */
 .care_sb_bg_background .flexibleContainerCell,
@@ -130,10 +162,10 @@
 
 .care_sb_fg_background .flexibleContainerCell .nestedContainerCell,
 .care_sb_fg_red .flexibleContainerCell .nestedContainerCell {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     border-radius: 0;
 }
 
