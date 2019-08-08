@@ -1,6 +1,6 @@
 /* .special button in header style only di button use in this theme */
-#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerRight {
-    background-color: white;
+/*#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerRight {
+   !* background-color: white;*!
 }
 #combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft {
     width: 300px;
@@ -11,16 +11,16 @@
 #combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
     height: 55px;
     width: 155px;
-    background-color: white;
+    !*background-color: white;*!
 }
 #combinedheadersnippet .snippet_block_bpbutton.bpbutton_large .bpbutton_table {
     width: 210px;
 }
 #combinedheadersnippet .snippet_block_bpbutton.bpbutton_large .bpbutton_table a {
     font-size: 18px;
-}
+}*/
 /* Header button Style Only */
-.snippet_block_bpbutton.bpbutton_style_red .bpbutton_table.bpButton_size_header_only {
+/*.snippet_block_bpbutton.bpbutton_style_red .bpbutton_table.bpButton_size_header_only {
     height: 43px;
     width: 220px;
 }
@@ -31,31 +31,82 @@
     padding: 0px;
     padding-right: 5px;
 }
-/*reset height for Header Only*/
+!*reset height for Header Only*!
+#combinedheadersnippet .snippet_block_bpbutton .textContent {
+    height: 80px;
+}*/
+/* HEADER REWORKED */
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .imageContent {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#combinedheadersnippet .snippet_block_bpbutton .textContent {
+    padding-right: 20px;
+}
+#combinedheadersnippet .ckediting_disabled.snippet_block_bpbutton.bpbutton_right.bpbutton_style_red.bpbutton_large .flexibleContainer {
+    width: 300px;
+}
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage,
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage img {
+    height: 55px;
+    width: 155px;
+}
+#combinedheadersnippet .snippet_block_bpbutton.bpbutton_large .bpbutton_table a {
+    font-size: 16px;
+}
+
 #combinedheadersnippet .snippet_block_bpbutton .textContent {
     height: 80px;
 }
-/* special styles footer*/
-.snippet_block_text_intro.combinedfooter .textContent {
-    background-color: #fbd499;
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerCell {
+    padding: 0px;
 }
-.snippet_block_text_intro.combinedfooter.mediaicons img {
-    width: 31px;
+#combinedheadersnippet .flexibleContainerCell {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-.snippet_block_text_intro.combinedfooter .flexibleContainerCell {
-    padding:0px;
+#combinedheadersnippet .snippet_block_bpbutton.bpbutton_style_red .bpbutton_table.bpButton_size_header_only {
+    height: 47px;
+    width: 203px;
 }
 
+/* special styles footer*/
 .combinedfooter a {
     color: #f0ac6b;
     font-size: 14px;
 }
+/* Background for all snippets */
+.snippet_block_text_intro.combinedfooter .textContent,
+.snippet_block_text_twocol.combinedfooter .textContent {
+    background-color: #fbd499;
+}
+/*
+.snippet_block_text_twocol.BuTlBuTr_inside .textContent,
+.snippet_block_text_twocol.BuTlBuTr_inside .textContent .flexibleImage {
+        background-color: #fbd499;
+}*/
+/* Social Media Icons */
+.snippet_block_text_intro.combinedfooter.mediaicons img {
+    width: 31px;
+}
+/* remove padding intro block */
+.snippet_block_text_intro.combinedfooter .flexibleContainerCell {
+    padding: 0px;
+}
 
+/* remove padding from spcial twocol block */
+.snippet_block_text_twocol.combinedfooter .flexibleContainerCell {
+    padding: 0px;
+}
+.combinedfooter .flexibleContainerCell {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 .snippet_block_text_twocol.BuTlBuTr_inside .flexibleImage {
     width: 80px;
     height: auto;
 }
-.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerLeft .flexibleContainer.boxleft     {
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerLeft .flexibleContainer.boxleft {
     width: 300px;
 }
 .snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerRight .flexibleContainer.boxright {
@@ -64,10 +115,6 @@
 .snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerCell .nestedContainerCell {
     padding-left: 0px;
     padding-right: 0px;
-}
-.snippet_block_text_twocol.BuTlBuTr_inside .textContent,
-.snippet_block_text_twocol.BuTlBuTr_inside .textContent .flexibleImage {
-        background-color: #fbd499;
 }
 
 

@@ -4,6 +4,7 @@
 
 .flexibleContainer {
     width: 620px;
+    background-color: white;
 }
 /*
 .flexibleContainerCell {
@@ -12,33 +13,41 @@
 }*/
 
 /* .snippet_block_text_image_left */
+
 .snippet_block_text_image_left .flexibleContainerRight {
     width: 300px;
 }
+/*
 .snippet_block_text_image_left .textContent {
     padding-left: 20px;
     padding-right:20px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+*/
 .snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
     width: 260px;
     height: 260px;
 }
+/*
 .snippet_block_text_image_left .textContent {
     background-color: white;
 }
+*/
 .snippet_block_text_image_left.care_sb_fg_red .flexibleContainerRight,
 .snippet_block_text_image_left.care_sb_fg_background .flexibleContainerRight {
     width: 300px;
-    background-color: white;
 }
+   /*
+    background-color: white;
+}*/
 
 /* .snippet_block_text_image_right */
 
 .snippet_block_text_image_right .flexibleContainerLeft {
     width: 300px;
 }
+/*
 .snippet_block_text_image_right .textContent {
     padding-left: 20px;
     padding-right:20px;
@@ -51,28 +60,37 @@
 .snippet_block_text_intro .flexibleContainerCell {
     padding: 0px;
 }
+*/
 .snippet_block_text_image_right .flexibleContainerRight .flexibleImage {
     width: 260px;
     height: 260px;
 }
+/*
 .snippet_block_text_image_right .textContent {
     background-color: white;
 }
+*/
 .snippet_block_text_image_right.care_sb_fg_red .flexibleContainerLeft,
 .snippet_block_text_image_right.care_sb_fg_background .flexibleContainerLeft {
     width: 300px;
 }
 
 /* .snippet_block_text_twocol */
+
 .snippet_block_text_twocol .flexibleContainerCell {
     padding-left: 0px;
     padding-right: 0px;
 }
+.snippet_block_text_twocol .flexibleContainer {
+    background-color: transparent;
+}
+
 .snippet_block_text_twocol .flexibleContainerRight,
 .snippet_block_text_twocol .flexibleContainerRight .flexibleImage {
     width: 260px;
     background-color: white;
 }
+
 .snippet_block_text_twocol .flexibleContainerLeft,
 .snippet_block_text_twocol .flexibleContainerLeft .flexibleImage {
     width: 260px;
@@ -86,26 +104,32 @@
     padding: 20px;
 }
 
+
 /* .snippet_block_text_threecol */
+/*
 .snippet_block_text_threecol .flexibleContainerCell {
     padding-left: 0px;
     padding-right: 0px;
 }
+*/
 .snippet_block_text_threecol .flexibleContainer33,
 .snippet_block_text_threecol .flexibleContainer33 .flexibleImage {
     width: 193px;
+}/*
     background-color: white;
-}
+}*/
 
 /**/
+/*
 .snippet_block_text_intro .textContent {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 8px;
     background-color: white;
-}
+}*/
 /* .snippet_block_banner */
+/*
 .dadi_sb_bg_normal .flexibleContainerCell,
 .dadi_sb_fg_normal .flexibleContainerCell .nestedContainerCell,
 .dadi_sb_bg_full .flexibleContainerCell,
@@ -115,6 +139,8 @@
     padding-left: 0px;
     padding-right: 0px;
 }
+*/
+/*
 .snippet_block_banner .flexibleImage,
 .snippet_block_banner.dadi_sb_bg_normal .flexibleImage {
     width: 620px;
@@ -124,20 +150,28 @@
     padding-left: 0px;
 
 }
+*/
+.snippet_block_spacer .flexibleContainer {
+    background-color: transparent;
+}
 .snippet_block_banner.dadi_sb_bg_full .flexibleImage {
-    width: 826px;
-    max-width: 826px;
+    width: 620px;
+    max-width: 620px;
+/*
     background-color: white;
     padding-right: 0px;
     padding-left: 0px;
-
+*/
 }
+
 .snippet_block_banner.dadi_sb_bg_narrow .flexibleImage {
     width: 600px;
     max-width: 600px;
+/*
     background-color: white;
     padding-right: 0px;
     padding-left: 0px;
+*/
 }
 
 /* --------------- */
@@ -145,9 +179,12 @@
 /* --------------- */
 
 /* Reset flexibleContainercell padding */
+/*
 .flexibleContainerCell {
     padding: 0px;
 }
+*/
+
 /* Background and Foreground Options for Snippet Blocks */
 /* ---------------------------------------------------- */
 .care_sb_bg_background .flexibleContainerCell,
@@ -162,16 +199,17 @@
 
 .care_sb_fg_background .flexibleContainerCell .nestedContainerCell,
 .care_sb_fg_red .flexibleContainerCell .nestedContainerCell {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 0;
 }
 
 /* care_snippet_block_padding */
 /* -------------------------- */
-
+/*
 .snippet_block.care_snippet_block_padding_none .flexibleContainer .flexibleContainerCell {
     padding-top: 0;
     padding-bottom: 0;
@@ -187,6 +225,7 @@
     padding-top: 32px;
     padding-bottom: 25px;
 }
+*/
 
 /* care_snipped_block_img_padding_top */
 /* ---------------------------------- */
