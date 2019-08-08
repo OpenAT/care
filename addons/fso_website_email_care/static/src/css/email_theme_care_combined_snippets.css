@@ -132,3 +132,43 @@
 .snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerRight {
     width: 190px;
 }
+
+/* OverlaytextBox */
+/*
+.snippet_overlay_textBanner.contenTable tbody {
+      background-color: gray;
+}
+.snippet_overlay_textBanner.contenTable tr {
+    position: relative;
+}*/
+
+/*
+.snippet_overlay_textBanner.contenTable {
+  border-collapse: collapse;
+}*/
+/* Schlüssel zur positionierung */
+.snippet_overlay_textBanner {
+    position: relative;
+}
+.snippet_block_text_intro.overlaybox .flexibleContainer {
+    width: 270px;
+    height: 135px;
+    background-color: transparent;
+}
+.overlayTableBox {
+    position: absolute;
+    width: 270px;
+    height: 135px;
+    left: 320px;
+    top: 135px;
+    background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");
+    opacity: 0.9;
+}
+.overlayTableBox a {
+    opacity: initial;
+    color: white;
+}
+.overlaybox .textContent h1 {
+    color: white;
+    
+}

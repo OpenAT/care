@@ -12,12 +12,122 @@
             </li>
         </xpath>
 
+
         <!-- ======================= -->
         <!--  care COMBINED SNIPPETS -->
         <!-- ======================= -->
         <xpath expr="//div[@id='snippet_email_special']" position="after">
             <div id="combined_snippets_care" class="tab-pane fade">
 
+
+                 <!-- BANNER SNIPPET BLOCK WITH TEXTBOX -->
+                <!-- =============== -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_care/static/src/icons/bannermitText_snippet.png"/>
+                        <span class="oe_snippet_thumbnail_title">Banner mit Text Snippet</span>
+                    </div>
+                    <div class="oe_snippet_body ckediting_enabled snippet_block snippet_block_banner dadi_sb_bg_full snippet_overlay_textBanner">
+                        <table cellpadding="0" cellspacing="0" class="centeringTable">
+                            <tbody>
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" class="flexibleContainerCell" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0"
+                                                               class="nestedContainer">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" class="nestedContainerCell" valign="top">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="textContent ckediting_enabled">
+                                                                                        <a href="#"><img class="flexibleImage snippet_block_banner_image" src="/fso_website_email_care/static/src/img/620x300_transparent.png"/>
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <!-- OverLaybox -->
+                                                                                    <td class="overlayTableBox">
+                                                                                        <div class="ckediting_disabled snippet_block snippet_block_text_intro overlaybox"
+                                                                                             contenteditable="false">
+                                                                                            <table class="centeringTable"
+                                                                                                   cellpadding="0"
+                                                                                                   cellspacing="0">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="center"
+                                                                                                            valign="top">
+                                                                                                            <table class="flexibleContainer"
+                                                                                                                   border="0"
+                                                                                                                   cellpadding="0"
+                                                                                                                   cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td class="flexibleContainerCell"
+                                                                                                                            align="center"
+                                                                                                                            valign="top">
+                                                                                                                            <table class="nestedContainer"
+                                                                                                                                   border="0"
+                                                                                                                                   cellpadding="0"
+                                                                                                                                   cellspacing="0">
+                                                                                                                                <tbody>
+                                                                                                                                    <tr>
+                                                                                                                                        <td class="nestedContainerCell"
+                                                                                                                                            align="center"
+                                                                                                                                            valign="top">
+                                                                                                                                            <table class="contentTable"
+                                                                                                                                                   border="0"
+                                                                                                                                                   cellpadding="0"
+                                                                                                                                                   cellspacing="0">
+                                                                                                                                                <tbody>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td class="textContent ckediting_enabled"
+                                                                                                                                                            contenteditable="true">
+                                                                                                                                                            <h1>
+                                                                                                                                                                Text test für Overlay box tables only
+                                                                                                                                                            </h1>
+                                                                                                                                                        </td>
+                                                                                                                                                    </tr>
+                                                                                                                                                </tbody>
+                                                                                                                                            </table>
+                                                                                                                                        </td>
+                                                                                                                                    </tr>
+                                                                                                                                </tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
              <!-- HEADER SNIPPET BLOCK ALLG -->
                 <!-- =============== -->
                 <div>
