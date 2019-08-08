@@ -168,7 +168,10 @@
     opacity: initial;
     color: white;
 }
+
 .overlaybox .textContent h1 {
+    margin: 0px 0px 0px 30px;
+    font-size: 26px;
     color: white;
-    
+
 }
