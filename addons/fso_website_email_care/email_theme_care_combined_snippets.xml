@@ -219,7 +219,7 @@
                                                                                                class="flexibleContainerRight">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="textContent ckediting_enabled"
+                                                                                                    <td class="textContent ckediting_disabled"
                                                                                                         valign="top">
                                                                                                         <div class="ckediting_disabled snippet_block_bpbutton bpbutton_right bpbutton_style_red bpbutton_large">
                                                                                                             <table cellpadding="0"

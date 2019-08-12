@@ -52,15 +52,27 @@
                  data-selector-children=".care_bin">
             </div>
         </xpath>
-        
-        <!-- care Foreground Styles -->
+
+        <xpath expr="//div[@data-snippet-option-id='dadi_sb_fg_color']" position="replace">
+        </xpath>
+
+        <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_width']" position="replace">
+        </xpath>
+
+        <xpath expr="//div[@data-snippet-option-id='dadi_sb_fg_width']" position="replace">
+        </xpath>
+
+
+<!--        &lt;!&ndash; care Foreground Styles &ndash;&gt;
         <xpath expr="//div[@data-snippet-option-id='dadi_sb_fg_color']//ul" position="replace">
             <ul class="dropdown-menu">
                 <li data-value=''><a>None</a></li>
+        &lt;!&ndash;
                 <li data-value='care_sb_fg_red'><a>Red</a></li>
                 <li data-value='care_sb_fg_background'><a>Background</a></li>
+        &ndash;&gt;
             </ul>
-        </xpath>
+        </xpath>-->
         
         <!-- care Background styles -->
         <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_color']//ul" position="replace">
@@ -70,17 +82,17 @@
             </ul>
         </xpath>
         
-        <!-- .drop_in_button Extra Styles -->
+<!--        &lt;!&ndash; .drop_in_button Extra Styles &ndash;&gt;
         <xpath expr="//li[@data-value='dadi_di_button_default']" position="after">
             <li data-value='dadi_di_button_red'><a>Red</a></li>
-            <!-- <li data-value='dadi_di_button_blue'><a>Blue</a></li>-->
-<!--            <li data-value='care_di_button_green'><a>Green</a></li>-->
-        </xpath>
+            &lt;!&ndash; <li data-value='dadi_di_button_blue'><a>Blue</a></li>&ndash;&gt;
+&lt;!&ndash;            <li data-value='care_di_button_green'><a>Green</a></li>&ndash;&gt;
+        </xpath>-->
         
-        <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
+<!--        <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
             <div data-snippet-option-id='care_snippet_block_padding'
                  data-selector=".snippet_block">
-                <!-- Snippet options menu -->
+                &lt;!&ndash; Snippet options menu &ndash;&gt;
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Vertical Padding</a>
                     <ul class="dropdown-menu">
@@ -92,7 +104,7 @@
                     </ul>
                 </li>
             </div>
-        </xpath>
+        </xpath>-->
 
         <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
             <div data-snippet-option-id='care_snippet_block_img_padding_top'
@@ -116,12 +128,12 @@
             </div>
         </xpath>
 
-        <!-- .drop_in_button Extra Options -->
+<!--        &lt;!&ndash; .drop_in_button Extra Options &ndash;&gt;
         <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
-            <!-- OPTION_GROUP: drop_in_button_care_width -->
+            &lt;!&ndash; OPTION_GROUP: drop_in_button_care_width &ndash;&gt;
             <div data-snippet-option-id='drop_in_button_care_width'
                  data-selector=".drop_in_button">
-                <!-- drop_in options menu -->
+                &lt;!&ndash; drop_in options menu &ndash;&gt;
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Width</a>
                     <ul class="dropdown-menu">
@@ -130,7 +142,7 @@
                     </ul>
                 </li>
             </div>
-        </xpath>
+        </xpath>-->
 
         <!-- NEW: .snippet_block_bpbutton Extra Styles -->
         <xpath expr="//div[@data-snippet-option-id='snippet_block_bpbutton_style']//ul" position="inside">
@@ -139,11 +151,11 @@
             </li>
         </xpath>
         
-        <!-- .snippet_block_banner Options -->
+<!--        &lt;!&ndash; .snippet_block_banner Options &ndash;&gt;
         <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_width']" position="after">
             <div data-snippet-option-id='care_sb_banner_width'
                  data-selector=".snippet_block_banner">
-                <!-- Snippet options menu -->
+                &lt;!&ndash; Snippet options menu &ndash;&gt;
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Banner Image Width</a>
                     <ul class="dropdown-menu">
@@ -152,14 +164,14 @@
                     </ul>
                 </li>
             </div>
-        </xpath>
+        </xpath>-->
         
-        <!-- .snippet_block_text_image_left, .snippet_block_text_image_right Options -->
+ <!--       &lt;!&ndash; .snippet_block_text_image_left, .snippet_block_text_image_right Options &ndash;&gt;
         <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
             <div data-snippet-option-id='care_image_size'
                  data-selector=".snippet_block_text_image_left,
                                 .snippet_block_text_image_right">
-                <!-- drop_in options menu -->
+                &lt;!&ndash; drop_in options menu &ndash;&gt;
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Bildgröße</a>
                     <ul class="dropdown-menu">
@@ -174,7 +186,7 @@
             
             <div data-snippet-option-id='care_image_styles'
                  data-selector=".snippet_block_text_image_left">
-                <!-- drop_in options menu -->
+                &lt;!&ndash; drop_in options menu &ndash;&gt;
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Care Styles</a>
                     <ul class="dropdown-menu">
@@ -185,7 +197,7 @@
             
             <div data-snippet-option-id='care_image_height'
                  data-selector=".snippet_block_text_image_left">
-                <!-- drop_in options menu -->
+                &lt;!&ndash; drop_in options menu &ndash;&gt;
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Containerhöhe</a>
                     <ul class="dropdown-menu">
@@ -202,7 +214,7 @@
             
             <div data-snippet-option-id='care_image_valign'
                  data-selector=".snippet_block_text_image_left">
-                <!-- drop_in options menu -->
+                &lt;!&ndash; drop_in options menu &ndash;&gt;
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Vertikale Bildposition</a>
                     <ul class="dropdown-menu">
@@ -213,7 +225,7 @@
                 </li>
             </div>
             
-        </xpath>
+        </xpath>-->
         
         
     </template>
