@@ -32,3 +32,6 @@ a[href="#editor-media-icon"] {
     display: none !important;
 }
 
+.btn.btn-primary.hover-edition-button.btn-xs {
+    width: auto;
+}

@@ -73,11 +73,12 @@ p {
     -webkit-margin-end: inherit;
 }
 /* Links */
-a,
-a:hover,
-a:visited {
-    color: #eb9e70;
+.snippet_block a,
+.snippet_block a:hover,
+.snippet_block a:visited {
+    color: #e4761e;
     text-decoration: underline;
+    font-size: 14px;
 }
 
 /* Headlines */

@@ -36,6 +36,13 @@
     height: 80px;
 }*/
 /* HEADER REWORKED */
+#combinedheadersnippetWebVersion.snippet_block_text_intro .flexibleContainerCell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .imageContent {
     padding-top: 10px;
     padding-left: 20px;
@@ -72,7 +79,7 @@
 
 /* special styles footer*/
 .combinedfooter a {
-    color: #f0ac6b;
+    color: #e4761e;
     font-size: 14px;
 }
 /* Background for all snippets */
@@ -105,6 +112,10 @@
 .snippet_block_text_twocol.BuTlBuTr_inside .flexibleImage {
     width: 80px;
     height: auto;
+    background-color: transparent;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerLeft{
+        background-color: transparent;
 }
 .snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerLeft .flexibleContainer.boxleft {
     width: 300px;
@@ -155,6 +166,7 @@
     height: 135px;
     background-color: transparent;
 }
+/* this works
 .overlayTableBox {
     position: absolute;
     width: 270px;
@@ -164,6 +176,27 @@
     background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");
     opacity: 0.9;
 }
+*/
+ /* testing Overlay Box with Image */
+.overlayTableBox {
+    position: absolute;
+    width: 270px;
+    height: 135px;
+    left: 320px;
+    top: 135px;
+    /*background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");*/
+    opacity: 0.9;
+}
+img.OverlayBannerImage {
+    position: absolute;
+    width: 270px;
+    height: 135px;
+    left: 320px;
+    top: 135px;
+    /*background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");*/
+    opacity: 0.9;
+}
+
 .overlayTableBox a {
     opacity: initial;
     color: white;
