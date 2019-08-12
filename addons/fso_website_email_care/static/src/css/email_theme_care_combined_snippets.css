@@ -94,7 +94,7 @@
 }*/
 /* Social Media Icons */
 .snippet_block_text_intro.combinedfooter.mediaicons img {
-    width: 31px;
+    width: 55px;
 }
 /* remove padding intro block */
 .snippet_block_text_intro.combinedfooter .flexibleContainerCell {
@@ -158,6 +158,7 @@
   border-collapse: collapse;
 }*/
 /* Schlüssel zur positionierung */
+/* this works with background image, but is not shown in some clients, test different DOCTYEPE */
 .snippet_overlay_textBanner {
     position: relative;
 }
@@ -184,9 +185,10 @@
     height: 135px;
     left: 320px;
     top: 135px;
-    /*background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");*/
+    background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");
     opacity: 0.9;
 }
+
 img.OverlayBannerImage {
     position: absolute;
     width: 270px;
@@ -196,6 +198,7 @@ img.OverlayBannerImage {
     /*background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");*/
     opacity: 0.9;
 }
+
 
 .overlayTableBox a {
     opacity: initial;

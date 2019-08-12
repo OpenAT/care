@@ -349,8 +349,8 @@
                                                                                                 <a href="https://www.facebook.com/CARE.Oesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/facebook.png" alt="Facebook"/></a>
                                                                                                 &amp;nbsp; &amp;nbsp;&amp;nbsp;
                                                                                                 <a href="https://twitter.com/#!/careaustria" target="_blank"><img src="/fso_website_email_care/static/src/icons/twitter.png" alt="Facebook"/></a>&amp;nbsp;
-                                                                                                &amp;nbsp; &amp;nbsp;<a href="https://www.flickr.com/photos/careoesterreich/albums" target="_blank"><img src="/fso_website_email_care/static/src/icons/flickr.png" alt="Flickr"/></a>&amp;nbsp;
-                                                                                                <a href="https://www.youtube.com/careoesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/youtube.png" alt="Youtube"/></a>
+                                                                                                &amp;nbsp; &amp;nbsp;<a href="https://www.youtube.com/careoesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/youtube.png" alt="Youtube"/></a>&amp;nbsp;
+                                                                                                <a href="https://www.flickr.com/photos/careoesterreich/albums" target="_blank"><img src="/fso_website_email_care/static/src/icons/flickr.png" alt="Flickr"/></a>
                                                                                                 &amp;nbsp;&amp;nbsp;
                                                                                             </p>
                                                                                         </td>
@@ -402,7 +402,7 @@
                                                                                                 +43 1 715 0 715<br></br>
                                                                                                 <a href="mailto:care@care.at">care@care.at</a>
                                                                                             </p>
-                                                                                            <p style="text-align: center;">
+                                                                                            <p class="care_tiny" style="text-align: center;">
                                                                                                 <a href="www.care.at" target="_blank">www.care.at</a><br></br><br></br>
                                                                                             </p>
                                                                                         </td>
@@ -660,8 +660,8 @@
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td class="textContent ckediting_enabled">
-                                                                                            <p style="text-align: center;">
-                                                                                                <span style="font-family: &quot;PT Sans&quot;, &quot;Trebuchet MS&quot;, sans-serif; font-size: 16px; background-color: transparent; text-align: center;">
+                                                                                            <p class="care_tiny" style="text-align: center;">
+                                                                                                <span style="text-align: center;">
                                                                                                     <br></br>
                                                                                                     &amp;nbsp;Kontakt&amp;nbsp;
                                                                                                     &amp;nbsp; &amp;nbsp; &amp;nbsp;
@@ -676,7 +676,7 @@
                                                                                             </p>
 
                                                                                             <p style="text-align: center;">
-                                                                                                <span style="font-family: &quot;PT Sans&quot;, &quot;Trebuchet MS&quot;, sans-serif; font-size: 16px; background-color: transparent; text-align: center;">
+                                                                                                <span style="text-align: center;">
                                                                                                     <a href="%NEWSLETTER%">
                                                                                                         Newsletter
                                                                                                         Abbestellen</a>&amp;nbsp;
@@ -688,7 +688,7 @@
                                                                                                 </span>
                                                                                             </p>
 
-                                                                                            <p style="text-align: center;">
+                                                                                            <p class="care_tiny" style="text-align: center;">
                                                                                                 <span style="font-family: &quot;PT Sans&quot;, &quot;Trebuchet MS&quot;, sans-serif; font-size: 16px; background-color: transparent; text-align: center;">
                                                                                                     C 2018 CARE
                                                                                                     Österreich
