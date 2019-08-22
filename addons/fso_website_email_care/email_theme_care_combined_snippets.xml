@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+
+    <!-- INHERIT AND EXTEND theme_default_snippets -->
+    <template id="email_theme_care_snippets_overrides_prat2" inherit_id="fso_website_email.theme_framework_snippets" name="Email Theme care Snippet overrides part2">
+
+        <xpath expr="//li[@id='snippet_menu_special']" position="after">
+            <li id="snippet_menu_combined_snippets_care">
+                <a href="#combined_snippets_care" data-toggle="tab">Combined</a>
+            </li>
+        </xpath>
+
+
+        <!-- ======================= -->
+        <!--  care COMBINED SNIPPETS -->
+        <!-- ======================= -->
+        <xpath expr="//div[@id='snippet_email_special']" position="after">
+            <div id="combined_snippets_care" class="tab-pane fade">
+
+
+                 <!-- BANNER SNIPPET BLOCK WITH TEXTBOX -->
+                <!-- =============== -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_care/static/src/icons/bannermitText_snippet.png"/>
+                        <span class="oe_snippet_thumbnail_title">Banner mit Text Snippet</span>
+                    </div>
+                    <div class="oe_snippet_body ckediting_enabled snippet_block snippet_block_banner dadi_sb_bg_full snippet_overlay_textBanner">
+                        <table cellpadding="0" cellspacing="0" class="centeringTable">
+                            <tbody>
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" class="flexibleContainerCell" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0"
+                                                               class="nestedContainer">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" class="nestedContainerCell" valign="top">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="textContent ckediting_enabled">
+                                                                                        <a href="#"><img class="flexibleImage snippet_block_banner_image" src="/fso_website_email_care/static/src/img/620x300_transparent.png"/>
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <!-- OverLaybox -->
+                                                                                    <td class="overlayTableBox">
+                                                                                        <div class="ckediting_disabled snippet_block snippet_block_text_intro overlaybox"
+                                                                                             contenteditable="false">
+                                                                                            <table class="centeringTable"
+                                                                                                   cellpadding="0"
+                                                                                                   cellspacing="0">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="center"
+                                                                                                            valign="top">
+                                                                                                            <table class="flexibleContainer"
+                                                                                                                   border="0"
+                                                                                                                   cellpadding="0"
+                                                                                                                   cellspacing="0">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td class="flexibleContainerCell"
+                                                                                                                            align="center"
+                                                                                                                            valign="top">
+                                                                                                                            <table class="nestedContainer"
+                                                                                                                                   border="0"
+                                                                                                                                   cellpadding="0"
+                                                                                                                                   cellspacing="0">
+                                                                                                                                <tbody>
+                                                                                                                                    <tr>
+                                                                                                                                        <td class="nestedContainerCell"
+                                                                                                                                            align="center"
+                                                                                                                                            valign="top">
+                                                                                                                                            <table class="contentTable"
+                                                                                                                                                   border="0"
+                                                                                                                                                   cellpadding="0"
+                                                                                                                                                   cellspacing="0">
+                                                                                                                                                <tbody>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td class="textContent ckediting_enabled"
+                                                                                                                                                            contenteditable="true">
+                                                                                                                                                            <a href="#"><img class="OverlayBannerImage" src="/fso_website_email_care/static/src/img/overlayimg.png"/></a>
+                                                                                                                                                            <h1>
+                                                                                                                                                                Text test für Overlay box tables only
+                                                                                                                                                            </h1>
+                                                                                                                                                        </td>
+                                                                                                                                                    </tr>
+                                                                                                                                                </tbody>
+                                                                                                                                            </table>
+                                                                                                                                        </td>
+                                                                                                                                    </tr>
+                                                                                                                                </tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+             <!-- HEADER SNIPPET BLOCK ALLG -->
+                <!-- =============== -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_care/static/src/icons/header_snippet.png"/>
+                        <span class="oe_snippet_thumbnail_title">Header Snippet</span>
+                    </div>
+                    <div id="combinedheadersnippetWebVersion" class="oe_snippet_body ckediting_enabled snippet_block snippet_block_text_intro care_sb_bg_background"
+                         contenteditable="false">
+                        <table class="centeringTable" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table class="flexibleContainer" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="flexibleContainerCell" align="center" valign="top">
+                                                        <table class="nestedContainer" border="0" cellpadding="0"
+                                                               cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="nestedContainerCell" align="center"
+                                                                        valign="top">
+                                                                        <table class="contentTable" border="0"
+                                                                               cellpadding="0" cellspacing="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="textContent ckediting_enabled"
+                                                                                        contenteditable="true">
+                                                                                        <p class="care_tiny"
+                                                                                           style="text-align: center;">
+                                                                                            <a href="www.care.at" data-cke-saved-href="www.care.at" target="_blank" style="text-align: center; color: gray; font-weight: 700; font-size: 12px;">Zur Webversion</a>
+                                                                                        </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="combinedheadersnippet" class="oe_snippet_body ckediting_enabled snippet_block snippet_block_text_image_left care_snippet_block_padding_none">
+                        <table cellpadding="0" cellspacing="0" class="centeringTable">
+                            <tbody>
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" class="flexibleContainerCell" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0"
+                                                               class="nestedContainer">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" class="nestedContainerCell"
+                                                                        valign="top">
+                                                                        <table border="0" cellpadding="0"
+                                                                               cellspacing="0" class="contentTable">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="textContent">
+                                                                                        <table align="left" border="0"
+                                                                                               cellpadding="0"
+                                                                                               cellspacing="0"
+                                                                                               class="flexibleContainerLeft">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td align="left" class="imageContent ckediting_disabled" valign="top"><img class="flexibleImage" src="/fso_website_email_care/static/src/img/logo.png"/>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+
+                                                                                        <table align="right" border="0"
+                                                                                               cellpadding="0"
+                                                                                               cellspacing="0"
+                                                                                               class="flexibleContainerRight">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="textContent ckediting_disabled"
+                                                                                                        valign="top">
+                                                                                                        <div class="ckediting_disabled snippet_block_bpbutton bpbutton_right bpbutton_style_red bpbutton_large">
+                                                                                                            <table cellpadding="0"
+                                                                                                                   cellspacing="0"
+                                                                                                                   class="centeringTable">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td align="center"
+                                                                                                                            valign="top">
+                                                                                                                            <table border="0"
+                                                                                                                                   cellpadding="0"
+                                                                                                                                   cellspacing="0"
+                                                                                                                                   class="flexibleContainer">
+                                                                                                                                <tbody>
+                                                                                                                                    <tr>
+                                                                                                                                        <td align="center"
+                                                                                                                                            class="flexibleContainerCell"
+                                                                                                                                            valign="top">
+                                                                                                                                            <table border="0"
+                                                                                                                                                   cellpadding="0"
+                                                                                                                                                   cellspacing="0"
+                                                                                                                                                   class="nestedContainer">
+                                                                                                                                                <tbody>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td align="center"
+                                                                                                                                                            class="nestedContainerCell"
+                                                                                                                                                            valign="top">
+                                                                                                                                                            <table border="0"
+                                                                                                                                                                   cellpadding="0"
+                                                                                                                                                                   cellspacing="0"
+                                                                                                                                                                   class="contentTable">
+                                                                                                                                                                <tbody>
+                                                                                                                                                                    <tr>
+                                                                                                                                                                        <td class="textContent bpButton_textareasize_header_only_reset">
+                                                                                                                                                                            <table class="bpbutton_table bpButton_size_header_only">
+                                                                                                                                                                                <tbody>
+                                                                                                                                                                                    <tr>
+                                                                                                                                                                                        <td>
+                                                                                                                                                                                            <p class="ckediting_enabled">
+                                                                                                                                                                                                <a class="bpbutton_link"
+                                                                                                                                                                                                   href="https://www.datadialog.at"
+                                                                                                                                                                                                   target="_blank">
+                                                                                                                                                                                                    JETZT
+                                                                                                                                                                                                    SPENDEN
+                                                                                                                                                                                                </a>
+                                                                                                                                                                                            </p>
+                                                                                                                                                                                        </td>
+                                                                                                                                                                                    </tr>
+                                                                                                                                                                                </tbody>
+                                                                                                                                                                            </table>
+                                                                                                                                                                        </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                                </tbody>
+                                                                                                                                                            </table>
+                                                                                                                                                        </td>
+                                                                                                                                                    </tr>
+                                                                                                                                                </tbody>
+                                                                                                                                            </table>
+                                                                                                                                        </td>
+                                                                                                                                    </tr>
+                                                                                                                                </tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- FOOTER SNIPPET BLOCK -->
+                <!-- =============== -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_care/static/src/icons/footer_snippet.png"/>
+                        <span class="oe_snippet_thumbnail_title">Footer Snippet</span>
+                    </div>
+
+                    <div class="oe_snippet_body ckediting_disabled care_bin">
+
+                        <div id="combinedsnippetfooter" class="ckediting_disabled snippet_block snippet_block_text_intro combinedfooter mediaicons">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell"
+                                                                            valign="top">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent ckediting_enabled">
+                                                                                            <h3 style="text-align: center;">
+                                                                                                FOLGEN SIE UNS AUF&amp;nbsp;
+                                                                                            </h3>
+                                                                                            <p style="text-align: center">
+                                                                                                <a href="https://www.facebook.com/CARE.Oesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/facebook.png" alt="Facebook"/></a>
+                                                                                                &amp;nbsp; &amp;nbsp;&amp;nbsp;
+                                                                                                <a href="https://twitter.com/#!/careaustria" target="_blank"><img src="/fso_website_email_care/static/src/icons/twitter.png" alt="Facebook"/></a>&amp;nbsp;
+                                                                                                &amp;nbsp; &amp;nbsp;<a href="https://www.youtube.com/careoesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/youtube.png" alt="Youtube"/></a>&amp;nbsp;
+                                                                                                <a href="https://www.flickr.com/photos/careoesterreich/albums" target="_blank"><img src="/fso_website_email_care/static/src/icons/flickr.png" alt="Flickr"/></a>
+                                                                                                &amp;nbsp;&amp;nbsp;
+                                                                                            </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="ckediting_disabled snippet_block snippet_block_text_intro combinedfooter">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell"
+                                                                            valign="top">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent ckediting_enabled">
+                                                                                            <h3 style="text-align: center;">
+                                                                                                <strong>KONTAKT</strong>
+                                                                                            </h3>
+
+                                                                                            <p class="care_tiny" style="text-align: center;">
+                                                                                                Lange Gasse 30/4<br></br>
+                                                                                                1080 Wien Österreich<br></br>
+                                                                                                +43 1 715 0 715<br></br>
+                                                                                                <a href="mailto:care@care.at">care@care.at</a>
+                                                                                            </p>
+                                                                                            <p class="care_tiny" style="text-align: center;">
+                                                                                                <a href="www.care.at" target="_blank">www.care.at</a><br></br><br></br>
+                                                                                            </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="ckediting_disabled snippet_block snippet_block_text_twocol dadi_sb_fg_normal care_snippet_block_padding_none BuTlBuTr_inside combinedfooter">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0" class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell" valign="top">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent">
+                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                                                                   class="flexibleContainerLeft">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                                                            <div class="ckediting_disabled snippet_block snippet_block_text_image_left">
+                                                                                                                <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                                                                                                    <tbody>
+                                                                                                                        <tr>
+                                                                                                                            <td align="center" valign="top">
+                                                                                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                                                                                       class="flexibleContainer boxleft">
+                                                                                                                                    <tbody>
+                                                                                                                                        <tr>
+                                                                                                                                            <td align="center"
+                                                                                                                                                class="flexibleContainerCell"
+                                                                                                                                                valign="top">
+                                                                                                                                                <table border="0" cellpadding="0"
+                                                                                                                                                       cellspacing="0"
+                                                                                                                                                       class="nestedContainer">
+                                                                                                                                                    <tbody>
+                                                                                                                                                        <tr>
+                                                                                                                                                            <td align="center"
+                                                                                                                                                                class="nestedContainerCell"
+                                                                                                                                                                valign="top">
+                                                                                                                                                                <table border="0"
+                                                                                                                                                                       cellpadding="0"
+                                                                                                                                                                       cellspacing="0"
+                                                                                                                                                                       class="contentTable">
+                                                                                                                                                                    <tbody>
+                                                                                                                                                                        <tr>
+                                                                                                                                                                            <td class="textContent">
+                                                                                                                                                                                <table align="left"
+                                                                                                                                                                                       border="0"
+                                                                                                                                                                                       cellpadding="0"
+                                                                                                                                                                                       cellspacing="0"
+                                                                                                                                                                                       class="flexibleContainerLeft">
+                                                                                                                                                                                    <tbody>
+                                                                                                                                                                                        <tr>
+                                                                                                                                                                                            <td align="left"
+                                                                                                                                                                                                class="imageContent ckediting_enabled"
+                                                                                                                                                                                                valign="top">
+                                                                                                                                                                                                <img class="flexibleImage"
+                                                                                                                                                                                                     src="/fso_website_email_care/static/src/img/guetesiegel.png"/>
+                                                                                                                                                                                            </td>
+                                                                                                                                                                                        </tr>
+                                                                                                                                                                                    </tbody>
+                                                                                                                                                                                </table>
+
+                                                                                                                                                                                <table align="right"
+                                                                                                                                                                                       border="0"
+                                                                                                                                                                                       cellpadding="0"
+                                                                                                                                                                                       cellspacing="0"
+                                                                                                                                                                                       class="flexibleContainerRight">
+                                                                                                                                                                                    <tbody>
+                                                                                                                                                                                        <tr>
+                                                                                                                                                                                            <td class="textContent ckediting_enabled"
+                                                                                                                                                                                                valign="top">
+                                                                                                                                                                                                <h4>
+                                                                                                                                                                                                    Kaiserin
+                                                                                                                                                                                                    <br/>
+                                                                                                                                                                                                </h4>
+                                                                                                                                                                                                <p class="care_tiny">
+                                                                                                                                                                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                                                                                                                                                                                </p>
+                                                                                                                                                                                            </td>
+                                                                                                                                                                                        </tr>
+                                                                                                                                                                                    </tbody>
+                                                                                                                                                                                </table>
+                                                                                                                                                                            </td>
+                                                                                                                                                                        </tr>
+                                                                                                                                                                    </tbody>
+                                                                                                                                                                </table>
+                                                                                                                                                            </td>
+                                                                                                                                                        </tr>
+                                                                                                                                                    </tbody>
+                                                                                                                                                </table>
+                                                                                                                                            </td>
+                                                                                                                                        </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                </table>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+
+                                                                                            <table align="right" border="0" cellpadding="0" cellspacing="0"
+                                                                                                   class="flexibleContainerRight">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="center" class="textContent ckediting_enabled" valign="top">
+                                                                                                            <div class="ckediting_disabled snippet_block snippet_block_text_image_left">
+                                                                                                                <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                                                                                                    <tbody>
+                                                                                                                        <tr>
+                                                                                                                            <td align="center" valign="top">
+                                                                                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                                                                                       class="flexibleContainer boxright">
+                                                                                                                                    <tbody>
+                                                                                                                                        <tr>
+                                                                                                                                            <td align="center"
+                                                                                                                                                class="flexibleContainerCell"
+                                                                                                                                                valign="top">
+                                                                                                                                                <table border="0" cellpadding="0"
+                                                                                                                                                       cellspacing="0"
+                                                                                                                                                       class="nestedContainer">
+                                                                                                                                                    <tbody>
+                                                                                                                                                        <tr>
+                                                                                                                                                            <td align="center"
+                                                                                                                                                                class="nestedContainerCell"
+                                                                                                                                                                valign="top">
+                                                                                                                                                                <table border="0"
+                                                                                                                                                                       cellpadding="0"
+                                                                                                                                                                       cellspacing="0"
+                                                                                                                                                                       class="contentTable">
+                                                                                                                                                                    <tbody>
+                                                                                                                                                                        <tr>
+                                                                                                                                                                            <td class="textContent">
+                                                                                                                                                                                <table align="left"
+                                                                                                                                                                                       border="0"
+                                                                                                                                                                                       cellpadding="0"
+                                                                                                                                                                                       cellspacing="0"
+                                                                                                                                                                                       class="flexibleContainerLeft">
+                                                                                                                                                                                    <tbody>
+                                                                                                                                                                                        <tr>
+                                                                                                                                                                                            <td align="left"
+                                                                                                                                                                                                class="imageContent ckediting_enabled"
+                                                                                                                                                                                                valign="top">
+                                                                                                                                                                                                <img class="flexibleImage"
+                                                                                                                                                                                                     src="/fso_website_email_care/static/src/img/absetzbar.png"/>
+                                                                                                                                                                                            </td>
+                                                                                                                                                                                        </tr>
+                                                                                                                                                                                    </tbody>
+                                                                                                                                                                                </table>
+
+                                                                                                                                                                                <table align="right"
+                                                                                                                                                                                       border="0"
+                                                                                                                                                                                       cellpadding="0"
+                                                                                                                                                                                       cellspacing="0"
+                                                                                                                                                                                       class="flexibleContainerRight">
+                                                                                                                                                                                    <tbody>
+                                                                                                                                                                                        <tr>
+                                                                                                                                                                                            <td class="textContent ckediting_enabled"
+                                                                                                                                                                                                valign="top">
+                                                                                                                                                                                                <h4>
+                                                                                                                                                                                                    Seidenschal
+                                                                                                                                                                                                    <br/>
+                                                                                                                                                                                                </h4>
+
+                                                                                                                                                                                                <p class="care_tiny">
+                                                                                                                                                                                                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                                                                                                                                                                                </p>
+                                                                                                                                                                                            </td>
+                                                                                                                                                                                        </tr>
+                                                                                                                                                                                    </tbody>
+                                                                                                                                                                                </table>
+                                                                                                                                                                            </td>
+                                                                                                                                                                        </tr>
+                                                                                                                                                                    </tbody>
+                                                                                                                                                                </table>
+                                                                                                                                                            </td>
+                                                                                                                                                        </tr>
+                                                                                                                                                    </tbody>
+                                                                                                                                                </table>
+                                                                                                                                            </td>
+                                                                                                                                        </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                </table>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="ckediting_disabled snippet_block snippet_block_text_intro combinedfooter">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell"
+                                                                            valign="top">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent ckediting_enabled">
+                                                                                            <p class="care_tiny" style="text-align: center;">
+                                                                                                <span style="text-align: center;">
+                                                                                                    <br></br>
+                                                                                                    &amp;nbsp;Kontakt&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp; Datenschutz&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp;Sitemap&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp;Barrierefreiheit&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp;Impressum&amp;nbsp;&amp;nbsp;
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p style="text-align: center;">
+                                                                                                <span style="text-align: center;">
+                                                                                                    <a href="%NEWSLETTER%">
+                                                                                                        Newsletter
+                                                                                                        Abbestellen</a>&amp;nbsp;
+                                                                                                    &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    &amp;nbsp;
+                                                                                                    <a href="%MEINEDATENFORM%">
+                                                                                                        Daten ändern
+                                                                                                    </a><br></br>
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="care_tiny" style="text-align: center;">
+                                                                                                <span style="font-family: &quot;PT Sans&quot;, &quot;Trebuchet MS&quot;, sans-serif; font-size: 16px; background-color: transparent; text-align: center;">
+                                                                                                    C 2018 CARE
+                                                                                                    Österreich
+                                                                                                </span>
+                                                                                            </p><br></br>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </xpath>
+    </template>
+
+
+</data>
+</openerp>

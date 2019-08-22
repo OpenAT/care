@@ -1,0 +1,213 @@
+/* .special button in header style only di button use in this theme */
+/*#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerRight {
+   !* background-color: white;*!
+}
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft {
+    width: 300px;
+}
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .imageContent {
+    padding: 10px;
+}
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
+    height: 55px;
+    width: 155px;
+    !*background-color: white;*!
+}
+#combinedheadersnippet .snippet_block_bpbutton.bpbutton_large .bpbutton_table {
+    width: 210px;
+}
+#combinedheadersnippet .snippet_block_bpbutton.bpbutton_large .bpbutton_table a {
+    font-size: 18px;
+}*/
+/* Header button Style Only */
+/*.snippet_block_bpbutton.bpbutton_style_red .bpbutton_table.bpButton_size_header_only {
+    height: 43px;
+    width: 220px;
+}
+#combinedheadersnippet .ckediting_disabled.snippet_block_bpbutton.bpbutton_right.bpbutton_style_red.bpbutton_large .flexibleContainer {
+    width: 300px;
+}
+#combinedheadersnippet.snippet_block_text_image_left .textContent {
+    padding: 0px;
+    padding-right: 5px;
+}
+!*reset height for Header Only*!
+#combinedheadersnippet .snippet_block_bpbutton .textContent {
+    height: 80px;
+}*/
+/* HEADER REWORKED */
+#combinedheadersnippetWebVersion.snippet_block_text_intro .flexibleContainerCell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .imageContent {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#combinedheadersnippet .snippet_block_bpbutton .textContent {
+    padding-right: 20px;
+}
+#combinedheadersnippet .ckediting_disabled.snippet_block_bpbutton.bpbutton_right.bpbutton_style_red.bpbutton_large .flexibleContainer {
+    width: 300px;
+}
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage,
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerLeft .flexibleImage img {
+    height: 55px;
+    width: 155px;
+}
+#combinedheadersnippet .snippet_block_bpbutton.bpbutton_large .bpbutton_table a {
+    font-size: 16px;
+}
+
+#combinedheadersnippet .snippet_block_bpbutton .textContent {
+    height: 80px;
+}
+#combinedheadersnippet.snippet_block_text_image_left .flexibleContainerCell {
+    padding: 0px;
+}
+#combinedheadersnippet .flexibleContainerCell {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#combinedheadersnippet .snippet_block_bpbutton.bpbutton_style_red .bpbutton_table.bpButton_size_header_only {
+    height: 47px;
+    width: 203px;
+}
+
+/* special styles footer*/
+.combinedfooter a {
+    color: #e4761e;
+    font-size: 14px;
+}
+/* Background for all snippets */
+.snippet_block_text_intro.combinedfooter .textContent,
+.snippet_block_text_twocol.combinedfooter .textContent {
+    background-color: #fbd499;
+}
+/*
+.snippet_block_text_twocol.BuTlBuTr_inside .textContent,
+.snippet_block_text_twocol.BuTlBuTr_inside .textContent .flexibleImage {
+        background-color: #fbd499;
+}*/
+/* Social Media Icons */
+.snippet_block_text_intro.combinedfooter.mediaicons img {
+    width: 55px;
+}
+/* remove padding intro block */
+.snippet_block_text_intro.combinedfooter .flexibleContainerCell {
+    padding: 0px;
+}
+
+/* remove padding from spcial twocol block */
+.snippet_block_text_twocol.combinedfooter .flexibleContainerCell {
+    padding: 0px;
+}
+.combinedfooter .flexibleContainerCell {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleImage {
+    width: 80px;
+    height: auto;
+    background-color: transparent;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerLeft{
+        background-color: transparent;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerLeft .flexibleContainer.boxleft {
+    width: 300px;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerRight .flexibleContainer.boxright {
+    width: 300px;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerCell .nestedContainerCell {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerLeft .textContent {
+    padding: 0px;
+    padding-left: 5px;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerRight .textContent {
+    padding: 0px;
+    padding-left: 5px;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerLeft {
+    width: 80px;
+}
+.snippet_block_text_twocol.BuTlBuTr_inside .flexibleContainerRight {
+    width: 190px;
+}
+
+/* OverlaytextBox */
+/*
+.snippet_overlay_textBanner.contenTable tbody {
+      background-color: gray;
+}
+.snippet_overlay_textBanner.contenTable tr {
+    position: relative;
+}*/
+
+/*
+.snippet_overlay_textBanner.contenTable {
+  border-collapse: collapse;
+}*/
+/* Schlüssel zur positionierung */
+/* this works with background image, but is not shown in some clients, test different DOCTYEPE */
+.snippet_overlay_textBanner {
+    position: relative;
+}
+.snippet_block_text_intro.overlaybox .flexibleContainer {
+    width: 270px;
+    height: 135px;
+    background-color: transparent;
+}
+/* this works
+.overlayTableBox {
+    position: absolute;
+    width: 270px;
+    height: 135px;
+    left: 320px;
+    top: 135px;
+    background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");
+    opacity: 0.9;
+}
+*/
+ /* testing Overlay Box with Image */
+.overlayTableBox {
+    position: absolute;
+    width: 270px;
+    height: 135px;
+    left: 320px;
+    top: 135px;
+    background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");
+    opacity: 0.9;
+}
+
+img.OverlayBannerImage {
+    position: absolute;
+    width: 270px;
+    height: 135px;
+    left: 320px;
+    top: 135px;
+    /*background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");*/
+    opacity: 0.9;
+}
+
+
+.overlayTableBox a {
+    opacity: initial;
+    color: white;
+}
+
+.overlaybox .textContent h1 {
+    margin: 0px 0px 0px 30px;
+    font-size: 26px;
+    color: white;
+
+}
