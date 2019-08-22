@@ -4,3 +4,8 @@
    e.g.: https://care.datadialog.net/?care-relaunch-css
    ATTENTION: Add this to the frontend asset at the relaunch day to permanently include and minify the css!
 */
+
+/* just a test - remove at any time */
+body {
+   background-color: orange;
+}
