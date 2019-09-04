@@ -39,18 +39,6 @@ $base_url: '/care_config/static/src/css/fonts';
 
 }
 
-//@font-face {
-//    font-family: 'ahsicons';
-//    src: url('#{$base_url}/ahsicons-regular.eot');
-//    src: url('#{$base_url}/ahsicons-regular.eot?#iefix') format('embedded-opentype'),
-//         url('#{$base_url}/ahsicons-regular.woff') format('woff'),
-//         url('#{$base_url}/ahsicons-regular.ttf') format('truetype'),
-//         url('#{$base_url}/ahsicons-regular.svg#ahsiconsregular') format('svg');
-//    font-weight: normal;
-//    font-style: normal;
-//
-//}
-
 /* FONTS */
 @font-face {
 font-family:'HelveticaNeueLTStd-Roman';
@@ -82,19 +70,19 @@ src:url('#{$base_url}/aaf88d3b-e95f-4151-a8ee-e423ca9b1c2e.eot?#iefix') format('
     url('#{$base_url}/7d5f14d9-042a-4645-93fd-1b97e88500e9.svg#7d5f14d9-042a-4645-93fd-1b97e88500e9') format('svg');
 }
 
-@font-face{
-	font-family: 'OfficinaSerifStd-Book';
-	src: url('#{$base_url}/OfficinaSerifStd-Book.woff2') format("woff2"),
-	url('#{$base_url}/OfficinaSerifStd-Book.woff') format("woff"),
-	url('#{$base_url}/OfficinaSerifStd-Book.ttf') format("truetype");
-	font-weight:100;font-style:normal;font-display:swap
+@font-face {
+font-family: 'OfficinaSerifStd-Book';
+src:url('#{$base_url}/OfficinaSerifStd-Book.woff2') format("woff2"),
+    url('#{$base_url}/OfficinaSerifStd-Book.woff') format("woff"),
+    url('#{$base_url}/OfficinaSerifStd-Book.ttf') format("truetype");
+    font-weight:100;font-style:normal;font-display:swap
 }
 
-@font-face{
-	font-family: 'OfficinaSerifStd-Bold';
-	src: url('#{$base_url}/OfficinaSerifStd-Bold.woff2') format("woff2"),
-	url('#{$base_url}/OfficinaSerifStd-Bold.woff') format("woff"),
-	url('#{$base_url}/OfficinaSerifStd-Bold.ttf') format("truetype");
-	font-weight:100;font-style:normal;font-display:swap
+@font-face {
+font-family: 'OfficinaSerifStd-Bold';
+src: url('#{$base_url}/OfficinaSerifStd-Bold.woff2') format("woff2"),
+     url('#{$base_url}/OfficinaSerifStd-Bold.woff') format("woff"),
+     url('#{$base_url}/OfficinaSerifStd-Bold.ttf') format("truetype");
+     font-weight:100;font-style:normal;font-display:swap
 }
 /* END FONTS */
