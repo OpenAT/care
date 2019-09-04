@@ -148,6 +148,14 @@ body .oe_website_sale h3 {
 	background: white;
 }
 
+.oe_product.oe_grid section .product_price {
+	display: none;
+}
+
+.wrap_wsd_1 {
+	margin-bottom: 20px;
+}
+
 #wsd_checkout_form label.sr-only {
 	hyphens: auto;
 	font-size: 14px;
@@ -186,6 +194,7 @@ body .js_sale a.btn-default,
 body .oe_product.oe_grid .oe_subdescription,
 body .quick_add_to_cart {
 	background: none;
+	text-align: left;
 }
 
 .wsd-icon_container {
@@ -199,7 +208,7 @@ body .quick_add_to_cart {
 	right: -1px;
 	bottom: -1px;
 	left: -1px;
-	background-image: url('https://care.711.at/wp-content/themes/floatwork_dev/images/img_overlay_news_white.png');
+	background-image: url("../../img/img_overlay_news_white.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -245,5 +254,24 @@ body[data-catid="7"] {
 }
 
 .quick_add_to_cart a {
-  font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important;
+	position: relative;
+	font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important;
+	display: inline;
+	line-height: 30px;
+}
+
+.quick_add_to_cart a:after {
+	position: relative;
+	content: '';
+	display: inline-block;
+	vertical-align: bottom;
+	width: 20.5px;
+	height: 20.5px;
+	background-image: url("../../img/arrow_right_orange.png");
+	background-repeat: no-repeat;
+	background-size: 80% auto;
+	vertical-align: bottom;
+	margin-left: 10px;
+	left: 0;
+	transition: left .3s ease-out;
 }
