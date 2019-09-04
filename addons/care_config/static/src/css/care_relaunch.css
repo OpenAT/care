@@ -304,3 +304,7 @@ body[data-catid="7"] {
 .remove_product {
 	color: #E4761E;
 }
+
+.oe_product.oe_grid section h5 a {
+   font-family: OfficinaSerifStd-Book,sans-serif;
+}
