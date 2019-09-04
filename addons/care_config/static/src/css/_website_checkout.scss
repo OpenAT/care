@@ -235,7 +235,7 @@ body .oe_website_sale h4.payment_interval_ids {
   }
 
   .nav-tabs > li img {
-    display: inline-block !important;
+    display: inline-block;
     vertical-align: middle;
     position: relative;
     top: -1px;
@@ -243,7 +243,7 @@ body .oe_website_sale h4.payment_interval_ids {
   }
 
   .tab-content {
-    height: auto !important;
+    height: auto;
     padding: 20px;
     max-width: none;
     background: #fff;
@@ -301,11 +301,11 @@ body .oe_website_sale h4.payment_interval_ids {
 // special Logout Button //
 .wsd_button_opc_logout {
     float: right;
-    border-radius: 0px !important;
-    background: #F5F5F5 !important;
-    color: #000 !important;
-    font-size: 18px !important;
-    line-height: 26px !important;
+    border-radius: 0px;
+    background: #F5F5F5;
+    color: #000;
+    font-size: 18px;
+    line-height: 26px;
 }
 // sepcial Logout Button //
 
