@@ -82,6 +82,10 @@ body {
   
 }
 
+.oe_product:hover .quick_add_to_cart a {
+    background-color: #333;
+}
+
 #wsd_checkout_form_submit_button:after, #add_to_cart:after {
   content: 'Ihre Daten sind sicher';
   position: absolute;
@@ -295,7 +299,7 @@ table .oe_product .oe_product_image img:hover {
 
 .quick_add_to_cart a {
   font-size: 18px;
-  font-family: 'HelveticaNeueLTStd-Roman' !important, 'Helvetica', 'Arial', sans-serif
+  font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important;
 }
 
 body[data-last-visited-rootcatid="2"] .fa-shopping-cart:before {
@@ -1449,10 +1453,6 @@ body.schenken_mit_sinn div[class^="col"].spenden {
   -moz-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
-}
-
-.oe_product:hover .quick_add_to_cart a {
-  background-color: #333;
 }
 
 .product_item > div .quick_add_to_cart a {
