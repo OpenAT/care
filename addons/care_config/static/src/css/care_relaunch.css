@@ -29,6 +29,10 @@ body {
 	background: white;
 }
 
+body #products_grid_before, body #products_grid_before.col-md-4 {
+	padding: 0;
+}
+
 #wsd_checkout_form .amount_title,
 .checkout_title,
 .payment_title,
