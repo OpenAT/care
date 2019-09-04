@@ -284,6 +284,10 @@ body[data-catid="7"] {
 	transition: left .3s ease-out;
 }
 
+.small_cart_buttons {
+	text-align: center;
+}
+
 #cart_products .pull-right {
 	height: 40px;
 	line-height: 40px;
