@@ -231,6 +231,10 @@ body[data-catid="7"] {
 	padding: 30px;
 }
 
+.oe_product:hover .quick_add_to_cart a {
+	background: transparent;
+}
+
 /*body #products_grid_before.col-md-4,
 body #products_grid_before {
 	padding: 0 !important;
