@@ -244,12 +244,6 @@ body[data-catid="7"] {
 	background: transparent;
 }
 
-/*body #products_grid_before.col-md-4,
-body #products_grid_before {
-	padding: 0 !important;
+.quick_add_to_cart a {
+  font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important;
 }
-
-.oe_website_sale .row {
-	margin-left: 0;
-	margin-right: 0;
-}*/
