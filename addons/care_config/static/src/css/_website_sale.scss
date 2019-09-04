@@ -295,7 +295,7 @@ table .oe_product .oe_product_image img:hover {
 
 .quick_add_to_cart a {
   font-size: 18px;
-  font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif
+  font-family: 'HelveticaNeueLTStd-Roman' !important, 'Helvetica', 'Arial', sans-serif
 }
 
 body[data-last-visited-rootcatid="2"] .fa-shopping-cart:before {
