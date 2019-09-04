@@ -301,7 +301,7 @@ body[data-catid="7"] {
 	float: none !important;
 }
 
-.remove_product {
+a.remove_product {
 	color: #E4761E;
 }
 
