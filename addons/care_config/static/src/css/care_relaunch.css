@@ -203,6 +203,7 @@ body .quick_add_to_cart {
 }
 
 #products_grid td {
+	width: 33.3333%;
 	border-spacing: 20px 40px;
 }
 
