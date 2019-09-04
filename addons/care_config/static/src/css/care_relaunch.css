@@ -1,3 +1,20 @@
+@font-face {
+font-family: 'OfficinaSerifStd-Book';
+src:url('#{$base_url}/OfficinaSerifStd-Book.woff2') format("woff2"),
+    url('#{$base_url}/OfficinaSerifStd-Book.woff') format("woff"),
+    url('#{$base_url}/OfficinaSerifStd-Book.ttf') format("truetype");
+    font-weight:100;font-style:normal;font-display:swap
+}
+
+@font-face {
+font-family: 'OfficinaSerifStd-Bold';
+src: url('#{$base_url}/OfficinaSerifStd-Bold.woff2') format("woff2"),
+     url('#{$base_url}/OfficinaSerifStd-Bold.woff') format("woff"),
+     url('#{$base_url}/OfficinaSerifStd-Bold.ttf') format("truetype");
+     font-weight:100;font-style:normal;font-display:swap
+}
+
+
 /* Care Website Relaunch CSS
  Load this css by adding care-relaunch-css in the query string
  e.g.: https://care.datadialog.net/?care-relaunch-css
