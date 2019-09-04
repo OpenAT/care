@@ -19,11 +19,11 @@ body[data-last-visited-rootcatid="2"] {
       //width: 100%;
 
       .col-md-8 {
-        padding-left: 0px !important;
+        padding-left: 0px;
       }
 
       td {
-        width: 33.3333% !important;
+        width: 33.3333%;
         //display: inline-block;
         display: inline-table;
         float: left;
@@ -31,9 +31,9 @@ body[data-last-visited-rootcatid="2"] {
       }
 
       tr {
-        display: inline !important;
+        display: inline;
         float: none;
-        clear: both !important;
+        clear: both;
       }
       table {
         //border-spacing: 22px 40px;
