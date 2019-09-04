@@ -69,7 +69,7 @@ body {
 strong {
   font-family: 'HelveticaNeueLTStd-Bold'; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h4.oe_price_h4, h5, h6 {
   font-family: 'HelveticaNeueLTStd-Roman' }
 
 .container {
