@@ -35,7 +35,7 @@ body {
     font-size: 35px;
   }
   #price_donate {
-    background-color: white !important;
+    background-color: white;
     //height: 90px;
     width: 90px;
   }
@@ -67,7 +67,7 @@ body {
     > li {
       float: none;
       img {
-        display: none !important;
+        display: none;
       }
     }
   }
@@ -88,7 +88,7 @@ body {
   margin-bottom: 1em;
   margin-top: 3em;
   h3 {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
     font-weight: normal;
     // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -120,16 +120,16 @@ body {
 /* Iframe Modal Box behavior */
 
 #wsd_checkout_form .form-group {
-        position: relative !important;
+        position: relative;
 }
 .modal-open .modal {
-        overflow: visible !important;
+        overflow: visible;
 }
 .modal {
-    position: absolute !important;
+    position: absolute;
 }
 /* BODY SCROLL AFTER ADDING MODAL BEHAVIOR -- STILL NEED TESTS */
 /* Fix Backend CSS for Speichern Button */
 #website-top-edit .btn.btn-primary.btn-xs {
-  width: auto !important;
+  width: auto;
 }
