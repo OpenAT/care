@@ -7,7 +7,7 @@
  ATTENTION: Add this to the frontend asset at the relaunch day to permanently include and minify the css!
  */
 
-body, a, .quick_add_to_cart a {
+body, a, .quick_add_to_cart a, h1, h2, h3, h4, h4.oe_price_h4, h5, h6 {
 	font-family: 'Roboto';
 }
 
