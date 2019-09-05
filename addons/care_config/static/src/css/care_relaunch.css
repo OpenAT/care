@@ -1,18 +1,4 @@
-@font-face {
-font-family: 'OfficinaSerifStd-Book';
-src:url('#{$base_url}/OfficinaSerifStd-Book.woff2') format("woff2"),
-    url('#{$base_url}/OfficinaSerifStd-Book.woff') format("woff"),
-    url('#{$base_url}/OfficinaSerifStd-Book.ttf') format("truetype");
-    font-weight:100;font-style:normal;font-display:swap
-}
-
-@font-face {
-font-family: 'OfficinaSerifStd-Bold';
-src: url('#{$base_url}/OfficinaSerifStd-Bold.woff2') format("woff2"),
-     url('#{$base_url}/OfficinaSerifStd-Bold.woff') format("woff"),
-     url('#{$base_url}/OfficinaSerifStd-Bold.ttf') format("truetype");
-     font-weight:100;font-style:normal;font-display:swap
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500&display=swap');
 
 
 /* Care Website Relaunch CSS
@@ -20,6 +6,10 @@ src: url('#{$base_url}/OfficinaSerifStd-Bold.woff2') format("woff2"),
  e.g.: https://care.datadialog.net/?care-relaunch-css
  ATTENTION: Add this to the frontend asset at the relaunch day to permanently include and minify the css!
  */
+
+body, .quick_add_to_cart a {
+	font-family: 'Roboto', 'Arial', sans-serif !important;
+}
 
 body, table .oe_product section {
 	color: #5A4941;
@@ -280,7 +270,6 @@ body[data-catid="7"] {
 
 .quick_add_to_cart a {
 	position: relative;
-	font-family: 'HelveticaNeueLTStd-Roman', 'Helvetica', 'Arial', sans-serif !important;
 	display: inline;
 	line-height: 30px;
 }
@@ -323,5 +312,5 @@ a.remove_product {
 }
 
 .oe_product.oe_grid section h5 a {
-   font-family: OfficinaSerifStd-Book,sans-serif;
+   font-family: 'Roboto Slab';
 }
