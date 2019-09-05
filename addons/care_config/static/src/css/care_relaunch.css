@@ -11,6 +11,10 @@ body, .quick_add_to_cart a {
 	font-family: 'Roboto', 'Arial', sans-serif !important;
 }
 
+.oe_product.oe_grid section h5 a, .js_sale #products_grid_before a.btn-default, .js_sale #products_grid_before a.btn-primary, .js_sale #wsd_checkout_form a.btn-default, .js_sale #wsd_checkout_form a.btn-primary {
+    font-family: 'Roboto Slab';
+}
+
 body, table .oe_product section {
 	color: #5A4941;
 }
@@ -309,8 +313,4 @@ body[data-catid="7"] {
 
 a.remove_product {
 	color: #E4761E;
-}
-
-.oe_product.oe_grid section h5 a {
-   font-family: 'Roboto Slab';
 }
