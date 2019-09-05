@@ -7,8 +7,8 @@
  ATTENTION: Add this to the frontend asset at the relaunch day to permanently include and minify the css!
  */
 
-body, .quick_add_to_cart a {
-	font-family: 'Roboto', 'Arial', sans-serif !important;
+body, a, .quick_add_to_cart a {
+	font-family: 'Roboto';
 }
 
 .oe_product.oe_grid section h5 a, .js_sale #products_grid_before a.btn-default, .js_sale #products_grid_before a.btn-primary, .js_sale #wsd_checkout_form a.btn-default, .js_sale #wsd_checkout_form a.btn-primary {
