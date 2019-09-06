@@ -7,8 +7,12 @@
  ATTENTION: Add this to the frontend asset at the relaunch day to permanently include and minify the css!
  */
 
-body, a, .quick_add_to_cart a, h1, h2, h3, h4, h4.oe_price_h4, h5, h6 {
+body, a, h1, h2, h3, h4, h4.oe_price_h4, h5, h6 {
 	font-family: 'Roboto';
+}
+
+.quick_add_to_cart a {
+	font-family: 'Roboto' !important;
 }
 
 .oe_product.oe_grid section h5 a, .js_sale #products_grid_before a.btn-default, .js_sale #products_grid_before a.btn-primary, .js_sale #wsd_checkout_form a.btn-default, .js_sale #wsd_checkout_form a.btn-primary {
@@ -241,7 +245,7 @@ body .quick_add_to_cart {
 
 #products_grid td {
 	width: 33.3333%;
-	border-spacing: 20px 40px;
+	border-spacing: 15px 40px;
 }
 
 .btn.btn-default.btn-xs.fa.fa-shopping-cart {
