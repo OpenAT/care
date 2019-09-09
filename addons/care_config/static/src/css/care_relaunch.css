@@ -7,6 +7,11 @@
  ATTENTION: Add this to the frontend asset at the relaunch day to permanently include and minify the css!
  */
 
+.oe_website_sale .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 body, a, h1, h2, h3, h4, h4.oe_price_h4, h5, h6 {
 	font-family: 'Roboto';
 }
@@ -313,4 +318,18 @@ body[data-catid="7"] {
 
 a.remove_product {
 	color: #E4761E;
+}
+
+#wsd_checkout_form .arbitrary_price {
+	margin-top: 60px;
+}
+
+@media only screen and (max-width: 817px) {
+	.form-group.price_donate {
+		margin-top: 20px;
+	}
+	
+	#wsd_checkout_form .row .row, #payment_method .col-lg-12 {
+		max-width: 100%;
+	}
 }
