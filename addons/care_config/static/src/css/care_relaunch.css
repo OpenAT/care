@@ -338,4 +338,9 @@ a.remove_product {
 	body .container #wsd_checkout_form {
 	    padding: 0 0 60px;
 	}
+	
+	body[data-catid="7"] {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
