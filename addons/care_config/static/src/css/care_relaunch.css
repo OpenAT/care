@@ -333,3 +333,9 @@ a.remove_product {
 		max-width: 100%;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	body .container #wsd_checkout_form {
+	    padding: 0 0 60px;
+	}
+}
