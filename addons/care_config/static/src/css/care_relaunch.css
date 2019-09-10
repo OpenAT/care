@@ -343,4 +343,8 @@ a.remove_product {
 		padding-left: 0;
 		padding-right: 0;
 	}
+	
+	td[name="product_remove"] {
+		min-width: 25px;
+	}
 }
