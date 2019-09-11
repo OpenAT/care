@@ -347,4 +347,8 @@ a.remove_product {
 	td[name="product_remove"] {
 		min-width: 25px;
 	}
+	
+	.js_sale #wsd_checkout_form a.btn-primary {
+		font-size: 15px;
+	}
 }
