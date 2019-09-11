@@ -6,7 +6,9 @@
 // ////// START ALEX
 
 $(document).ready( function() {
-    console.log(getUrlParameter('care-relaunch-css'));
+    if (window.location.href.indexOf('care-relaunch-css') > -1) {
+        console.log('test);
+    }
     // rotation help-function
     $.fn.animateRotate = function(angle, duration, delay, easing, complete) {
         return this.each(function() {
@@ -123,15 +125,3 @@ $(document).ready( function() {
     });
 
 });
-
-function getUrlParameter(name) {
-    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    var results = regex.exec(location.search);
-    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-};
-
-
-
-
-// ////// END ALEX
