@@ -365,3 +365,19 @@ a.remove_product {
 		font-size: 15px;
 	}
 }
+
+@media (max-width: 400px) {
+	#products_grid .oe_product {
+		height: auto;
+	}
+	#products_grid .oe_product section {
+		background: none;
+	}
+	#products_grid .oe_product .oe_product_image {
+		top: 0;
+		bottom: auto;
+	}
+	#products_grid .oe_product.oe_image_full .oe_product_image {
+		bottom: auto;
+	}
+}
