@@ -6,7 +6,9 @@
 // ////// START ALEX
 
 $(document).ready( function() {
-
+    if ( window.location.href.indexOf( 'care-relaunch-css' ) > -1 ) {
+        console.log('yo');
+    }
     // rotation help-function
     $.fn.animateRotate = function(angle, duration, delay, easing, complete) {
         return this.each(function() {
