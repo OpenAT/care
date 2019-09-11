@@ -59,36 +59,41 @@
         <template id="care_product_grid_cart" inherit_id="website_sale.products" active="True" customize_show="True" name="Care Cart and Add to Cart">
 
             <!-- Add a small shopping cart to products grid before column -->
-            <xpath expr="//div[@id='products_grid_before']" position="inside">
-                <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
-                <!-- Small Cart Header -->
-                <t t-call="website_sale_donate.small_cart_header">
-                    <t t-set="show_small_cart_header" t-value="True"/>
-                </t>
-                <!-- Care Package Drop Area -->
-                <div class="box_content">
-                    <div id="spenden_paket_circle">
-                        <div id="spenden_paket_opened">
-                            <div class="spenden_paket_bg_2"></div>
-                            <div class="spenden_paket_bg"></div>
-                        </div>
-                        <div id="spenden_paket_closed" class="spenden_paket_bg_sent"></div>
-                        <div id="spenden_paket_confirmed" class="vCenter">
-                            <div>
-                                <p>Thank you!</p>
+            <!-- ATTENTION: FOR THE WEBSITE RELAUNCH THE CART WAS MOVED AFTER THE GRID (REQUESTED BY ANDI FROM FLOATWORKS) BUT SINCE THE CSS WAS ALREADY DONE I HAD TO KEEP THE DIV BOX ID #products_grid_before -->
+            <xpath expr="//div[@id='products_grid_before']" position="replace"></xpath>
+            <xpath expr="//div[@id='products_grid']" position="after">
+
+                <div id="products_grid_before" class="col-md-4">
+                    <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+                    <!-- Small Cart Header -->
+                    <t t-call="website_sale_donate.small_cart_header">
+                        <t t-set="show_small_cart_header" t-value="True"/>
+                    </t>
+                    <!-- Care Package Drop Area -->
+                    <div class="box_content">
+                        <div id="spenden_paket_circle">
+                            <div id="spenden_paket_opened">
+                                <div class="spenden_paket_bg_2"></div>
+                                <div class="spenden_paket_bg"></div>
+                            </div>
+                            <div id="spenden_paket_closed" class="spenden_paket_bg_sent"></div>
+                            <div id="spenden_paket_confirmed" class="vCenter">
+                                <div>
+                                    <p>Thank you!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Small Cart -->
-                <t t-call="website_sale_donate.small_cart"/>
+                    <!-- Small Cart -->
+                    <t t-call="website_sale_donate.small_cart"/>
 
-                <!-- Checkout Button -->
-                <div class="text-left small_cart_buttons">
-                    <a t-if="not optional_products and website_sale_order and website_sale_order.website_order_line" class="btn btn-primary pull-right" href="#">Checkout</a>
+                    <!-- Checkout Button -->
+                    <div class="text-left small_cart_buttons">
+                        <a t-if="not optional_products and website_sale_order and website_sale_order.website_order_line" class="btn btn-primary pull-right" href="#">Checkout</a>
+                    </div>
+                    <div class="clearfix"/>
                 </div>
-                <div class="clearfix"/>
             </xpath>
         </template>
 
