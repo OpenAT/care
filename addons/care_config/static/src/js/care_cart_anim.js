@@ -1,10 +1,6 @@
 $(document).ready( function() {
 	var relaunch = ( window.location.href.indexOf( 'care-relaunch-css' ) > -1 ) ? 1 : 0;
 	
-	if ( relaunch ) {
-		$('#products_grid_before').hide();
-	}
-
 	// rotation help-function
 	$.fn.animateRotate = function(angle, duration, delay, easing, complete) {
 		if ( !relaunch ) {
