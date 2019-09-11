@@ -78,7 +78,10 @@ $(document).ready( function() {
 				$(this).find('form').submit();
 			}
 		} else {
+			e.preventDefault();
 			$('#products_grid_before').show();
+			var $form = $(this).find('form');
+			$form.submit();
 		}
 	});
 
@@ -118,15 +121,16 @@ $(document).ready( function() {
 				$('.spenden_paket_bg_2').css('left','300px').css('z-index', '99');
 				$('#spenden_paket_confirmed').delay(150).fadeIn();
 			}, 1500);
-
-			var timeout_href = setTimeout( function() {
-				//window.location.href = "/shop/checkout";
-				//window.location.href = "#";
-
-				//window.parent.$("html, body").animate({ scrollTop: $('.one-page-checkout').offset().top });
-				parentIFrame.scrollToOffset( 0, $('.one-page-checkout').offset().top - 25 );
-				parentIFrame.sendMessage('parcel-closed');
-			}, 3000)
+		} else {
+			e.preventDefault();
 		}
+		var timeout_href = setTimeout( function() {
+			//window.location.href = "/shop/checkout";
+			//window.location.href = "#";
+
+			//window.parent.$("html, body").animate({ scrollTop: $('.one-page-checkout').offset().top });
+			parentIFrame.scrollToOffset( 0, $('.one-page-checkout').offset().top - 25 );
+			parentIFrame.sendMessage('parcel-closed');
+		}, 3000);
 	});
 });
