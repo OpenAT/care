@@ -316,6 +316,19 @@ body[data-catid="7"] {
 	float: none !important;
 }
 
+#products_grid .oe_product .oe_product_image img {
+	margin: 0;
+	min-height: 100%;
+}
+
+.wrap_wsd_1 .back {
+	display: none;
+}
+
+.oe_product_image {
+	background: none;
+}
+
 a.remove_product {
 	color: #E4761E;
 }
