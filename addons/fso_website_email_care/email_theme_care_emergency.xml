@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    
+    <!-- CARE EMERGENCY THEME ASSETS -->
+    <!-- ATTENTION: At least one local css <link> or inline <style> tag  (even if just empty) MUST exist in an assets template -->
+    <template id="email_theme_care_emergency_assets">
+        <link href='/fso_website_email_care/static/src/css/email_theme_care_emergency.css' rel='stylesheet' type='text/css' t-ignore="true"/>
+    </template>
+
+    <!-- CARE EMERGENCY THEME -->
+    <template id="email_theme_care_emergency" name="care emergency"><t t-set="emergency_theme" t-value="True"/><t t-call="fso_website_email_care.email_theme_care"/>
+    </template>
+
+    <!-- Enable the boolean field 'fso_email_template' for this theme to show it at the 'fso/email/select' page -->
+    <record id="fso_website_email_care.email_theme_care_emergency" model="ir.ui.view">
+        <field name="fso_email_template" eval="True"/>
+    </record>
+
+</data>
+</openerp>

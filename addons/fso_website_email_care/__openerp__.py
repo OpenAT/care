@@ -45,6 +45,7 @@ Custom Newsletter-Theme for care based on the website design.
         'email_theme_care_snippets.xml',
         'email_theme_care_combined_snippets.xml',
         'email_theme_care.xml',
+        'email_theme_care_emergency.xml',
     ],
     'qweb': [
     ],

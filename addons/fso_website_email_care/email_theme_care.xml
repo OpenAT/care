@@ -84,7 +84,12 @@
                 
                 <!-- THEME care CSS-ASSETS -->
                 <t t-call-assets="fso_website_email_care.email_theme_care_assets" t-js="false"/>
-                
+
+                <!-- SPECIAL EMERGENCY THEME ASSETS -->
+                <t t-if="emergency_theme">
+                    <t t-call-assets="fso_website_email_care.email_theme_care_emergency_assets" t-js="false"/>
+                </t>
+
                 <meta name="viewport" content="width=device-width"/>
             </head>
 
