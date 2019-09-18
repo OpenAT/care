@@ -183,9 +183,11 @@
     position: absolute;
     width: 270px;
     height: 135px;
-    left: 320px;
-    top: 135px;
-    background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");
+    /*left: 320px;*/
+    right:5%;
+    /*top: 135px;*/
+    top: 40%;
+    /*background-image: url("/fso_website_email_care/static/src/img/overlayimg.png");*/
     opacity: 0.9;
 }
 

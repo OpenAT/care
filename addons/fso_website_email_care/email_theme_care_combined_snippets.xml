@@ -43,16 +43,26 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td align="center" class="nestedContainerCell" valign="top">
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable" height="300px" width="620px">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td class="textContent ckediting_enabled">
-                                                                                        <a href="#"><img class="flexibleImage snippet_block_banner_image" src="/fso_website_email_care/static/src/img/620x300_transparent.png"/>
+                                                                                    <!-- <td class="textContent ckediting_enabled BackgroundLayerBack" background="/website/image/ir.attachment/10339_e27b29b/datas">
+                                                                                    -->
+                                                                                    <td>
+                                                                                        <a href="#">
+                                                                                            <img class="flexibleImage snippet_block_banner_image"
+                                                                                                 src="/fso_website_email_care/static/src/img/620x300_transparent.png"/>
                                                                                         </a>
                                                                                     </td>
-                                                                                </tr>
+
+                                                                        <!--
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable" height="300px" width="620px">
+                                                                            <tbody>
                                                                                 <tr>
-                                                                                    <!-- OverLaybox -->
+
+                                                                                    <td class="textContent ckediting_enabled BackgroundLayerFront" contenteditable="true" background="/website/image/ir.attachment/10612_d043e45/datas">
+                                                                                    </td>-->
+                                                                     <!-- OverLaybox -->
                                                                                     <td class="overlayTableBox">
                                                                                         <div class="ckediting_disabled snippet_block snippet_block_text_intro overlaybox"
                                                                                              contenteditable="false">
@@ -88,8 +98,8 @@
                                                                                                                                                 <tbody>
                                                                                                                                                     <tr>
                                                                                                                                                         <td class="textContent ckediting_enabled"
-                                                                                                                                                            contenteditable="true">
-                                                                                                                                                            <a href="#"><img class="OverlayBannerImage" src="/fso_website_email_care/static/src/img/overlayimg.png"/></a>
+                                                                                                                                                            contenteditable="true" background="/fso_website_email_care/static/src/img/overlayimg.png">
+                                                                                                                                                            <!-- <a href="#"><img class="OverlayBannerImage" src="/fso_website_email_care/static/src/img/overlayimg.png"/></a> -->
                                                                                                                                                             <h1>
                                                                                                                                                                 Text test für Overlay box tables only
                                                                                                                                                             </h1>
