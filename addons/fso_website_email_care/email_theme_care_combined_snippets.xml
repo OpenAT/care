@@ -43,17 +43,38 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td align="center" class="nestedContainerCell" valign="top">
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable" height="300px" width="620px">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable" height="300px" width="620px" background="/website/image/ir.attachment/10339_e27b29b/datas">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <!-- <td class="textContent ckediting_enabled BackgroundLayerBack" background="/website/image/ir.attachment/10339_e27b29b/datas">
-                                                                                    -->
-                                                                                    <td>
+                                                                                    <td class="textContent ckediting_enabled BackgroundLayerBack" background="/website/image/ir.attachment/10626_e83a34a/datas">
+                                                                                        <!--[if gte mso 9]>
+                                                                                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:500px;">
+                                                                                        <v:fill type="frame" src="http://www.planwallpaper.com/static/images/6909249-black-hd-background.jpg" color="#3b4a69" />
+                                                                                        <v:textbox inset="0,0,0,0">
+                                                                                        <![endif]-->
+                                                                                        <!--
                                                                                         <a href="#">
                                                                                             <img class="flexibleImage snippet_block_banner_image"
                                                                                                  src="/fso_website_email_care/static/src/img/620x300_transparent.png"/>
-                                                                                        </a>
+                                                                                        </a>-->
+                                                                                        <div>
+                                                                                            <!-- Overlay image or text -->
+                                                                                            <table class="ckediting_enabled" align="right" border="0" cellpadding="0" cellspacing="0" width="270px" height="135px" style="max-width:270px; margin-right:5%; margin-top:10%;">
+                                                                                                <tr>
+                                                                                                    <td style="color: white; padding-left: 10px; background-image:url(/fso_website_email_care/static/src/img/overlayimg.png); background-position: right; background-repeat: no-repeat;">
+                                                                                                        <h1 style="color: white; margin: 0 0 0 30px; font-size: 26px;">text test für overlay boxtables only</h1>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <!--[if gte mso 9]>
+                                                                                        </v:textbox>
+                                                                                        </v:rect>
+                                                                                        <![endif]-->
                                                                                     </td>
+
+
+
 
                                                                         <!--
                                                                         <table border="0" cellpadding="0" cellspacing="0" class="contentTable" height="300px" width="620px">
@@ -63,7 +84,7 @@
                                                                                     <td class="textContent ckediting_enabled BackgroundLayerFront" contenteditable="true" background="/website/image/ir.attachment/10612_d043e45/datas">
                                                                                     </td>-->
                                                                      <!-- OverLaybox -->
-                                                                                    <td class="overlayTableBox">
+                                                                                    <td class="overlayTableBox" style="display:none;">
                                                                                         <div class="ckediting_disabled snippet_block snippet_block_text_intro overlaybox"
                                                                                              contenteditable="false">
                                                                                             <table class="centeringTable"
