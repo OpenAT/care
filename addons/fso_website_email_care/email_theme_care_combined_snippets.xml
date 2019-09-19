@@ -43,20 +43,30 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td align="center" class="nestedContainerCell" valign="top">
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable" height="300px" width="620px" background="/website/image/ir.attachment/10339_e27b29b/datas">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="contentTable" height="300px" width="620px" background="/website/image/ir.attachment/13694_aa03872/datas">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td class="textContent ckediting_enabled BackgroundLayerBack" background="/website/image/ir.attachment/10626_e83a34a/datas">
-                                                                                        <!--[if gte mso 9]>
-                                                                                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:500px;">
-                                                                                        <v:fill type="frame" src="http://www.planwallpaper.com/static/images/6909249-black-hd-background.jpg" color="#3b4a69" />
-                                                                                        <v:textbox inset="0,0,0,0">
-                                                                                        <![endif]-->
+                                                                                    <td class="textContent ckediting_enabled" background="/website/image/ir.attachment/14430_331bd1f/datas">
+
+                                                                                        <!-- Outlook Hacks -->
+                                                                                        <t t-set='outlook_comments'>
+                                                                                        <![CDATA[
+                                                                                            <!--[if gte mso 9]>
+                                                                                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:620;height:300px;">
+                                                                                            <v:fill type="frame" src="/website/image/ir.attachment/14430_331bd1f/datas" color="#3b4a69" />
+                                                                                            <v:textbox inset="0,0,0,0">
+                                                                                            <![endif]-->
+
+                                                                                        ]]>
+                                                                                        </t>
+                                                                                        <t t-raw="outlook_comments"/>
+
                                                                                         <!--
-                                                                                        <a href="#">
-                                                                                            <img class="flexibleImage snippet_block_banner_image"
-                                                                                                 src="/fso_website_email_care/static/src/img/620x300_transparent.png"/>
-                                                                                        </a>-->
+                                                                                            <a href="#">
+                                                                                             <img class="flexibleImage snippet_block_banner_image"
+                                                                                                     src="/fso_website_email_care/static/src/img/620x300_transparent.png"/>
+                                                                                            </a>
+                                                                                        -->
                                                                                         <div>
                                                                                             <!-- Overlay image or text -->
                                                                                             <table class="ckediting_enabled" align="right" border="0" cellpadding="0" cellspacing="0" width="270px" height="135px" style="max-width:270px; margin-right:5%; margin-top:10%;">
@@ -67,11 +77,19 @@
                                                                                                 </tr>
                                                                                             </table>
                                                                                         </div>
-                                                                                        <!--[if gte mso 9]>
-                                                                                        </v:textbox>
-                                                                                        </v:rect>
-                                                                                        <![endif]-->
+                                                                                        <t t-set='outlook_comments_secondpart'>
+
+                                                                                        <![CDATA[
+
+                                                                                            <!--[if gte mso 9]>
+                                                                                            </v:textbox>
+                                                                                            </v:rect>
+                                                                                            <![endif]-->
+                                                                                        ]]>
+                                                                                        </t>
+                                                                                        <t t-raw='outlook_comments_secondpart'/>
                                                                                     </td>
+
 
 
 
@@ -380,8 +398,8 @@
                                                                                                 <a href="https://www.facebook.com/CARE.Oesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/facebook.png" alt="Facebook"/></a>
                                                                                                 &amp;nbsp; &amp;nbsp;&amp;nbsp;
                                                                                                 <a href="https://twitter.com/#!/careaustria" target="_blank"><img src="/fso_website_email_care/static/src/icons/twitter.png" alt="Facebook"/></a>&amp;nbsp;
-                                                                                                &amp;nbsp; &amp;nbsp;<a href="https://www.youtube.com/careoesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/youtube.png" alt="Youtube"/></a>&amp;nbsp;
-                                                                                                <a href="https://www.flickr.com/photos/careoesterreich/albums" target="_blank"><img src="/fso_website_email_care/static/src/icons/flickr.png" alt="Flickr"/></a>
+                                                                                                &amp;nbsp; &amp;nbsp;<a href="https://www.youtube.com/careoesterreich" target="_blank"><img src="/fso_website_email_care/static/src/icons/youtube.png" alt="Youtube"/></a>&amp;nbsp;&amp;nbsp; &amp;nbsp;
+                                                                                                <a href="https://www.instagram.com/care.at/" target="_blank"><img src="/fso_website_email_care/static/src/icons/instagram.png" alt="Instagram"/></a>
                                                                                                 &amp;nbsp;&amp;nbsp;
                                                                                             </p>
                                                                                         </td>
@@ -512,9 +530,8 @@
                                                                                                                                                                                         <tr>
                                                                                                                                                                                             <td align="left"
                                                                                                                                                                                                 class="imageContent ckediting_enabled"
-                                                                                                                                                                                                valign="top">
-                                                                                                                                                                                                <img class="flexibleImage"
-                                                                                                                                                                                                     src="/fso_website_email_care/static/src/img/guetesiegel.png"/>
+                                                                                                                                                                                                valign="middle" vertical-align="middle">
+                                                                                                                                                                                                <a href="https://www.osgs.at/" target="_blank"><img class="flexibleImage" src="/fso_website_email_care/static/src/img/guetesiegel.png"/></a>
                                                                                                                                                                                             </td>
                                                                                                                                                                                         </tr>
                                                                                                                                                                                     </tbody>
@@ -529,12 +546,8 @@
                                                                                                                                                                                         <tr>
                                                                                                                                                                                             <td class="textContent ckediting_enabled"
                                                                                                                                                                                                 valign="top">
-                                                                                                                                                                                                <h4>
-                                                                                                                                                                                                    Kaiserin
-                                                                                                                                                                                                    <br/>
-                                                                                                                                                                                                </h4>
                                                                                                                                                                                                 <p class="care_tiny">
-                                                                                                                                                                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                                                                                                                                                                                    Diese unabhängige Kontrolle bestätigt, dass Ihre Spende sicher in den Projekten von CARE Österreich ankommt.
                                                                                                                                                                                                 </p>
                                                                                                                                                                                             </td>
                                                                                                                                                                                         </tr>
@@ -603,9 +616,8 @@
                                                                                                                                                                                         <tr>
                                                                                                                                                                                             <td align="left"
                                                                                                                                                                                                 class="imageContent ckediting_enabled"
-                                                                                                                                                                                                valign="top">
-                                                                                                                                                                                                <img class="flexibleImage"
-                                                                                                                                                                                                     src="/fso_website_email_care/static/src/img/absetzbar.png"/>
+                                                                                                                                                                                                valign="middle">
+                                                                                                                                                                                                <a href="https://www.care.at/transparenz-und-kontrolle/" target="_blank"><img class="flexibleImage" src="/fso_website_email_care/static/src/img/absetzbar.jpg"/></a>
                                                                                                                                                                                             </td>
                                                                                                                                                                                         </tr>
                                                                                                                                                                                     </tbody>
@@ -620,13 +632,8 @@
                                                                                                                                                                                         <tr>
                                                                                                                                                                                             <td class="textContent ckediting_enabled"
                                                                                                                                                                                                 valign="top">
-                                                                                                                                                                                                <h4>
-                                                                                                                                                                                                    Seidenschal
-                                                                                                                                                                                                    <br/>
-                                                                                                                                                                                                </h4>
-
                                                                                                                                                                                                 <p class="care_tiny">
-                                                                                                                                                                                                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                                                                                                                                                                                   Ihre Spende an CARE Österreich ist absetzbar und wird automatisch von uns an das Finanzamt gemeldet.
                                                                                                                                                                                                 </p>
                                                                                                                                                                                             </td>
                                                                                                                                                                                         </tr>

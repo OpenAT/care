@@ -94,7 +94,8 @@
 }*/
 /* Social Media Icons */
 .snippet_block_text_intro.combinedfooter.mediaicons img {
-    width: 55px;
+    /*width: 55px;*/
+    height: 25px;
 }
 /* remove padding intro block */
 .snippet_block_text_intro.combinedfooter .flexibleContainerCell {
