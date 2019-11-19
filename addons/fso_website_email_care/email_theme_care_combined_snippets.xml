@@ -211,7 +211,7 @@
                                                                                         contenteditable="true">
                                                                                         <p class="care_tiny"
                                                                                            style="text-align: center;">
-                                                                                            <a href="www.care.at" data-cke-saved-href="www.care.at" target="_blank" style="text-align: center; color: gray; font-weight: 700; font-size: 12px;">Zur Webversion</a>
+                                                                                            <a href="%open_browser%" data-cke-saved-href="%open_browser%" target="_blank" style="text-align: center; color: gray; font-weight: 700; font-size: 12px;">Zur Webversion</a>
                                                                                         </p>
                                                                                     </td>
                                                                                 </tr>
@@ -309,7 +309,7 @@
                                                                                                                                                                                         <td>
                                                                                                                                                                                             <p class="ckediting_enabled">
                                                                                                                                                                                                 <a class="bpbutton_link"
-                                                                                                                                                                                                   href="https://www.datadialog.at"
+                                                                                                                                                                                                   href="https://www.care.at/online-spenden/"
                                                                                                                                                                                                    target="_blank">
                                                                                                                                                                                                     JETZT
                                                                                                                                                                                                     SPENDEN
@@ -701,26 +701,34 @@
                                                                                             <p class="care_tiny" style="text-align: center;">
                                                                                                 <span style="text-align: center;">
                                                                                                     <br></br>
+                                                                                                    <a href="https://www.care.at/contact-us/">
                                                                                                     &amp;nbsp;Kontakt&amp;nbsp;
                                                                                                     &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    </a>
+                                                                                                    <a href="https://www.care.at/datenschutz/">
                                                                                                     &amp;nbsp; Datenschutz&amp;nbsp;
                                                                                                     &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    </a>
+                                                                                                    <a href="https://www.care.at/datenschutz/">
                                                                                                     &amp;nbsp;Sitemap&amp;nbsp;
                                                                                                     &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    </a>
                                                                                                     &amp;nbsp;Barrierefreiheit&amp;nbsp;
                                                                                                     &amp;nbsp; &amp;nbsp; &amp;nbsp;
+                                                                                                    <a href="https://www.care.at/impressum/">
                                                                                                     &amp;nbsp;Impressum&amp;nbsp;&amp;nbsp;
+                                                                                                    </a>
                                                                                                 </span>
                                                                                             </p>
 
                                                                                             <p style="text-align: center;">
                                                                                                 <span style="text-align: center;">
-                                                                                                    <a href="%NEWSLETTER%">
+                                                                                                    <a href="https://www.care.at/newsletter-abmeldung">
                                                                                                         Newsletter
                                                                                                         Abbestellen</a>&amp;nbsp;
                                                                                                     &amp;nbsp; &amp;nbsp; &amp;nbsp;
                                                                                                     &amp;nbsp;
-                                                                                                    <a href="%MEINEDATENFORM%">
+                                                                                                    <a href="https://www.care.at/spenden/spendeninformation/">
                                                                                                         Daten ändern
                                                                                                     </a><br></br>
                                                                                                 </span>
@@ -728,7 +736,7 @@
 
                                                                                             <p class="care_tiny" style="text-align: center;">
                                                                                                 <span style="font-family: &quot;PT Sans&quot;, &quot;Trebuchet MS&quot;, sans-serif; font-size: 16px; background-color: transparent; text-align: center;">
-                                                                                                    C 2018 CARE
+                                                                                                    C 2019 CARE
                                                                                                     Österreich
                                                                                                 </span>
                                                                                             </p><br></br>
