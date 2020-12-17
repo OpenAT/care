@@ -5,10 +5,10 @@
         <!-- Load custom CSS and JS for the website -->
         <template id="care_assets_frontend" inherit_id="website_forum.assets_frontend" name="care CSS and JS">
             <xpath expr='//script[@src="/website_forum/static/src/js/website_forum.js"]' position="after">
-                <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
+<!--                <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
 
-                <!-- Website relaunch css -->
-                <link rel="stylesheet" href='/care_config/static/src/css/care_relaunch.css'/>
+                &lt;!&ndash; Website relaunch css &ndash;&gt;
+                <link rel="stylesheet" href='/care_config/static/src/css/care_relaunch.css'/>-->
 
                 <script type="text/javascript" src="/care_config/static/src/js/jquery.flip.min.js"/>
                 <script type="text/javascript" src="/care_config/static/src/js/care_cart_anim.js"/>
@@ -27,13 +27,25 @@
         <!--    </xpath>-->
         <!--</template>-->
 
-        <!--<template id="care_relauch_custom_css_tester" inherit_id="website.layout" name="Care Relauch Custom CSS Tester">-->
-        <!--    <xpath expr="//head" position="inside">-->
-        <!--        <t t-if="'care-relaunch-css' in request.httprequest.query_string">-->
-        <!--            <link rel="stylesheet" href='/care_config/static/src/css/care_relaunch.css'/>-->
-        <!--        </t>-->
-        <!--    </xpath>-->
-        <!--</template>-->
+        <template id="care_repair_custom_css_tester" inherit_id="website.layout" name="Care Repair Custom CSS Tester">
+            <xpath expr="//head" position="inside">
+                <t t-if="'care-repair-css' in request.httprequest.query_string">
+                    <link rel='stylesheet' href='/care_config/static/src/css/bootstrap_care/css/bootstrap.min.css' t-ignore="true"/>
+                    <link rel='stylesheet' href='/care_config/static/src/css/bootstrap_care/css/bootstrap-theme.min.css' t-ignore="true"/>
+                    <link rel="stylesheet" href='/care_config/static/src/css/care-repair-css.css'/>
+<!--
+                    <script type="text/javascript" src="/care_config/static/src/js/care_grid.js"/>
+-->
+                </t>
+                <t t-if="not request or not request.httprequest or not request.httprequest.query_string or 'care-repair-css' not in request.httprequest.query_string">
+                    <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
+                    <link rel="stylesheet" href='/care_config/static/src/css/care_relaunch.css'/>
+<!--                    <script type="text/javascript" src="/care_config/static/src/js/jquery.flip.min.js"/>
+                    <script type="text/javascript" src="/care_config/static/src/js/care_cart_anim.js"/>
+                    <script type="text/javascript" src="/care_config/static/src/js/jquery.path.js"/>-->
+                </t>
+            </xpath>
+        </template>
 
     </data>
 </openerp>
