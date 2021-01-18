@@ -11,7 +11,7 @@ care form_jahresbericht Web Form to collect information about the care jahresber
     'website': "http://www.datadialog.net",
     'installable': True,
     'category': 'Uncategorized',
-    'version': '0.2',
+    'version': '0.3.1',
     'depends': [
         'fsonline'
     ],
@@ -19,5 +19,6 @@ care form_jahresbericht Web Form to collect information about the care jahresber
         'security/ir.model.access.csv',
         'security/access_rules.xml',
         'views/form_jahresbericht_submission.xml',
+        'views/assets.xml'
     ],
 }

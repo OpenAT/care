@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Load custom CSS and JS for the website -->
+        <template id="care_assets_frontend_form_jahresbericht" inherit_id="fso_forms.assets_frontend" name="CARE CSS and JS for form_jahresbericht">
+            <xpath expr='//script[last()]' position="after">
+                <link rel="stylesheet" href='/form_jahresbericht/static/src/css/form_jahresbericht.css'/>
+                <script type="text/javascript" src="/form_jahresbericht/static/src/js/form_jahresbericht.js"/>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
