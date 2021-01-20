@@ -1,83 +1,46 @@
-.text-muted {
-  display: none;
-}
-
 @font-face {
   font-family: 'OpenSansABold';
   src: url("/care_config/static/src/css/fonts/OpenSans-Bold.eot");
   src: url("/care_config/static/src/css/fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("/care_config/static/src/css/fonts/OpenSans-Bold.woff") format("woff"), url("/care_config/static/src/css/fonts/OpenSans-Bold.ttf") format("truetype"), url("/care_config/static/src/css/fonts/OpenSans-Bold.svg#OpenSans_bold") format("svg");
   font-weight: bold;
-  font-style: normal;
-}
-
+  font-style: normal; }
 @font-face {
   font-family: 'OpenSansARegular';
   src: url("/care_config/static/src/css/fonts/OpenSans-Regular.eot");
   src: url("/care_config/static/src/css/fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("/care_config/static/src/css/fonts/OpenSans-Regular.woff") format("woff"), url("/care_config/static/src/css/fonts/OpenSans-Regular.ttf") format("truetype"), url("/care_config/static/src/css/fonts/OpenSans-Regular.svg#OpenSans") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
-
+  font-style: normal; }
 @font-face {
   font-family: 'OpenSansAItalic';
   src: url("/care_config/static/src/css/fonts/OpenSans-Italic.eot");
   src: url("/care_config/static/src/css/fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("/care_config/static/src/css/fonts/OpenSans-Italic.woff") format("woff"), url("/care_config/static/src/css/fonts/OpenSans-Italic.ttf") format("truetype"), url("/care_config/static/src/css/fonts/OpenSans-Italic.svg#OpenSans_italic") format("svg");
   font-weight: normal;
-  font-style: italic;
-}
-
+  font-style: italic; }
 /* FONTS */
 @font-face {
   font-family: 'HelveticaNeueLTStd-Roman';
   src: url("/care_config/static/src/css/fonts/d049bc4e-8fa0-4797-9919-c124e6da7904.eot?#iefix");
-  src: url("/care_config/static/src/css/fonts/d049bc4e-8fa0-4797-9919-c124e6da7904.eot?#iefix") format("eot"), url("/care_config/static/src/css/fonts/ddc46a1f-4501-4c92-82fc-b412d6781f2d.woff2") format("woff2"), url("/care_config/static/src/css/fonts/3a3acd33-1964-4e6b-86ac-1b0fc117d8e0.woff") format("woff"), url("/care_config/static/src/css/fonts/f21c489c-feb8-42f4-abe7-b761a9ef042e.ttf") format("truetype"), url("/care_config/static/src/css/fonts/d8e220ed-4602-498f-be6b-161f6fcd1b92.svg#d8e220ed-4602-498f-be6b-161f6fcd1b92") format("svg");
-}
-
+  src: url("/care_config/static/src/css/fonts/d049bc4e-8fa0-4797-9919-c124e6da7904.eot?#iefix") format("eot"), url("/care_config/static/src/css/fonts/ddc46a1f-4501-4c92-82fc-b412d6781f2d.woff2") format("woff2"), url("/care_config/static/src/css/fonts/3a3acd33-1964-4e6b-86ac-1b0fc117d8e0.woff") format("woff"), url("/care_config/static/src/css/fonts/f21c489c-feb8-42f4-abe7-b761a9ef042e.ttf") format("truetype"), url("/care_config/static/src/css/fonts/d8e220ed-4602-498f-be6b-161f6fcd1b92.svg#d8e220ed-4602-498f-be6b-161f6fcd1b92") format("svg"); }
 @font-face {
   font-family: 'HelveticaNeueLTStd-Bold';
   src: url("/care_config/static/src/css/fonts/42980074-3753-4614-ac95-9506e9ad6c88.eot?#iefix");
-  src: url("/care_config/static/src/css/fonts/42980074-3753-4614-ac95-9506e9ad6c88.eot?#iefix") format("eot"), url("/care_config/static/src/css/fonts/31ee5279-92a8-43d1-9e8d-a418792435d2.woff2") format("woff2"), url("/care_config/static/src/css/fonts/88d3aa78-c646-4af0-9318-7e4405946f99.woff") format("woff"), url("/care_config/static/src/css/fonts/9e90bce2-6d02-4871-be6f-8eb1eb03eccf.ttf") format("truetype"), url("/care_config/static/src/css/fonts/339b37a5-69e3-4a27-a530-38254d6d9d80.svg#339b37a5-69e3-4a27-a530-38254d6d9d80") format("svg");
-}
-
+  src: url("/care_config/static/src/css/fonts/42980074-3753-4614-ac95-9506e9ad6c88.eot?#iefix") format("eot"), url("/care_config/static/src/css/fonts/31ee5279-92a8-43d1-9e8d-a418792435d2.woff2") format("woff2"), url("/care_config/static/src/css/fonts/88d3aa78-c646-4af0-9318-7e4405946f99.woff") format("woff"), url("/care_config/static/src/css/fonts/9e90bce2-6d02-4871-be6f-8eb1eb03eccf.ttf") format("truetype"), url("/care_config/static/src/css/fonts/339b37a5-69e3-4a27-a530-38254d6d9d80.svg#339b37a5-69e3-4a27-a530-38254d6d9d80") format("svg"); }
 @font-face {
   font-family: 'OfficinaSansStd-Bold';
   src: url("/care_config/static/src/css/fonts/aaf88d3b-e95f-4151-a8ee-e423ca9b1c2e.eot?#iefix");
-  src: url("/care_config/static/src/css/fonts/aaf88d3b-e95f-4151-a8ee-e423ca9b1c2e.eot?#iefix") format("eot"), url("/care_config/static/src/css/fonts/79209bd7-d1a2-4b23-af8f-cfe1e95199da.woff2") format("woff2"), url("/care_config/static/src/css/fonts/b422b051-41d8-49be-b329-aeaa08b5cb4d.woff") format("woff"), url("/care_config/static/src/css/fonts/345f5f5e-e3b4-4ebd-b954-8da02cc7493e.ttf") format("truetype"), url("/care_config/static/src/css/fonts/7d5f14d9-042a-4645-93fd-1b97e88500e9.svg#7d5f14d9-042a-4645-93fd-1b97e88500e9") format("svg");
-}
-
+  src: url("/care_config/static/src/css/fonts/aaf88d3b-e95f-4151-a8ee-e423ca9b1c2e.eot?#iefix") format("eot"), url("/care_config/static/src/css/fonts/79209bd7-d1a2-4b23-af8f-cfe1e95199da.woff2") format("woff2"), url("/care_config/static/src/css/fonts/b422b051-41d8-49be-b329-aeaa08b5cb4d.woff") format("woff"), url("/care_config/static/src/css/fonts/345f5f5e-e3b4-4ebd-b954-8da02cc7493e.ttf") format("truetype"), url("/care_config/static/src/css/fonts/7d5f14d9-042a-4645-93fd-1b97e88500e9.svg#7d5f14d9-042a-4645-93fd-1b97e88500e9") format("svg"); }
 @font-face {
   font-family: 'OfficinaSerifStd-Book';
   src: url("/care_config/static/src/css/fonts/OfficinaSerifStd-Book.woff2") format("woff2"), url("/care_config/static/src/css/fonts/OfficinaSerifStd-Book.woff") format("woff"), url("/care_config/static/src/css/fonts/OfficinaSerifStd-Book.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
-}
-
+  font-display: swap; }
 @font-face {
   font-family: 'OfficinaSerifStd-Bold';
   src: url("/care_config/static/src/css/fonts/OfficinaSerifStd-Bold.woff2") format("woff2"), url("/care_config/static/src/css/fonts/OfficinaSerifStd-Bold.woff") format("woff"), url("/care_config/static/src/css/fonts/OfficinaSerifStd-Bold.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
-}
-
+  font-display: swap; }
 /* END FONTS */
-.amount_title, .checkout_title, .payment_title {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  font-size: 20px;
-  max-width: 704px;
-  display: block;
-  margin: 0px auto;
-  text-align: left;
-  background: #efb71b;
-  font-size: 20px;
-  position: relative;
-  margin-bottom: 1em;
-  margin-top: 3em;
-  border-left: solid white 5px;
-  border-right: solid white 5px;
-}
+
 /*# sourceMappingURL=care-repair-css.css.map */
