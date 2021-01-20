@@ -62,4 +62,22 @@
 }
 
 /* END FONTS */
+.amount_title, .checkout_title, .payment_title {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 20px;
+  max-width: 704px;
+  display: block;
+  margin: 0px auto;
+  text-align: left;
+  background: #efb71b;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 1em;
+  margin-top: 3em;
+  border-left: solid white 5px;
+  border-right: solid white 5px;
+}
 /*# sourceMappingURL=care-repair-css.css.map */
