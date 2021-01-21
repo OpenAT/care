@@ -85,6 +85,19 @@
   color: #333;
 }
 
+#wsd_checkout_form .arbitrary_price {
+  margin-top: 60px;
+}
+
+.container #wsd_checkout_form .form-control {
+  height: 46px;
+  font-size: 18px;
+}
+
+#wsd_checkout_form label, #wsd_checkout_form label.text-danger {
+  color: #898989;
+}
+
 .price_donate_suggested_currency {
   color: #777;
   font-size: 16px;
@@ -97,18 +110,15 @@
 }
 
 #wsd_checkout_form label.sr-only {
-  position: absolute;
-  width: 100%;
   height: auto;
   clip: inherit;
   z-index: 3;
   position: absolute;
-  top: 6px;
-  left: 7px;
+  top: -20px;
   color: #777;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
-  text-align: left;
+  text-align: center;
   overflow: visible;
   width: 100%;
 }
