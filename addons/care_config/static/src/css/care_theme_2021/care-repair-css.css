@@ -62,16 +62,17 @@
 }
 
 /* END FONTS */
-.amount-title,
-.checkout-title,
-.payment-title {
+.amount-title {
   border-radius: 5px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding: 10px 20px;
-  background: #FFEFCF;
+  background: #ffefcf;
   font-size: 20px;
   margin-bottom: 0;
+  display: block;
+  margin: 0px auto;
+  text-align: left;
 }
 
 .price_donate_suggested {
@@ -81,6 +82,7 @@
   font-size: 35px;
   background-image: none;
   text-shadow: none;
+  color: #333;
 }
 
 .price_donate_suggested_currency {
@@ -94,18 +96,30 @@
   display: none;
 }
 
-.sr-only {
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-  font-size: 14px;
-  top: -20px;
-  text-align: center;
-  left: 0;
-  clip: inherit;
+#wsd_checkout_form label.sr-only {
+  position: absolute;
+  width: 100%;
   height: auto;
+  clip: inherit;
+  z-index: 3;
+  position: absolute;
+  top: 6px;
+  left: 7px;
   color: #777;
+  font-size: 16px;
   line-height: 16px;
+  text-align: left;
+  overflow: visible;
+  width: 100%;
+}
+
+#price_donate {
+  height: 90px;
+  width: 100px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 22px;
+  color: #333;
 }
 
 .f-newsletter_web {
