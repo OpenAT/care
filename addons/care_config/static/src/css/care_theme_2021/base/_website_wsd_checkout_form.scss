@@ -1,5 +1,8 @@
 .container{
   width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -54,6 +57,8 @@
 .form-control {
   border: 1px solid #ccc;
   height: 46px;
+
+  
 }
 
 .payment_interval_ids .form-group select {
@@ -205,4 +210,9 @@ body .oe_website_sale h6 {
 .row{
   margin-left: 0;
   margin-right: 0;
+}
+
+.form-control-feedback{
+  top: 13px;
+  right: 15px;
 }
