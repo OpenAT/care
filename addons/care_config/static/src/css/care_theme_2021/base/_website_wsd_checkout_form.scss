@@ -126,13 +126,21 @@
   margin: 0 auto;
 }
 
-.oe_website_sale h4.payment_interval_ids {
-  margin: 0;
-  padding: 20px 0;
-  background: white;
-  position: relative;
-  z-index: 9999999;
+.oe_website_sale {
+  h4.payment_interval_ids{
+    margin: 0;
+    padding: 20px 0;
+    background: white;
+    position: relative;
+    z-index: 9999999;
+  }
+
+  h3{
+    margin-top: 0;
+  }
 }
+
+
 
 .payment_interval_ids hr {
   display: none;
@@ -171,6 +179,10 @@
     margin: 0 auto 40px;
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .col-lg-12{
+    max-width: 100%;
   }
 }
 

@@ -203,6 +203,10 @@
   z-index: 9999999;
 }
 
+.oe_website_sale h3 {
+  margin-top: 0;
+}
+
 .payment_interval_ids hr {
   display: none;
 }
@@ -247,6 +251,10 @@
   margin: 0 auto 40px;
   font-size: 12px;
   line-height: 16px;
+}
+
+#payment_method .col-lg-12 {
+  max-width: 100%;
 }
 
 .btn-primary {
