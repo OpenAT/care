@@ -62,6 +62,10 @@
 }
 
 /* END FONTS */
+.container {
+  width: 100%;
+}
+
 .amount_title,
 .checkout_title,
 .payment_title {
