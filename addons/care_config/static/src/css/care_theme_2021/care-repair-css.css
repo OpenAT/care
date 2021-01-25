@@ -62,7 +62,7 @@
 }
 
 /* END FONTS */
-.products-grid .oe_product {
+#products-grid .oe_product {
   height: 410px;
 }
 
