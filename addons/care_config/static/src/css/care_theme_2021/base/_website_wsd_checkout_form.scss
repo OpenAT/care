@@ -20,6 +20,8 @@
   text-align: left;
   margin-bottom: 1em;
   max-width: none;
+  font-weight: normal;
+
 }
 
 .price_donate_suggested {
@@ -73,6 +75,7 @@
 #wsd_checkout_form label,
 #wsd_checkout_form label.text-danger {
   color: #898989;
+  font-weight: normal;
 }
 
 .price_donate_suggested_currency {
@@ -177,6 +180,7 @@ body .oe_website_sale h6 {
 
   p {
     margin-bottom: 30px;
+    font-weight: normal;
   }
 }
 

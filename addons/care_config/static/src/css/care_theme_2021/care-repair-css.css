@@ -32,6 +32,11 @@ table .oe_product section {
   color: #5a4941;
 }
 
+.oe_product.oe_grid section h5 strong {
+  font-weight: 600;
+  font-size: 22px;
+}
+
 @font-face {
   font-family: 'OpenSansABold';
   src: url("/care_config/static/src/css/fonts/OpenSans-Bold.eot");
@@ -137,6 +142,7 @@ table .oe_product section {
   text-align: left;
   margin-bottom: 1em;
   max-width: none;
+  font-weight: normal;
 }
 
 .price_donate_suggested {
@@ -194,6 +200,7 @@ table .oe_product section {
 #wsd_checkout_form label,
 #wsd_checkout_form label.text-danger {
   color: #898989;
+  font-weight: normal;
 }
 
 .price_donate_suggested_currency {
@@ -306,6 +313,7 @@ body .oe_website_sale h6 {
 
 .billing_field_snippet section p {
   margin-bottom: 30px;
+  font-weight: normal;
 }
 
 #payment_method {
