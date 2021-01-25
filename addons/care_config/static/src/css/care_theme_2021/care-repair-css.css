@@ -195,6 +195,15 @@
   margin: 0 auto;
 }
 
+body .oe_website_sale h1,
+body .oe_website_sale h2,
+body .oe_website_sale h3,
+body .oe_website_sale h4,
+body .oe_website_sale h5,
+body .oe_website_sale h6 {
+  margin: 0 0;
+}
+
 .oe_website_sale h4.payment_interval_ids {
   margin: 0;
   padding: 20px 0;
@@ -263,5 +272,10 @@
   border: none;
   border-radius: 0;
   font-size: 20px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 /*# sourceMappingURL=care-repair-css.css.map */

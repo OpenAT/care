@@ -24,23 +24,20 @@
   color: #333;
   box-shadow: none;
 
-  &:focus{
+  &:focus {
     background: white;
     color: #333;
     box-shadow: none;
-
   }
-  &:hover{
+  &:hover {
     background: white;
     color: #333;
     box-shadow: none;
-
   }
-  &:active{
+  &:active {
     background: white;
     color: #333;
     box-shadow: none;
-
   }
 }
 
@@ -125,9 +122,17 @@
   max-width: 80%;
   margin: 0 auto;
 }
+body .oe_website_sale h1,
+body .oe_website_sale h2,
+body .oe_website_sale h3,
+body .oe_website_sale h4,
+body .oe_website_sale h5,
+body .oe_website_sale h6 {
+  margin: 0 0;
+}
 
 .oe_website_sale {
-  h4.payment_interval_ids{
+  h4.payment_interval_ids {
     margin: 0;
     padding: 20px 0;
     background: white;
@@ -135,18 +140,16 @@
     z-index: 9999999;
   }
 
-  h3{
+  h3 {
     margin-top: 0;
   }
 }
-
-
 
 .payment_interval_ids hr {
   display: none;
 }
 
-.payment_interval_info{
+.payment_interval_info {
   display: block;
 }
 
@@ -157,20 +160,20 @@
   padding: 0;
 }
 
-.billing_field_snippet section{
-  display: flex; 
+.billing_field_snippet section {
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  p{
+  p {
     margin-bottom: 30px;
   }
 }
 
-#payment_method{
+#payment_method {
   width: 100%;
 
-  .tab-content{
+  .tab-content {
     border: 1px solid #ddd;
     border-top: none;
     padding: 20px;
@@ -181,16 +184,20 @@
     line-height: 16px;
   }
 
-  .col-lg-12{
+  .col-lg-12 {
     max-width: 100%;
   }
 }
 
-.btn-primary{
-  background-image: none; 
+.btn-primary {
+  background-image: none;
   text-shadow: none;
   border: none;
   border-radius: 0;
   font-size: 20px;
 }
 
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
