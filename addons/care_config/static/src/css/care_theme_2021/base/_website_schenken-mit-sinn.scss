@@ -4,7 +4,7 @@
 
 #products_grid td {
   width: 33.3333%;
-  border-spacing: 15px 40px;
+  border-spacing: 0;
 }
 
 .oe_product.oe_grid .oe_subdescription {
@@ -78,11 +78,12 @@
   border: none;
   box-shadow: none;
   font-size: 18px;
+  padding: 0;
   &:hover{
     color: rgba(#e4761e, .8);
   }
 }
 
-.product_pager{
+.products_pager{
   display: none;
 }
