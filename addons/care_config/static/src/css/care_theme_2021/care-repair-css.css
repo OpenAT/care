@@ -121,13 +121,17 @@ table .oe_product section {
 }
 
 .oe_product section h5 strong a {
-  color: #5A4941;
+  color: #5a4941;
 }
 
 .oe_product section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -164,37 +168,12 @@ table .oe_product section {
   position: relative;
   display: inline;
   line-height: 30px;
-}
-
-.quick_add_to_cart a:after {
-  position: relative;
-  content: '';
-  display: inline-block;
-  vertical-align: bottom;
-  width: 20.5px;
-  height: 20.5px;
-  background-image: url("../../img/arrow_right_orange.png");
-  background-repeat: no-repeat;
-  background-size: 80% auto;
-  vertical-align: bottom;
-  margin-left: 10px;
-  left: 0;
-  -webkit-transition: left .3s ease-out;
-  transition: left .3s ease-out;
-}
-
-.oe_product_image:after {
-  content: '';
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  bottom: -1px;
-  left: -1px;
-  background-image: url("../../img/img_overlay_news_white.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 4;
+  background: none;
+  color: #e4761e;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 18px;
 }
 
 .container {
