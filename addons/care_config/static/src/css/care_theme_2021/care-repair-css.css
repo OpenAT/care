@@ -108,6 +108,10 @@ table .oe_product section {
   border-collapse: none;
 }
 
+#products_grid table {
+  border-collapse: none;
+}
+
 .oe_product.oe_grid .oe_subdescription {
   font-size: 16px;
   line-height: 22px;
@@ -222,6 +226,11 @@ table .oe_product section {
 
 #products_grid_before .small_cart_header a {
   color: #333;
+}
+
+body #products_grid_before,
+body #products_grid_before.col-md-4 {
+  padding: 0;
 }
 
 .container {
