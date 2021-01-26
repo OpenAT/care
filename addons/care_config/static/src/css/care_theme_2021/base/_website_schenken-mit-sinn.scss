@@ -35,5 +35,45 @@
 .oe_product.oe_grid{
   border: none; 
   box-shadow: none;
+  &:hover{
+    border: none; 
+    box-shadow: none;  
+  }
 }
+
+.wsd_button_back_to_page{
+  display: none;
+}
+
+.quick_add_to_cart a:after {
+	position: relative;
+	content: '';
+	display: inline-block;
+	vertical-align: bottom;
+	width: 20.5px;
+	height: 20.5px;
+	background-image: url("../../img/arrow_right_orange.png");
+	background-repeat: no-repeat;
+	background-size: 80% auto;
+	vertical-align: bottom;
+	margin-left: 10px;
+	left: 0;
+	transition: left .3s ease-out;
+}
+
+.oe_product_image:after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	bottom: -1px;
+	left: -1px;
+	background-image: url("../../img/img_overlay_news_white.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 4;
+}
+
+
 
