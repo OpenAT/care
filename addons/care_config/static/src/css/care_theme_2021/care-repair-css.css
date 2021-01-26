@@ -109,7 +109,6 @@ table .oe_product section {
 .oe_product.oe_grid .oe_subdescription {
   font-size: 16px;
   line-height: 22px;
-  padding: 10px 11px 5px;
   color: inherit;
   margin: 0;
   width: 100%;
@@ -123,6 +122,18 @@ table .oe_product section {
 
 .oe_product section h5 strong a {
   color: #5A4941;
+}
+
+.oe_product section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .oe_product .product_price {
@@ -143,6 +154,16 @@ table .oe_product section {
 
 .wsd_button_back_to_page {
   display: none;
+}
+
+.oe_product:hover .quick_add_to_cart a {
+  background: transparent;
+}
+
+.quick_add_to_cart a {
+  position: relative;
+  display: inline;
+  line-height: 30px;
 }
 
 .quick_add_to_cart a:after {
