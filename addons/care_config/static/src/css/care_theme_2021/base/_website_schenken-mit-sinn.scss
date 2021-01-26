@@ -5,6 +5,7 @@
 #products_grid td {
   width: 33.3333%;
   border-spacing: 0;
+  border-collapse: none;
 }
 
 .oe_product.oe_grid .oe_subdescription {
@@ -86,4 +87,28 @@
 
 .products_pager{
   display: none;
+}
+
+
+
+/* ---------- PRODUCTS GRID BEFORE STYLES ----------- */ 
+
+#products_grid_before{
+  box-shadow: 0px 2px 10px 5px #efefef;
+  border-radius: 5px;
+  background: white;
+
+  .small_cart_header{
+    height: 50px;
+    line-height: 50px;
+    background:#ffefcf;
+    font-size: 18px;
+    padding: 0 20px;
+    margin: 0;
+    a{
+      color: #333;
+    }
+  }
+
+
 }
