@@ -24,12 +24,19 @@
 .oe_product section h5 strong a {
   color: #5a4941;
 }
+.oe_product section h5 {
+  padding-bottom: 1em;
+}
 
 .oe_product section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  &:nth-child(n){
+    padding-bottom: 1em;
+  }
 }
 
 .oe_product {
@@ -64,4 +71,7 @@
   border: none;
   box-shadow: none;
   font-size: 18px;
+  &:hover{
+    color: rgba(#e4761e, .8);
+  }
 }

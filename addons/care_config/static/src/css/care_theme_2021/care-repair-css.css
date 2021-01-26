@@ -124,6 +124,10 @@ table .oe_product section {
   color: #5a4941;
 }
 
+.oe_product section h5 {
+  padding-bottom: 1em;
+}
+
 .oe_product section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +142,10 @@ table .oe_product section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.oe_product section:nth-child(n) {
+  padding-bottom: 1em;
 }
 
 .oe_product .product_price {
@@ -174,6 +182,10 @@ table .oe_product section {
   -webkit-box-shadow: none;
           box-shadow: none;
   font-size: 18px;
+}
+
+.quick_add_to_cart a:hover {
+  color: rgba(228, 118, 30, 0.8);
 }
 
 .container {
