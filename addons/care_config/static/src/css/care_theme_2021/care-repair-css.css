@@ -121,6 +121,20 @@ table .oe_product section {
   font-size: 22px;
 }
 
+.oe_product section h5 strong a {
+  color: #5A4941;
+}
+
+.oe_product {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.oe_product .product_price {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
