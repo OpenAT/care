@@ -37,6 +37,9 @@
   &:nth-child(n){
     padding-bottom: 1em;
   }
+  &:last-child(n){
+    padding-bottom: 0em;
+  }
 }
 
 .oe_product {

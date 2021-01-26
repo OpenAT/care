@@ -148,6 +148,10 @@ table .oe_product section {
   padding-bottom: 1em;
 }
 
+.oe_product section:last-child(n) {
+  padding-bottom: 0em;
+}
+
 .oe_product .product_price {
   display: none;
 }
