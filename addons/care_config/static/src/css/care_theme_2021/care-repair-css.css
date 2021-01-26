@@ -125,14 +125,14 @@ table .oe_product section {
   color: #5A4941;
 }
 
-.oe_product {
+.oe_product .product_price {
+  display: none;
+}
+
+.oe_product.oe_grid {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.oe_product .product_price {
-  display: none;
 }
 
 .container {

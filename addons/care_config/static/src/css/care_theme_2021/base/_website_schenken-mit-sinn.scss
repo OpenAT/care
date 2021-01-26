@@ -27,10 +27,13 @@
 }
 
 .oe_product {
-  border: none; 
-  box-shadow: none;
   .product_price{
     display: none;
   }
+}
+
+.oe_product.oe_grid{
+  border: none; 
+  box-shadow: none;
 }
 
