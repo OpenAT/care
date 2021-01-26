@@ -42,6 +42,10 @@
   }
 }
 
+.fa-shopping-cart:before {
+  display: none;
+}
+
 .oe_product {
   .product_price {
     display: none;
@@ -77,4 +81,8 @@
   &:hover{
     color: rgba(#e4761e, .8);
   }
+}
+
+.product_pager{
+  display: none;
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500&display=swap");
 .text-muted {
   display: none;
 }
@@ -152,6 +153,10 @@ table .oe_product section {
   padding-bottom: 0em;
 }
 
+.fa-shopping-cart:before {
+  display: none;
+}
+
 .oe_product .product_price {
   display: none;
 }
@@ -190,6 +195,10 @@ table .oe_product section {
 
 .quick_add_to_cart a:hover {
   color: rgba(228, 118, 30, 0.8);
+}
+
+.product_pager {
+  display: none;
 }
 
 .container {
