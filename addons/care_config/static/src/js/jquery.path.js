@@ -12,7 +12,7 @@
 
 */
 
-;(function($){
+/*;(function($){
 
   $.path = {};
 
@@ -57,7 +57,7 @@
     this.f3 = function(t) { return (3*t*(1-t)*(1-t)); };
     this.f4 = function(t) { return ((1-t)*(1-t)*(1-t)); };
 
-    /* p from 0 to 1 */
+    /!* p from 0 to 1 *!/
     this.css = function(p) {
       var f1 = this.f1(p), f2 = this.f2(p), f3 = this.f3(p), f4=this.f4(p), css = {};
       if (rotate) {
@@ -112,4 +112,4 @@
     fx.elem.style.left = css.left;
   };
 
-})(jQuery);
+})(jQuery);*/

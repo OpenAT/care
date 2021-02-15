@@ -1,5 +1,5 @@
 $(document).ready( function() {
-	var relaunch = ( window.location.href.indexOf( 'care-relaunch-css' ) > -1 ) ? 1 : 0;
+/*	var relaunch = ( window.location.href.indexOf( 'care-relaunch-css' ) > -1 ) ? 1 : 0;
 	
 	// rotation help-function
 	$.fn.animateRotate = function(angle, duration, delay, easing, complete) {
@@ -19,13 +19,13 @@ $(document).ready( function() {
 				});
 			});
 		}
-	};
+	};*/
 
 
 	// giftbox-animation
 	$effect_disp_width = 0; // min. screen resolution where animation starts; 0 = on every device, 768 = no effect on mobile...
 
-	$("body[data-rootcatid='7'] .oe_product").click( function( e ) {
+/*	$("body[data-rootcatid='7'] .oe_product").click( function( e ) {
 		if ( !relaunch ) {
 			e.preventDefault();
 
@@ -79,21 +79,25 @@ $(document).ready( function() {
 			var $form = $(this).find('form');
 			$form.submit();
 		}
-	});
+	});*/
 
 
 	// disable quick-add-to-cart-button
+/*
 	$("body[data-rootcatid='7'] .quick_add_to_cart .a-submit").unbind('click');
-
+*/
+	$("body[data-rootcatid='7'] .oe_product").click( function( e ) {
+        e.preventDefault();
+    });
 
 	// activate flip-effect
-	if ( ( $( window).width() > $effect_disp_width ) && !relaunch ) {
+/*	if ( ( $( window).width() > $effect_disp_width ) && !relaunch ) {
 		$("body[data-rootcatid='7'] .wrap_wsd_1").flip();
-	}
+	}*/
 
 
 
-	// activate flip-effect on the whole tile
+/*	// activate flip-effect on the whole tile
 	$("body[data-rootcatid='7'] .oe_product_cart form").mouseenter( function() { //body[data-rootcatid='7'] .oe_product, body[data-rootcatid='7'] .oe_product section
 		if ( ( $( window).width() > $effect_disp_width ) && !relaunch ) {
 			$( this).find('.wrap_wsd_1').flip( true );
@@ -102,7 +106,7 @@ $(document).ready( function() {
 		if ( ( $( window).width() > $effect_disp_width ) && !relaunch ) {
 			$( this).find('.wrap_wsd_1').flip( false );
 		}
-	});
+	});*/
 
 
 	// close box and slide to the right on submit of the cart
