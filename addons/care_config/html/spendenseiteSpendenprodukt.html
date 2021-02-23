@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+<!-- FS-Online widgets-resize-scripts -->
+<script type="text/javascript" src="http://demo.localhost.at/website_widget_manager/static/lib/iframe-resizer/js/iframeResizer.min.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+        document.addEventListener("DOMContentLoaded", function(event) {
+            iFrameResize({baseUrl: 'http://demo.localhost.at', heightCalculationMethod: 'taggedElement', checkOrigin: false, enablePublicMethods: true, useGetParam: true, inPageLinks: false, inPageAnchors: true, log: false}, '.fso_iframe')
+        });
+    //]]>
+</script>
+</head>
+<body>
+
+    <div style="width: 1000px; margin: auto;">
+        <div style="margin: auto; text-align: center; border: 1px solid black"> Iframe ab hier 1000px wie bei care </div>
+    <!-- FS-Online widget embed code -->
+    <iframe id="fso_if8" class="fso_iframe" src="http://demo.localhost.at/shop/product/54?care-repair-css" scrolling="no" frameborder="0" width="100%" style="width:100%; border:none; padding:0; margin:0;"></iframe>
+    </div>
+
+</body>
+</html>

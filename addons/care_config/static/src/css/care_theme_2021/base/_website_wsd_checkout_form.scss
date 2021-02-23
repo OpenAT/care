@@ -86,9 +86,10 @@
   margin-left: 5px;
 }
 
-.price_donate span.input-group-addon:first-child {
+
+/*.price_donate span.input-group-addon:first-child {
   display: none;
-}
+}*/
 
 #wsd_checkout_form label.sr-only {
   height: auto;
@@ -118,7 +119,7 @@
 }
 
 .billing-fields {
-  max-width: 80%;
+  //max-width: 80%;
   margin: 0 auto;
 }
 
@@ -158,13 +159,13 @@ body .oe_website_sale h6 {
   }
 }
 
-.payment_interval_ids hr {
+/*.payment_interval_ids hr {
   display: none;
 }
 
 .payment_interval_info {
   display: block;
-}
+}*/
 
 .js_product > .text-left > .row > .col-md-12:first-child,
 .js_product > .text-left > .row > .col-lg-12:first-child,
