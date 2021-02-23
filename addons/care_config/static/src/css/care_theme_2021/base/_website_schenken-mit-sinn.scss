@@ -312,3 +312,12 @@
     }
 }
 
+.wsd-icon_container img {
+  display: none;
+}
+
+@media (min-width: 300px) {
+  #wsd_checkout_form .form-inline .form-group {
+    margin-top: 20px;
+  }
+}

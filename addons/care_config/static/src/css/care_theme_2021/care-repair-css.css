@@ -1,9 +1,9 @@
 @charset "UTF-8";
+/*.text-muted {
+  display: none;
+}*/
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500&display=swap");
-.text-muted {
-  display: none; }
-
 body,
 a,
 h1,
@@ -109,9 +109,9 @@ table .oe_product section {
   display: flex;
   justify-content: center; }
 
-#wsd-checkout-box > div > div.panel-body.text-center > form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span:nth-child(1) {
-  display: none; }
-
+/*#wsd-checkout-box > div > div.panel-body.text-center > form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span:nth-child(1) {
+  display: none;
+}*/
 /* Maybe do this only for a specific category */
 /* wsd_payment_page_right_col hide adress datafield on payment method page */
 #wsd_payment_page_right_col {
@@ -132,6 +132,14 @@ table .oe_product section {
 @media (min-width: 992px) {
   #wsd_checkout_page_left_column .col-md-pull-4 {
     right: 0%; } }
+
+#price_donate {
+  height: 90px;
+  width: 100px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 22px;
+  color: #333; }
 
 /* change Warenkorb und Produktpage übereinander und 100% */
 /*body[data-rootcatid="7"] {
@@ -416,6 +424,12 @@ body #products_grid_before.col-md-4 {
     clear: both; }
 
   #products_grid.col-md-8 table {
+    margin-top: 20px; } }
+.wsd-icon_container img {
+  display: none; }
+
+@media (min-width: 300px) {
+  #wsd_checkout_form .form-inline .form-group {
     margin-top: 20px; } }
 .container {
   width: 100%;

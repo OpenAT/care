@@ -42,9 +42,9 @@
   display: flex;
   justify-content: center;
 }
-#wsd-checkout-box > div > div.panel-body.text-center > form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span:nth-child(1) {
+/*#wsd-checkout-box > div > div.panel-body.text-center > form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span:nth-child(1) {
   display: none;
-}
+}*/
 
 /* Maybe do this only for a specific category */
 
@@ -75,4 +75,13 @@
     right: 0%;
     }
   }
+}
+
+#price_donate {
+    height: 90px;
+    width: 100px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 22px;
+    color: #333;
 }
