@@ -1,1 +1,78 @@
 
+#wsd_checkout_form #price_donate {
+    background-color: white;
+    width: 90px;
+}
+
+@media only screen and (max-width: 767px) {
+  #wsd_checkout_form label.sr-only {
+    top: 3px;
+    left: 5px;
+  }
+
+  .container #wsd_checkout_form .price_donate_suggested_currency {
+      margin-top: 3px;
+      margin-left: 3px;
+  }
+
+  .container #wsd_checkout_form .price_donate_suggested_currency, #wsd_checkout_form label.sr-only {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+@media (min-width: 300px) {
+  #wsd_checkout_form .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    //margin-top:10px;
+  }
+  .price_donate_suggested_outer {
+    display: inline-block;
+  }
+}
+
+/* Inline LAyout */
+.price_donate, #description_sale {
+  padding: 0 5px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+}
+#wsd-checkout-box > div > div.panel-body.text-center > form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span:nth-child(1) {
+  display: none;
+}
+
+/* Maybe do this only for a specific category */
+
+/* wsd_payment_page_right_col hide adress datafield on payment method page */
+#wsd_payment_page_right_col {
+  display: none;
+}
+/* use the 100% space after remove of right side */
+@media (min-width: 767px) {
+  .col-sm-8 {
+    width: 100%;
+  }
+}
+#wsd_checkout_page_right_column {
+  display: none;
+    @media (min-width: 992px) {
+      .col-md-push-8 {
+        left: 0%;
+      }
+      .col-md-8 {
+        width: 100%;
+      }
+    }
+}
+#wsd_checkout_page_left_column {
+  @media (min-width: 992px) {
+    .col-md-pull-4 {
+    right: 0%;
+    }
+  }
+}
