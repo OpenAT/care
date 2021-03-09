@@ -611,4 +611,46 @@ body .oe_website_sale h6 {
   top: 13px;
   right: 15px; }
 
+/* additional fixes for repair css */
+/* mini form prize donate field */
+.ppt_inline_donation #price_donate {
+  height: initial; }
+.ppt_inline_donation .price_donate_suggested {
+  min-width: auto !important; }
+.ppt_inline_donation #wsd-checkout-box > div > div > form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div {
+  margin-top: 5px; }
+.ppt_inline_donation .checkout_steps_buttons.nav.navbar-right {
+  border-bottom: 1px solid #ddd; }
+.ppt_inline_donation #wsd_checkout_steps_nav .navbar.checkout_steps_navigation {
+  display: flex; }
+.ppt_inline_donation group-btn > .btn {
+  height: 45px;
+  padding: 10px 3px 3px 5px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px; }
+.ppt_inline_donation .price_donate .input-group-addon {
+  min-width: 55px;
+  /* width: fit-content; */ }
+.ppt_inline_donation #price_donate {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+.ppt_inline_donation .arbitrary_price {
+  margin-top: 10px; }
+.ppt_inline_donation #wsd-checkout-box .panel {
+  background-color: #fff; }
+.ppt_inline_donation body {
+  background-color: #fff; }
+.ppt_inline_donation .price_donate_suggested {
+  height: initial;
+  width: initial;
+  min-width: 70px;
+  font-size: initial;
+  background-image: none;
+  text-shadow: none;
+  color: #333;
+  box-shadow: none; }
+.ppt_inline_donation .checkout_steps_indicator {
+  display: flex; }
+
 /*# sourceMappingURL=care-repair-css.css.map */
