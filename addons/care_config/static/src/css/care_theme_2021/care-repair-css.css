@@ -623,6 +623,10 @@ body .oe_website_sale h6 {
   border-bottom: 1px solid #ddd; }
 .ppt_inline_donation #wsd_checkout_steps_nav .navbar.checkout_steps_navigation {
   display: flex; }
+.ppt_inline_donation .nav-tabs {
+  border-bottom: 1px solid #ddd; }
+.ppt_inline_donation .checkout_steps_buttons.nav.navbar-right {
+  border-bottom: 1px solid #ddd; }
 .ppt_inline_donation group-btn > .btn {
   height: 45px;
   padding: 10px 3px 3px 5px;
@@ -646,11 +650,18 @@ body .oe_website_sale h6 {
   width: initial;
   min-width: 70px;
   font-size: initial;
-  background-image: none;
   text-shadow: none;
   color: #333;
   box-shadow: none; }
 .ppt_inline_donation .checkout_steps_indicator {
   display: flex; }
+.ppt_inline_donation .price_donate_suggested_currency {
+  display: none; }
+.ppt_inline_donation .ppt_inline_donation .price_donate .input-group-addon {
+  width: fit-content; }
+.ppt_inline_donation .input-group-lg > .form-control, .ppt_inline_donation .input-group-lg > .input-group-addon, .ppt_inline_donation .input-group-lg > .input-group-btn > .btn {
+  height: 45px;
+  padding: 10px 3px 3px 5px;
+  font-size: 18px; }
 
 /*# sourceMappingURL=care-repair-css.css.map */

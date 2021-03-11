@@ -240,8 +240,15 @@ body .oe_website_sale h6 {
   .checkout_steps_buttons.nav.navbar-right {
     border-bottom: 1px solid #ddd;
   }
+
   #wsd_checkout_steps_nav .navbar.checkout_steps_navigation {
     display: flex;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+  .checkout_steps_buttons.nav.navbar-right {
+    border-bottom: 1px solid #ddd;
   }
   group-btn > .btn {
     height: 45px;
@@ -273,12 +280,22 @@ body .oe_website_sale h6 {
     width: initial;
     min-width: 70px;
     font-size: initial;
-    background-image: none;
     text-shadow: none;
     color: #333;
     box-shadow: none;
 }
 .checkout_steps_indicator {
     display: flex;
+}
+  .price_donate_suggested_currency {
+    display: none;
+  }
+  .ppt_inline_donation .price_donate .input-group-addon {
+     width: fit-content;
+}
+  .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+    height: 45px;
+    padding: 10px 3px 3px 5px;
+    font-size: 18px;
 }
 }
