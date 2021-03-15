@@ -644,7 +644,8 @@ body .oe_website_sale h6 {
 .ppt_inline_donation #wsd-checkout-box .panel {
   background-color: #fff; }
 .ppt_inline_donation body {
-  background-color: #fff; }
+  background-color: #fff;
+  font-size: 14px; }
 .ppt_inline_donation .price_donate_suggested {
   height: initial;
   width: initial;
@@ -663,5 +664,7 @@ body .oe_website_sale h6 {
   height: 45px;
   padding: 10px 3px 3px 5px;
   font-size: 18px; }
+.ppt_inline_donation .amount_title, .ppt_inline_donation .checkout_title, .ppt_inline_donation .payment_title {
+  font-size: 14px; }
 
 /*# sourceMappingURL=care-repair-css.css.map */

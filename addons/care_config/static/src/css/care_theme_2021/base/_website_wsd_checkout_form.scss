@@ -274,6 +274,7 @@ body .oe_website_sale h6 {
 }
   body {
     background-color: #fff;
+    font-size: 14px;
 }
 .price_donate_suggested {
     height: initial;
@@ -298,4 +299,7 @@ body .oe_website_sale h6 {
     padding: 10px 3px 3px 5px;
     font-size: 18px;
 }
+  .amount_title, .checkout_title, .payment_title {
+    font-size: 14px;
+  }
 }

@@ -26,17 +26,21 @@
             <xpath expr="//head" position="inside">
 
                 <!-- Current theme -->
-                <t t-if="not request or not request.httprequest or not request.httprequest.query_string or 'care-repair-css' not in request.httprequest.query_string">
+<!--                <t t-if="not request or not request.httprequest or not request.httprequest.query_string or 'care-repair-css' not in request.httprequest.query_string">
                     <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
                     <link rel="stylesheet" href='/care_config/static/src/css/care_relaunch.css'/>
-                </t>
+                </t>-->
 
                 <!-- New theme for 2021 to restore all functions of FS-Online: Loaded by e.g. "?care-repair-css=#" -->
+<!--
                 <t t-if="'care-repair-css' in request.httprequest.query_string">
+-->
                     <link rel='stylesheet' href='/care_config/static/src/css/care_theme_2021/bootstrap_care/css/bootstrap.min.css' t-ignore="true"/>
                     <link rel='stylesheet' href='/care_config/static/src/css/care_theme_2021/bootstrap_care/css/bootstrap-theme.min.css' t-ignore="true"/>
                     <link rel="stylesheet" href='/care_config/static/src/css/care_theme_2021/care-repair-css.css'/>
+<!--
                 </t>
+-->
 
             </xpath>
         </template>
