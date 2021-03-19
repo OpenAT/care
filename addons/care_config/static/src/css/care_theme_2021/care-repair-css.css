@@ -667,4 +667,41 @@ body .oe_website_sale h6 {
 .ppt_inline_donation .amount_title, .ppt_inline_donation .checkout_title, .ppt_inline_donation .payment_title {
   font-size: 14px; }
 
+/* Subsciption und fsoForms BAckgrond NEwsletter */
+.fso_subscription_wrap.fso_subscription_wrap_1,
+.fso_form_wrap.fso_form_wrap_6 {
+  background-color: #AB1455;
+  color: white; }
+
+/* care repair additional css payment page */
+#payment_method .nav-tabs {
+  text-align: center; }
+
+@media only screen and (max-width: 767px) {
+  .container #payment_method .nav > li {
+    display: block;
+    text-align: center; } }
+#payment_method .nav-tabs > li {
+  float: none; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent; }
+
+#wsd_checkout_form #payment_method .nav-tabs > li img {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  margin-right: 3px; }
+
+#payment_method .tab-acquirer-image img,
+#payment_method .tab-acquirer-image img.img-responsive {
+  display: inline-block;
+  max-height: 0.99em;
+  width: auto; }
+
 /*# sourceMappingURL=care-repair-css.css.map */
