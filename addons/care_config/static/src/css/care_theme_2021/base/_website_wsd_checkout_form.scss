@@ -344,3 +344,26 @@ body .oe_website_sale h6 {
     max-height: 0.99em;
     width: auto;
 }
+
+/* FSO Form adressänderung specific css test */
+@media (min-width: 767px) {
+#wrap.fso_form_wrap.fso_form_wrap_14 .col-sm-8,
+#wrap.fso_form_wrap.fso_form_wrap_15 .col-sm-8,
+#wrap.fso_form_wrap.fso_form_wrap_17 .col-sm-8 {
+    width: initial;
+  }
+}
+
+#wrap.fso_form_wrap.fso_form_wrap_14 > div > div:nth-child(1) > div > div > section.mb16.mt8,
+#wrap.fso_form_wrap.fso_form_wrap_14 > div > div:nth-child(1) > div > div > section.mb16.mt8 > div > div,
+#wrap.fso_form_wrap.fso_form_wrap_15 > div > div:nth-child(1) > div > div > section.mb16.mt8,
+#wrap.fso_form_wrap.fso_form_wrap_15 > div > div:nth-child(1) > div > div > section.mb16.mt8 > div > div,
+#wrap.fso_form_wrap.fso_form_wrap_17 > div > div:nth-child(1) > div > div > section.mb16.mt8,
+#wrap.fso_form_wrap.fso_form_wrap_17 > div > div:nth-child(1) > div > div > section.mb16.mt8 > div > div {
+  display: flex;
+}
+.btn-warning {
+    color: #fff;
+    background-color: #e4761e;
+    border-color: #e4761e;
+}
