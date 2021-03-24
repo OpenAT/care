@@ -133,7 +133,7 @@
 #wsd_checkout_form .row .row,
 #payment_method .col-lg-12 {
   box-shadow: none;
-  max-width: 80%;
+  max-width: 98%;
   margin: 0 auto;
 }
 body .oe_website_sale h1,
@@ -321,8 +321,10 @@ body .oe_website_sale h6 {
     text-align: center;
   }
 }
-#payment_method .nav-tabs > li {
+@media only screen and (max-width: 767px) {
+  #payment_method .nav-tabs > li {
     float: none;
+  }
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: #555;
@@ -365,4 +367,22 @@ body .oe_website_sale h6 {
     border: none;
     border-radius: 0;
     font-size: 20px;
+}
+
+/* sale donate responsive */
+@media only screen and (max-width: 767px) {
+  #website_sale_donate .container {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+.has-feedback .form-control {
+  padding-right: 10px;
+}
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+  height: 90px;
+}
+#wsd_checkout_form label.sr-only {
+  top: -30px;
 }
