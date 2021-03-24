@@ -739,4 +739,10 @@ body .oe_website_sale h6 {
 #wsd_checkout_form label.sr-only {
   top: -30px; }
 
+@media only screen and (max-width: 767px) {
+  #wsd_checkout_form label.sr-only {
+    display: none; } }
+#payment_method .tab-content {
+  font-size: 16px; }
+
 /*# sourceMappingURL=care-repair-css.css.map */
