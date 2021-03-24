@@ -717,7 +717,12 @@ body .oe_website_sale h6 {
 
 .btn-warning {
   color: #fff;
-  background-color: #e4761e !important;
-  border-color: #e4761e !important; }
+  background-color: #e4761e;
+  border-color: #e4761e;
+  background-image: none;
+  text-shadow: none;
+  border: none;
+  border-radius: 0;
+  font-size: 20px; }
 
 /*# sourceMappingURL=care-repair-css.css.map */

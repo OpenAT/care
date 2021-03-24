@@ -355,8 +355,14 @@ body .oe_website_sale h6 {
 #wrap.fso_form_wrap.fso_form_wrap_17 > div > div:nth-child(1) > div > div > section.mb16.mt8 > div > div {
   display: flex;
 }
+
 .btn-warning {
     color: #fff;
-    background-color: #e4761e !important;
-    border-color: #e4761e !important;
+    background-color: #e4761e;
+    border-color: #e4761e;
+    background-image: none;
+    text-shadow: none;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
 }
