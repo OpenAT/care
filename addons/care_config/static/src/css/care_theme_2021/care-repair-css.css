@@ -767,4 +767,18 @@ body .oe_website_sale h6 {
   background-color: #efebe4;
   color: #5a4941; }
 
+.ppt_inline_donation #wsd_checkout_steps_nav .navbar.checkout_steps_navigation {
+  display: flex;
+  flex-flow: column; }
+
+#wsd_checkout_steps_nav > div > div > a.btn.btn-primary.navbar-btn,
+#wsd_checkout_steps_nav > div > div {
+  float: right; }
+
+.nav > li > a > span {
+  overflow-wrap: break-word; }
+
+#wsd_checkout_steps_nav .ppt_inline_donation .nav-tabs {
+  border-bottom: none; }
+
 /*# sourceMappingURL=care-repair-css.css.map */
