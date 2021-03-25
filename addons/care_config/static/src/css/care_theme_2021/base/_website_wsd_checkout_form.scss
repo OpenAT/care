@@ -429,10 +429,21 @@ body .oe_website_sale h6 {
 #wsd_checkout_steps_nav > div > div {
   float: right;
 }
-
-.nav>li>a>span {
+.ppt_inline_donation #wsd_checkout_steps_nav > div > ul > li > a > span {
     overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
-#wsd_checkout_steps_nav .ppt_inline_donation .nav-tabs {
+.ppt_inline_donation #wsd_checkout_steps_nav .nav-tabs {
     border-bottom: none;
+}
+.ppt_inline_donation .checkout_steps_indicator {
+    display: flex;
+    flex-flow: wrap;
 }
