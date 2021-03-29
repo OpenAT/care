@@ -105,7 +105,7 @@ table .oe_product section {
 .price_donate, #description_sale {
   padding: 0 5px; }
 
-.miniFormsOhneNavHeader {
+.checkout_steps_buttons {
   display: none; }
 
 .input-group {
