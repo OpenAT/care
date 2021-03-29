@@ -105,6 +105,9 @@ table .oe_product section {
 .price_donate, #description_sale {
   padding: 0 5px; }
 
+.miniFormsOhneNavHeader {
+  display: none; }
+
 .input-group {
   display: flex;
   justify-content: center; }
