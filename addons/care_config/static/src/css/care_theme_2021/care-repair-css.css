@@ -678,6 +678,14 @@ body .oe_website_sale h6 {
   background-color: #AB1455;
   color: white; }
 
+.fso_subscription_wrap.fso_subscription_wrap_1 label.mandatory.text-danger,
+.fso_form_wrap.fso_form_wrap_6 label.mandatory.text-danger {
+  color: hsl(var(--hue), calc(var(--sat) * 1%), calc(var(--light) * 1%)); }
+
+/*.fso_subscription_wrap.fso_subscription_wrap_1 #fsoforms_submit_button,
+.fso_form_wrap.fso_form_wrap_6 #fsoforms_submit_button {
+  float: left;
+}*/
 /* care repair additional css payment page */
 #payment_method .nav-tabs {
   text-align: center; }
