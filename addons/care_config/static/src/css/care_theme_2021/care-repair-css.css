@@ -151,6 +151,9 @@ table .oe_product section {
   font-size: 22px;
   color: #333; }
 
+@media (max-width: 768px) {
+  #wsd_checkout_form_inside_row {
+    padding: 0px 0px; } }
 /* change Warenkorb und Produktpage übereinander und 100% */
 /*body[data-rootcatid="7"] {
   #wrap > div.container.oe_website_sale > div.row {
@@ -746,7 +749,10 @@ body .oe_website_sale h6 {
 @media only screen and (max-width: 767px) {
   #website_sale_donate .container {
     padding-left: 3px;
-    padding-right: 3px; } }
+    padding-right: 3px; }
+
+  .ppt_opc .price_donate_suggested {
+    margin-bottom: 5px; } }
 .has-feedback .form-control {
   padding-right: 10px; }
 

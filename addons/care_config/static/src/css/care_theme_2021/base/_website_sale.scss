@@ -93,3 +93,9 @@
     font-size: 22px;
     color: #333;
 }
+
+@media (max-width: 768px) {
+  #wsd_checkout_form_inside_row {
+    padding: 0px 0px;
+  }
+}
