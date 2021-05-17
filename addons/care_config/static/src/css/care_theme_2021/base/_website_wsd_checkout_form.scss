@@ -384,9 +384,14 @@ body .oe_website_sale h6 {
     padding-left: 3px;
     padding-right: 3px;
   }
+}
+@media screen and (max-width: 767px) {
   .ppt_opc .price_donate_suggested {
     margin-bottom: 5px;
-}
+  }
+  .price_donate_suggested {
+    font-size: 22px;
+  }
 }
 
 
