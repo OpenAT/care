@@ -79,7 +79,7 @@ table .oe_product section {
 /* END FONTS */
 #wsd_checkout_form #price_donate {
   background-color: white;
-  width: auto;
+  width: 140px;
   min-width: 90px; }
 
 .ppt_opc .price_donate_suggested {
@@ -100,7 +100,7 @@ table .oe_product section {
     line-height: 13px; } }
 @media (min-width: 300px) {
   #wsd_checkout_form .form-inline .form-group {
-    display: block;
+    display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
 
