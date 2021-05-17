@@ -440,7 +440,7 @@ body #products_grid_before.col-md-4 {
 
 @media (min-width: 300px) {
   #wsd_checkout_form .form-inline .form-group {
-    margin-top: 5px; } }
+    margin-top: 0px; } }
 .container {
   width: 100%;
   max-width: 1440px;
@@ -498,7 +498,7 @@ body #products_grid_before.col-md-4 {
   margin-top: 10px; }
 
 .arbitrary_price {
-  margin-top: 60px; }
+  margin-top: 30px; }
 
 #wsd_checkout_form label,
 #wsd_checkout_form label.text-danger {
@@ -754,7 +754,7 @@ body .oe_website_sale h6 {
   height: 90px; }
 
 #wsd_checkout_form label.sr-only {
-  top: -30px;
+  top: -16px;
   right: 10px; }
 
 @media only screen and (max-width: 767px) {
