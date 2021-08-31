@@ -187,7 +187,8 @@
                              src="/fso_website_email_care/static/src/icons/header_snippet.png"/>
                         <span class="oe_snippet_thumbnail_title">Header Snippet</span>
                     </div>
-                    <div id="combinedheadersnippetWebVersion" class="oe_snippet_body ckediting_enabled snippet_block snippet_block_text_intro care_sb_bg_background"
+                    <div class="oe_snippet_body ckediting_disabled care_bin">
+                    <div id="combinedheadersnippetWebVersion" class="ckediting_enabled snippet_block snippet_block_text_intro care_sb_bg_background"
                          contenteditable="false">
                         <table class="centeringTable" cellpadding="0" cellspacing="0">
                             <tbody>
@@ -230,7 +231,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div id="combinedheadersnippet" class="oe_snippet_body ckediting_enabled snippet_block snippet_block_text_image_left care_snippet_block_padding_none">
+                    <div id="combinedheadersnippet" class="ckediting_enabled snippet_block snippet_block_text_image_left care_snippet_block_padding_none">
                         <table cellpadding="0" cellspacing="0" class="centeringTable">
                             <tbody>
                                 <tr>
@@ -358,7 +359,171 @@
                         </table>
                     </div>
                 </div>
+                </div>
 
+                <!-- FOOTER SNIPPET BLOCK More Onion Template-->
+                <!-- =============== -->
+                <div>
+                    <!-- Icon and name -->
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img"
+                             src="/fso_website_email_care/static/src/icons/footer_snippet_mo.png"/>
+                        <span class="oe_snippet_thumbnail_title">Footer Snippet More Onion</span>
+                    </div>
+                    <div class="oe_snippet_body ckediting_disabled care_bin">
+                        <div id="combinedsnippetfootermo" class="ckediting_disabled snippet_block snippet_block_text_twocol">
+                            <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="flexibleContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="flexibleContainerCell" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="nestedContainer">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" class="nestedContainerCell"
+                                                                            valign="top">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" class="contentTable">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="textContent">
+                                                                                            <table align="left"
+                                                                                                   border="0"
+                                                                                                   cellpadding="0"
+                                                                                                   cellspacing="0"
+                                                                                                   class="flexibleContainerLeft">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="center"
+                                                                                                            class="textContent ckediting_enabled"
+                                                                                                            valign="top">
+                                                                                                            <p class="care_tiny"
+                                                                                                               style="text-align: left;">
+                                                                                                                © CARE
+                                                                                                                Österreich:
+                                                                                                                Verein
+                                                                                                                für
+                                                                                                                Entwicklungszusammenarbeit
+                                                                                                                und
+                                                                                                                humanitäre
+                                                                                                                Hilfe
+                                                                                                                <br></br>
+                                                                                                            </p>
+
+                                                                                                            <p class="care_tiny"
+                                                                                                               style="text-align: left;">
+                                                                                                                Lange
+                                                                                                                Gasse
+                                                                                                                30/4
+                                                                                                                <br></br>
+                                                                                                                1080
+                                                                                                                Wien
+                                                                                                                Österreich
+                                                                                                                <br></br>
+                                                                                                            </p>
+
+                                                                                                            <p class="care_tiny"
+                                                                                                               style="text-align: left;">
+                                                                                                                <br></br>
+                                                                                                            </p>
+
+                                                                                                            <p class="care_tiny"
+                                                                                                               style="text-align: left;">
+                                                                                                                <a href="%open_browser%"
+                                                                                                                   target="_blank">
+                                                                                                                    Wenn
+                                                                                                                    die
+                                                                                                                    Nachricht
+                                                                                                                    nicht
+                                                                                                                    richtig
+                                                                                                                    angezeigt
+                                                                                                                    wird,
+                                                                                                                    klicke
+                                                                                                                    bitte
+                                                                                                                    hier..
+                                                                                                                </a>
+                                                                                                            </p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+
+                                                                                            <table align="right"
+                                                                                                   border="0"
+                                                                                                   cellpadding="0"
+                                                                                                   cellspacing="0"
+                                                                                                   class="flexibleContainerRight">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="center"
+                                                                                                            class="textContent ckediting_enabled"
+                                                                                                            valign="top">
+                                                                                                            <p class="care_tiny"
+                                                                                                               style="text-align: left;">
+                                                                                                                +43 1
+                                                                                                                715 0
+                                                                                                                715
+                                                                                                                <br></br>
+                                                                                                                <br></br>
+                                                                                                                <a href="mailto:care@care.at">
+                                                                                                                    care@care.at
+                                                                                                                </a>
+                                                                                                                <br></br>
+                                                                                                                <br></br>
+                                                                                                                <a href="https://www.care.at"
+                                                                                                                   target="_blank">
+                                                                                                                    https://www.care.at/
+                                                                                                                </a>
+                                                                                                            </p>
+
+                                                                                                            <p class="care_tiny"
+                                                                                                               style="text-align: left;">
+                                                                                                                <br></br>
+                                                                                                                <a href="https://www.care.at/newsletter-abmeldung/"
+                                                                                                                   target="_blank">
+                                                                                                                    Wenn
+                                                                                                                    du
+                                                                                                                    keine
+                                                                                                                    E-Mails
+                                                                                                                    mehr
+                                                                                                                    erhalten
+                                                                                                                    möchtest,
+                                                                                                                    dann
+                                                                                                                    klicke
+                                                                                                                    hier,
+                                                                                                                    um
+                                                                                                                    dich
+                                                                                                                    abzumelden.
+                                                                                                                </a>
+                                                                                                                <br></br>
+                                                                                                            </p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <!-- FOOTER SNIPPET BLOCK -->
                 <!-- =============== -->
                 <div>

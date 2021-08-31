@@ -214,3 +214,30 @@ img.OverlayBannerImage {
     color: white;
 
 }
+
+/* More Onion Footer Styles */
+#combinedsnippetfootermo > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > table.flexibleContainerLeft {
+
+}
+#combinedsnippetfootermo.snippet_block_text_twocol .flexibleContainerRight {
+    width: 290px !important;
+    background-color: transparent !important;
+}
+#combinedsnippetfootermo.snippet_block_text_twocol .flexibleContainerLeft {
+    width: 290px !important;
+    background-color: transparent !important;
+}
+#combinedsnippetfootermo.snippet_block_text_twocol p.care_tiny,
+#combinedsnippetfootermo.snippet_block_text_twocol p > a {
+    font-size: 12px;
+    font-weight: regular;
+    }
+#combinedsnippetfootermo.snippet_block_text_twocol .flexibleContainerLeft p.care_tiny {
+    padding-right: 0px;
+}
+#combinedsnippetfootermo.snippet_block_text_twocol .flexibleContainerRight p.care_tiny {
+    padding-right: 0px;
+}
+.snippet_block_bpbutton.bpbutton_border_style_radius_3px .bpbutton_table a {
+    border-radius: 3px;
+}

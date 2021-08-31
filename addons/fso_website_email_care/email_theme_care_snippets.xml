@@ -150,7 +150,22 @@
                 <a>Rot</a>
             </li>
         </xpath>
-        
+        <xpath expr="//div[@data-snippet-option-id='snippet_block_bpbutton_style']" position="after">
+            <div data-snippet-option-id='snippet_block_bpbutton_specialstyle_care'
+                             data-selector=".snippet_block_bpbutton">
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">special Style</a>
+                    <ul class="dropdown-menu">
+                         <li data-value=''>
+                            <a>none</a>
+                        </li>
+                        <li data-value='bpbutton_border_style_radius_3px'>
+                            <a>3px</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
 <!--        &lt;!&ndash; .snippet_block_banner Options &ndash;&gt;
         <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_width']" position="after">
             <div data-snippet-option-id='care_sb_banner_width'
