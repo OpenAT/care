@@ -515,6 +515,26 @@ body #products_grid_before.col-md-4 {
   margin-top: 5px;
   margin-left: 5px; }
 
+/* Checkout Page neu ENDE */
+/* Iframe Modal Box behavior */
+/* Modal Box Behavior When alt Tags image Modul is installed, save button moves out of screen */
+.modal-dialog.select-media .modal-body {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto; }
+
+/* IFRAME MODAL BOX BEHAVIOR BEGIN */
+#wsd_checkout_form .form-group {
+  position: relative !important; }
+
+.modal-open .modal {
+  overflow: visible !important; }
+
+.modal {
+  position: absolute !important; }
+
+#oe_main_menu_navbar div.modal.in > div.modal-dialog > div.modal-content {
+  position: relative; }
+
 /*.price_donate span.input-group-addon:first-child {
   display: none;
 }*/
@@ -818,5 +838,30 @@ body .oe_website_sale h6 {
 .ppt_inline_donation .checkout_steps_indicator {
   display: flex;
   flex-flow: wrap; }
+
+/* suggested Donation Buttons colors */
+.care_sdb_bg_orange {
+  background: #E4761E;
+  color: #fff; }
+
+.care_sdb_bg_lila {
+  background: #AB1455;
+  color: #fff; }
+
+.care_sdb_bg_beige {
+  background: #ffefcf;
+  color: #5a4941; }
+
+.care_sdb_bg_yellow {
+  background: #f9c00e;
+  color: #5a4941; }
+
+.care_sdb_bg_lightgrey {
+  background: #EFEFEF;
+  color: #5a4941; }
+
+.care_sdb_bg_grey {
+  background: #c9c8c6;
+  color: #fff; }
 
 /*# sourceMappingURL=care-repair-css.css.map */

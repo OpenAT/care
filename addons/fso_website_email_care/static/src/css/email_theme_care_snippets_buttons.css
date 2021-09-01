@@ -54,7 +54,7 @@
 
 #emailBody span.drop_in_button.dadi_di_button_huge,
 #emailBody span.drop_in_button.dadi_di_button_huge a {
-    font-size: 20px;
+    font-size: 36px;
     border-radius: 0px;
 }
 #emailBody span.drop_in_button.dadi_di_button_huge a {
@@ -81,12 +81,7 @@
     background-color: #000000;
     color: white;
 }
-#emailBody span.drop_in_button.dadi_di_button_green a:visited,
-#emailBody span.drop_in_button.dadi_di_button_green a {
-    background-color: #63bc46;
-    border-color: #63bc46;
-    color: white;
-}
+
 #emailBody span.drop_in_button.dadi_di_button_yellow a:visited,
 #emailBody span.drop_in_button.dadi_di_button_yellow a {
     background-color: #f4e485;
@@ -94,29 +89,29 @@
 }
 #emailBody span.drop_in_button.dadi_di_button_red a:visited,
 #emailBody span.drop_in_button.dadi_di_button_red a {
-    background-color: #ab1455;
+    background-color: #c50f0e;
     color: white;
+    border-color: #c50f0e;
 }
-#emailBody span.drop_in_button.dadi_di_button_blue a:visited,
-#emailBody span.drop_in_button.dadi_di_button_blue a {
-    background-color: #364979;
-    color: white;
-    border-color: #364979;
-}
-#emailBody span.drop_in_button.dadi_di_button_orange a:visited,
-#emailBody span.drop_in_button.dadi_di_button_orange a {
-    background-color: #f49800;
-    color: white;
-    border-color: #f49800;
-}
+
 #emailBody span.drop_in_button.dadi_di_button_pink a:visited,
 #emailBody span.drop_in_button.dadi_di_button_pink a {
     background-color: #b32986;
     color: white;
     border-color: #b32986;
 }
+/*
+.snippet_block a:hover {
+    color: unset !important;
+    text-decoration: none !important;
+    font-size: unset !important;
+}*/
 
-
+#emailBody .snippet_block span.drop_in_button a:hover {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+}
 
 /* .care_di_button_width_full */
 #emailBody span.drop_in_button.care_di_button_width_full {
