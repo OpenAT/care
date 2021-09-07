@@ -616,6 +616,9 @@ body .oe_website_sale h6 {
     margin-bottom: 30px;
     font-weight: normal; }
 
+#wsd_checkout_form_inside_row > div.col-md-12 {
+  width: 100%; }
+
 #payment_method {
   width: 100%; }
   #payment_method .tab-content {
