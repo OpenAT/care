@@ -530,7 +530,8 @@ body #products_grid_before.col-md-4 {
   overflow: visible !important; }
 
 .modal {
-  position: absolute !important; }
+  position: absolute !important;
+  transform: translate(-50%, -50%); }
 
 #oe_main_menu_navbar div.modal.in > div.modal-dialog > div.modal-content {
   position: relative; }
