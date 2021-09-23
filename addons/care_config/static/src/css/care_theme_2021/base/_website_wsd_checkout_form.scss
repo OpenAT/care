@@ -104,7 +104,9 @@
 }
 .modal {
     position: absolute !important;
-    transform: translate(-50%, -50%);
+/*    width: 600px;
+    max-width: 100%;
+    transform: translate(-50%, -50%);*/
 }
 
 #oe_main_menu_navbar div.modal.in > div.modal-dialog > div.modal-content {
