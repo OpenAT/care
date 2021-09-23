@@ -442,6 +442,32 @@ body .oe_website_sale h6 {
 #payment_method .tab-content {
   font-size: 16px;
 }
+@media (min-width: 480px) {
+  #add_to_cart.btn {
+    white-space: normal;
+  }
+  #wrap > div.container.oe_website_sale {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #wsd_checkout_page_left_column {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 300px) {
+  #add_to_cart.btn {
+    white-space: normal;
+  }
+    #wrap > div.container.oe_website_sale {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #wsd_checkout_page_left_column {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 @media (min-width: 300px) {
   .input-group-lg>.input-group-addon {
     padding: 30px 16px;
