@@ -455,9 +455,13 @@ body .oe_website_sale h6 {
     padding-right: 0px;
   }
 }
-@media (min-width: 300px) {
-  #add_to_cart.btn {
+@media (min-width: 280px) {
+  #add_to_cart {
     white-space: normal;
+  }
+  #website_sale_donate > div > div {
+    padding-left: 0px;
+    padding-left: 0px;
   }
     #wrap > div.container.oe_website_sale {
     padding-left: 0px;
