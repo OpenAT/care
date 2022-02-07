@@ -171,7 +171,6 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav {
   padding-left: 0;
   padding-right: 0;
-  display: none;
 }
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation {
   background-color: transparent;
