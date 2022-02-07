@@ -68,7 +68,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate_suggested_currency {
   display: block;
 }
-body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate_suggested {
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price input.price_donate_suggested {
   height: 120px;
   width: 120px;
   font-size: 56px;
@@ -106,7 +106,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
   position: absolute;
 }
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate span.input-group-addon:first-child::before {
-  content: "EUR";
+  content: "freier Betrag";
   visibility: visible;
   position: absolute;
 }
