@@ -1,0 +1,470 @@
+/* global 2000 product theme */
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap {
+  margin: 0 7px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap #wsd-checkout-box .panel {
+  border-color: transparent;
+  box-shadow: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap a.btn span.glyphicon {
+  top: 3px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap .checkout_steps_buttons {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap .container.oe_website_sale {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  color: #3c3c3b;
+  font-family: Roboto;
+  font-weight: bold;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap input,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap .radio label,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap #wsd_checkout_form label {
+  font-family: Roboto;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap input {
+  font-weight: bold;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .ppt_inline_donation #wsd-checkout-box .panel {
+  background-color: transparent;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .oe_website_sale h4.payment_interval_ids {
+  background: transparent;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd-checkout-box {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .arbitrary_price {
+  width: 30%;
+  margin: auto;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate_suggested_outer {
+  width: 50%;
+  margin: 0 0;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .arbitrary_price.form-inline span:nth-child(odd) {
+  float: left;
+  border-right: 1px solid #80808047;
+  border-bottom: 1px solid #80808047;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .arbitrary_price.form-inline span:nth-child(even) {
+  border-bottom: 1px solid #80808047;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .arbitrary_price.form-inline span:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .product_price .btn {
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-style: normal;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) input.price_donate_suggested:active,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) input.price_donate_suggested:focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) input.price_donate_suggested:hover {
+  color: #e57424;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate_suggested_currency {
+  display: block;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate_suggested {
+  height: 120px;
+  width: 120px;
+  font-size: 56px;
+  border: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #price_donate {
+  height: 120px;
+  background: none;
+  border: none;
+  border-bottom: 3px dotted;
+  width: 50%;
+  font-size: 3.5rem;
+  color: #333;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #price_donate:active,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #price_donate:focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #price_donate:hover {
+  color: #e57424;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .ppt_inline_donation #wsd-checkout-box > div > div > form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div {
+  margin-top: 0px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail #add_to_cart.js_check_product {
+  float: initial !important;
+  min-width: initial;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate {
+  width: 120px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate span.input-group-addon:first-child {
+  display: grid;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate span.input-group-addon:first-child {
+  visibility: hidden;
+  position: absolute;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate span.input-group-addon:first-child::before {
+  content: "EUR";
+  visibility: visible;
+  position: absolute;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .price_donate span.input-group-addon:last-child {
+  display: none;
+}
+@media (max-width: 884px) {
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .arbitrary_price {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 884px) {
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .container .arbitrary_price > span,
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .container .arbitrary_price > div {
+    display: grid;
+  }
+}
+@media (max-width: 558px) {
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .arbitrary_price {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 817px) {
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .form-group.price_donate {
+    margin-top: 0px;
+  }
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn {
+  font-family: Roboto;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn-default {
+  background: none;
+  background-color: white;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn-primary,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn-primary:hover,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn-primary > a:visited {
+  background: none;
+  background-color: #e57424;
+  border-color: #e57424;
+  color: white;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn-primary:active,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn-primary:active:focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn-primary:focus {
+  background: none;
+  background-color: #e57424;
+  border-color: #e57424;
+  color: white;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn:focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn:active:focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn.focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn:active.focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .btn.active.focus {
+  outline: 0 auto transparent;
+  outline-color: transparent;
+  outline-style: auto;
+  outline-width: 0;
+  outline-offset: 0;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav {
+  padding-left: 0;
+  padding-right: 0;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation {
+  background-color: transparent;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li {
+  display: table-cell;
+  width: 1%;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:hover,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:focus {
+  padding: 0;
+  line-height: 49px;
+  border: none;
+  color: #3c3c3b;
+  text-align: center;
+  background-color: white;
+  font-family: Nunito Sans;
+  font-weight: bold;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a .csi_tab_after,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:hover .csi_tab_after,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:focus .csi_tab_after {
+  width: 25px;
+  height: 49px;
+  display: inline-block;
+  position: absolute;
+  right: -25px;
+  vertical-align: top;
+  overflow: hidden;
+  z-index: 3;
+  background-color: transparent;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a .csi_tab_after span,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:hover .csi_tab_after span,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:focus .csi_tab_after span {
+  position: relative;
+  width: 49px;
+  height: 49px;
+  display: inline-block;
+  margin-left: -45px;
+  background-color: white;
+  border: 1px solid darkgray;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li.active a,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li.active a:hover,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li.active a:focus {
+  background-color: #e57424;
+  color: white;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li.active a .csi_tab_after span,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li.active a:hover .csi_tab_after span,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li.active a:focus .csi_tab_after span {
+  background-color: #e57424;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li:last-child a .csi_tab_after,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li:last-child a:hover .csi_tab_after,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li:last-child a:focus .csi_tab_after {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .amount_title {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .btn {
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: sans-serif, Rubik, Nunito Sans;
+  font-weight: bold;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .btn-default {
+  background: none;
+  background-color: transparent;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .btn-primary,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .btn-primary:active,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .btn-primary:focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .btn-primary:hover,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price btn-primary > a:visited {
+  background: none;
+  border-color: #e57424;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .arbitrary_price_form_group .form-control {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: bold;
+  height: 50px;
+  text-align: center;
+  color: #e57424;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .arbitrary_price_form_group .input-group-addon {
+  background: none;
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .arbitrary_price_form_group #price_donate:active,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .arbitrary_price_form_group #price_donate:focus,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .product_price .arbitrary_price_form_group #price_donate:visited {
+  color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .payment_interval_ids > hr {
+  margin: 0 6px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .payment_interval_ids > small {
+  color: #3c3c3b;
+  font-family: Roboto;
+  font-weight: bold;
+  margin: 1.5em 0 1em 0;
+  display: block;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .payment_interval_lines_ids .form-group .radio {
+  display: inline;
+  padding-left: 24px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail .payment_interval_lines_ids .form-group input[type="radio"] {
+  margin-top: 10px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail #add_to_cart.btn-xl {
+  padding: 10px 20px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail #add_to_cart {
+  float: right;
+  min-width: 44%;
+  margin-right: 16px;
+  text-align: left;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #product_detail #add_to_cart span:after {
+  font-family: "Glyphicons Halflings";
+  float: right;
+  content: "\e080";
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .ppt_opc #website_sale_donate > .container {
+  border: 0.11111111rem solid #b3b3b3;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  color: #3c3c3b;
+  font-family: Roboto;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_pages_snippets_top,
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_bottom {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content {
+  padding-bottom: 1em;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content .checkout_title {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content #wsd_checkout_page_right_column {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content #wsd_checkout_page_left_column {
+  width: 100%;
+  padding: 12px 32px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content #wsd_checkout_page_left_column .billing-fields {
+  padding-bottom: 2em;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content .form-control {
+  border-radius: 5px;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content {
+  padding-bottom: 1em;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content #cart_products {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content .small_cart_header {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content #cart_total {
+  border-top: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content #cart_total #order_total h3 {
+  font-family: Roboto;
+  color: #3d3d3c;
+  font-size: 2rem;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content #cart_total .text-right {
+  text-align: left;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content table#cart_total.pull-right {
+  float: none !important;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content table#cart_total.pull-right tr#order_total {
+  width: 300px !important;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content #wsd_payment_page_left_col {
+  width: 100%;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content #wsd_payment_page_left_col .payment_opc_acquirer_form {
+  text-align: center;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content #wsd_payment_page_left_col .payment_opc_acquirer_form div {
+  text-align: left;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content #wsd_payment_page_right_col {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_bottom {
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #payment_method .payment_title {
+  text-align: center;
+  margin-bottom: 1em;
+  display: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #payment_method ul.nav.nav-tabs li {
+  background-color: rgba(196, 195, 195, 0.39);
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #payment_method ul.nav.nav-tabs li a {
+  margin: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  text-align: center;
+  padding: 8px 26px;
+  color: #e57424;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #payment_method ul.nav.nav-tabs li .tab-acquirer-image img {
+  height: 12px;
+  margin: auto;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #payment_method .tab-content {
+  background-color: white;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #payment_method .tab-content > .tab-pane > div {
+  padding: 1em;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #payment_method .form-control {
+  border-radius: 5px;
+}
+@media (max-width: 400px) {
+  .oe_cart table td:last-child,
+  .oe_cart table td:nth-last-child(2),
+  #modal_optional_products table td:last-child,
+  #modal_optional_products table td:nth-last-child(2) {
+    width: 50% !important;
+    text-align: left;
+    height: none;
+  }
+  body h3 {
+    font-size: 2rem;
+  }
+  body[data-on-shop-page=True][data-latest-product-theme=care_theme_a]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a .csi_tab_after span,
+  body[data-on-shop-page=True][data-latest-product-theme=care_theme_a]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:focus .csi_tab_after span,
+  body[data-on-shop-page=True][data-latest-product-theme=care_theme_a]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:hover .csi_tab_after span {
+    margin-left: -80px;
+  }
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a,
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:hover,
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wsd_checkout_steps_nav .checkout_steps_navigation ul.checkout_steps_indicator.nav-tabs li a:focus {
+    font-size: 4vw;
+  }
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #payment_method ul.nav.nav-tabs li {
+    width: 100%;
+  }
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content {
+    padding-bottom: 1em;
+  }
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content .small_cart table#cart_total.pull-right {
+    float: none !important;
+  }
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content .small_cart table#cart_total.pull-right .h3 {
+    font-size: 2rem;
+  }
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content .small_cart table#cart_total.pull-right #cart_total {
+    font-family: Nunito Sans;
+    color: #3d3d3c;
+    font-size: 1rem;
+    border-top: none;
+  }
+  body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_payment_page_content .small_cart table#cart_total.pull-right .text-right {
+    text-align: left;
+  }
+}
