@@ -209,6 +209,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
   #wsd_checkout_steps_nav {
     padding-left: 0;
     padding-right: 0;
+    display: none;
 
     .checkout_steps_navigation {
       background-color: transparent;
@@ -423,6 +424,14 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
       display: none;
     }
 
+  @media (max-width: 558px) {
+    .wsd_cfi_buttons {
+      display: grid;
+      .wsd_button_back_to_page {
+          color: initial;
+      }
+    }
+  }
   .wsd_checkout_page_content {
     padding-bottom: 1em;
 
@@ -452,6 +461,9 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
   // ------------
   // PAYMENT PAGE
   // ------------
+  #aq7 > div:nth-child(6) {
+    display: none;
+  }
   .wsd_payment_page_content {
     padding-bottom: 1em;
 
