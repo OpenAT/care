@@ -101,7 +101,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
   }
   #product_detail .product_price input.price_donate_suggested {
     height: 120px;
-    width: 120px;
+    width: auto;
     font-size: 56px;
     border: none;
   }
@@ -110,7 +110,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
     background: none;
     border: none;
     border-bottom: 3px dotted;
-    width:50%;
+    width: auto;
     font-size: 3.5rem;
     color: #333;
   }
@@ -127,9 +127,12 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
     min-width: initial;
   }
   .price_donate {
-    width: 120px;
+    width: 50%;
   }
-    .price_donate span.input-group-addon:first-child {
+  div.price_donate .input-group {
+    display: grid;
+  }
+  .price_donate span.input-group-addon:first-child {
     display: grid;
   }
   .price_donate span.input-group-addon:first-child {
@@ -140,6 +143,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
       content: "freier Betrag";
       visibility: visible;
       position: absolute;
+      padding-left: 3px;
     }
   .price_donate span.input-group-addon:last-child {
     display: none;
@@ -424,7 +428,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
       display: none;
     }
 
-  @media (max-width: 558px) {
+  @media (max-width: 570px) {
     .wsd_cfi_buttons {
       display: grid;
       .wsd_button_back_to_page {
