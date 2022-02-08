@@ -12,6 +12,13 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap .checkout_steps_buttons {
   display: none;
 }
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap .wsd_button_back_to_page_text {
+  color: black;
+}
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap #wsd_checkout_form_inside_row > div:nth-child(2) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap .container.oe_website_sale {
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -354,7 +361,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
 }
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content #wsd_checkout_page_left_column {
   width: 100%;
-  padding: 12px 32px;
+  padding: 2px 3px;
 }
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content #wsd_checkout_page_left_column .billing-fields {
   padding-bottom: 2em;
