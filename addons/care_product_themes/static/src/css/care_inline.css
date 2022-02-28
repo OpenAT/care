@@ -22,8 +22,12 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
   padding-left: 5px;
   padding-right: 5px;
 }
+body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap #wsd-checkout-box > div > div.panel-footer {
+  background-color: transparent;
+}
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap .container.oe_website_sale {
   border: none;
+  border-top: 1px solid #80808029;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   color: #3c3c3b;
   font-family: Roboto;
