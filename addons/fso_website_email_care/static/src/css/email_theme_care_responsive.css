@@ -47,7 +47,14 @@
         font-size: 14px;
         font-weight: 300;
     }
-
+    #combinedsnippetfootermo .snippet_block_text_twocol,
+    #combinedsnippetfootermo .snippet_block_text_twocol p {
+        text-align: center !important;
+    }
+    .snippet_block_text_twocol.BuTlBuTr_inside .flexibleImage {
+        width: 50%;
+        margin: auto;
+    }
     body #emailBody .snippet_block_text_image_left .flexibleContainerLeft {
     min-height: inherit;
 }

@@ -358,7 +358,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-co
   }
 }
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content {
-  padding-bottom: 1em;
+  padding-bottom: 3px;
 }
 body[data-on-shop-page=True][data-latest-product-theme=care_inline]:not([data-confirmation-controller-called=True]) .wsd_checkout_page_content .checkout_title {
   display: none;

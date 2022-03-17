@@ -219,23 +219,49 @@ img.OverlayBannerImage {
 #combinedsnippetfootermo > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > table.flexibleContainerLeft {
 
 }
-#combinedsnippetfootermo.snippet_block_text_twocol .flexibleContainerRight {
-    width: 290px !important;
+#combinedsnippetfootermo .snippet_block_text_twocol .flexibleContainerLeft, .snippet_block_text_twocol .flexibleContainerLeft .flexibleImage {
+    background-color: transparent;
+}
+#combinedsnippetfootermo .snippet_block_text_twocol .flexibleContainerRight, .snippet_block_text_twocol .flexibleContainerRight .flexibleImage {
+    background-color: transparent;
+}
+.snippet_block_text_intro.combinedfooter .textContent, .snippet_block_text_twocol.combinedfooter .textContent {
+
+}
+#combinedsnippetfootermo .flexibleContainer {
+    background-color: transparent;
+}
+#combinedsnippetfootermo .snippet_block_text_twocol.snippet_block_twocol_nopic_mo .flexibleContainerRight {
+    width: 300px !important;
     background-color: transparent !important;
 }
-#combinedsnippetfootermo.snippet_block_text_twocol .flexibleContainerLeft {
-    width: 290px !important;
+#combinedsnippetfootermo .snippet_block_text_twocol.snippet_block_twocol_nopic_mo .flexibleContainerLeft {
+    width: 300px !important;
     background-color: transparent !important;
 }
-#combinedsnippetfootermo.snippet_block_text_twocol p.care_tiny,
-#combinedsnippetfootermo.snippet_block_text_twocol p > a {
+#combinedsnippetfootermo .snippet_block_text_twocol .flexibleContainerCell {
+    padding-bottom: 0px;
+}
+#combinedsnippetfootermo .snippet_block_text_twocol.snippet_block_twocol_nopic_mo .flexibleContainerLeft .textContent,
+#combinedsnippetfootermo .snippet_block_text_twocol.snippet_block_twocol_nopic_mo .flexibleContainerRight .textContent
+{
+    padding-right: 0px;
+}
+#combinedsnippetfootermo .snippet_block_text_twocol p.care_tiny,
+#combinedsnippetfootermo .snippet_block_text_intro p,
+#combinedsnippetfootermo .snippet_block_text_twocol p > a {
     font-size: 12px;
     font-weight: regular;
     }
-#combinedsnippetfootermo.snippet_block_text_twocol .flexibleContainerLeft p.care_tiny {
+#combinedsnippetfootermo .snippet_block a,
+#combinedsnippetfootermo .snippet_block a:hover,
+#combinedsnippetfootermo .snippet_block a:visited {
+    font-size: 12px;
+}
+#combinedsnippetfootermo .snippet_block_text_twocol .flexibleContainerLeft p.care_tiny {
     padding-right: 0px;
 }
-#combinedsnippetfootermo.snippet_block_text_twocol .flexibleContainerRight p.care_tiny {
+#combinedsnippetfootermo .snippet_block_text_twocol .flexibleContainerRight p.care_tiny {
     padding-right: 0px;
 }
 .snippet_block_bpbutton.bpbutton_border_style_radius_3px .bpbutton_table a {
