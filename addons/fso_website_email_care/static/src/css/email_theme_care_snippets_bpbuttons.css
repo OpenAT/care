@@ -27,7 +27,7 @@
 }
 
 .snippet_block_bpbutton .textContent {
-    height: 126px;
+    height: 100%;
 }
 /* Base Style */
 .snippet_block_bpbutton .bpbutton_table,

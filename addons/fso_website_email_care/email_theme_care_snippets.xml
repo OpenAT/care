@@ -77,8 +77,9 @@
         <!-- care Background styles -->
         <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_color']//ul" position="replace">
             <ul class="dropdown-menu">
-                <li data-value='care_sb_bg_red'><a>Red</a></li>
-                <li data-value='care_sb_bg_background'><a>Background</a></li>
+                <li data-value='care_sb_bg_red'><a>Rot</a></li>
+                <li data-value='care_sb_bg_background'><a>Hintergrund</a></li>
+                <li data-value='care_sb_bg_white'><a>Weiss</a></li>
             </ul>
         </xpath>
         
@@ -89,10 +90,10 @@
 &lt;!&ndash;            <li data-value='care_di_button_green'><a>Green</a></li>&ndash;&gt;
         </xpath>-->
         
-<!--        <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
+        <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
             <div data-snippet-option-id='care_snippet_block_padding'
                  data-selector=".snippet_block">
-                &lt;!&ndash; Snippet options menu &ndash;&gt;
+                <!-- Snippet options menu -->
                 <li class="dropdown-submenu" data-required="true">
                     <a tabindex="-1" href="#">Vertical Padding</a>
                     <ul class="dropdown-menu">
@@ -104,7 +105,7 @@
                     </ul>
                 </li>
             </div>
-        </xpath>-->
+        </xpath>
 
         <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
             <div data-snippet-option-id='care_snippet_block_img_padding_top'
@@ -127,6 +128,43 @@
                 </li>
             </div>
         </xpath>
+
+                <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_color']" position="after">
+                    <div data-snippet-option-id='care_snippet_block_bpb_spacing_top'
+                         data-selector=".snippet_block_bpbutton">
+                        <!-- Snippet options menu -->
+                        <li class="dropdown-submenu" data-required="true">
+                            <a tabindex="-1" href="#">Vertical bpButton Padding Top</a>
+                            <ul class="dropdown-menu">
+                                <li data-value='care_snippet_block_bpb_padding_top_0'><a>entferne padding</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_top_5'><a>5px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_top_10'><a>10px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_top_15'><a>15px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_top_20'><a>20px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_top_25'><a>25px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_top_30'><a>30px</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </xpath>
+                <xpath expr="//div[@data-snippet-option-id='care_snippet_block_bpb_spacing_top']" position="after">
+                    <div data-snippet-option-id='care_snippet_block_bpb_spacing_bottom'
+                         data-selector=".snippet_block_bpbutton">
+                        <!-- Snippet options menu -->
+                        <li class="dropdown-submenu" data-required="true">
+                            <a tabindex="-1" href="#">Vertical bpButton Padding Bottom</a>
+                            <ul class="dropdown-menu">
+                                <li data-value='care_snippet_block_bpb_padding_bottom_0'><a>entferne padding</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_bottom_5'><a>5px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_bottom_10'><a>10px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_bottom_15'><a>15px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_bottom_20'><a>20px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_bottom_25'><a>25px</a></li>
+                                <li data-value='care_snippet_block_bpb_padding_bottom_30'><a>30px</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </xpath>
 
 <!--        &lt;!&ndash; .drop_in_button Extra Options &ndash;&gt;
         <xpath expr="//div[@data-snippet-option-id='drop_in_button_width']" position="after">
