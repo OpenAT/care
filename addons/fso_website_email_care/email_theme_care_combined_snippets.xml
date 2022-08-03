@@ -257,7 +257,7 @@
                                                                                                class="flexibleContainerLeft">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td align="left" class="imageContent ckediting_disabled" valign="top"><img class="flexibleImage" src="/fso_website_email_care/static/src/img/logo.png" alt=""/>
+                                                                                                    <td align="left" class="imageContent ckediting_enabled" valign="top"><img class="flexibleImage" src="/fso_website_email_care/static/src/img/logo.png" alt=""/>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                             </tbody>
