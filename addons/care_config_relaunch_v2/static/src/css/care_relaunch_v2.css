@@ -24,3 +24,206 @@ div#products_grid {
 }
 
 /* PRODUCT CARDS AND GRID END */
+
+/* FORM REDESIGN START */
+
+/* Hide product image and header */
+#website_sale_donate img.product-image,
+#website_sale_donate h1 {
+    display: none;
+}
+
+/* Reorder elements */
+
+div.js_product {
+    display: grid;
+}
+
+h3.amount_title {
+    order: -2;
+}
+
+div.js_product h4#payment_intervals {
+    order: -1;
+    padding: 0 !important;
+}
+
+div.js_product div.text-left {
+    display: grid;
+}
+
+div.wsd_opc_payment {
+    order: -1;
+}
+
+/* Fix headline spacing and indentation */
+
+h3.amount_title,
+h3.checkout_title,
+h3.payment_title {
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0;
+}
+
+/* Counter graphics */
+body {
+  counter-reset: section;
+  counter-increment: section; /* start counter at 2, the parent website renders the first */
+}
+
+#website_sale_donate h3 {
+    font-weight: bold;
+    color: black;
+    background: transparent;
+}
+
+#website_sale_donate h3:before {
+    counter-increment: section;
+    /* content: counter(section); do not use real counter, due to CSS order, it's counted wrong */
+    margin-right: 1rem;
+    background-color: #E36F1E;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+h3.amount_title:before { content: "2"; }
+h3.payment_title:before { content: "3"; }
+h3.checkout_title:before { content: "4"; }
+
+/* Suggested price boxes */
+
+.arbitrary_price.form-inline {
+    font-size: 0;
+}
+
+span.price_donate_suggested_outer {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 50%;
+    background-color: transparent;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #DEDEDE;
+    border-radius: 0;
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.price_donate_suggested_currency {
+    margin-left: 10px !important;
+    margin-top: 25px !important;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input:focus {
+    width: 100%;
+    color: #E36F1E;
+    background-color: #FDF7F3;
+    border: 1px solid #E36F1E;
+    border-radius: 0;
+    outline: 0;
+}
+
+div.form-group.price_donate {
+    border: 1px solid #DEDEDE;
+    width: 100%;
+}
+
+div.form-group.price_donate label {
+    display: none;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div,
+#wsd_checkout_form #price_donate {
+    width: 100% !important;
+    border: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span {
+    border: 0;
+    background-color: white;
+    border-radius: 0;
+}
+
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+    height: 70px !important;
+}
+
+.input-group-lg > .input-group-addon {
+    padding: 20px 10px !important;
+}
+
+@media screen and (max-width: 767px) {
+    #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
+        margin-bottom: 0 !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+/* Payment interval box */
+
+small.payment_interval_info,
+div.js_product h4#payment_intervals hr {
+    display: none !important;
+}
+
+#payment_intervals > div {
+    width: 100%;
+}
+
+#payment_intervals > div select,
+#payment_intervals > div select.has-success.form-control{
+    border-radius: 0;
+    border: 1px solid #DEDEDE;
+}
+
+#payment_intervals > div select:focus,
+#payment_intervals > div select.has-success.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#payment_intervals > div > span {
+    display: none;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 {
+    margin-top: 0 !important;
+}
+
+/* Form box */
+
+div#wsd_checkout_form_inside_row {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#wsd_checkout_form_inside_row div.row.billing-fields {
+    margin-left: -30px !important;
+    margin-right: -30px !important;
+    width: calc(100% + 64px);
+    max-width: calc(100% + 64px);
+}
+
+@media (max-width: 768px) {
+    div#wsd_checkout_form_inside_row {
+        padding: 0px !important;
+    }
+}
+
+/* FORM REDESIGN END */
