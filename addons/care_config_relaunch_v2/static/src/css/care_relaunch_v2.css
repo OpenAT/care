@@ -1,0 +1,26 @@
+/* PRODUCT CARDS AND GRID START */
+div.oe_product_image:after {
+    background-image: none;
+}
+
+div.oe_product_cart {
+    background-color: #EEE9E5;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+div#products_grid_before {
+    display: none;
+}
+
+div#products_grid {
+    width: 100%;
+}
+
+#products_grid > table > tbody > tr > td > div > form > div > div.wrap_wsd_1 > div.wrap_wsd_2.front > div > a > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+}
+
+/* PRODUCT CARDS AND GRID END */
