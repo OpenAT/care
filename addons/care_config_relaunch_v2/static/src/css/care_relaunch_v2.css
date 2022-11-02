@@ -96,7 +96,7 @@ h3.amount_title:before { content: "2"; }
 h3.payment_title:before { content: "3"; }
 h3.checkout_title:before { content: "4"; }
 
-/* Suggested price boxes */
+/* Suggested price boxes - OPC forms */
 
 .arbitrary_price.form-inline {
     font-size: 0;
@@ -175,6 +175,10 @@ div.form-group.price_donate label {
     }
 }
 
+/* Suggested price boxes - multi page forms */
+
+/* TODO */
+
 /* Payment interval box */
 
 small.payment_interval_info,
@@ -224,6 +228,58 @@ div#wsd_checkout_form_inside_row {
     div#wsd_checkout_form_inside_row {
         padding: 0px !important;
     }
+}
+
+/* Payment methods */
+
+#payment_method > div:nth-child(2) {
+    padding: 0;
+}
+
+ul.nav.nav-tabs li {
+    display: inline-block;
+    border: 1px solid #DEDEDE;
+    width: 179px;
+    height: 151px;
+    background-color: white;
+    line-height: 151px;
+    text-align: center;
+}
+
+ul.nav.nav-tabs li.active {
+    border: 1px solid #E36F1E;
+}
+
+ul.nav.nav-tabs li.active a {
+    background-color: #FDF7F3;
+    color: #E36F1E;
+}
+
+ul.nav.nav-tabs li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    color: black;
+}
+
+ul.nav.nav-tabs li a span.tab-acquirer-image {
+    display: block;
+    height: 95px;
+    padding-top: 25px;
+    line-height: 70px;
+}
+
+ul.nav.nav-tabs li a span.tab-acquirer-image img {
+    display: inline-block;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 70px !important;
+    max-height: 70px !important;
+}
+
+div.tab-content {
+    height: auto !important;
 }
 
 /* FORM REDESIGN END */
