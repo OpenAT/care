@@ -223,14 +223,19 @@ span.price_donate_suggested_outer {
     color: #E36F1E !important;
 }
 
-.container #wsd_checkout_form .active .price_donate_suggested_currency::before {
+.container #wsd_checkout_form .active .price_donate_suggested_currency::before,
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type::before {
     border: 2px solid #E36F1E;
-    background-image: url(/care_config_relaunch_v2/static/src/img/check-orange.svg);
+    content: "\e013";
 }
 
 .container #wsd_checkout_form .price_donate_suggested_currency::before {
-    display: inline-block;
+}
+
+.container #wsd_checkout_form .price_donate_suggested_currency::before,
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type::before {
     content: "";
+    display: inline-block;
     line-height: 20px;
     margin-left: 10px;
     margin-right: 8px;
@@ -242,6 +247,8 @@ span.price_donate_suggested_outer {
     vertical-align: top;
     overflow: clip;
     background-position: center;
+    font-size: 12px;
+    font-family: 'Glyphicons Halflings'
 }
 
 #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input:focus,
@@ -303,26 +310,6 @@ div.form-group.price_donate label {
     background-color: #FDF7F3;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type::before {
-    display: inline-block;
-    content: "";
-    line-height: 20px;
-    margin-left: 10px;
-    margin-right: 8px;
-    width: 24px;
-    height: 24px;
-    border: 2px solid #DEDEDE;
-    border-radius: 12px;
-    pointer-events: none;
-    vertical-align: top;
-    overflow: clip;
-    background-position: center;
-}
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type::before {
-    border: 2px solid #E36F1E;
-    background-image: url(/care_config_relaunch_v2/static/src/img/check-orange.svg);
 }
 
 .input-group-lg > .form-control,
@@ -484,6 +471,32 @@ div.tab-content {
 #wsd_checkout_form div.f-type-boolean input[type=radio]:not(:checked),
 #wsd_checkout_form div.f-type-boolean input[type=checkbox]:not(:checked) {
     opacity: 0.4;
+}
+
+/* Text input fields */
+
+#wsd_checkout_form input[type=text],
+#wsd_checkout_form select {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #DEDEDE;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#wsd_checkout_form select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23000000' stroke='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px 12px;
+}
+
+#wsd_checkout_form select + .glyphicon {
+    margin-right: 2.5rem;
 }
 
 /* FORM REDESIGN END */
