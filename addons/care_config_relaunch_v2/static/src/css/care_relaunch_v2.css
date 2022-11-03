@@ -50,6 +50,16 @@
     font-family: 'Open Sans';
 }
 
+/* Bootstrap buttons */
+
+a.btn {
+    font-family: 'Open Sans' !important;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 16px !important;
+}
+
 /* GENERAL END */
 
 /* PRODUCT CARDS AND GRID START */
