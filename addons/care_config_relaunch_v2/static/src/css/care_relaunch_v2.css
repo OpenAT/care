@@ -45,6 +45,26 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/FiraSans/FiraSans-ext-condensed-bold.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/FiraSans/FiraSans-condensed-bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* Base fonts */
 * {
     font-family: 'Open Sans';
@@ -53,11 +73,13 @@
 /* Bootstrap buttons */
 
 a.btn {
-    font-family: 'Open Sans' !important;
+    font-family: 'Fira Sans Condensed' !important;
     font-weight: bold;
-    font-size: 16px;
+    font-stretch: condensed;
+    font-size: 18px;
+    letter-spacing: 1.1px;
     border-radius: 5px;
-    padding: 16px !important;
+    padding: 18px !important;
 }
 
 /* GENERAL END */
@@ -239,6 +261,10 @@ div.form-group.price_donate {
 
 div.form-group.price_donate label {
     display: none;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div {
+    display: flex;
 }
 
 #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div,
