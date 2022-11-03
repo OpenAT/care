@@ -461,4 +461,29 @@ div.tab-content {
     }
 }
 
+/* Checkbox fields */
+
+#wsd_checkout_form div.f-type-boolean {
+    border: 1px solid #DEDEDE;
+    padding: 16px 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#wsd_checkout_form div.f-type-boolean label {
+    margin: 0;
+}
+
+#wsd_checkout_form div.f-type-boolean input[type=radio],
+#wsd_checkout_form div.f-type-boolean input[type=checkbox] {
+    transform: scale(1.5);
+    margin-right: 8px;
+    accent-color: #E36F1E;
+}
+
+#wsd_checkout_form div.f-type-boolean input[type=radio]:not(:checked),
+#wsd_checkout_form div.f-type-boolean input[type=checkbox]:not(:checked) {
+    opacity: 0.4;
+}
+
 /* FORM REDESIGN END */
