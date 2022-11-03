@@ -22,6 +22,7 @@
             <xpath expr="//head" position="inside">
                 <t t-if="'/localhost' in request.httprequest.url">
                     <link rel="stylesheet" href='/care_config_relaunch_v2/static/src/css/care_relaunch_v2.css'/>
+                    <script type="text/javascript" src="/care_config_relaunch_v2/static/src/js/relaunch_v2.js"/>
                 </t>
             </xpath>
         </template>

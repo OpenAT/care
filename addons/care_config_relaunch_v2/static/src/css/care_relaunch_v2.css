@@ -1,3 +1,57 @@
+/* GENERAL START */
+
+/* Font definitions */
+
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/OpenSans/OpenSans-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/OpenSans/OpenSans-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/OpenSans/OpenSans-latin-ext-bold.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/OpenSans/OpenSans-latin-bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Base fonts */
+* {
+    font-family: 'Open Sans';
+}
+
+/* GENERAL END */
+
 /* PRODUCT CARDS AND GRID START */
 div.oe_product_image:after {
     background-image: none;
@@ -74,6 +128,7 @@ body {
 
 #website_sale_donate h3 {
     font-weight: bold;
+    font-size: 18px;
     color: black;
     background: transparent;
 }
@@ -86,10 +141,11 @@ body {
     color: white;
     display: inline-block;
     text-align: center;
-    line-height: 3rem;
-    border-radius: 1.5rem;
-    width: 3rem;
-    height: 3rem;
+    line-height: 28px;
+    border-radius: 14px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
 }
 
 h3.amount_title:before { content: "2"; }
@@ -118,14 +174,46 @@ span.price_donate_suggested_outer {
     background-color: transparent;
     padding-top: 0;
     padding-bottom: 0;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .price_donate_suggested_currency {
+    display: inline-block;
     margin-left: 10px !important;
-    margin-top: 25px !important;
+    margin-top: 22px !important;
+    font-size: 14px !important;
+    line-height: 25px !important;
+    pointer-events: none;
 }
 
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input:focus {
+.active .price_donate_suggested_currency {
+    color: #E36F1E !important;
+}
+
+.container #wsd_checkout_form .active .price_donate_suggested_currency::before {
+    border: 2px solid #E36F1E;
+    background-image: url(/care_config_relaunch_v2/static/src/img/check-orange.svg);
+}
+
+.container #wsd_checkout_form .price_donate_suggested_currency::before {
+    display: inline-block;
+    content: "";
+    line-height: 20px;
+    margin-left: 10px;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #DEDEDE;
+    border-radius: 12px;
+    pointer-events: none;
+    vertical-align: top;
+    overflow: clip;
+    background-position: center;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input:focus,
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span.active > input{
     width: 100%;
     color: #E36F1E;
     background-color: #FDF7F3;
@@ -155,6 +243,50 @@ div.form-group.price_donate label {
     border: 0;
     background-color: white;
     border-radius: 0;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:first-of-type {
+    display: none;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type {
+    order: -1;
+    font-size: 14px;
+    line-height: 30px;
+    min-width: 90px;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active {
+    background-color: #FDF7F3;
+    border: 1px solid #E36F1E !important;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type,
+#wsd_checkout_form .active #price_donate {
+    color: #E36F1E;
+    background-color: #FDF7F3;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type::before {
+    display: inline-block;
+    content: "";
+    line-height: 20px;
+    margin-left: 10px;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #DEDEDE;
+    border-radius: 12px;
+    pointer-events: none;
+    vertical-align: top;
+    overflow: clip;
+    background-position: center;
+}
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type::before {
+    border: 2px solid #E36F1E;
+    background-image: url(/care_config_relaunch_v2/static/src/img/check-orange.svg);
 }
 
 .input-group-lg > .form-control,
@@ -266,7 +398,7 @@ ul.nav.nav-tabs li a {
 ul.nav.nav-tabs li a span.tab-acquirer-image {
     display: block;
     height: 95px;
-    padding-top: 25px;
+    padding-top: 20px;
     line-height: 70px;
 }
 
@@ -280,6 +412,17 @@ ul.nav.nav-tabs li a span.tab-acquirer-image img {
 
 div.tab-content {
     height: auto !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .container #payment_method ul {
+        font-size: 0;
+        text-align: left;
+    }
+    .container #payment_method .nav > li {
+        font-size: 14px;
+        display: inline-block !important;
+    }
 }
 
 /* FORM REDESIGN END */
