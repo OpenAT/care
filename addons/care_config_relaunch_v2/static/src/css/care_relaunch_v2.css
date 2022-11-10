@@ -475,6 +475,60 @@ div.tab-content {
 
 /* Text input fields */
 
+#wsd_checkout_form div input[type=text]::-webkit-input-placeholder { /* Edge */
+  /* color: transparent !important; */
+  text-align: right;
+}
+#wsd_checkout_form div input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  /* color: transparent !important; */
+  text-align: right;
+}
+
+#wsd_checkout_form div input[type=text]::placeholder {
+  /* color: transparent !important; */
+  text-align: right;
+}
+
+label.un-focused,
+label.is-focused {
+    position: absolute;
+    top: 6px;
+    font-size: 12px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+label.un-focused.empty,
+label.is-focused.empty {
+    position: absolute;
+    font-size: 17px;
+    top: 24px;
+    left: 16px;
+    pointer-events: none;
+    color: black !important;
+}
+
+@media only screen and (max-width: 1199px) {
+    label.un-focused,
+    label.is-focused {
+        position: absolute;
+        top: -10px;
+        font-size: 12px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    label.un-focused.empty,
+    label.is-focused.empty {
+        position: absolute;
+        font-size: 17px;
+        top: 11px;
+        left: 16px;
+        pointer-events: none;
+        color: black !important;
+    }
+}
+
 #wsd_checkout_form input[type=text],
 #wsd_checkout_form select {
     border: 0;
@@ -483,6 +537,9 @@ div.tab-content {
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+    margin-top: 16px;
+    padding-left: 0px !important;
+    padding-right: 50px !important;
 }
 
 #wsd_checkout_form select {
@@ -497,6 +554,41 @@ div.tab-content {
 
 #wsd_checkout_form select + .glyphicon {
     margin-right: 2.5rem;
+}
+
+#wsd_checkout_form .glyphicon {
+    top: 18px;
+}
+
+#wsd_checkout_form .glyphicon-info-sign {
+    position: absolute;
+    top: 30px !important;
+    right: 4px !important;
+}
+
+#wsd_checkout_form .f-type-boolean .glyphicon-info-sign {
+    top: 21px !important;
+    margin-lef: 8px !important;
+    right: unset !important;
+    border-left: 8px solid transparent;
+}
+
+@media only screen and (max-width: 1199px) {
+    #wsd_checkout_form .glyphicon {
+        top: 4px;
+    }
+
+    #wsd_checkout_form .glyphicon-info-sign {
+        position: absolute;
+        top: 15px !important;
+    }
+
+    #wsd_checkout_form .f-type-boolean .glyphicon-info-sign {
+        top: 21px !important;
+        margin-lef: 8px !important;
+        right: unset !important;
+        border-left: 8px solid transparent;
+    }
 }
 
 /* FORM REDESIGN END */
