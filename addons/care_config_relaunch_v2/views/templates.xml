@@ -9,7 +9,7 @@
             <xpath expr="//script[@src='/care_config/static/src/js/jquery.path.js']" position="replace"></xpath>
 
             <xpath expr='//script[@src="/website_forum/static/src/js/website_forum.js"]' position="after">
-                <t t-if="not '/localhost' in request.httprequest.url">
+                <t t-if="'shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url">
                     <script type="text/javascript" src="/care_config/static/src/js/jquery.flip.min.js"/>
                     <script type="text/javascript" src="/care_config/static/src/js/care_cart_anim.js"/>
                     <script type="text/javascript" src="/care_config/static/src/js/jquery.path.js"/>
@@ -20,7 +20,7 @@
         <!-- Load relaunch v2 CSS for new domain only -->
         <template id="care_relauch_v2_custom_css" inherit_id="website.layout" name="care Relauch Custom CSS">
             <xpath expr="//head" position="inside">
-                <t t-if="'/localhost' in request.httprequest.url">
+                <t t-if="'shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url">
                     <link rel="stylesheet" href='/care_config_relaunch_v2/static/src/css/care_relaunch_v2.css'/>
                     <script type="text/javascript" src="/care_config_relaunch_v2/static/src/js/relaunch_v2.js"/>
                 </t>
