@@ -459,6 +459,29 @@ div.tab-content {
     }
 }
 
+@media screen and (max-width: 574px) {
+    ul.nav.nav-tabs li {
+        width: 150px;
+        height: 127px;
+        line-height: 127px;
+    }
+
+    ul.nav.nav-tabs li a span.tab-acquirer-image {
+        padding-top: 15px;
+        height: 70px;
+        line-height: 50px;
+    }
+
+    ul.nav.nav-tabs li a span.tab-acquirer-image img {
+        max-width: 50px !important;
+        max-height: 50px !important;
+    }
+
+    #payment_method .tab-acquirer-name {
+        word-break: break-word;
+    }
+}
+
 /* Checkbox fields */
 
 #wsd_checkout_form div.f-type-boolean label {
