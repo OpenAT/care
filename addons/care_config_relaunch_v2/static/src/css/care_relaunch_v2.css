@@ -385,6 +385,14 @@ div#wsd_checkout_form_inside_row {
     }
 }
 
+/* Form groups */
+
+@media only screen and (max-width: 1199px) {
+    #wsd_checkout_form_inside_row .form-group {
+        float: none;
+    }
+}
+
 /* Payment methods */
 
 #payment_method > div:nth-child(2) {
