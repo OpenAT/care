@@ -587,7 +587,7 @@ label.is-focused.empty {
 }
 
 #wsd_checkout_form .glyphicon {
-    top: 18px;
+    top: 10px;
 }
 
 #wsd_checkout_form .glyphicon-info-sign {
@@ -604,10 +604,6 @@ label.is-focused.empty {
 }
 
 @media only screen and (max-width: 1199px) {
-    #wsd_checkout_form .glyphicon {
-        top: 4px;
-    }
-
     #wsd_checkout_form .f-type-boolean .glyphicon-info-sign {
         top: 21px !important;
         margin-lef: 8px !important;
