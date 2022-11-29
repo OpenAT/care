@@ -210,7 +210,7 @@ span.price_donate_suggested_outer {
     font-size: 30px;
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
         text-align: right;
     }
@@ -325,7 +325,7 @@ div.form-group.price_donate label {
     padding: 20px 10px !important;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
         margin-bottom: 0 !important;
         padding-top: 0;
@@ -382,7 +382,7 @@ div#wsd_checkout_form_inside_row {
     max-width: calc(100% + 64px);
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     div#wsd_checkout_form_inside_row {
         padding: 0px !important;
     }
@@ -459,7 +459,7 @@ div.tab-content {
     }
 }
 
-@media screen and (max-width: 574px) {
+@media only screen and (max-width: 574px) {
     ul.nav.nav-tabs li {
         width: 150px;
         height: 127px;
