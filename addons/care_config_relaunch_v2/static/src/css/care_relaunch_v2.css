@@ -458,15 +458,10 @@ div.tab-content {
 
 /* Checkbox fields */
 
-#wsd_checkout_form div.f-type-boolean {
+#wsd_checkout_form div.f-type-boolean label {
+    display: block;
     border: 1px solid #DEDEDE;
     padding: 16px 20px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-#wsd_checkout_form div.f-type-boolean label {
-    margin: 0;
 }
 
 #wsd_checkout_form div.f-type-boolean input[type=radio],
@@ -577,7 +572,7 @@ label.is-focused.empty {
 #wsd_checkout_form .f-type-boolean .glyphicon-info-sign {
     top: 21px !important;
     margin-lef: 8px !important;
-    right: unset !important;
+    right: 32px !important;
     border-left: 8px solid transparent;
 }
 
@@ -594,7 +589,7 @@ label.is-focused.empty {
     #wsd_checkout_form .f-type-boolean .glyphicon-info-sign {
         top: 21px !important;
         margin-lef: 8px !important;
-        right: unset !important;
+        right: 32px !important;
         border-left: 8px solid transparent;
     }
 }
