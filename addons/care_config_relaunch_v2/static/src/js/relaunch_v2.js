@@ -67,7 +67,7 @@ function setupFloatingInputs() {
                     });
                     currentInput.dispatchEvent(new Event("change"))
                 } else {
-                    currentInput.addEventListener("keyup", function(e) {
+                    var keyFunc = function(e) {
                         const me = e.currentTarget;
                         const label = me.parentElement.getElementsByTagName("label").item(0);
                         if (!me.value) {
@@ -75,7 +75,9 @@ function setupFloatingInputs() {
                         } else {
                             label.classList.remove("empty");
                         }
-                    });
+                    };
+                    currentInput.addEventListener("keyup", keyFunc);
+                    currentInput.addEventListener("keydown", keyFunc);
                     currentInput.dispatchEvent(new Event("keyup"))
                 }
                 currentInput.dispatchEvent(new Event("blur"))
