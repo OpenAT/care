@@ -55,10 +55,8 @@ function setupFloatingInputs() {
                     label.classList.add("un-focused");
                 });
 
-                console.log(parent.classList);
-                if (parent.classList.contains("f-type-many2one")) {
+                if (parent.classList.contains("f-type-many2one") || parent.classList.contains("f-type-selection")) {
                     currentInput.addEventListener("change", function(e) {
-                        console.log("SELECT changed!")
                         const me = e.currentTarget;
                         const label = me.parentElement.getElementsByTagName("label").item(0);
                         if (!me.options[me.selectedIndex].text) {
