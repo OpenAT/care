@@ -405,6 +405,7 @@ ul.nav.nav-tabs li {
     background-color: white;
     line-height: 151px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 ul.nav.nav-tabs li.active {
