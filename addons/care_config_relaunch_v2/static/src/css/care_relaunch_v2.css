@@ -229,9 +229,6 @@ span.price_donate_suggested_outer {
     content: "\e013";
 }
 
-.container #wsd_checkout_form .price_donate_suggested_currency::before {
-}
-
 .container #wsd_checkout_form .price_donate_suggested_currency::before,
 #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type::before {
     content: "";
