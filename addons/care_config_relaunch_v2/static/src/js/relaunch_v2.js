@@ -1,21 +1,27 @@
 document.addEventListener("DOMContentLoaded", function(e) {
-    setupPriceDonate();
     setupFloatingInputs();
+    setupPriceDonate();
 });
 
 function setupPriceDonate() {
-    document.getElementById("price_donate").addEventListener('click', function(e) {
-        priceDonateClearAllActive();
-        document.getElementsByClassName('price_donate').item(0).classList.add("active");
-    });
+    const priceDonate = document.getElementById("price_donate");
+
+    if (priceDonate) {
+        priceDonate.addEventListener('click', function(e) {
+            priceDonateClearAllActive();
+            document.getElementsByClassName('price_donate').item(0).classList.add("active");
+        });
+    }
 
     const price_suggestions = document.getElementsByClassName("price_donate_suggested");
 
-    for (let i = 0; i < price_suggestions.length; i++) {
-        price_suggestions.item(i).addEventListener("click", function(e) {
-            priceDonateClearAllActive();
-            e.currentTarget.parentElement.classList.add("active");
-        });
+    if (price_suggestions) {
+        for (let i = 0; i < price_suggestions.length; i++) {
+            price_suggestions.item(i).addEventListener("click", function(e) {
+                priceDonateClearAllActive();
+                e.currentTarget.parentElement.classList.add("active");
+            });
+        }
     }
 }
 
