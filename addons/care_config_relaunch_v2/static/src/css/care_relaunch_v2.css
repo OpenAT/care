@@ -134,6 +134,10 @@ div.js_product h4#payment_intervals {
     padding: 0 !important;
 }
 
+#payment_intervals > div > select {
+    padding-left: 8px !important;
+}
+
 div.js_product div.text-left {
     display: grid;
 }
