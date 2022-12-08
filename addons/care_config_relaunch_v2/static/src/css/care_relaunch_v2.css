@@ -144,6 +144,10 @@ a.btn {
     color: white;
 }
 
+body .oe_website_sale .row .row .col-md-12 {
+    float: inherit;
+}
+
 /* GENERAL END */
 
 /* PRODUCT CARDS AND GRID START */
@@ -790,6 +794,17 @@ label.is-focused.empty {
         right: 32px !important;
         border-left: 8px solid transparent;
     }
+}
+
+/* Checkout box */
+
+.lock-sign {
+    margin-top: 32px;
+    margin-bottom: 13px;
+    padding: 0;
+}
+.lock-text {
+    margin: 0;
 }
 
 /* FORM REDESIGN END */

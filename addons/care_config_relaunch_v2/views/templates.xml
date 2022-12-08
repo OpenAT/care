@@ -47,5 +47,19 @@
             </xpath>
         </template>
 
+        <!-- Add lock symbol and text below checkout button -->
+        <template id="checkoutbox_relaunch_v2" inherit_id="website_sale_donate.checkoutbox">
+            <xpath expr="//a[@id='add_to_cart']" position="after">
+                <t t-if="'shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url">
+                    <p class="lock-sign">
+                        <img src="/care_config_relaunch_v2/static/src/img/lock.svg" width="20" height="25" />
+                    </p>
+                    <p class="lock-text">
+                        Ihre Daten sind sicher.
+                    </p>
+                </t>
+            </xpath>
+        </template>
+
     </data>
 </openerp>
