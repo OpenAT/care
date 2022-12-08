@@ -639,6 +639,19 @@ div.tab-content {
     }
 }
 
+ul.nav.nav-tabs li:first-child+li+li+li+li:last-child::after {
+    content: "x";
+    color: transparent;
+    float: right;
+    display: inline-block;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    position: relative;
+    top: calc(-100% - 1px);
+    left: calc(100% + 3px);
+    border: 1px solid #DEDEDE;
+}
+
 @media only screen and (max-width: 480px) {
     ul.nav.nav-tabs li {
         width: 50%;
