@@ -65,6 +65,45 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/FiraSans/FiraSans-ext-condensed-regular.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/FiraSans/FiraSans-condensed-regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/Merriweather/Merriweather-ext-bold.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/care_config_relaunch_v2/static/src/fonts/Merriweather/Merriweather-bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* Base fonts */
 * {
     font-family: 'Open Sans';
@@ -85,14 +124,53 @@ a.btn {
 /* GENERAL END */
 
 /* PRODUCT CARDS AND GRID START */
-div.oe_product_image:after {
-    background-image: none;
+#products_grid > table > tbody > tr > td.oe_product.oe_grid {
+    padding: 1rem;
+}
+
+td.oe_product.oe_grid.oe-height-2 {
+    height: 552px !important;
+}
+
+@media (max-width: 768px) {
+    #products_grid .oe_product_cart {
+        height: 552px !important;
+    }
 }
 
 div.oe_product_cart {
     background-color: #EEE9E5;
     border-radius: 10px;
     padding: 2rem;
+}
+
+#products_grid td.oe_product.oe_grid section {
+    background-color: transparent;
+    padding: 2rem;
+    height: 300px;
+}
+
+#products_grid td.oe_product.oe_grid section h5 a {
+    font-family: 'Merriweather';
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #222;
+    text-decoration: none;
+}
+
+#products_grid div.text-info.oe_subdescription div {
+    font-family: 'Fira Sans Condensed';
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #222;
 }
 
 div#products_grid_before {
@@ -105,8 +183,78 @@ div#products_grid {
 
 #products_grid > table > tbody > tr > td > div > form > div > div.wrap_wsd_1 > div.wrap_wsd_2.front > div > a > img {
     width: 100%;
-    max-width: 100%;
-    height: auto !important;
+    max-width: 170px;
+    max-height: auto !important;
+    height: auto;
+}
+
+#products_grid .oe_product .oe_product_image {
+    top: 35px;
+}
+div.oe_product_image:after {
+    background-image: none;
+}
+
+#products_grid div.quick_add_to_cart {
+    width: 100%;
+}
+
+#products_grid div.quick_add_to_cart a {
+    display: block;
+    background-color: #e36f1e;
+    color: white;
+    text-shadow: none;
+    padding: 7px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#products_grid .oe_product section {
+    overflow: visible;
+}
+
+#products_grid .oe_product .product_price {
+    position: absolute;
+    top: -210px;
+    left: calc(50% + 25px);
+}
+
+#products_grid .oe_product .product_price {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #e36f1e;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#products_grid .oe_product .product_price span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: block;
+    width: 70px;
+    text-align: center;
+    font-family: 'Merriweather';
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -1.1px;
+}
+
+#products_grid .oe_product .product_price span span {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    top: 15px;
+    right: -2px;
+    font-size: 22px;
+    letter-spacing: -2.2px;
 }
 
 /* PRODUCT CARDS AND GRID END */

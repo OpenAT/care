@@ -26,6 +26,7 @@
     'installable': True,
     'depends': [
         'care_config',
+        'website_sale_grid3x3',
     ],
     'data': [
         'views/templates.xml',

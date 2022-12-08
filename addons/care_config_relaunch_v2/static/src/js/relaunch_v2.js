@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     setupFloatingInputs();
     setupPriceDonate();
+    setupRemoveZeroDecimals();
 });
 
 function setupPriceDonate() {
@@ -88,6 +89,16 @@ function setupFloatingInputs() {
                 }
                 currentInput.dispatchEvent(new Event("blur"))
             }
+        }
+    }
+}
+
+function setupRemoveZeroDecimals() {
+    const price_values = document.getElementsByClassName("oe_currency_value");
+
+    for (let i = 0; i < price_values.length; i++) {
+        if (price_values.item(i).innerText.endsWith('.00') || price_values.item(i).innerText.endsWith(',00')) {
+            price_values.item(i).innerText = price_values.item(i).innerText.substring(0, price_values.item(i).innerText.length - 3);
         }
     }
 }

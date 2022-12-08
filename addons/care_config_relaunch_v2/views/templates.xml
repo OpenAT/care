@@ -27,5 +27,25 @@
             </xpath>
         </template>
 
+        <!-- Change quick add to cart button text  -->
+        <template id="products_item_care_relaunch_2" inherit_id="website_sale_grid3x3.products_item_care" name="Care Product Description Relaunch 2">
+            <xpath expr="//a[@class='btn btn-default btn-xs fa fa-shopping-cart a-submit']" position="replace">
+                <t t-if="'shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url">
+                    <a class="btn btn-default btn-xs fa fa-shopping-cart a-submit">Produkt spenden</a>
+                </t>
+                <t t-if="not ('shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url)">
+                    <a class="btn btn-default btn-xs fa fa-shopping-cart a-submit">ins CARE-Paket legen</a>
+            </t>
+            </xpath>
+            <xpath expr="//a[@class='btn btn-default btn-xs fa fa-shopping-cart']" position="replace">
+                <t t-if="'shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url">
+                    <a class="btn btn-default btn-xs fa fa-shopping-cart" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))">Produkt spenden</a>
+                </t>
+                <t t-if="not ('shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url)">
+                    <a class="btn btn-default btn-xs fa fa-shopping-cart" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))">ins CARE-Paket legen</a>
+                </t>
+            </xpath>
+        </template>
+
     </data>
 </openerp>
