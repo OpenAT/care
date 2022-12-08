@@ -109,6 +109,24 @@
     font-family: 'Open Sans';
 }
 
+*,
+input[type=text],
+select,
+select.form-control,
+#website_sale_donate label.control-label:not(.un-focused):not(.is-focused),
+#website_sale_donate label.control-label.empty,
+#website_sale_donate input[type=button].price_donate_suggested,
+#website_sale_donate input[type=number],
+#wsd_checkout_form label.control-label:not(.un-focused):not(.is-focused),
+#wsd_checkout_form label.control-label.empty,
+#wsd_checkout_form input[type=button].price_donate_suggested,
+#wsd_checkout_form input[type=number],
+span.price_donate_suggested_currency,
+.price_donate span.input-group-addon,
+.btn.btn-default {
+    color: #222;
+}
+
 /* Bootstrap buttons */
 
 a.btn {
@@ -119,6 +137,11 @@ a.btn {
     letter-spacing: 1.1px;
     border-radius: 5px;
     padding: 18px !important;
+}
+
+.btn.btn-primary,
+.btn.btn-primary span {
+    color: white;
 }
 
 /* GENERAL END */
@@ -245,6 +268,11 @@ div.oe_product_image:after {
     font-stretch: normal;
     font-style: normal;
     letter-spacing: -1.1px;
+    color: white;
+}
+
+#products_grid .oe_currency_value {
+    color: white;
 }
 
 #products_grid .oe_product .product_price span span {
@@ -684,7 +712,6 @@ label.is-focused.empty {
     top: 15px;
     /* background-color: yellow; */
     pointer-events: none;
-    color: black !important;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -703,7 +730,6 @@ label.is-focused.empty {
         left: 16px;
         /* background-color: orange; */
         pointer-events: none;
-        color: black !important;
     }
 }
 
@@ -747,6 +773,7 @@ label.is-focused.empty {
     position: absolute;
     top: 20px !important;
     right: 4px !important;
+    color: #e36f1e;
 }
 
 #wsd_checkout_form .f-type-boolean .glyphicon-info-sign {

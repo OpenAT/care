@@ -98,7 +98,10 @@ function setupRemoveZeroDecimals() {
 
     for (let i = 0; i < price_values.length; i++) {
         if (price_values.item(i).innerText.endsWith('.00') || price_values.item(i).innerText.endsWith(',00')) {
-            price_values.item(i).innerText = price_values.item(i).innerText.substring(0, price_values.item(i).innerText.length - 3);
+            price_values.item(i).innerText = price_values.item(i).innerText
+                .substring(0, price_values.item(i).innerText.length - 3)
+                .replace(',', '')
+                .replace('.', '');
         }
     }
 }
