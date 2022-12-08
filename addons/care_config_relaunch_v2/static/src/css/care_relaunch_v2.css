@@ -584,7 +584,7 @@ div#wsd_checkout_form_inside_row {
 ul.nav.nav-tabs li {
     display: inline-block;
     border: 1px solid #DEDEDE;
-    width: 179px;
+    width: 33.33%;
     height: 151px;
     background-color: white;
     line-height: 151px;
@@ -639,9 +639,20 @@ div.tab-content {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    ul.nav.nav-tabs li {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    ul.nav.nav-tabs li {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 574px) {
     ul.nav.nav-tabs li {
-        width: 150px;
         height: 127px;
         line-height: 127px;
     }
