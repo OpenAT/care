@@ -215,6 +215,7 @@ div#products_grid_before {
     width: 100%;
     padding: 30px !important;
     box-shadow: none;
+    float: left !important;
 }
 
 div#products_grid {
