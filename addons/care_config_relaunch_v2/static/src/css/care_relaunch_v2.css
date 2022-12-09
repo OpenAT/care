@@ -212,7 +212,9 @@ div.oe_product_cart {
 }
 
 div#products_grid_before {
-    display: none;
+    width: 100%;
+    padding: 30px !important;
+    box-shadow: none;
 }
 
 div#products_grid {
