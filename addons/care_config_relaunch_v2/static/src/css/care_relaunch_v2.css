@@ -392,9 +392,9 @@ body {
     font-size: 14px;
 }
 
-h3.amount_title:before { content: "2"; }
-h3.payment_title:before { content: "3"; }
-h3.checkout_title:before { content: "4"; }
+#wsd-checkout-box h3.amount_title:before { content: "2"; }
+#wsd-checkout-box h3.payment_title:before { content: "3"; }
+#wsd-checkout-box h3.checkout_title:before { content: "4"; }
 
 /* Suggested price boxes - OPC forms */
 
