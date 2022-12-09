@@ -152,7 +152,7 @@ body .oe_website_sale .row .row .col-md-12 {
 
 /* PRODUCT CARDS AND GRID START */
 #products_grid.col-md-8 td,
-#products_grid table {
+#products_grid > table {
     border-spacing: 0px !important;
 }
 
@@ -185,6 +185,7 @@ div.oe_product_cart {
     background-color: transparent;
     padding: 2rem;
     height: 300px;
+    justify-content: start;
 }
 
 #products_grid td.oe_product.oe_grid section h5 a {
@@ -233,7 +234,10 @@ div.oe_product_image:after {
 }
 
 #products_grid div.quick_add_to_cart {
-    width: 100%;
+    width: calc(100% - 4rem);
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
 }
 
 #products_grid div.quick_add_to_cart a {
