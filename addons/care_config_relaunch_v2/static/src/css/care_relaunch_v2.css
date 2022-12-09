@@ -151,6 +151,16 @@ body .oe_website_sale .row .row .col-md-12 {
 /* GENERAL END */
 
 /* PRODUCT CARDS AND GRID START */
+#products_grid.col-md-8 td,
+#products_grid table {
+    border-spacing: 0px !important;
+}
+
+body #products_grid.col-md-8 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
 #products_grid > table > tbody > tr > td.oe_product.oe_grid {
     padding: 1rem;
 }
