@@ -188,6 +188,10 @@ div.oe_product_cart {
     justify-content: start;
 }
 
+#products_grid td.oe_product.oe_grid section h5 {
+    word-break: break-word;
+}
+
 #products_grid td.oe_product.oe_grid section h5 a {
     font-family: 'Merriweather';
     font-size: 30px;
