@@ -228,7 +228,13 @@ div#products_grid {
 
 #products_grid .oe_product .oe_product_image {
     top: 35px;
+    border-radius: 50%;
+    top: 50px;
+    left: calc(50% - 170px / 2);
+    width: 170px !important;
+    height: 170px !important;
 }
+
 div.oe_product_image:after {
     background-image: none;
 }
