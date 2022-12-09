@@ -377,6 +377,22 @@ body {
     background: transparent;
 }
 
+section[name="one-page-checkout"] h3 {
+    margin-bottom: 15px !important;
+}
+
+section[name="one-page-checkout"] h3,
+section[name="one-page-checkout"] h3 > span,
+#products_grid_before .small_cart_header,
+#products_grid_before .small_cart_header span {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 42px;
+    background: transparent !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 #website_sale_donate h3:before {
     counter-increment: section;
     /* content: counter(section); do not use real counter, due to CSS order, it's counted wrong */
