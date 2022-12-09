@@ -27,6 +27,17 @@
             </xpath>
         </template>
 
+        <!-- Remove the relaunch parameter css, for the new shop2 domain -->
+        <template id="remove_care_repair_custom_css" inherit_id="care_config.care_repair_custom_css_tester" name="Remove Care Repair Custom CSS Tester">
+            <xpath expr="//t[@t-if=&quot;'care-relaunch-css' in request.httprequest.query_string&quot;]" position="replace">
+                <!-- if not on shop2, render like before -->
+                <t t-if="not ('shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url)">
+                    <link rel="stylesheet" href='/care_config/static/src/css/care.css'/>
+                    <link rel="stylesheet" href='/care_config/static/src/css/care_relaunch.css'/>
+                </t>
+            </xpath>
+        </template>
+
         <!-- Change quick add to cart button text  -->
         <template id="products_item_care_relaunch_2" inherit_id="website_sale_grid3x3.products_item_care" name="Care Product Description Relaunch 2">
             <xpath expr="//a[@class='btn btn-default btn-xs fa fa-shopping-cart a-submit']" position="replace">
