@@ -916,20 +916,43 @@ label.is-focused.empty {
     border: 0px solid transparent;
 }
 
+#products_grid_before .small_cart_price_unit {
+    text-align: right !important;
+}
+
+#products_grid_before .oe_cart.small_cart .remove_product {
+    line-height: 2.6em;
+}
+
 #cart_products > tbody > tr > td:nth-child(2) > span,
 #cart_products > tbody > tr > td:nth-child(2) > div > input {
-  width: 86px;
-  height: 19px;
-  margin: 4px 8px 19px 14px;
-  font-family: 'Fira Sans Condensed';
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: condensed;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #222;
+    width: 86px;
+    height: 19px;
+    margin: 4px 8px 19px 14px;
+    font-family: 'Fira Sans Condensed';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222;
+}
+
+@media only screen and (max-width: 649px) {
+    #cart_products > tbody > tr > td:nth-child(2) {
+        display: inline-block;
+        width: calc(100% - 20px) !important;
+    }
+    #cart_products > tbody > tr > td:nth-child(3) {
+        display: inline-block;
+        width: 20px !important;
+    }
+
+    #cart_products > tbody > tr > td:nth-child(2) > span {
+        margin-bottom: 5px;
+    }
 }
 
 #cart_total {
