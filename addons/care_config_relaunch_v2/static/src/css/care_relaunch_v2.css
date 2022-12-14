@@ -853,7 +853,7 @@ label.is-focused.empty {
 #wsd_checkout_form .glyphicon-info-sign {
     position: absolute;
     top: 20px !important;
-    right: 4px !important;
+    right: 16px !important;
     color: #e36f1e;
 }
 
@@ -871,6 +871,10 @@ label.is-focused.empty {
         right: 32px !important;
         border-left: 8px solid transparent;
     }
+}
+
+#wsd_checkout_form .billing-fields .form-control-feedback {
+    right: 28px;
 }
 
 /* Checkout box */
