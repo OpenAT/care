@@ -890,6 +890,19 @@ label.is-focused.empty {
 
 /* Shop Cart */
 
+#products_grid_before {
+    position: relative;
+    max-width: calc(768px + 40px);
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+#wrap div.row.one-page-checkout {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #products_grid_before th {
     display: none;
 }
