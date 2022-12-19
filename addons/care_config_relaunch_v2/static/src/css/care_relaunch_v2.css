@@ -746,6 +746,18 @@ ul.nav.nav-tabs li:first-child+li+li+li+li:last-child::after {
     }
 }
 
+/* payment method input box */
+
+.tab-content .form-group input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.tab-content .form-group label.empty.un-focused {
+    left: 0px;
+    top: 19px;
+}
+
 /* Acquirer messages */
 
 .acquirer_pre_msg {
