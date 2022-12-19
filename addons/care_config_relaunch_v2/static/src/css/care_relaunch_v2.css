@@ -114,11 +114,11 @@ input[type=text],
 select,
 select.form-control,
 #website_sale_donate label.control-label:not(.un-focused):not(.is-focused),
-#website_sale_donate label.control-label.empty,
+#website_sale_donate label.control-label.empty:not(.is-focused),
 #website_sale_donate input[type=button].price_donate_suggested,
 #website_sale_donate input[type=number],
 #wsd_checkout_form label.control-label:not(.un-focused):not(.is-focused),
-#wsd_checkout_form label.control-label.empty,
+#wsd_checkout_form label.control-label.empty:not(.is-focused),
 #wsd_checkout_form input[type=button].price_donate_suggested,
 #wsd_checkout_form input[type=number],
 span.price_donate_suggested_currency,
@@ -788,8 +788,7 @@ label.is-focused {
     margin-bottom: 0px !important;
 }
 
-label.un-focused.empty,
-label.is-focused.empty {
+label.un-focused.empty {
     position: absolute;
     font-size: 17px;
     left: 16px;
@@ -806,8 +805,7 @@ label.is-focused.empty {
         margin-bottom: 0px !important;
     }
 
-    label.un-focused.empty,
-    label.is-focused.empty {
+    label.un-focused.empty {
         position: absolute;
         font-size: 17px;
         left: 16px;
