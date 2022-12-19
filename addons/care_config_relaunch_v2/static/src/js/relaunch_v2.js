@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     setupFloatingInputs();
     setupPriceDonate();
     setupRemoveZeroDecimals();
+    hidePaymentIntervalIfOnlyOneEntry();
 });
 
 function setupPriceDonate() {
@@ -103,5 +104,14 @@ function setupRemoveZeroDecimals() {
                 .replace(',', '')
                 .replace('.', '');
         }
+    }
+}
+
+function hidePaymentIntervalIfOnlyOneEntry() {
+    const element = document.getElementsByName("payment_interval_id").item(0);
+
+    if (element && element.tagName == "SELECT" && element.children.length <= 1) {
+        element.selectedIndex = 0;
+        element.parentElement.style = "display: none;";
     }
 }
