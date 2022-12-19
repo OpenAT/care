@@ -746,6 +746,18 @@ ul.nav.nav-tabs li:first-child+li+li+li+li:last-child::after {
     }
 }
 
+/* Acquirer messages */
+
+.acquirer_pre_msg {
+    font-family: 'Open Sans';
+    font-size: 17px;
+    line-height: 24.2857px;
+}
+
+.tab-content .form-group:first-of-type {
+    margin-top: 24px;
+}
+
 /* Checkbox fields */
 
 #wsd_checkout_form div.f-type-boolean label {
