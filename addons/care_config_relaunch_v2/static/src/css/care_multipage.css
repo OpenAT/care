@@ -1,0 +1,94 @@
+/* Fonts and colors */
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True]) * {
+    font-family: 'Fira Sans Condensed';
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #000;
+}
+
+/* Headlines */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True]) #wsd-checkout-box h3.amount_title,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True]) #wsd-checkout-box h3.amount_title span {
+    text-align: left;
+    font-family: Merriweather;
+    font-size: 33px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #222;
+    margin-bottom: 20px !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True]) #wsd-checkout-box h3.amount_title::before {
+    display: none;
+}
+
+/* Payment intervals */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide the browser's default radio button */
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio label input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio label:has(input[type=radio]) {
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    border: 1px solid black;
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio label:has(input[type=radio]:checked) {
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    background-color: #e36f1e;
+    border: 1px solid #e36f1e;
+    width: 100%;
+    color: white;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio:nth-of-type(1) label:has(input[type=radio]) {
+    border-radius: 22.5px 0px 0px 0px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio:nth-of-type(2) label:has(input[type=radio]) {
+    border-radius: 0px 22.5px 0px 0px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio:nth-of-type(3) label:has(input[type=radio]) {
+    border-radius: 0px 0px 0px 22.5px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio:nth-of-type(4) label:has(input[type=radio]) {
+    border-radius: 0px 0px 22.5px 0px;
+}

@@ -6,7 +6,6 @@
         <template id="assets_frontend" inherit_id="fso_base_website.assets_frontend" name="Shop Donate">
             <xpath expr="//link[last()]" position="after">
                 <link rel="stylesheet" href='/care_product_themes/static/src/css/care_inline.css'/>
-
             </xpath>
         </template>
 

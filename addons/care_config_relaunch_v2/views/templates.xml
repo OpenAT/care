@@ -15,6 +15,10 @@
                     <script type="text/javascript" src="/care_config/static/src/js/jquery.path.js"/>
                 </t>
             </xpath>
+
+            <xpath expr="//link[last()]" position="after">
+                <link rel="stylesheet" href='/care_config_relaunch_v2/static/src/css/care_multipage.css'/>
+            </xpath>
         </template>
 
         <!-- Load relaunch v2 CSS for new domain only -->
