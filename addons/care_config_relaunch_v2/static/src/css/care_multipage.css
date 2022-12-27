@@ -117,6 +117,31 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .price_donate_suggested_outer.active,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .form-group.price_donate.active {
+    background-color: #e36f1e;
+    border: 1px solid #e36f1e;
+    color: white;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .price_donate_suggested_outer.active *,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .price_donate_suggested_outer.active::before,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .form-group.price_donate.active *,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .form-group.price_donate.active::before {
+    color: white;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .form-group.price_donate.active::after {
+    content: url(/care_config_relaunch_v2/static/src/img/pencil-white.svg);
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .price_donate_suggested_outer:nth-child(odd),
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .form-group.price_donate:nth-child(odd) {
@@ -146,8 +171,6 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
     background-color: transparent;
     border: 0;
 }
-
-
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .price_donate_suggested_outer::before,
