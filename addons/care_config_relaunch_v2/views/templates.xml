@@ -62,8 +62,13 @@
             </xpath>
         </template>
 
-        <!-- Add lock symbol and text below checkout button -->
+        <!-- Add product description right before checkout button, add lock symbol and text below checkout button -->
         <template id="checkoutbox_relaunch_v2" inherit_id="website_sale_donate.checkoutbox">
+            <xpath expr="//a[@id='add_to_cart']" position="before">
+                <div t-if="not product.hide_salesdesc" class="multistep_inline_sale_description">
+                    <t t-esc="product.description_sale" />
+                </div>
+            </xpath>
             <xpath expr="//a[@id='add_to_cart']" position="after">
                 <t t-if="'shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url">
                     <p class="lock-sign">

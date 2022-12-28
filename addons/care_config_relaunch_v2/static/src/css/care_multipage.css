@@ -295,6 +295,34 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
     display: none;
 }
 
+/* Product short description */
+
+/* Display inline description */
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .multistep_inline_sale_description {
+    display: block;
+    font-family: 'Fira Sans Condensed';
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: #000;
+    text-align: left;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .panel-body {
+    display: flex;
+    flex-flow: column;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#description_sale {
+    display: none;
+}
+
 /* Hide lock symbol */
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 .lock-sign,

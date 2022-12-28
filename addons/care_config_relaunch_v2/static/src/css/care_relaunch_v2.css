@@ -1065,4 +1065,10 @@ label.un-focused.empty {
     }
 }
 
+/* Hide multi step inline description by default */
+
+.multistep_inline_sale_description {
+    display: none;
+}
+
 /* FORM REDESIGN END */
