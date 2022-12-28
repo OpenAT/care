@@ -921,7 +921,7 @@ label.un-focused.empty {
 
 #wsd_checkout_form .glyphicon,
 .payment_opc_acquirer_form .glyphicon {
-    top: 10px;
+    top: 10px !important;
 }
 
 #wsd_checkout_form .glyphicon-info-sign,

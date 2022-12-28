@@ -15,10 +15,6 @@
                     <script type="text/javascript" src="/care_config/static/src/js/jquery.path.js"/>
                 </t>
             </xpath>
-
-            <xpath expr="//link[last()]" position="after">
-                <link rel="stylesheet" href='/care_config_relaunch_v2/static/src/css/care_multipage.css'/>
-            </xpath>
         </template>
 
         <!-- Load relaunch v2 CSS for new domain only -->
@@ -26,8 +22,9 @@
             <xpath expr="//head" position="inside">
                 <t t-if="'shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url">
                     <link rel="stylesheet" href='/care_config_relaunch_v2/static/src/css/care_relaunch_v2.css'/>
+                    <link rel="stylesheet" href='/care_config_relaunch_v2/static/src/css/care_multistep.css'/>
                     <script type="text/javascript" src="/care_config_relaunch_v2/static/src/js/relaunch_v2.js"/>
-                </t>
+        </t>
             </xpath>
         </template>
 

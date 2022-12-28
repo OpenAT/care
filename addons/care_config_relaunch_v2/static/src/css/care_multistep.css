@@ -82,7 +82,14 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 .small_cart #cart_total * {
+    font-family: 'Fira Sans Condensed';
+    font-size: 16px;
     font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #222;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
@@ -508,4 +515,16 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 
 #payment_method > div:nth-child(1) {
     padding: 0;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_method #aq3 label {
+    font-weight: normal;
+    color: #898989 !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_method #aq3 label.un-focused.empty {
+    font-weight: normal;
+    color: #222 !important;
 }
