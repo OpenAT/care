@@ -121,6 +121,10 @@ select.form-control,
 #wsd_checkout_form label.control-label.empty:not(.is-focused),
 #wsd_checkout_form input[type=button].price_donate_suggested,
 #wsd_checkout_form input[type=number],
+.payment_opc_acquirer_form label.control-label:not(.un-focused):not(.is-focused),
+.payment_opc_acquirer_form label.control-label.empty:not(.is-focused),
+.payment_opc_acquirer_form input[type=button].price_donate_suggested,
+.payment_opc_acquirer_form input[type=number],
 span.price_donate_suggested_currency,
 .price_donate span.input-group-addon,
 .btn.btn-default {
@@ -442,7 +446,8 @@ span.price_donate_suggested_outer {
     background-color: transparent;
 }
 
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
     width: 100%;
     height: 70px;
     border: 1px solid #DEDEDE;
@@ -455,7 +460,8 @@ span.price_donate_suggested_outer {
 }
 
 @media only screen and (max-width: 500px) {
-    #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
+    #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input,
+    .payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
         text-align: right;
     }
 }
@@ -474,13 +480,17 @@ span.price_donate_suggested_outer {
 }
 
 .container #wsd_checkout_form .active .price_donate_suggested_currency::before,
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type::before {
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type::before,
+.container .payment_opc_acquirer_form .active .price_donate_suggested_currency::before,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type::before {
     border: 2px solid #E36F1E;
     content: "\e013";
 }
 
 .container #wsd_checkout_form .price_donate_suggested_currency::before,
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type::before {
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type::before,
+.container .payment_opc_acquirer_form .price_donate_suggested_currency::before,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type::before {
     content: "";
     display: inline-block;
     line-height: 20px;
@@ -498,8 +508,11 @@ span.price_donate_suggested_outer {
     font-family: 'Glyphicons Halflings'
 }
 
+
 #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input:focus,
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span.active > input{
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span.active > input,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input:focus,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span.active > input {
     width: 100%;
     color: #E36F1E;
     background-color: #FDF7F3;
@@ -517,42 +530,51 @@ div.form-group.price_donate label {
     display: none;
 }
 
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div {
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div {
     display: flex;
 }
 
 #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div,
-#wsd_checkout_form #price_donate {
+#wsd_checkout_form #price_donate,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div,
+.payment_opc_acquirer_form #price_donate {
     width: 100% !important;
     border: 0;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span {
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span {
     border: 0;
     background-color: white;
     border-radius: 0;
 }
 
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:first-of-type {
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:first-of-type,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:first-of-type {
     display: none;
 }
 
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type {
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div > span.input-group-addon:last-of-type {
     order: -1;
     font-size: 14px;
     line-height: 30px;
     min-width: 90px;
 }
 
-#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active {
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active {
     background-color: #FDF7F3;
     border: 1px solid #E36F1E !important;
 }
 
 #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type,
-#wsd_checkout_form .active #price_donate {
+#wsd_checkout_form .active #price_donate,
+.payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div.active > div > span.input-group-addon:last-of-type,
+.payment_opc_acquirer_form .active #price_donate {
     color: #E36F1E;
     background-color: #FDF7F3;
     -webkit-box-shadow: none;
@@ -588,7 +610,8 @@ div.form-group.price_donate label {
 }
 
 @media only screen and (max-width: 767px) {
-    #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
+    #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input,
+    .payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
         margin-bottom: 0 !important;
         padding-top: 0;
         padding-bottom: 0;
@@ -786,34 +809,42 @@ ul.nav.nav-tabs li:first-child+li+li+li+li:last-child::after {
 
 /* Checkbox fields */
 
-#wsd_checkout_form div.f-type-boolean label {
+#wsd_checkout_form div.f-type-boolean label,
+.payment_opc_acquirer_form div.f-type-boolean label {
     display: block;
     border: 1px solid #DEDEDE;
     padding: 16px 20px;
 }
 
 #wsd_checkout_form div.f-type-boolean input[type=radio],
-#wsd_checkout_form div.f-type-boolean input[type=checkbox] {
+#wsd_checkout_form div.f-type-boolean input[type=checkbox],
+.payment_opc_acquirer_form div.f-type-boolean input[type=radio],
+.payment_opc_acquirer_form div.f-type-boolean input[type=checkbox] {
     transform: scale(1.5);
     margin-right: 8px;
     accent-color: #E36F1E;
 }
 
 #wsd_checkout_form div.f-type-boolean input[type=radio]:not(:checked),
-#wsd_checkout_form div.f-type-boolean input[type=checkbox]:not(:checked) {
+#wsd_checkout_form div.f-type-boolean input[type=checkbox]:not(:checked),
+.payment_opc_acquirer_form div.f-type-boolean input[type=radio]:not(:checked),
+.payment_opc_acquirer_form div.f-type-boolean input[type=checkbox]:not(:checked){
     opacity: 0.4;
 }
 
 /* Text input fields */
 
-#wsd_checkout_form div input[type=text]::-webkit-input-placeholder { /* Edge */
+#wsd_checkout_form div input[type=text]::-webkit-input-placeholder,
+.payment_opc_acquirer_form div input[type=text]::-webkit-input-placeholder { /* Edge */
   text-align: right;
 }
-#wsd_checkout_form div input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+#wsd_checkout_form div input[type=text]:-ms-input-placeholder,
+.payment_opc_acquirer_form div input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */
   text-align: right;
 }
 
-#wsd_checkout_form div input[type=text]::placeholder {
+#wsd_checkout_form div input[type=text]::placeholder,
+.payment_opc_acquirer_form div input[type=text]::placeholder {
   text-align: right;
 }
 
@@ -852,23 +883,28 @@ label.un-focused.empty {
 }
 
 #wsd_checkout_form input[type=text],
-#wsd_checkout_form select {
+#wsd_checkout_form select,
+.payment_opc_acquirer_form input[type=text],
+.payment_opc_acquirer_form select {
     height: 54px;
 }
 
 #wsd_checkout_form input[type=text],
-#wsd_checkout_form select {
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid #DEDEDE;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+#wsd_checkout_form select,
+.payment_opc_acquirer_form input[type=text],
+.payment_opc_acquirer_form select {
+    border: 0 !important;
+    outline: 0 !important;
+    border-bottom: 1px solid #DEDEDE !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
     padding-left: 0px !important;
     padding-right: 50px !important;
 }
 
-#wsd_checkout_form select {
+#wsd_checkout_form select,
+.payment_opc_acquirer_form select {
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
@@ -878,22 +914,26 @@ label.un-focused.empty {
     background-size: 16px 12px;
 }
 
-#wsd_checkout_form select + .glyphicon {
+#wsd_checkout_form select + .glyphicon,
+.payment_opc_acquirer_form select + .glyphicon {
     margin-right: 2.5rem;
 }
 
-#wsd_checkout_form .glyphicon {
+#wsd_checkout_form .glyphicon,
+.payment_opc_acquirer_form .glyphicon {
     top: 10px;
 }
 
-#wsd_checkout_form .glyphicon-info-sign {
+#wsd_checkout_form .glyphicon-info-sign,
+.payment_opc_acquirer_form .glyphicon-info-sign {
     position: absolute;
     top: 20px !important;
     right: 16px !important;
     color: #e36f1e;
 }
 
-#wsd_checkout_form .f-type-boolean .glyphicon-info-sign {
+#wsd_checkout_form .f-type-boolean .glyphicon-info-sign,
+.payment_opc_acquirer_form f-type-boolean .glyphicon-info-sign {
     top: 21px !important;
     margin-lef: 8px !important;
     right: 32px !important;
@@ -901,7 +941,8 @@ label.un-focused.empty {
 }
 
 @media only screen and (max-width: 1199px) {
-    #wsd_checkout_form .f-type-boolean .glyphicon-info-sign {
+    #wsd_checkout_form .f-type-boolean .glyphicon-info-sign,
+    .payment_opc_acquirer_form .f-type-boolean .glyphicon-info-sign {
         top: 21px !important;
         margin-lef: 8px !important;
         right: 32px !important;
@@ -909,7 +950,8 @@ label.un-focused.empty {
     }
 }
 
-#wsd_checkout_form .billing-fields .form-control-feedback {
+#wsd_checkout_form .billing-fields .form-control-feedback,
+.payment_opc_acquirer_form .billing-fields .form-control-feedback {
     right: 28px;
 }
 
