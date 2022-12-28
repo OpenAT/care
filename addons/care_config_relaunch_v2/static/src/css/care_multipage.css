@@ -248,3 +248,76 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 #wsd-checkout-box input[type=number]#price_donate {
   -moz-appearance: textfield;
 }
+
+/* Checkout Step idicators */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#product_detail {
+    display: flex;
+    flex-flow: column;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.wsd_checkout_pages_header {
+    order: 1;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_steps_nav .checkout_steps_navigation {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    min-height: unset;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_steps_nav ul li {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    border: 1px solid black;
+    background-color: white !important;
+    margin: 4.5px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_steps_nav ul li.active {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #e36f1e;
+    background-color: #e36f1e !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_steps_nav ul li a {
+    display: none;
+}
+
+/* Hide lock symbol */
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.lock-sign,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.lock-text {
+    display: none;
+}
+
+/* Panels */
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.panel.panel-default {
+    border: none;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .panel-footer,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .panel-body {
+    border: none;
+    background-color: white;
+    padding: 0px !important;
+}
+
+/* Serach box */
+#product_detail div:has(input[name=search]) {
+    display: table;
+}
