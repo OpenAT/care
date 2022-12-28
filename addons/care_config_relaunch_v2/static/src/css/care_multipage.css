@@ -18,6 +18,32 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
     display: none;
 }
 
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form_inside_row h3 {
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: transparent;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form_inside_row h3 span {
+    text-align: left;
+    font-family: Merriweather;
+    font-size: 33px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #222;
+    margin-bottom: 20px !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_steps_header > h1 {
+    display: none;
+}
+
 /* Payment intervals */
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
@@ -303,6 +329,11 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd_checkout_steps_nav ul li a {
     display: none;
+}
+
+#wrap > .oe_website_sale {
+    display: flex;
+    flex-flow: column;
 }
 
 /* Product short description */
