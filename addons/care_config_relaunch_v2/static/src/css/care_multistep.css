@@ -471,7 +471,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 #wsd_checkout_form #wsd_checkout_form_submit_button .glyphicon,
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd_checkout_form .wsd_button_back_to_page .glyphicon {
-    top: unset;
+    top: unset !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
