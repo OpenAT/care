@@ -540,10 +540,3 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 ul.nav.nav-tabs li .tab-acquirer-image {
     padding-top: 10px;
 }
-/*
-body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-ul.nav.nav-tabs li .tab-acquirer-name {
-    position: relative;
-    top: -5px;
-}
-*/
