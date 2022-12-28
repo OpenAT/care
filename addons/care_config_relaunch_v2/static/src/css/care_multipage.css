@@ -264,6 +264,16 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_steps_nav {
+    text-align: center;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_steps_nav ul {
+    border: 0;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd_checkout_steps_nav .checkout_steps_navigation {
     display: inline-block;
     margin: 0;
@@ -347,6 +357,59 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 }
 
 /* Serach box */
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #product_detail div:has(input[name=search]) {
     display: table;
+}
+
+/* Fix two column setup by making left column full width */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.wsd_cfi_buttons {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form .glyphicon {
+    top: unset;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_page_left_column,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_payment_page_left_col
+{
+    width: 100% !important;
+    position: unset !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form_inside_row div.row.billing-fields {
+    width: 100%;
+    max-width: 100%;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#website_sale_donate > div > div {
+    padding-right: 0px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#product_detail,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_page_left_column{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form_inside_row > div:nth-child(2) {
+    padding: 0 !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form_inside_row div.row.billing-fields {
+    padding 0 !important;
+    margin: 0 !important;
 }
