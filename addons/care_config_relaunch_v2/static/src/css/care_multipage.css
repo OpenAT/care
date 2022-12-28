@@ -444,3 +444,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
     padding 0 !important;
     margin: 0 !important;
 }
+
+#payment_method > div:nth-child(1) {
+    padding: 0;
+}
