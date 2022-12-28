@@ -636,8 +636,8 @@ div#wsd_checkout_form_inside_row {
 #wsd_checkout_form_inside_row div.row.billing-fields {
     margin-left: -30px !important;
     margin-right: -30px !important;
-    width: calc(100% + 64px);
-    max-width: calc(100% + 64px);
+    width: calc(100% + 60px);
+    max-width: calc(100% + 60px);
 }
 
 @media only screen and (max-width: 768px) {
@@ -1054,6 +1054,15 @@ label.un-focused.empty {
 
 #cart_products .glyphicon {
     color: #e36f1e;
+}
+
+/* Padding overrides */
+
+@media only screen and (max-width: 767px) {
+    #website_sale_donate .container {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
 }
 
 /* FORM REDESIGN END */

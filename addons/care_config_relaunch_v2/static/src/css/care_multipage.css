@@ -1,15 +1,3 @@
-/* Fonts and colors */
-body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True]) * {
-    font-family: 'Fira Sans Condensed';
-    font-size: 18px;
-    font-weight: bold;
-    font-stretch: condensed;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.1px;
-    color: #000;
-}
-
 /* Headlines */
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True]) #wsd-checkout-box h3.amount_title,
@@ -31,6 +19,18 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 }
 
 /* Payment intervals */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals .form-group .radio * {
+    font-family: 'Fira Sans Condensed';
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    color: #000;
+}
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #payment_intervals .form-group .radio {
