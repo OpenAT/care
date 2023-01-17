@@ -52,6 +52,11 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
     margin-bottom: 20px !important;
 }
 
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+h3.checkout_title {
+    margin-bottom: 21px !important;
+}
+
 /* Small shop cart for multistep */
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd_checkout_steps_header > h1 {
@@ -540,8 +545,14 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
     margin: 0 !important;
 }
 
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #payment_method > div:nth-child(1) {
     padding: 0;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_method {
+    margin-top: 24.5px;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
