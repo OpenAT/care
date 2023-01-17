@@ -625,17 +625,17 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 label[for="frst_iban"].un-focused,
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-#aq7 > div:nth-child(5) > label.un-focused
+#aq7 > div:nth-child(5) > label
 {
     color: #898989 !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-label[for="frst_iban"].focused.empty,
+label[for="frst_iban"].control-label:not(.un-focused):not(.is-focused),
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-#aq7 > div:nth-child(5) > label.focused.empty
+label[for="frst_iban"].control-label.empty:not(.is-focused)
 {
-    color: black !important;
+    color: #222 !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
