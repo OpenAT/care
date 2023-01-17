@@ -1,10 +1,15 @@
+/* Base fonts */
+*:not(.glyphicon) {
+    font-family: 'Fira Sans Condensed';
+}
+
 /* Headlines */
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True]) #wsd-checkout-box h3.amount_title,
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True]) #wsd-checkout-box h3.amount_title span {
     text-align: left;
     font-family: Merriweather;
-    font-size: 33px;
+    font-size: 26px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -37,7 +42,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 #payment_method h3 span {
     text-align: left;
     font-family: Merriweather;
-    font-size: 33px;
+    font-size: 26px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -101,7 +106,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 .small_cart #cart_total::before {
     content: "Zahlungsmethoden";
     font-family: Merriweather;
-    font-size: 33px;
+    font-size: 26px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -115,7 +120,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #payment_intervals .form-group .radio * {
     font-family: 'Fira Sans Condensed';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     font-stretch: condensed;
     font-style: normal;
@@ -188,6 +193,21 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 /* Suggested price boxes */
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box .product_price,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.ppt_inline_donation .arbitrary_price,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd-checkout-box > div > div.panel-body.text-center > form > div > ul {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_intervals > div {
+    margin-bottom: 23px !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .arbitrary_price.form-inline {
     display: flex;
     flex-wrap: wrap;
@@ -200,12 +220,12 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
     display: flex;
     margin: 0 !important;
     padding: 0 !important;
-    width: calc(50% - 12.5px);
+    width: calc(50% - 7.5px);
     background-color: white;
-    height: 118.8px;
+    height: 90px;
     border: 1px solid #222;
     border-radius: 7px;
-    margin-bottom: 25px !important;
+    margin-bottom: 15px !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
@@ -230,27 +250,27 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .form-group.price_donate.active::after {
-    content: url(/care_config_relaunch_v2/static/src/img/pencil-white.svg);
+    background-image: url(/care_config_relaunch_v2/static/src/img/pencil-white.svg);
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .price_donate_suggested_outer:nth-child(odd),
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .form-group.price_donate:nth-child(odd) {
-    margin-right: 12.5px !important;
+    margin-right: 7.5px !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .price_donate_suggested_outer:nth-child(even),
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .form-group.price_donate:nth-child(even) {
-    margin-left: 12.5px !important;
+    margin-left: 7.5px !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .price_donate_suggested_outer input[type=button] {
     font-family: Merriweather;
-    font-size: 72px;
+    font-size: 50px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -284,12 +304,19 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box .form-group.price_donate::after {
-    content: url(/care_config_relaunch_v2/static/src/img/pencil.svg);
+    content: "";
+    display: block;
+    background-image: url(/care_config_relaunch_v2/static/src/img/pencil.svg);
+    background-size: 24px 24px;
     position: relative;
-    width: 42px;
-    height: 42px;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    margin-left: -12px;
     right: 14px;
-    top: calc(116.8px - 42px - 16px);
+    top: calc(90px - 24px - 16px);
+    /* top: 12px; */
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
@@ -309,7 +336,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box #price_donate {
     font-family: Merriweather;
-    font-size: 72px;
+    font-size: 50px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -409,7 +436,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 #wsd-checkout-box .multistep_inline_sale_description {
     display: block;
     font-family: 'Fira Sans Condensed';
-    font-size: 23px;
+    font-size: 20px;
     font-weight: normal;
     font-stretch: condensed;
     font-style: normal;
@@ -539,4 +566,72 @@ ul.nav.nav-tabs li {
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 ul.nav.nav-tabs li .tab-acquirer-image {
     padding-top: 10px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.tab-content {
+    border: 0px solid transparent !important;
+    padding: 0px !important;
+    padding-top: 20px !important;
+}
+
+/* Acquirer messages */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.acquirer_pre_msg {
+    font-size: 20px;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.acquirer_pre_msg * {
+    font-family: 'Fira Sans Condensed' !important;
+    font-size: 20px !important;
+    color: black !important;
+}
+
+/* Acquirer IBAN */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+label[for="frst_iban"] {
+    font-weight: regular !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#frst_iban::-webkit-input-placeholder {
+/* WebKit browsers */
+    color: transparent;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#frst_iban:-moz-placeholder {
+/* Mozilla Firefox 4 to 18 */
+    color: transparent;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#frst_iban::-moz-placeholder {
+/* Mozilla Firefox 19+ */
+    color: transparent;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#frst_iban:-ms-input-placeholder {
+/* Internet Explorer 10+ */
+    color: transparent;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#frst_iban::placeholder {
+    color: transparent;
+}
+
+/* Button styles for multi-step only */
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+.btn {
+    padding: 16px !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#button_paynow {
+    width: 100%;
 }
