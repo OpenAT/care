@@ -619,7 +619,7 @@ label[for="frst_iban"],
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #aq7 > div:nth-child(5) > label
 {
-    font-weight: regular !important;
+    font-weight: normal !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
