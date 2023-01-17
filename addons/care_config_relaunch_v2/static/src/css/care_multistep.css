@@ -611,26 +611,26 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 
 /* Nav-tabs overrides */
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-ul.nav.nav-tabs li {
+#payment_method ul.nav.nav-tabs li {
     overflow: hidden !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-ul.nav.nav-tabs li span {
+#payment_method ul.nav.nav-tabs li span {
     word-break: normal !important;
 }
 
 @media only screen and (max-width: 480px) {
     body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-    ul.nav.nav-tabs li {
+    #payment_method ul.nav.nav-tabs li {
         width: 33.33%;
         height: 120px !important;
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 360px) {
     body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-    ul.nav.nav-tabs li {
+    #payment_method ul.nav.nav-tabs li {
         width: 50%;
     }
 }
