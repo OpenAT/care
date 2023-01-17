@@ -681,3 +681,14 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 #button_paynow {
     width: 100%;
 }
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+div.acquirer_pre_msg > p {
+    margin-bottom: 30px !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#payment_method div.tab-content {
+    padding-top: 38px !important;
+    margin-bottom: 22px;
+}
