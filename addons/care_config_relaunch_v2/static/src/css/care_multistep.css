@@ -631,6 +631,14 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+label[for="frst_iban"].focused.empty,
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#aq7 > div:nth-child(5) > label.focused.empty
+{
+    color: black !important;
+}
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #frst_iban::-webkit-input-placeholder {
 /* WebKit browsers */
     color: transparent;
