@@ -615,7 +615,10 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 /* Acquirer IBAN */
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-label[for="frst_iban"] {
+label[for="frst_iban"],
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#aq7 > div:nth-child(5) > label
+{
     font-weight: regular !important;
 }
 
