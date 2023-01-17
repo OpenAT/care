@@ -674,7 +674,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 /* Button styles for multi-step only */
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 .btn {
-    padding: 16px !important;
+    padding: 12px !important;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
