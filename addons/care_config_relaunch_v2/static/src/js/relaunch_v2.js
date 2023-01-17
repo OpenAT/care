@@ -6,12 +6,23 @@ document.addEventListener("DOMContentLoaded", function(e) {
 });
 
 function setupPriceDonate() {
+    $(document).ready(() => {
+        removePriceDonateComma();
+    });
+
+    $('#price_donate').change(() => {
+        removePriceDonateComma();
+    });
+
     const priceDonate = document.getElementById("price_donate");
 
     if (priceDonate) {
         priceDonate.addEventListener('click', function(e) {
             priceDonateClearAllActive();
             document.getElementsByClassName('price_donate').item(0).classList.add("active");
+        });
+
+        priceDonate.addEventListener('change', function(e) {
         });
     }
 
@@ -23,6 +34,25 @@ function setupPriceDonate() {
                 priceDonateClearAllActive();
                 e.currentTarget.parentElement.classList.add("active");
             });
+        }
+    }
+}
+
+function removePriceDonateComma() {
+    const priceDonate = document.getElementById("price_donate");
+
+    if (priceDonate) {
+        if (priceDonate.value.endsWith('.00') || priceDonate.value.endsWith(',00')) {
+            priceDonate.value = priceDonate.value
+                .substring(0, priceDonate.value.length - 3)
+                .replace(',', '')
+                .replace('.', '');
+        }
+        else if (priceDonate.value.endsWith('.0') || priceDonate.value.endsWith(',0')) {
+            priceDonate.value = priceDonate.value
+                .substring(0, priceDonate.value.length - 2)
+                .replace(',', '')
+                .replace('.', '');
         }
     }
 }
