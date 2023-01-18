@@ -57,6 +57,13 @@ h3.checkout_title {
     margin-bottom: 21px !important;
 }
 
+/* Form margins etc. */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form {
+    padding-bottom: 23px;
+}
+
 /* Small shop cart for multistep */
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd_checkout_steps_header > h1 {
@@ -474,6 +481,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 .panel.panel-default {
     border: none;
+    margin-bottom: 23px;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
@@ -515,6 +523,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd_checkout_form_submit_button {
     width: 100%;
+    margin-bottom: 0px;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
@@ -729,6 +738,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #button_paynow {
     width: 100%;
+    margin-bottom: 23px;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
