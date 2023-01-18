@@ -646,7 +646,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 .acquirer_pre_msg * {
     font-family: 'Fira Sans Condensed' !important;
-    font-size: 20px !important;
+    font-size: 16px !important;
     color: black !important;
 }
 
