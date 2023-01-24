@@ -78,5 +78,17 @@
             </xpath>
         </template>
 
+        <template id="wsd_checkout_form_inside_relaunch_v2" inherit_id="website_sale_donate.wsd_checkout_form_inside">
+            <xpath expr="//a[@id='wsd_checkout_form_submit_button']" position="after">
+                <t t-if="'shop2.care.at' in request.httprequest.url or '/localhost' in request.httprequest.url or 'theme=rv2' in request.httprequest.url">
+                    <p class="lock-sign">
+                        <img src="/care_config_relaunch_v2/static/src/img/lock.svg" width="20" height="25" />
+                    </p>
+                    <p class="lock-text">
+                        Ihre Daten sind sicher.
+                    </p>
+                </t>
+            </xpath>
+        </template>
     </data>
 </openerp>

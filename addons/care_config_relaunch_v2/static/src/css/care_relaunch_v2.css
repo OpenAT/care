@@ -957,6 +957,9 @@ label.un-focused.empty {
 
 /* Checkout box */
 
+.lock-sign, .lock-text {
+    text-align: center;
+}
 .lock-sign {
     margin-top: 32px;
     margin-bottom: 13px;
@@ -1111,6 +1114,28 @@ label.un-focused.empty {
 
 .multistep_inline_sale_description {
     display: none;
+}
+
+/* Hide back button in shop */
+body[data-on-shop-page=True]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form .wsd_button_back_to_page {
+    display: none;
+}
+
+/* Hide next glyph, restyle button */
+body[data-on-shop-page=True]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form #wsd_checkout_form_submit_button .glyphicon,
+body[data-on-shop-page=True]:not([data-confirmation-controller-called=True])
+#wsd_checkout_form .wsd_button_back_to_page .glyphicon {
+    display: none;
+}
+
+body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-called=True]):not([data-catid=False])
+#wsd_checkout_form_submit_button {
+    width: 100%;
+    float: none !important;
+    padding-top: 10px !important;
+    padding-bottom: 9.3px !important;
 }
 
 /* FORM REDESIGN END */
