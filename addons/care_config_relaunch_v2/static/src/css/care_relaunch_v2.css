@@ -1230,11 +1230,11 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
     margin: 0px;
 }
 
-.fso_subscription_left {
+#fso_subscription_left {
     display: none;
 }
 
-.fso_subscription_right {
+#fso_subscription_right {
     width: 100%;
 }
 
