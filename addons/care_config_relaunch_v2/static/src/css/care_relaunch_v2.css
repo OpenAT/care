@@ -1229,3 +1229,18 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
     width: 100%;
     margin: 0px;
 }
+
+/* PAMENT REDIRECTION PAGE */
+
+#wsd_pp_auto_submit_form .form-group[for=frst_iban] {
+    display: none;
+}
+
+#wsd_pp_auto_submit_form button {
+    border-radius: 5px;
+    width: auto;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
