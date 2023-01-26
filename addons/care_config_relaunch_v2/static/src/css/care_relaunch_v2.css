@@ -1058,6 +1058,12 @@ label.un-focused.empty {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #wsd_checkout_form_inside_row .wsd_button_opc_logout {
+        float: none;
+    }
+}
+
 #cart_total {
     width: 100%;
 }
