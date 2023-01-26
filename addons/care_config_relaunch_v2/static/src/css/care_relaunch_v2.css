@@ -1236,6 +1236,15 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
 
 #fso_subscription_right {
     width: 100%;
+    border: 0px;
+    margin: 0px;
+    padding: 1em;
+}
+
+#fso_subscription_right #fso_form,
+#fso_subscription_right div[name=form-group-list_id],
+#fso_subscription_right div[name=form-group-origin] {
+    margin: 0px;
 }
 
 /* PAMENT REDIRECTION PAGE */
