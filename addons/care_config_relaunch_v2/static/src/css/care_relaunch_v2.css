@@ -1239,6 +1239,7 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
 #wsd_pp_auto_submit_form button {
     border-radius: 5px;
     width: auto;
+    max-width: unset;
     padding-top: 7px !important;
     padding-bottom: 7px !important;
     padding-left: 16px !important;
