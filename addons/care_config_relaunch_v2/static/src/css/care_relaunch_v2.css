@@ -366,6 +366,10 @@ h3.payment_title {
     margin-bottom: 0 !important;
     margin-left: 0 !important;
     padding-left: 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 #products_grid_before > h3 {
@@ -1136,6 +1140,22 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
     float: none !important;
     padding-top: 10px !important;
     padding-bottom: 9.3px !important;
+}
+
+/* Hide small cart buttons in shop */
+#products_grid_before > .small_cart_buttons * {
+    display: none !important;
+}
+
+#products_grid_before > .small_cart_buttons {
+    padding-bottom: 0px !important;
+}
+
+/* Small cart sum */
+#order_total td,
+#order_total h3 {
+    margin-bottom: 0px;
+    height: auto;
 }
 
 /* FORM REDESIGN END */
