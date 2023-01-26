@@ -921,6 +921,11 @@ label.un-focused.empty {
     padding-right: 50px !important;
 }
 
+.fso_subscription_wrap input[type=text]:focus,
+.fso_subscription_wrap select:focus {
+    box-shadow: 0 0 20px rgba(0,0,0,.5) !important;
+}
+
 .fso_subscription_wrap input[type=text],
 .fso_subscription_wrap select {
     padding-left: 7px !important;
@@ -941,12 +946,10 @@ label.un-focused.empty {
     top: 14px;
 }
 
-
 .fso_subscription_wrap label.un-focused:not(.empty),
 .fso_subscription_wrap label.is-focused:not(.empty) {
 
 }
-
 
 #wsd_checkout_form select,
 .payment_opc_acquirer_form select,
