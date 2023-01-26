@@ -899,14 +899,18 @@ label.un-focused.empty {
 #wsd_checkout_form input[type=text],
 #wsd_checkout_form select,
 .payment_opc_acquirer_form input[type=text],
-.payment_opc_acquirer_form select {
+.payment_opc_acquirer_form select,
+.fso_subscription_wrap input[type=text],
+.fso_subscription_wrap select {
     height: 54px;
 }
 
 #wsd_checkout_form input[type=text],
 #wsd_checkout_form select,
 .payment_opc_acquirer_form input[type=text],
-.payment_opc_acquirer_form select {
+.payment_opc_acquirer_form select,
+.fso_subscription_wrap input[type=text],
+.fso_subscription_wrap select {
     border: 0 !important;
     outline: 0 !important;
     border-bottom: 1px solid #DEDEDE !important;
@@ -917,8 +921,36 @@ label.un-focused.empty {
     padding-right: 50px !important;
 }
 
+.fso_subscription_wrap input[type=text],
+.fso_subscription_wrap select {
+    padding-left: 7px !important;
+}
+
+.fso_subscription_wrap label {
+    color: #898989 !important;
+    font-weight: normal !important;
+}
+
+.fso_subscription_wrap label.un-focused,
+.fso_subscription_wrap label.is-focused {
+    top: 0px;
+    margin-left: 7px;
+}
+
+.fso_subscription_wrap label.empty.un-focused {
+    top: 14px;
+}
+
+
+.fso_subscription_wrap label.un-focused:not(.empty),
+.fso_subscription_wrap label.is-focused:not(.empty) {
+
+}
+
+
 #wsd_checkout_form select,
-.payment_opc_acquirer_form select {
+.payment_opc_acquirer_form select,
+.fso_subscription_wrap select {
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
@@ -929,17 +961,20 @@ label.un-focused.empty {
 }
 
 #wsd_checkout_form select + .glyphicon,
-.payment_opc_acquirer_form select + .glyphicon {
+.payment_opc_acquirer_form select + .glyphicon,
+.fso_subscription_wrap select + .glyphicon{
     margin-right: 2.5rem;
 }
 
 #wsd_checkout_form .glyphicon,
-.payment_opc_acquirer_form .glyphicon {
+.payment_opc_acquirer_form .glyphicon,
+.fso_subscription_wrap .glyphicon {
     top: 10px !important;
 }
 
 #wsd_checkout_form .glyphicon-info-sign,
-.payment_opc_acquirer_form .glyphicon-info-sign {
+.payment_opc_acquirer_form .glyphicon-info-sign,
+.fso_subscription_wrap .glyphicon-info-sign {
     position: absolute;
     top: 20px !important;
     right: 16px !important;
@@ -947,7 +982,8 @@ label.un-focused.empty {
 }
 
 #wsd_checkout_form .f-type-boolean .glyphicon-info-sign,
-.payment_opc_acquirer_form f-type-boolean .glyphicon-info-sign {
+.payment_opc_acquirer_form f-type-boolean .glyphicon-info-sign,
+.fso_subscription_wrap f-type-boolean .glyphicon-info-sign {
     top: 21px !important;
     margin-lef: 8px !important;
     right: 32px !important;
@@ -956,7 +992,8 @@ label.un-focused.empty {
 
 @media only screen and (max-width: 1199px) {
     #wsd_checkout_form .f-type-boolean .glyphicon-info-sign,
-    .payment_opc_acquirer_form .f-type-boolean .glyphicon-info-sign {
+    .payment_opc_acquirer_form .f-type-boolean .glyphicon-info-sign,
+    .fso_subscription_wrap .f-type-boolean .glyphicon-info-sign {
         top: 21px !important;
         margin-lef: 8px !important;
         right: 32px !important;
@@ -965,7 +1002,8 @@ label.un-focused.empty {
 }
 
 #wsd_checkout_form .billing-fields .form-control-feedback,
-.payment_opc_acquirer_form .billing-fields .form-control-feedback {
+.payment_opc_acquirer_form .billing-fields .form-control-feedback,
+.fso_subscription_wrap .billing-fields .form-control-feedback {
     right: 28px;
 }
 
@@ -1175,3 +1213,16 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
 }
 
 /* FORM REDESIGN END */
+
+/* NEWSLETTER FORM REDESIGN */
+
+.fso_subscription_wrap {
+    background-color: #eee9e5 !important;
+}
+
+.fso_subscription_wrap #fsoforms_submit_button {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    width: 100%;
+    margin: 0px;
+}
