@@ -1219,6 +1219,8 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
 
 /* NEWSLETTER FORM REDESIGN */
 
+
+
 .fso_subscription_wrap {
     background-color: #eee9e5 !important;
 }
@@ -1238,13 +1240,18 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
     width: 100%;
     border: 0px;
     margin: 0px;
-    padding: 1em;
+    padding: 1em 0em;
 }
 
 #fso_subscription_right #fso_form,
 #fso_subscription_right div[name=form-group-list_id],
 #fso_subscription_right div[name=form-group-origin] {
     margin: 0px;
+}
+
+.fsosubscription_container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 /* PAMENT REDIRECTION PAGE */
