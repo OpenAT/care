@@ -343,6 +343,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
     margin-left: -17px; /* offest for euro symbol */
     padding: 0;
     border-radius: 7px;
+    width: 100%;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])

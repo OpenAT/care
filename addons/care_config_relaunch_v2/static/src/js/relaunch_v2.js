@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     setupFloatingInputs();
     setupPriceDonate();
+    setupDynamicPriceTextSize();
     setupRemoveZeroDecimals();
     hidePaymentIntervalIfOnlyOneEntry();
 });
@@ -54,6 +55,65 @@ function removePriceDonateComma() {
                 .replace(',', '')
                 .replace('.', '');
         }
+    }
+}
+
+function setupDynamicPriceTextSize() {
+    // Only setup for multi step
+    var body = document.getElementsByTagName("body").item(0);
+
+    var isMultiStep = body.getAttribute("data-on-shop-page") == "True"
+        && body.getAttribute("data-latest-product-theme") == "care_multistep"
+        && body.getAttribute("data-confirmation-controller-called") != "True";
+
+    if (!isMultiStep)
+        return;
+
+    const priceDonate = document.getElementById("price_donate");
+
+    if (priceDonate) {
+        $('#price_donate').attr('maxlength','7');
+        $('#price_donate').change(() => {
+            updatePriceDonateTextSize();
+        });
+        $('#price_donate').keyup(() => {
+            updatePriceDonateTextSize(priceDonate);
+        });
+    }
+}
+
+function updatePriceDonateTextSize(priceDonate) {
+    if (priceDonate) {
+        var maxLength = priceDonate.getAttribute('maxlength');
+        if (maxLength && priceDonate.value.length > maxLength) {
+            priceDonate.value = priceDonate.value.substr(0, maxLength);
+        }
+
+        var size = "";
+
+        switch(priceDonate.value.length) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+                size = "50px";
+                break;
+            case 4:
+                size = "40px";
+                break;
+            case 5:
+                size = "35px";
+                break;
+            case 6:
+                size = "30px";
+                break;
+            case 7:
+            default:
+                size = "25px";
+                break;
+        }
+
+        priceDonate.style = "font-size: " + size + ";"
     }
 }
 
