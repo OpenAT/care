@@ -69,6 +69,11 @@ function setupDynamicPriceTextSize() {
     if (!isMultiStep)
         return;
 
+    addPriceDonateInputHandlers();
+    adjustPriceSuggestions();
+}
+
+function addPriceDonateInputHandlers() {
     const priceDonate = document.getElementById("price_donate");
 
     if (priceDonate) {
@@ -82,6 +87,17 @@ function setupDynamicPriceTextSize() {
     }
 }
 
+function adjustPriceSuggestions() {
+    const priceSuggestions = document.getElementsByClassName("price_donate_suggested");
+
+    for (var i = 0; i <= priceSuggestions.length; i++) {
+        const button = priceSuggestions.item(i);
+        if (button) {
+            button.style.fontSize = getDynamicPriceSize(button.value.length);
+        }
+    }
+}
+
 function updatePriceDonateTextSize(priceDonate) {
     if (priceDonate) {
         var maxLength = priceDonate.getAttribute('maxlength');
@@ -89,32 +105,37 @@ function updatePriceDonateTextSize(priceDonate) {
             priceDonate.value = priceDonate.value.substr(0, maxLength);
         }
 
-        var size = "";
-
-        switch(priceDonate.value.length) {
-            case 0:
-            case 1:
-            case 2:
-            case 3:
-                size = "50px";
-                break;
-            case 4:
-                size = "40px";
-                break;
-            case 5:
-                size = "35px";
-                break;
-            case 6:
-                size = "30px";
-                break;
-            case 7:
-            default:
-                size = "25px";
-                break;
-        }
-
+        var size = getDynamicPriceSize(priceDonate.value.length);
         priceDonate.style = "font-size: " + size + ";"
     }
+}
+
+function getDynamicPriceSize(digits) {
+    var size = "";
+
+    switch(digits) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+            size = "50px";
+            break;
+        case 4:
+            size = "40px";
+            break;
+        case 5:
+            size = "35px";
+            break;
+        case 6:
+            size = "30px";
+            break;
+        case 7:
+        default:
+            size = "25px";
+            break;
+    }
+
+    return size;
 }
 
 function priceDonateClearAllActive() {
