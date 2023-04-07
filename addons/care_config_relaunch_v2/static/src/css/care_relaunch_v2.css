@@ -556,6 +556,18 @@ div.form-group.price_donate {
     height: 68px !important;
 }
 
+.price_donate_suggested_outer:nth-child(odd) + div.form-group.price_donate > .input-group span:last-of-type {
+    margin-right: -90px;
+    pointer-events: none;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 500px) {
+    .price_donate_suggested_outer:nth-child(odd) + div.form-group.price_donate > .input-group #price_donate {
+        text-align: right;
+    }
+}
+
 div.form-group.price_donate label {
     display: none;
 }
