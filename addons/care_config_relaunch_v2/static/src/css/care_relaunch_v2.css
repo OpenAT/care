@@ -546,6 +546,16 @@ div.form-group.price_donate {
     width: 100%;
 }
 
+.price_donate_suggested_outer:nth-child(odd) + div.form-group.price_donate {
+    width: 50%;
+}
+
+.price_donate_suggested_outer:nth-child(odd) + div.form-group.price_donate > .input-group,
+.price_donate_suggested_outer:nth-child(odd) + div.form-group.price_donate > .input-group #price_donate,
+.price_donate_suggested_outer:nth-child(odd) + div.form-group.price_donate > .input-group span:last-of-type {
+    height: 68px !important;
+}
+
 div.form-group.price_donate label {
     display: none;
 }
