@@ -260,7 +260,7 @@ div#products_grid {
     left: calc(50% - 170px / 2);
     width: 170px !important;
     height: 170px !important;
-    background-color: #5A4941;
+    background-color: transparent;
 }
 
 div.oe_product_image:after {
