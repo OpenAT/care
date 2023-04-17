@@ -375,6 +375,13 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
   margin: 0;
 }
 
+/* Fix double error messge */
+
+body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
+#product_detail .alert.alert-danger:nth-child(1) {
+    display: none;
+}
+
 /* Firefox hide number buttons */
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
 #wsd-checkout-box input[type=number]#price_donate {
