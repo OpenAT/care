@@ -1,0 +1,6 @@
+#. module: website_sale_donate
+#: code:addons/website_sale_donate/controllers/main.py:457
+#: code:addons/website_sale_donate/controllers/main.py:441
+#, python-format
+msgid "Der Betrag muss %s oder hoeher sein."
+msgstr "Der Mindestbetrag beträgt %s Euro."

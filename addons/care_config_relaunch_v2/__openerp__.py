@@ -27,6 +27,7 @@
     'depends': [
         'care_config',
         'website_sale_grid3x3',
+        'website_sale_donate',
     ],
     'data': [
         'views/templates.xml',
