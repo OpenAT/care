@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     setupPriceDonate();
     setupDynamicPriceTextSize();
     setupRemoveZeroDecimals();
+    setupMultiStepIntervals();
     hidePaymentIntervalIfOnlyOneEntry();
 });
 
@@ -214,6 +215,37 @@ function setupRemoveZeroDecimals() {
                 .substring(0, price_values.item(i).innerText.length - 3)
                 .replace(',', '')
                 .replace('.', '');
+        }
+    }
+}
+
+function setupMultiStepIntervals() {
+    const intervalElements = document.getElementsByName("payment_interval_id");
+
+    for (let i = 0; i < intervalElements.length; i++) {
+        const currentElement = intervalElements.item(i);
+
+        currentElement.addEventListener("change", function(e) {
+            const me = e.currentTarget;
+            const label = me.parentElement;
+            updateActiveOnAllIntervals();
+        });
+    }
+
+    updateActiveOnAllIntervals();
+}
+
+function updateActiveOnAllIntervals() {
+    const intervalElements = document.getElementsByName("payment_interval_id");
+
+    for (let i = 0; i < intervalElements.length; i++) {
+        const me = intervalElements.item(i);
+        const label = me.parentElement;
+
+        label.classList.remove("active");
+
+        if (me.checked) {
+            label.classList.add("active");
         }
     }
 }

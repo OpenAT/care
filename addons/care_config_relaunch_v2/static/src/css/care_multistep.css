@@ -161,7 +161,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-#payment_intervals .form-group .radio label:has(input[type=radio]) {
+#payment_intervals .form-group .radio label {
     background-color: green;
     padding-top: 10px;
     padding-bottom: 9px;
@@ -172,7 +172,7 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-#payment_intervals .form-group .radio label:has(input[type=radio]:checked) {
+#payment_intervals .form-group .radio label.active {
     background-color: green;
     padding-top: 10px;
     padding-bottom: 9px;
@@ -183,22 +183,22 @@ body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-#payment_intervals .form-group .radio:nth-of-type(1) label:has(input[type=radio]) {
+#payment_intervals .form-group .radio:nth-of-type(1) label {
     border-radius: 22.5px 0px 0px 0px;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-#payment_intervals .form-group .radio:nth-of-type(2) label:has(input[type=radio]) {
+#payment_intervals .form-group .radio:nth-of-type(2) label {
     border-radius: 0px 22.5px 0px 0px;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-#payment_intervals .form-group .radio:nth-of-type(3) label:has(input[type=radio]) {
+#payment_intervals .form-group .radio:nth-of-type(3) label {
     border-radius: 0px 0px 0px 22.5px;
 }
 
 body[data-on-shop-page=True][data-latest-product-theme=care_multistep]:not([data-confirmation-controller-called=True])
-#payment_intervals .form-group .radio:nth-of-type(4) label:has(input[type=radio]) {
+#payment_intervals .form-group .radio:nth-of-type(4) label {
     border-radius: 0px 0px 22.5px 0px;
 }
 
