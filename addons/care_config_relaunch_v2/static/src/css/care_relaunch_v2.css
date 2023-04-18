@@ -479,7 +479,7 @@ span.price_donate_suggested_outer {
     font-size: 30px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input,
     .payment_opc_acquirer_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > span > input {
         text-align: right;
@@ -562,9 +562,19 @@ div.form-group.price_donate {
     z-index: 5;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .price_donate_suggested_outer:nth-child(odd) + div.form-group.price_donate > .input-group #price_donate {
         text-align: right;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    span.price_donate_suggested_outer {
+        width: 100%;
+    }
+
+    .price_donate_suggested_outer:nth-child(odd) + div.form-group.price_donate {
+        width: 100%;
     }
 }
 
