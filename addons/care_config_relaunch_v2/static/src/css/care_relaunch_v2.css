@@ -173,7 +173,7 @@ td.oe_product.oe_grid.oe-height-2 {
     height: 552px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #products_grid .oe_product_cart {
         height: 552px !important;
     }
