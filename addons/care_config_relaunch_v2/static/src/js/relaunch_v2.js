@@ -31,11 +31,24 @@ function setupPriceDonate() {
     const price_suggestions = document.getElementsByClassName("price_donate_suggested");
 
     if (price_suggestions) {
+        const urlParams = new URLSearchParams(window.location.search);
+        let suggestionMatched = false;
+
         for (let i = 0; i < price_suggestions.length; i++) {
             price_suggestions.item(i).addEventListener("click", function(e) {
                 priceDonateClearAllActive();
                 e.currentTarget.parentElement.classList.add("active");
             });
+
+            const suppliedPriceDonate = urlParams.get('price_donate');
+            if (price_suggestions.item(i).value == suppliedPriceDonate) {
+                suggestionMatched = true;
+                price_suggestions.item(i).parentElement.classList.add("active");
+            }
+        }
+
+        if (priceDonate && !suggestionMatched) {
+             document.getElementsByClassName('price_donate').item(0).classList.add("active");
         }
     }
 }
