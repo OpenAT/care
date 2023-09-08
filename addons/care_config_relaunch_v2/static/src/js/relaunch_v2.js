@@ -33,6 +33,7 @@ function setupPriceDonate() {
     if (price_suggestions) {
         const urlParams = new URLSearchParams(window.location.search);
         let suggestionMatched = false;
+        const suppliedPriceDonate = urlParams.get('price_donate');
 
         for (let i = 0; i < price_suggestions.length; i++) {
             price_suggestions.item(i).addEventListener("click", function(e) {
@@ -40,7 +41,6 @@ function setupPriceDonate() {
                 e.currentTarget.parentElement.classList.add("active");
             });
 
-            const suppliedPriceDonate = urlParams.get('price_donate');
             if (price_suggestions.item(i).value == suppliedPriceDonate) {
                 suggestionMatched = true;
                 price_suggestions.item(i).parentElement.classList.add("active");
