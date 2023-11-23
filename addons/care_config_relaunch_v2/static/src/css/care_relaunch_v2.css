@@ -1301,3 +1301,78 @@ body[data-on-shop-page=True][data-catid]:not([data-confirmation-controller-calle
     padding-left: 16px !important;
     padding-right: 16px !important;
 }
+
+/* payment intervals like multistep */
+
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio * {
+    font-family: 'Fira Sans Condensed';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    color: #000;
+}
+
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Hide the browser's default radio button */
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio label input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio label {
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    border: 1px solid black;
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio label.active {
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    background-color: #e36f1e;
+    border: 1px solid #e36f1e;
+    width: 100%;
+    color: white;
+}
+
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio:nth-of-type(1) label {
+    border-radius: 22.5px 0px 0px 0px;
+}
+
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio:nth-of-type(2) label {
+    border-radius: 0px 22.5px 0px 0px;
+}
+
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio:nth-of-type(3) label {
+    border-radius: 0px 0px 0px 22.5px;
+}
+
+html[data-view-xmlid='website_sale_donate.ppt_opc'] body[data-on-shop-page=True]
+#payment_intervals .form-group .radio:nth-of-type(4) label {
+    border-radius: 0px 0px 22.5px 0px;
+}
