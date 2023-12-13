@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     setupDynamicPriceTextSize();
     setupRemoveZeroDecimals();
     setupMultiStepIntervals();
+    setupAutoRecomputePriceSuggestions();
     hidePaymentIntervalIfOnlyOneEntry();
 });
 
@@ -269,5 +270,55 @@ function hidePaymentIntervalIfOnlyOneEntry() {
     if (element && element.tagName == "SELECT" && element.children.length <= 1) {
         element.selectedIndex = 0;
         element.parentElement.style = "display: none;";
+    }
+}
+
+function setupAutoRecomputePriceSuggestions() {
+    const header = document.getElementById('payment_intervals');
+
+    if (!header || header.getAttribute('data-auto-recompute-price-donate') !== 'True')
+        return;
+
+    updatePriceSuggestion();
+
+    const interval_select = document.getElementsByName('payment_interval_id');
+
+    if (interval_select.length == 1) {
+        interval_select.item(0).addEventListener("change", e => {
+            updatePriceSuggestion();
+        });
+    } else {
+        const elements = document.querySelectorAll('[data-payment-interval-length-in-months]');
+
+        for (let i = 0; i < elements.length; i++) {
+            elements.item(i).addEventListener("change", e => {
+                updatePriceSuggestion();
+            });
+        }
+    }
+}
+
+function updatePriceSuggestion() {
+    var interval = 1;
+    let selectedInterval = document.querySelectorAll('[data-payment-interval-length-in-months]:checked');
+
+    if (!selectedInterval) {
+        selectedInterval = document.querySelectorAll('[data-payment-interval-length-in-months]:selected');
+    }
+
+    if (selectedInterval) {
+        const interval_months = selectedInterval.item(0).getAttribute('data-payment-interval-length-in-months');
+        interval = 12 / interval_months;
+    }
+
+    const elements = document.querySelectorAll('[data-price-original]');
+
+    for (let i = 0; i < elements.length; i++) {
+        const el = elements.item(i);
+        const new_price = el.getAttribute('data-price-original') / interval;
+        const new_price_rounded = Math.round((new_price + Number.EPSILON) * 10) / 10;
+        el.setAttribute('data-price', new_price_rounded);
+        el.value = String(new_price_rounded).replace(',', '').replace('.', ',');
+        $(el).data('price', new_price_rounded);
     }
 }

@@ -90,5 +90,17 @@
                 </t>
             </xpath>
         </template>
+
+        <template id="relaunchv2_wsd_product_price" inherit_id="website_sale_donate.wsd_product_price">
+            <xpath expr="//t[@t-foreach='product.price_suggested_ids']//input" position="replace">
+                <input type="button"
+                       t-att-data-price="ps_button.amount"
+                       t-att-data-price-original="ps_button.amount"
+                       t-att-value="ps_button.name or '{:.0f}'.format(ps_button.amount)"
+                       t-att-class="'btn btn-lg btn-default price_donate_suggested'+ps_button_classes"
+                       t-att-data-ps-id="ps_button.id">
+                </input>
+            </xpath>
+        </template>
     </data>
 </openerp>
