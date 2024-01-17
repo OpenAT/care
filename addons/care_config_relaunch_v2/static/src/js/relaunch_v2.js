@@ -308,7 +308,7 @@ function updatePriceSuggestion() {
 
     if (selectedInterval) {
         const interval_months = selectedInterval.item(0).getAttribute('data-payment-interval-length-in-months');
-        if (interval_months = 0) {
+        if (interval_months == 0) {
             interval_months = 12;
         }
         interval = 12 / interval_months;
