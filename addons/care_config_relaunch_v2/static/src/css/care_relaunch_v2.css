@@ -448,9 +448,9 @@ section[name="one-page-checkout"] h3 > span,
     font-size: 14px;
 }
 
-#wsd-checkout-box h3.amount_title:before { content: "2"; }
-#wsd-checkout-box h3.payment_title:before { content: "3"; }
-#wsd-checkout-box h3.checkout_title:before { content: "4"; }
+#wsd-checkout-box h3.amount_title:before { content: "1"; }
+#wsd-checkout-box h3.payment_title:before { content: "2"; }
+#wsd-checkout-box h3.checkout_title:before { content: "3"; }
 
 /* Suggested price boxes - OPC forms */
 
