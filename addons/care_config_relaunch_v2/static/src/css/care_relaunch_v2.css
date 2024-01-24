@@ -1376,3 +1376,7 @@ body[data-on-shop-page=True]
 #payment_intervals .form-group .radio:nth-of-type(4) label {
     border-radius: 0px 0px 22.5px 0px;
 }
+
+#wsd_checkout_form .wsd_button_opc_logout {
+    display: none;
+}
