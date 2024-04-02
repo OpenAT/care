@@ -11,8 +11,8 @@
                 <script t-if="'care.at' in request.httprequest.url or 'care-relaunch-css' in request.httprequest.query_string">
                     <![CDATA[
                     document.addEventListener("DOMContentLoaded", function() {
-                        product_div = document.getElementsByClassName('js_product').item(0);
-                        price_donate_input = document.getElementById('price_donate');
+                        const product_div = document.getElementsByClassName('js_product').item(0);
+                        const price_donate_input = document.getElementById('price_donate');
                         var dataToSend = {
                             'event': 'view-item',
                             'donation-name': product_div.getAttribute('data-product-name'),
@@ -26,8 +26,8 @@
                 <script t-if="not ('care.at' in request.httprequest.url or 'care-relaunch-css' in request.httprequest.query_string)">
                     <![CDATA[
                     document.addEventListener("DOMContentLoaded", function() {
-                        product_div = document.getElementsByClassName('js_product').item(0);
-                        price_donate_input = document.getElementById('price_donate');
+                        const product_div = document.getElementsByClassName('js_product').item(0);
+                        const price_donate_input = document.getElementById('price_donate');
                         var dataToSend = {
                             'event': 'view-item',
                             'donation-name': product_div.getAttribute('data-product-name'),
@@ -49,6 +49,7 @@
                 <script t-if="'care.at' in request.httprequest.url or 'care-relaunch-css' in request.httprequest.query_string">
                     <![CDATA[
                     document.addEventListener("DOMContentLoaded", function() {
+                        const cart = document.getElementById('cart_products');
                         var dataToSend = {
                             'event': 'view-item',
                             'donation-name': cart.querySelectorAll('a[name="product_name"]').item(0).text.trim(),
@@ -62,7 +63,7 @@
                 <script t-if="not ('care.at' in request.httprequest.url or 'care-relaunch-css' in request.httprequest.query_string)">
                     <![CDATA[
                     document.addEventListener("DOMContentLoaded", function() {
-                        cart = document.getElementById('cart_products');
+                        const cart = document.getElementById('cart_products');
                         var dataToSend = {
                             'event': 'view-item',
                             'donation-name': cart.querySelectorAll('a[name="product_name"]').item(0).text.trim(),
