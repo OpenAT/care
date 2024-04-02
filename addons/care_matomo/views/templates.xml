@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- ##################################################
+        OPC (One-Page-Checkout) Tracking
+        ################################################### -->
+        <template id="care_matomo_ppt_opc" inherit_id="website_sale_donate.ppt_opc" name="OPC Matomo Tracking">
+            <xpath expr='//div[@class="container ppt_opc-footer"]' position="inside">
+                <!-- If the request URL contains care.at, use original script from getunik -->
+                <script t-if="'care.at' in request.httprequest.url or 'care-relaunch-css' in request.httprequest.query_string">
+                    <![CDATA[
+                    document.addEventListener("DOMContentLoaded", function() {
+                        product_div = document.getElementsByClassName('js_product').item(0);
+                        price_donate_input = document.getElementById('price_donate');
+                        var dataToSend = {
+                            'event': 'view-item',
+                            'donation-name': product_div.getAttribute('data-product-name'),
+                            'donation-price': price_donate_input.value
+                        };
+                        window.parent.postMessage(dataToSend, "https://care.at");
+                    });
+                    ]]>
+                </script>
+                <!-- If care.at is not present in request url, just do a console log while developing -->
+                <script t-if="not ('care.at' in request.httprequest.url or 'care-relaunch-css' in request.httprequest.query_string)">
+                    <![CDATA[
+                    document.addEventListener("DOMContentLoaded", function() {
+                        product_div = document.getElementsByClassName('js_product').item(0);
+                        price_donate_input = document.getElementById('price_donate');
+                        var dataToSend = {
+                            'event': 'view-item',
+                            'donation-name': product_div.getAttribute('data-product-name'),
+                            'donation-price': price_donate_input.value
+                        };
+                        console.log('OPC-Tracking event: %o', dataToSend);
+                    });
+                    ]]>
+                </script>
+            </xpath>
+        </template>
+
+        <!-- ##################################################
+        MPC (Multi-Page-Checkout) Tracking, only Step 2
+        ################################################### -->
+        <template id="care_matomo_ppt_donate" inherit_id="website_sale.checkout" name="MPC Matomo Tracking">
+            <xpath expr="//form[@action='/shop/confirm_order']" position="after">
+                <!-- If the request URL contains care.at, use original script from getunik -->
+                <script t-if="'care.at' in request.httprequest.url or 'care-relaunch-css' in request.httprequest.query_string">
+                    <![CDATA[
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var dataToSend = {
+                            'event': 'view-item',
+                            'donation-name': cart.querySelectorAll('a[name="product_name"]').item(0).text.trim(),
+                            'donation-price': cart.querySelectorAll('.oe_currency_value').item(0).text.trim()
+                        };
+                        window.parent.postMessage(dataToSend, "https://care.at");
+                        ]]>
+                    });
+                </script>
+                <!-- If care.at is not present in request url, just do a console log while developing -->
+                <script t-if="not ('care.at' in request.httprequest.url or 'care-relaunch-css' in request.httprequest.query_string)">
+                    <![CDATA[
+                    document.addEventListener("DOMContentLoaded", function() {
+                        cart = document.getElementById('cart_products');
+                        var dataToSend = {
+                            'event': 'view-item',
+                            'donation-name': cart.querySelectorAll('a[name="product_name"]').item(0).text.trim(),
+                            'donation-price': cart.querySelectorAll('.oe_currency_value').item(0).innerText.trim()
+                        };
+                        console.log('MPC-Tracking event: %o', dataToSend);
+                    });
+                    ]]>
+                </script>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
