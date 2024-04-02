@@ -53,7 +53,7 @@
                         var dataToSend = {
                             'event': 'view-item',
                             'donation-name': cart.querySelectorAll('a[name="product_name"]').item(0).text.trim(),
-                            'donation-price': cart.querySelectorAll('.oe_currency_value').item(0).text.trim()
+                            'donation-price': cart.querySelectorAll('.oe_currency_value').item(0).innerText.trim()
                         };
                         window.parent.postMessage(dataToSend, "https://care.at");
                         ]]>
