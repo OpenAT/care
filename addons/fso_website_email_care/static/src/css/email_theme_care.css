@@ -45,11 +45,14 @@ html body #wrapwrap {
 /* Typography */
 /* ---------- */
 
+body, p {
+    font-size: 19px;
+}
+
 body, p, a {
     /*font-family: 'PT Sans', 'Trebuchet MS', sans-serif;*/
     font-family: Arial, Helvetica, sans-serif !important;
     text-rendering: optimizeLegibility;
-    font-size: 19px;
     color: #5a4941;
 }
 /* ATTENTION: Do not add line-height to "td", "div" or "span" elements to support Outlook 2013 and alike */
@@ -78,7 +81,6 @@ p {
 .snippet_block a:visited {
     color: #e4761e;
     text-decoration: underline;
-    font-size: 19px;
 }
 
 /* Headlines */
